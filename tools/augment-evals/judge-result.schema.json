@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Augment Eval Judge Result",
+  "type": "object",
+  "required": ["protocol_version", "case_id", "trial", "valid", "criteria", "failure_signals"],
+  "properties": {
+    "protocol_version": {"const": "1.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "trial": {"type": "integer", "minimum": 1},
+    "valid": {"type": "boolean"},
+    "invalid_reason": {"type": "string"},
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["criterion_index", "status", "evidence"],
+        "properties": {
+          "criterion_index": {"type": "integer", "minimum": 0},
+          "status": {"enum": ["met", "partial", "not_met"]},
+          "evidence": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "failure_signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signal_index", "observed", "evidence"],
+        "properties": {
+          "signal_index": {"type": "integer", "minimum": 0},
+          "observed": {"type": "boolean"},
+          "evidence": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "acceptable_variation_used": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

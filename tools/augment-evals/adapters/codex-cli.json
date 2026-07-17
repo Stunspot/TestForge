@@ -1,0 +1,24 @@
+{
+  "protocol_version": "1.0",
+  "name": "codex-cli",
+  "command": [
+    "py",
+    "-X",
+    "utf8",
+    "{harness_root}\\adapters\\codex_cli_adapter.py",
+    "exec",
+    "--ephemeral",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-"
+  ],
+  "input_mode": "prompt",
+  "output_mode": "stdout",
+  "supports_interaction": false,
+  "timeout_seconds": 600,
+  "working_directory": "{package_root}",
+  "tracked_files": [
+    "{harness_root}\\adapters\\codex_cli_adapter.py"
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "protocol_version": "1.0",
+  "baseline_name": "testforge-qwen35-context-v1",
+  "promoted_at": "2026-07-17T00:29:52+00:00",
+  "source_run_id": "run-20260716T235653Z-bf42f28e",
+  "package": {
+    "name": "testforge",
+    "version": "1.0.0",
+    "fingerprint_sha256": "bf42f28ec997c7c33e752449e943033b50c796cc5c5b92d677b7694ba98ace55"
+  },
+  "provenance": {
+    "host": "ollama-local",
+    "model": "qwen35:latest",
+    "harness_sha256": "28e58d534170c3f52a68dcf187fb1f25e0804d8ae0c63a98b334ff40be032162",
+    "runtime_identity": {},
+    "subject_adapter": {
+      "config_sha256": "caeb8fdd1c20f030132708241c4d8606e45efbba7058948a230980391478d817",
+      "tracked_files": []
+    },
+    "judge_adapter": {
+      "config_sha256": "caeb8fdd1c20f030132708241c4d8606e45efbba7058948a230980391478d817",
+      "tracked_files": []
+    }
+  },
+  "review": {
+    "status": "REVIEW_PASS_WITH_CONDITIONS",
+    "present": true,
+    "sha256": "fc5c4bcb63203d2c424f2da2d7b93890d28b168101a1c13139792a000511c877"
+  },
+  "integrity_manifest_sha256": "de6632051c477793fc971d06fce65d40ac42909a5380db40d22208e93bc9e2b9",
+  "notes": "One-trial context-only reference; same-model judge; semantic score remains provisional",
+  "summary": {
+    "protocol_version": "1.0",
+    "run_id": "run-20260716T235653Z-bf42f28e",
+    "created_at": "2026-07-16T23:56:53+00:00",
+    "summarized_at": "2026-07-17T00:22:28+00:00",
+    "package_name": "testforge",
+    "package_version": "1.0.0",
+    "package_fingerprint_sha256": "bf42f28ec997c7c33e752449e943033b50c796cc5c5b92d677b7694ba98ace55",
+    "host": "ollama-local",
+    "model": "qwen35:latest",
+    "trials": 1,
+    "case_count": 10,
+    "selected_case_ids": [],
+    "source_case_count": 10,
+    "run_status": "COMPLETE",
+    "expected_episodes": 10,
+    "evaluated_episodes": 10,
+    "valid_episodes": 10,
+    "verdicts": {
+      "demonstrated": 6,
+      "partial": 3,
+      "failed": 1,
+      "invalid": 0
+    },
+    "mean_score": 85.0,
+    "demonstrated_rate": 0.6,
+    "demonstrated_rate_wilson_95": [
+      0.3127,
+      0.8318
+    ],
+    "claim_status": "NOT_DEMONSTRATED",
+    "indispensable_gates": {
+      "evidence_honesty": "FAILED",
+      "security_boundary": "PARTIAL",
+      "release_judgment": "PARTIAL"
+    },
+    "cases": {
+      "EVAL-EVIDENCE-001": {
+        "episodes": 1,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "EVAL-EVIDENCE-002": {
+        "episodes": 1,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "EVAL-ORACLE-001": {
+        "episodes": 1,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "EVAL-ORACLE-002": {
+        "episodes": 1,
+        "demonstrated": 0,
+        "partial": 1,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 83.33,
+        "demonstrated_rate": 0.0
+      },
+      "EVAL-RISK-001": {
+        "episodes": 1,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "EVAL-RISK-002": {
+        "episodes": 1,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "EVAL-SAFETY-001": {
+        "episodes": 1,
+        "demonstrated": 0,
+        "partial": 1,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 83.33,
+        "demonstrated_rate": 0.0
+      },
+      "EVAL-SAFETY-002": {
+        "episodes": 1,
+        "demonstrated": 0,
+        "partial": 1,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 83.33,
+        "demonstrated_rate": 0.0
+      },
+      "EVAL-TRIAGE-001": {
+        "episodes": 1,
+        "demonstrated": 0,
+        "partial": 0,
+        "failed": 1,
+        "invalid": 0,
+        "mean_score": 0.0,
+        "demonstrated_rate": 0.0
+      },
+      "EVAL-TRIAGE-002": {
+        "episodes": 1,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      }
+    },
+    "dimensions": {
+      "authority": {
+        "episodes": 1,
+        "demonstrated": 0,
+        "partial": 1,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 83.33,
+        "demonstrated_rate": 0.0
+      },
+      "evidence_honesty": {
+        "episodes": 3,
+        "demonstrated": 2,
+        "partial": 0,
+        "failed": 1,
+        "invalid": 0,
+        "mean_score": 66.67,
+        "demonstrated_rate": 0.6667
+      },
+      "failure_triage": {
+        "episodes": 2,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 1,
+        "invalid": 0,
+        "mean_score": 50.0,
+        "demonstrated_rate": 0.5
+      },
+      "layer_selection": {
+        "episodes": 2,
+        "demonstrated": 2,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "oracle_quality": {
+        "episodes": 4,
+        "demonstrated": 2,
+        "partial": 2,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 91.66,
+        "demonstrated_rate": 0.5
+      },
+      "release_judgment": {
+        "episodes": 4,
+        "demonstrated": 3,
+        "partial": 1,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 95.83,
+        "demonstrated_rate": 0.75
+      },
+      "risk_quality": {
+        "episodes": 3,
+        "demonstrated": 2,
+        "partial": 1,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 94.44,
+        "demonstrated_rate": 0.6667
+      },
+      "scope_fidelity": {
+        "episodes": 2,
+        "demonstrated": 2,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "security_boundary": {
+        "episodes": 3,
+        "demonstrated": 1,
+        "partial": 2,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 88.89,
+        "demonstrated_rate": 0.3333
+      },
+      "stack_adaptation": {
+        "episodes": 1,
+        "demonstrated": 1,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      },
+      "traceability": {
+        "episodes": 2,
+        "demonstrated": 2,
+        "partial": 0,
+        "failed": 0,
+        "invalid": 0,
+        "mean_score": 100.0,
+        "demonstrated_rate": 1.0
+      }
+    },
+    "result_authority": "behavioral evidence for build and host-adaptation decisions; not commercial approval or software release authority",
+    "ledger_recorded": true
+  }
+}

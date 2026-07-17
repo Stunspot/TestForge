@@ -1,0 +1,26 @@
+{
+  "protocol_version": "1.0",
+  "name": "ollama-qwen35-context-32k-cpu",
+  "command": [
+    "py",
+    "-X",
+    "utf8",
+    "{harness_root}\\adapters\\ollama_context_adapter.py",
+    "--model",
+    "qwen35",
+    "--context-length",
+    "32768",
+    "--num-gpu",
+    "0",
+    "--thinking",
+    "off"
+  ],
+  "input_mode": "prompt",
+  "output_mode": "stdout",
+  "supports_interaction": false,
+  "timeout_seconds": 1800,
+  "working_directory": "{package_root}",
+  "tracked_files": [
+    "{harness_root}\\adapters\\ollama_context_adapter.py"
+  ]
+}

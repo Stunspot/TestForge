@@ -1,0 +1,22 @@
+name: TestForge checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r tools/augment-evals/requirements.txt
+      - run: python -m unittest discover -s testforge/tests -v
+      - run: python -m unittest discover -s tools/augment-evals/tests -v
+      - run: python testforge/scripts/verify_package.py testforge
+      - run: python tools/augment-evals/augment_eval.py validate testforge
