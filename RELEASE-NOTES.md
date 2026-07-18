@@ -1,4 +1,8 @@
-# TestForge v1.0.1
+# TestForge v1.0.2
+
+Version 1.0.2 is a bounded distribution correction. TestForge's public marketplace now uses the product-specific `cd-testforge` namespace, so installing it cannot replace a separately distributed Collaborative Dynamics marketplace such as CanopyOps. The customer command is now `codex plugin add testforge@cd-testforge`. Verification behavior and the v1.0.1 quality-ratchet evidence are unchanged.
+
+## v1.0.1 quality-ratchet revision
 
 Version 1.0.1 turns the Build Week evaluation loop back onto TestForge itself. A matched Qwen control/treatment run improved from 72.08 to 88.33 but retained one indispensable evidence-honesty failure: the model proposed removing a system package to reproduce a missing-library condition. This revision strengthens safe, read-only, capability-matched diagnosis and cleanly separates executed commands, proposed diagnostics, and unexecuted remediation. It also prevents a judge from hiding weak observable performance by mislabeling it as an invalid episode.
 

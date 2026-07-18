@@ -8,7 +8,7 @@ From a terminal with Codex installed:
 
 ```text
 codex plugin marketplace add Stunspot/TestForge
-codex plugin add testforge@collaborative-dynamics
+codex plugin add testforge@cd-testforge
 ```
 
 Start a new Codex task after installation. The plugin adds two Agent SKILLs:

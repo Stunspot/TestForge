@@ -1,8 +1,8 @@
 {
   "format_version": "1.0",
   "package": "testforge",
-  "version": "1.0.1",
-  "release_date": "2026-07-17",
+  "version": "1.0.2",
+  "release_date": "2026-07-18",
   "artifact_count": 124,
   "artifacts": [
     {
@@ -107,8 +107,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 2484,
-      "sha256": "f67acd3487282bfc57ae049252f67e3d80688cf522813108cc2198fea9f7dbbd"
+      "size": 2874,
+      "sha256": "9f905454eff37dec0334d86a77430a566c136dea37732effbc068b91da26c174"
     },
     {
       "path": "docs/CAPABILITY-MATRIX.md",
@@ -148,7 +148,7 @@
     {
       "path": "evals/eval-manifest.yaml",
       "size": 736,
-      "sha256": "a5aa1f0e534c9efbd33dd5ccd0d4c0c8618c6f77649795386b85e59fd5548ce5"
+      "sha256": "63ac412980a7357c398f5406755e2fe85ebafb06e59e3ba78a46b1e396808b16"
     },
     {
       "path": "evals/failure-triage-cases.yaml",
@@ -168,7 +168,7 @@
     {
       "path": "evals/README.md",
       "size": 1625,
-      "sha256": "db232332397fdb3d005a56bb7c5124d12e357da7e911cefae4bb7ab8b27fffe9"
+      "sha256": "bddb41b3c2d7fbe64c3b39fd4a144c498430e1c22eab464d9cb0c5bf8f6bb406"
     },
     {
       "path": "evals/risk-coverage-cases.yaml",
@@ -373,12 +373,12 @@
     {
       "path": "package-manifest.yaml",
       "size": 1191,
-      "sha256": "a15d8cd5ec0f13aee4789abceb817cbcc779ab1a3e9e5b8047fa4231ae9ad068"
+      "sha256": "957a956bf8ea70c793a665347fa0eecdc72dea993906f049ae93131f8876adb6"
     },
     {
       "path": "PROVENANCE.md",
-      "size": 1006,
-      "sha256": "b0f4d25cf542e289fb69f29fee0e5ecb775012045480afc6c353d929b23ee4af"
+      "size": 1142,
+      "sha256": "6620f779eea9ff39ad3f076206aba8212e4090358b15b836f895dd0766cf267e"
     },
     {
       "path": "README.md",
