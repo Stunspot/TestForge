@@ -2,12 +2,12 @@
 
 Turn a software change, repository, failing test, or feature requirement into risk-ranked, repository-compatible verification evidence—and a release conclusion that says what is still unsafe to ship.
 
-TestForge is a portable Augment with one verification operator, one independent skeptical reviewer, progressive testing doctrine, operational artifacts, deterministic Python tools, TypeScript/Python stack guidance, three situated examples, behavioral evaluations, and a fileless fallback. Markdown is the canonical human record; JSON is the canonical machine record.
+TestForge is a portable Augment with one self-contained verification operator, one self-contained independent reviewer, progressive testing doctrine, operational artifacts, deterministic Python tools, TypeScript/Python stack guidance, three situated examples, behavioral evaluations, and a fileless fallback. Markdown is the canonical human record; JSON is the canonical machine record.
 
 ## Start here
 
 1. Read `docs/QUICK-START.md`.
-2. Expose `skills/software-verification` and `skills/verification-reviewer` to a compatible skill host while preserving this package tree.
+2. Install `skills/software-verification` and `skills/verification-reviewer` as complete skill folders, or upload the matching one-skill archives from the repository's `claude-ai/` directory.
 3. Invoke `$software-verification` with whatever you have: a diff, repository, defect, test failure, requirement, or release candidate.
 4. Let TestForge inspect before it questions you. It asks only for decision-critical information it cannot recover.
 5. Run the independent reviewer before accepting a release assessment.
@@ -26,4 +26,4 @@ TestForge is a portable Augment with one verification operator, one independent 
 
 TestForge uses the files and tools a host actually exposes. It can create compatible tests and run repository-local checks when execution is available and authorized; it cannot grant file access, install dependencies, create environments, certify compliance, prove defect-freedom, or assume release authority. Active security testing, destructive operations, production access, dependency installation, production-code modification, CI changes, and external publication remain human-authorized actions.
 
-See `docs/CAPABILITY-MATRIX.md`, `docs/LIMITATIONS.md`, and `SECURITY.md` for the exercised boundary.
+See `docs/CAPABILITY-MATRIX.md`, `docs/LIMITATIONS.md`, and `SECURITY.md` for the exercised boundary. See `docs/HOST-COMPATIBILITY.md` for the exact Codex, Claude.ai, and Claude Code installation units.

@@ -1,6 +1,6 @@
 ---
 name: verification-reviewer
-description: Independently challenge a completed or proposed software verification package for missing catastrophic risks, weak oracles, misleading mocks, unsupported execution claims, broken traceability, unsafe testing, and a release status that outruns its evidence. Use after verification work exists; yield to first-pass test generation or ordinary code review.
+description: Independently challenge software-verification packages for missed catastrophic risks, weak oracles, misleading mocks, unsupported claims, unsafe tests, broken traceability, and overclaimed status.
 ---
 
 # Try to make the release claim fail
@@ -11,7 +11,7 @@ Ask first: **what would have to be false for this recommendation to be unsafe?**
 
 `scope → impact → risk → invariant → scenario → test → evidence → status`
 
-Use `review-rubric.md` and `adversarial-checks.md`. Re-run `../../scripts/validate_manifest.py` and `../../scripts/validate_traceability.py` when tool access exists. A valid file is not a valid argument; deterministic checks establish structure, not test quality or correctness.
+Use `review-rubric.md` and `adversarial-checks.md`. Re-run `scripts/validate_manifest.py` and `scripts/validate_traceability.py` when tool access exists. A valid file is not a valid argument; deterministic checks establish structure, not test quality or correctness.
 
 Challenge in this order:
 

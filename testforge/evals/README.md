@@ -4,7 +4,7 @@ These isolated cases test whether TestForge transfers its governing behavior bey
 
 ## Runtime contract
 
-- Package version: TestForge 1.0.2.
+- Package version: TestForge 1.1.0.
 - Load the operator skill and package-relative resources it chooses.
 - Do not load demonstrations unless the operator's own retrieval rule selects one; none of these cases requires an example.
 - Give only the case `input` to the evaluated model. Keep `expected_behaviors`, `acceptable_variation`, and `failure_signals` evaluator-only.

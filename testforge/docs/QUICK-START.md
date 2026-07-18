@@ -2,7 +2,26 @@
 
 ## Install
 
-Keep the entire `testforge` directory together. Expose `skills/software-verification` and `skills/verification-reviewer` using your host's skill installation mechanism. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
+Each v1.1.0 skill is self-contained. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
+
+### Codex
+
+1. Copy the complete `skills/software-verification/` and `skills/verification-reviewer/` directories into your Codex personal skills directory.
+2. On Windows, the resulting paths are normally `%USERPROFILE%\.codex\skills\software-verification\SKILL.md` and `%USERPROFILE%\.codex\skills\verification-reviewer\SKILL.md`.
+3. Start a new Codex task, then invoke `$software-verification` explicitly for the first run.
+
+### Claude.ai
+
+1. Open **Customize > Skills**.
+2. Select **+**, then **Create skill**.
+3. Upload `claude-ai/software-verification-v1.1.0.zip` and `claude-ai/verification-reviewer-v1.1.0.zip` separately.
+4. Enable both skills if Claude presents enable controls, then start a new conversation.
+
+Claude Skills and code execution must be available for the account. Team and Enterprise organizations may require an owner to enable Skills. The two supplied archives are independent installation units; do not combine them or upload a ZIP containing only `SKILL.md`.
+
+### Claude Code
+
+Copy both complete skill directories into `~/.claude/skills/` for personal use or `.claude/skills/` for one project. Invoke `/software-verification` and `/verification-reviewer` when explicit selection is useful.
 
 ## First verification
 
@@ -15,7 +34,7 @@ Keep the entire `testforge` directory together. Expose `skills/software-verifica
 
 ## Deterministic tools
 
-From the package root:
+From the installed `software-verification` skill root:
 
 ```text
 python scripts/inspect_repo.py <repository> --output repo-inventory.json
@@ -27,6 +46,8 @@ python scripts/assemble_report.py <manifest.json> --output verification-report.m
 ```
 
 See each command's `--help`. Use `scripts/capture_command.py` only after reviewing the explicit command.
+
+The reviewer carries its own manifest and traceability validators. Run it in a fresh context when practical. If it is unavailable, record that the independent challenge was not exercised; same-context self-review is not an equivalent guarantee.
 
 ## No skill or shell support
 

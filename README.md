@@ -40,8 +40,9 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 
 ## Repository map
 
-- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.0.2.
+- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.0.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
+- [`RELEASE-NOTES-v1.1.0.md`](RELEASE-NOTES-v1.1.0.md) - dual-host release changes and exact untested boundary.
 - [`testforge/docs/SALES-DEMO.md`](testforge/docs/SALES-DEMO.md) - a compact proof-of-value scenario.
 - [`tools/augment-evals/`](tools/augment-evals/) - isolated Augment behavioral evaluation harness.
 - [`tools/augment-evals/README.md`](tools/augment-evals/README.md) - testbed setup, run, review, seal, promote and regression workflow.

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 — 2026-07-18
+
+- Make the operator and reviewer independently self-contained without changing their verification doctrine.
+- Add portable one-skill Claude.ai upload archives and current non-coder installation guidance.
+- Shorten discovery metadata to the current Claude limit.
+- Replace the operator's sibling-file reviewer handoff with explicit `$verification-reviewer` routing and an honest unavailable-reviewer boundary.
+- Add deterministic dual-host packaging and parity checks.
+
 ## 1.0.2 — 2026-07-18
 
 - Assigned TestForge the product-specific `cd-testforge` marketplace namespace so installing it cannot displace a separately distributed Collaborative Dynamics marketplace such as CanopyOps.

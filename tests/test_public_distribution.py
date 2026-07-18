@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "testforge"
 PLUGIN = ROOT / "plugins" / "testforge"
-PLUGIN_BUNDLE = PLUGIN / "skills" / "software-verification" / "testforge"
+PLUGIN_SKILLS = PLUGIN / "skills"
 
 
 class PublicDistributionTests(unittest.TestCase):
@@ -41,7 +41,7 @@ class PublicDistributionTests(unittest.TestCase):
                 (PLUGIN / "skills" / skill / "agents" / "openai.yaml").is_file()
             )
 
-    def test_plugin_bundle_is_byte_identical_to_canonical_testforge(self):
+    def test_plugin_skills_are_byte_identical_to_canonical_skills(self):
         def inventory(root: Path):
             return {
                 path.relative_to(root).as_posix(): path.read_bytes()
@@ -49,7 +49,11 @@ class PublicDistributionTests(unittest.TestCase):
                 if path.is_file() and "__pycache__" not in path.parts
             }
 
-        self.assertEqual(inventory(CANONICAL), inventory(PLUGIN_BUNDLE))
+        for skill in ("software-verification", "verification-reviewer"):
+            self.assertEqual(
+                inventory(CANONICAL / "skills" / skill),
+                inventory(PLUGIN_SKILLS / skill),
+            )
 
     def test_public_tree_has_no_cache_debris(self):
         tracked = subprocess.run(
