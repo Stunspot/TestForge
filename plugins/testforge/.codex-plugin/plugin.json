@@ -1,0 +1,44 @@
+{
+  "name": "testforge",
+  "version": "1.0.1",
+  "description": "Make local coding Agents verify better, then test and remember every Augment you build.",
+  "author": {
+    "name": "Collaborative Dynamics",
+    "url": "https://collaborative-dynamics.com"
+  },
+  "homepage": "https://github.com/Stunspot/TestForge",
+  "repository": "https://github.com/Stunspot/TestForge",
+  "license": "SEE LICENSE.md",
+  "keywords": [
+    "software verification",
+    "testing",
+    "agent skills",
+    "behavioral evaluation",
+    "release confidence"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TestForge",
+    "shortDescription": "A quality ratchet for local Agent competence.",
+    "longDescription": "Give inexpensive local coding Agents a risk model, evidence discipline, and independent reviewer, then turn every Agent capability into a test, reengineering, baseline, and regression loop that moves quality upward.",
+    "developerName": "Collaborative Dynamics",
+    "websiteURL": "https://github.com/Stunspot/TestForge",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Make this local Agent verify the repository before it ships.",
+      "Find the catastrophic risks this test plan may have missed.",
+      "Test this Augment and preserve a reviewed behavioral baseline."
+    ],
+    "brandColor": "#48CBE8",
+    "composerIcon": "./assets/testforge-icon.png",
+    "logo": "./assets/testforge-icon.png",
+    "screenshots": [
+      "./assets/testforge-social-preview.png"
+    ]
+  }
+}

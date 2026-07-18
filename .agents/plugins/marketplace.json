@@ -1,0 +1,20 @@
+{
+  "name": "collaborative-dynamics",
+  "interface": {
+    "displayName": "Collaborative Dynamics"
+  },
+  "plugins": [
+    {
+      "name": "testforge",
+      "source": {
+        "source": "local",
+        "path": "./plugins/testforge"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

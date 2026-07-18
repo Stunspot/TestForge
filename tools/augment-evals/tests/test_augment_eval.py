@@ -359,6 +359,24 @@ class EvidenceCustodyTests(unittest.TestCase):
         self.assertEqual(100.0, result["criterion_score"])
         self.assertEqual(0.0, result["score"])
 
+    def test_judge_cannot_hide_weak_performance_as_invalid(self):
+        rubric = {"criteria": ["one"], "failure_signals": []}
+        judgment = {
+            "valid": False,
+            "invalid_reason": "subject did not perform the requested work",
+            "criteria": [
+                {
+                    "criterion_index": 0,
+                    "status": "not_met",
+                    "evidence": "the observable response omitted the required behavior",
+                }
+            ],
+            "failure_signals": [],
+        }
+        result = augment_eval.derive_result(judgment, rubric)
+        self.assertEqual("FAILED", result["verdict"])
+        self.assertEqual(0.0, result["score"])
+
 
 class ExecutionAndSummaryTests(unittest.TestCase):
     def test_end_to_end_adapter_run_records_numbers_and_gate(self):

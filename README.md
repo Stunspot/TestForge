@@ -2,7 +2,21 @@
 
 # TestForge
 
-TestForge is a free Collaborative Dynamics Augment for turning software changes, repositories, defects and release candidates into risk-ranked verification evidence instead of a comforting pile of green checkmarks.
+TestForge is a free Collaborative Dynamics Augment that gives inexpensive local coding Agents a verification discipline they do not reliably improvise on their own. It turns software changes, repositories, defects, and release candidates into risk-ranked evidence instead of a comforting pile of green checkmarks.
+
+The bundled Augment testbed generalizes the same discipline beyond code. Every capability you build can carry behavioral evals, run isolated trials, expose the exact failed dimensions, guide reengineering, seal the evidence, promote a reviewed passing baseline, and detect regression later. TestForge makes “I should check this” an operative capability and “it worked before” a durable record.
+
+This is not one-shot benchmarking. **TestForge is a quality ratchet for Agent competence:** failures drive reengineering, reviewed success becomes the new baseline, and regression gates resist backward motion. One way, upwards.
+
+The operating loop is: **build → test → diagnose → reengineer → rerun → review → promote → regression-check**.
+
+## Built with Codex and GPT-5.6 during OpenAI Build Week
+
+TestForge was conceived and built during the July 13-21, 2026 submission period. Stun supplied the product intention, approved capability map, promptcraft system, evaluation philosophy, and release judgment. Codex with GPT-5.6 Sol turned that design into the complete Augment, repaired defects found during execution, packaged it, and then helped use TestForge to build the behavioral testbed included here.
+
+The primary Codex build task completed roughly 35 minutes of active construction. The result is not a prompt folder wearing a fake moustache: it is an installable two-SKILL verification system with deterministic tools, schemas, examples, evals, independent review, host adapters, CI, and an evidence-recording testbed. Its practical wager is simple: externalized method and memory can buy more competent work from cheaper cognition.
+
+Read the [Build Week collaboration and architecture record](BUILD-WEEK.md), or take the [five-minute fictional judge path](JUDGE-QUICKSTART.md).
 
 It includes two Agent SKILLs:
 
@@ -13,24 +27,35 @@ This repository also includes the CD Augment evaluation testbed used to run isol
 
 ## What you can do with it
 
+- Give a limited local coding Agent a reusable risk model, oracle discipline, evidence vocabulary, and skeptical second pass.
 - Hand an Agent a bug, diff, feature or failing test and get a risk-driven verification plan.
 - Generate tests that try to expose consequential failure rather than merely exercise edited lines.
 - Distinguish product defects, test defects, environment failures, flaky behavior and insufficient evidence.
 - Produce `READY`, `READY_WITH_RESIDUAL_RISK`, `NOT_READY`, `INSUFFICIENT_EVIDENCE` or `BLOCKED_BY_ENVIRONMENT` with a reproducible evidence trail.
 - Challenge that conclusion with a separate skeptical reviewer.
 - Run and track behavioral evals for other Augments with Codex or local Ollama models.
+- Preserve reviewed baselines so future builds can compare behavior instead of relying on remembered impressions.
 
 TestForge is advisory verification machinery. It does not prove defect freedom, certify compliance, grant production access, authorize release, or turn model confidence into evidence.
 
 ## Repository map
 
-- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.0.0.
+- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.0.1.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
 - [`testforge/docs/SALES-DEMO.md`](testforge/docs/SALES-DEMO.md) - a compact proof-of-value scenario.
 - [`tools/augment-evals/`](tools/augment-evals/) - isolated Augment behavioral evaluation harness.
 - [`tools/augment-evals/README.md`](tools/augment-evals/README.md) - testbed setup, run, review, seal, promote and regression workflow.
 
-## Quick start: use the Agent SKILLs
+## Quick start: install the Codex plugin
+
+```text
+codex plugin marketplace add Stunspot/TestForge
+codex plugin add testforge@collaborative-dynamics
+```
+
+Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles one canonical TestForge v1.0.1 package behind both entry points so their doctrine, tools, examples, and status vocabulary stay aligned.
+
+## Quick start: use the standalone Agent SKILLs
 
 Download the latest release, unzip it and keep the `testforge/` tree together. Expose both directories under `testforge/skills/` through your Agent host's skill mechanism. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
 
