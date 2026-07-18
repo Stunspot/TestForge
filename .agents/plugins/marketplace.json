@@ -1,7 +1,7 @@
 {
-  "name": "collaborative-dynamics",
+  "name": "cd-testforge",
   "interface": {
-    "displayName": "Collaborative Dynamics"
+    "displayName": "Collaborative Dynamics - TestForge"
   },
   "plugins": [
     {

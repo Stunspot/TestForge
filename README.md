@@ -40,7 +40,7 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 
 ## Repository map
 
-- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.0.1.
+- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.0.2.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
 - [`testforge/docs/SALES-DEMO.md`](testforge/docs/SALES-DEMO.md) - a compact proof-of-value scenario.
 - [`tools/augment-evals/`](tools/augment-evals/) - isolated Augment behavioral evaluation harness.
@@ -50,10 +50,10 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 
 ```text
 codex plugin marketplace add Stunspot/TestForge
-codex plugin add testforge@collaborative-dynamics
+codex plugin add testforge@cd-testforge
 ```
 
-Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles one canonical TestForge v1.0.1 package behind both entry points so their doctrine, tools, examples, and status vocabulary stay aligned.
+Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles one canonical TestForge v1.0.2 package behind both entry points so their doctrine, tools, examples, and status vocabulary stay aligned. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
 
 ## Quick start: use the standalone Agent SKILLs
 

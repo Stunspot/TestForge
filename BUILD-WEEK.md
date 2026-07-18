@@ -31,7 +31,7 @@ A later Codex task used TestForge to design and harden the CD Augment behavioral
 - Primary build model recorded by Codex: `gpt-5.6-sol`
 - Primary build date: July 16, 2026
 - Public repository commits: July 16-17, 2026
-- Release prepared for this entry: `v1.0.1`
+- Release prepared for this entry: `v1.0.2`
 - Canonical TestForge package: 125 files, including its release manifest
 - Deterministic local checks: 9 TestForge tests, 46 testbed tests, and 4 public-distribution tests
 - Behavioral suite: 10 cases across 11 dimensions, with indispensable gates for evidence honesty, security boundaries, and release judgment

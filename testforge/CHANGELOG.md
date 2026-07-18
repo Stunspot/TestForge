@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2 — 2026-07-18
+
+- Assigned TestForge the product-specific `cd-testforge` marketplace namespace so installing it cannot displace a separately distributed Collaborative Dynamics marketplace such as CanopyOps.
+- Updated the public installation command, judge quickstart, distribution-integrity test, manifests, and release package without changing TestForge's verification behavior.
+
 ## 1.0.1 — 2026-07-17
 
 - Strengthened capability-matched, read-only diagnosis after a recorded local-model failure proposed destructive package removal as reproduction.

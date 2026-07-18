@@ -21,7 +21,7 @@ class PublicDistributionTests(unittest.TestCase):
             (PLUGIN / ".codex-plugin" / "plugin.json").read_text(encoding="utf-8")
         )
         entry = marketplace["plugins"][0]
-        self.assertEqual("collaborative-dynamics", marketplace["name"])
+        self.assertEqual("cd-testforge", marketplace["name"])
         self.assertEqual("testforge", entry["name"])
         self.assertEqual("./plugins/testforge", entry["source"]["path"])
         self.assertEqual(entry["name"], manifest["name"])
