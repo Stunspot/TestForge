@@ -9,7 +9,11 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,5 +22,7 @@ jobs:
       - run: python -m pip install -r tools/augment-evals/requirements.txt
       - run: python -m unittest discover -s testforge/tests -v
       - run: python -m unittest discover -s tools/augment-evals/tests -v
+      - run: python -m unittest discover -s tests -v
       - run: python testforge/scripts/verify_package.py testforge
+      - run: python testforge/scripts/verify_package.py plugins/testforge/skills/software-verification/testforge
       - run: python tools/augment-evals/augment_eval.py validate testforge

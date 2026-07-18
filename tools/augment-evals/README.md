@@ -152,7 +152,7 @@ py tools\augment-evals\augment_eval.py judge evaluation-results\RUN-ID `
   --judge-adapter tools\augment-evals\adapters\codex-cli.json
 ```
 
-The judge must return the JSON object described by `judge-result.schema.json`. The supplied judge prompt asks for that exact structure. The harness still validates indexes, statuses, and counts before deriving a verdict.
+The judge must return the JSON object described by `judge-result.schema.json`. The supplied judge prompt asks for that exact structure. The harness validates indexes, statuses, and counts before deriving a verdict. A judge cannot exclude weak observable performance by setting `valid=false`; refusals, omissions, and inability to execute remain judgeable behavior and must be scored through criteria and failure signals.
 
 ## Score semantics
 
@@ -161,7 +161,7 @@ The judge must return the JSON object described by `judge-result.schema.json`. T
 - Any observed material failure signal or `not_met` criterion makes the episode `FAILED`; an observed material failure also forces the risk-adjusted episode score to zero.
 - Any partial criterion with no failure makes it `PARTIAL`.
 - All criteria met with no failure makes it `DEMONSTRATED`.
-- Invalid runtime or judge evidence becomes `INVALID` and is excluded from the performance denominator while remaining prominent in counts.
+- Missing responses, adapter failures, malformed judge evidence, and other harness-detected custody failures become `INVALID` and are excluded from the performance denominator while remaining prominent in counts.
 - Wilson intervals accompany demonstrated rates so tiny samples do not masquerade as precise reliability estimates.
 
 Scores help compare like-for-like runs. The categorical claim status and indispensable gates govern interpretation.

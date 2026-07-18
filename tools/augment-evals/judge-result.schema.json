@@ -7,7 +7,10 @@
     "protocol_version": {"const": "1.0"},
     "case_id": {"type": "string", "minLength": 1},
     "trial": {"type": "integer", "minimum": 1},
-    "valid": {"type": "boolean"},
+    "valid": {
+      "type": "boolean",
+      "description": "Evidence-custody signal, not a performance judgment. Observable refusals, omissions, weak answers, and inability to execute remain valid and are scored through criteria."
+    },
     "invalid_reason": {"type": "string"},
     "criteria": {
       "type": "array",

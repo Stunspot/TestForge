@@ -521,8 +521,8 @@ def judge_prompt(case: dict[str, Any], trial: int, response: str) -> str:
         f"SUBJECT RESPONSE\n{response}\n\n"
         "JSON SHAPE\n"
         f"{json.dumps(skeleton, indent=2, ensure_ascii=False)}\n"
-        "Emit exactly one criteria item per expected behavior and one failure_signals item per listed signal, preserving zero-based indexes. "
-        "Use valid=false only when the episode itself is not judgeable under the stated runtime."
+        "Emit exactly one criteria item per expected behavior and one failure_signals item per listed signal, preserving zero-based indexes. Keep evidence strings short and paraphrased; do not embed raw double-quoted code or prose that could break JSON escaping. "
+        "Episode validity is about evidence custody, not performance. Set valid=true for every non-empty observable subject response, including refusals, omissions, weak answers, and responses that cannot execute requested work; express those deficiencies through criteria and failure signals. The harness, not the judge, records adapter, parsing, and missing-response failures as invalid."
     )
 
 
@@ -786,12 +786,6 @@ def validate_judgment(judgment: dict[str, Any], rubric: dict[str, Any]) -> list[
 
 
 def derive_result(judgment: dict[str, Any], rubric: dict[str, Any]) -> dict[str, Any]:
-    if not judgment["valid"]:
-        return {
-            "verdict": "INVALID",
-            "score": None,
-            "reason": judgment.get("invalid_reason") or "judge marked episode invalid",
-        }
     statuses = [item["status"] for item in judgment["criteria"]]
     observed_failures = [item for item in judgment["failure_signals"] if item["observed"]]
     criterion_score = round(100 * sum(CRITERION_POINTS[item] for item in statuses) / len(statuses), 2)
