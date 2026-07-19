@@ -3,7 +3,7 @@
   "package": "testforge",
   "version": "1.1.0",
   "release_date": "2026-07-18",
-  "artifact_count": 219,
+  "artifact_count": 224,
   "artifacts": [
     {
       "path": "adapters/claude-code.md",
@@ -116,9 +116,24 @@
       "sha256": "fa3c14a4eb3da2806de7019a6cfb196ebdeaf14e4fa4a5a554eef54988e4d09e"
     },
     {
+      "path": "docs/DATA-AND-PRIVACY.md",
+      "size": 963,
+      "sha256": "1b8d35c48fe1678eab99bedc29aefb325fbdc70acf8db36da3c1c27f81c5f31b"
+    },
+    {
       "path": "docs/HOST-COMPATIBILITY.md",
       "size": 1566,
       "sha256": "52690969e818eff377307260aeec2d362ab8d71ecc6470323873d097e892a75c"
+    },
+    {
+      "path": "docs/INSTALL-CLAUDE.md",
+      "size": 1274,
+      "sha256": "5add5d3cc6f2b037ee7398c8d48a7a0f5d6b4895ccd34bb843449ed94b07185b"
+    },
+    {
+      "path": "docs/INSTALL-CODEX.md",
+      "size": 1267,
+      "sha256": "d8e4a251f9e2a34976e00de53947ed10eff8ee7ee36f215ac11c8da1cbc71f1f"
     },
     {
       "path": "docs/LIMITATIONS.md",
@@ -127,8 +142,8 @@
     },
     {
       "path": "docs/QUICK-START.md",
-      "size": 3167,
-      "sha256": "3bb4109796cfc29ac166ece71334419618b369e9320f52f1ea1c337238ff8e73"
+      "size": 2650,
+      "sha256": "77f308a3e132a8e98a6d7d1f77019a24af35b59f43aeb8e64a767cb7457cc530"
     },
     {
       "path": "docs/SALES-DEMO.md",
@@ -149,6 +164,16 @@
       "path": "docs/TROUBLESHOOTING.md",
       "size": 1313,
       "sha256": "1d4a6ecab38dbcb177045ea37b119a5bac13942497a80e60d17f36aaccff292d"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "size": 1282,
+      "sha256": "5cd09dce1f87d6e61d47ab5563700550e06fffb80d0fd6eba6c19beec495c473"
+    },
+    {
+      "path": "docs/WORKFLOWS.md",
+      "size": 2106,
+      "sha256": "b3d3e30a3b30214bf2d1afc75a98fe06eb2d7b28b9220650e82c6678f7cbf725"
     },
     {
       "path": "evals/eval-manifest.yaml",
@@ -577,8 +602,8 @@
     },
     {
       "path": "scripts/verify_package.py",
-      "size": 3179,
-      "sha256": "7b9c0f7abdf7a86f8c2773a4604ec992cdb0285407ddc91eab8359dd3ed0a2d8"
+      "size": 3302,
+      "sha256": "dcf32cd7bc5c2538a1968ca4ec1114358d3dc2296024627d1b91cba80b9b16af"
     },
     {
       "path": "SECURITY.md",

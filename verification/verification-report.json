@@ -1,0 +1,40 @@
+{
+  "format": "cd-augment-verification-summary/v1",
+  "product": "testforge",
+  "version": "1.1.0",
+  "disposition": "READY_WITH_CONDITIONS",
+  "passed_checks": {
+    "builder_bundle_profile": true,
+    "builder_codex_skill_profiles": 2,
+    "builder_claude_folder_profiles": 2,
+    "builder_claude_zip_profiles": 2,
+    "builder_plugin_codex_profiles": 2,
+    "deterministic_tests": 61,
+    "canonical_package_verifier": true,
+    "evaluation_cases_structurally_valid": 10,
+    "declared_customer_documents_linted": 16,
+    "strict_documentation_gate": true,
+    "documentation_fingerprint": "b13863cf1a728c83ae649d2482c3ebf992005b1e5d919ec634b05e08216130a4",
+    "fresh_review_run_id": "run-20260719T063837Z-b13863cf",
+    "fresh_review_material_findings": 0,
+    "deterministic_rebuilds_compared": 2,
+    "release_manifests_valid": true,
+    "claude_archive_source_parity": true
+  },
+  "artifacts": {
+    "software_verification_claude_zip_sha256": "126889cb85278d80dd9cc12d3c2dcef072511cb45e6f851de71896fc66ab8cfa",
+    "verification_reviewer_claude_zip_sha256": "d7f9ec1faa9fbe38a8c595cdbb8a01ad1de084a1e2b403f60a66b7016aaadcd2"
+  },
+  "unexecuted": [
+    "fresh standalone Codex activation",
+    "live Claude upload and activation",
+    "current Claude interface verification",
+    "live resource loading and script execution",
+    "clean installation",
+    "broad repeated-model behavior",
+    "representative developer testing",
+    "accessibility and localization testing",
+    "legal, security, compliance, and accountable release approval",
+    "production and customer outcomes"
+  ]
+}

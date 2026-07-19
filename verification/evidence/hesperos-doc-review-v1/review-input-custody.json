@@ -1,0 +1,21 @@
+{
+  "format": "cd-documentation-review-input/v1",
+  "review_run_id": "run-20260719T063837Z-b13863cf",
+  "contents_supplied": true,
+  "documentation_fingerprint": "b13863cf1a728c83ae649d2482c3ebf992005b1e5d919ec634b05e08216130a4",
+  "supplied_files": [
+    "README.md", "testforge/README.md", "testforge/docs/HOST-COMPATIBILITY.md", "testforge/docs/INSTALL-CODEX.md",
+    "testforge/docs/INSTALL-CLAUDE.md", "testforge/docs/QUICK-START.md", "testforge/docs/WORKFLOWS.md",
+    "testforge/docs/CAPABILITY-MATRIX.md", "testforge/docs/TROUBLESHOOTING.md", "testforge/docs/DATA-AND-PRIVACY.md",
+    "testforge/SECURITY.md", "testforge/docs/VALIDATION.md", "testforge/docs/LIMITATIONS.md",
+    "testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.0.md", "testforge/PROVENANCE.md"
+  ],
+  "transport": "Local Ollama fresh-context adapter with explicit context-file list",
+  "supplied_corpus_path_hash_fingerprint_sha256": "ca7c09eea8bf913b209e2a27d39db9a333f8cdb4a6fa467bc2257594c7709213",
+  "review_response_evidence": "verification/evidence/hesperos-doc-review-v1/review-response.md",
+  "execution_evidence": [
+    "verification/evidence/hesperos-doc-review-v1/review-request.md",
+    "verification/evidence/hesperos-doc-review-v1/execution.json",
+    "verification/evidence/hesperos-doc-review-v1/review-response.md"
+  ]
+}

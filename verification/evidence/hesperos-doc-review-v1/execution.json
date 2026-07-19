@@ -1,0 +1,22 @@
+{
+  "format": "cd-documentation-review-execution/v1",
+  "review_run_id": "run-20260719T063837Z-b13863cf",
+  "fresh_context": true,
+  "reviewer": "documentation-accessibility-reviewer operating the Hesperos contract",
+  "model": "gpt-oss:20b",
+  "provider": "local Ollama",
+  "context_length": 65536,
+  "temperature": 0,
+  "seed": 42,
+  "thinking": false,
+  "context_selection": "Explicit reviewer doctrine, manifest, and exact contents of all 16 declared customer files.",
+  "attempts": 2,
+  "rejected_response_shapes": [],
+  "rejected_results": [
+    "Attempt one incorrectly treated three existing supplemental linked files as missing solely because they were outside the declared review corpus. Deterministic link validation contradicted the findings; the review context was corrected and the exact corpus rerun."
+  ],
+  "final_disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "final_material_findings": 0,
+  "response_sha256": "5268ec875e01de0cf7ca05873915a5637756a7c3a022dbb3988912ea8f963ee3",
+  "response_evidence": "verification/evidence/hesperos-doc-review-v1/review-response.md"
+}

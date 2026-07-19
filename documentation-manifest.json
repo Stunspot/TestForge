@@ -1,0 +1,33 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "landing_page": "README.md",
+  "customer_docs": [
+    "README.md",
+    "testforge/README.md",
+    "testforge/docs/HOST-COMPATIBILITY.md",
+    "testforge/docs/INSTALL-CODEX.md",
+    "testforge/docs/INSTALL-CLAUDE.md",
+    "testforge/docs/QUICK-START.md",
+    "testforge/docs/WORKFLOWS.md",
+    "testforge/docs/CAPABILITY-MATRIX.md",
+    "testforge/docs/TROUBLESHOOTING.md",
+    "testforge/docs/DATA-AND-PRIVACY.md",
+    "testforge/SECURITY.md",
+    "testforge/docs/VALIDATION.md",
+    "testforge/docs/LIMITATIONS.md",
+    "testforge/docs/SUPPORT-AND-VERSIONING.md",
+    "RELEASE-NOTES-v1.1.0.md",
+    "testforge/PROVENANCE.md"
+  ],
+  "moments": {
+    "orientation": ["README.md", "testforge/README.md"],
+    "installation": ["testforge/docs/HOST-COMPATIBILITY.md", "testforge/docs/INSTALL-CODEX.md", "testforge/docs/INSTALL-CLAUDE.md"],
+    "first_value": ["testforge/docs/QUICK-START.md"],
+    "normal_use": ["testforge/docs/WORKFLOWS.md", "testforge/docs/CAPABILITY-MATRIX.md"],
+    "recovery": ["README.md", "testforge/docs/TROUBLESHOOTING.md", "testforge/docs/SUPPORT-AND-VERSIONING.md"],
+    "privacy_security": ["testforge/docs/DATA-AND-PRIVACY.md", "testforge/SECURITY.md"],
+    "evidence_limits": ["testforge/docs/VALIDATION.md", "testforge/docs/LIMITATIONS.md"],
+    "support_maintenance": ["testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.0.md"],
+    "provenance": ["testforge/PROVENANCE.md"]
+  }
+}

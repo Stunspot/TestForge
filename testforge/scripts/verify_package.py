@@ -20,8 +20,10 @@ REQUIRED = [
     "examples/typescript-api-change/walkthrough.md", "examples/python-regression/walkthrough.md", "examples/parser-edge-cases/walkthrough.md",
     "fallback/master-prompt.md", "evals/eval-manifest.yaml",
 ]
+WINDOWS_PRIVATE_ROOTS = r"(?:Users\\+|Github\\+cd-augment-lab|Indranet)"
+POSIX_PRIVATE_ROOTS = "/" + "Users" + "/|/" + "home" + r"/[^/]+/"
 PRIVATE_PATH = re.compile(
-    r"(?:[A-Za-z]:\\+(?:Users\\+|Github\\+cd-augment-lab|Indranet)|/Users/|/home/[^/]+/)",
+    rf"(?:[A-Za-z]:\\+(?:{WINDOWS_PRIVATE_ROOTS})|{POSIX_PRIVATE_ROOTS})",
     re.IGNORECASE,
 )
 RELATIVE_LINK = re.compile(r"`((?:\.\./)+[^`]+)`")

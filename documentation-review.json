@@ -1,0 +1,23 @@
+{
+  "format": "cd-documentation-review/v1",
+  "fresh_context": true,
+  "disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "unresolved_material_findings": 0,
+  "documentation_fingerprint": "b13863cf1a728c83ae649d2482c3ebf992005b1e5d919ec634b05e08216130a4",
+  "reviewed_files": [
+    "README.md", "testforge/README.md", "testforge/docs/HOST-COMPATIBILITY.md", "testforge/docs/INSTALL-CODEX.md",
+    "testforge/docs/INSTALL-CLAUDE.md", "testforge/docs/QUICK-START.md", "testforge/docs/WORKFLOWS.md",
+    "testforge/docs/CAPABILITY-MATRIX.md", "testforge/docs/TROUBLESHOOTING.md", "testforge/docs/DATA-AND-PRIVACY.md",
+    "testforge/SECURITY.md", "testforge/docs/VALIDATION.md", "testforge/docs/LIMITATIONS.md",
+    "testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.0.md", "testforge/PROVENANCE.md"
+  ],
+  "reviewer": "hesperos-documentation via documentation-accessibility-reviewer and local gpt-oss:20b",
+  "review_run_id": "run-20260719T063837Z-b13863cf",
+  "review_input_evidence": "verification/evidence/hesperos-doc-review-v1/review-input-custody.json",
+  "evidence_directory": "verification/evidence/hesperos-doc-review-v1",
+  "conditions": [
+    "Fresh standalone Codex activation, live Claude upload and activation, current Claude interface verification, live resource loading, script execution under customer permissions, clean installation, and representative first-success behavior remain unexecuted.",
+    "Broad repeated-model behavior, representative developer, browser, keyboard, screen-reader, localization, and accessibility-conformance testing remain unexecuted.",
+    "Legal, security, compliance, accountable release approval, production outcomes, and customer outcomes remain unexecuted."
+  ]
+}

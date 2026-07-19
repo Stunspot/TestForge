@@ -54,7 +54,7 @@ codex plugin marketplace add Stunspot/TestForge
 codex plugin add testforge@cd-testforge
 ```
 
-Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles one canonical TestForge v1.0.2 package behind both entry points so their doctrine, tools, examples, and status vocabulary stay aligned. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
+Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles one canonical TestForge v1.1.0 package behind both entry points so their doctrine, tools, examples, and status vocabulary stay aligned. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
 
 ## Quick start: use the standalone Agent SKILLs
 
