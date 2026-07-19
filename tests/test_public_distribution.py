@@ -1,7 +1,10 @@
 import json
 import subprocess
+import tempfile
 import unittest
 from pathlib import Path
+
+from tools.validate_release_manifests import canonical_bytes
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,6 +14,15 @@ PLUGIN_SKILLS = PLUGIN / "skills"
 
 
 class PublicDistributionTests(unittest.TestCase):
+    def test_release_hashes_are_line_ending_portable(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            lf = root / "lf.md"
+            crlf = root / "crlf.md"
+            lf.write_bytes(b"one\ntwo\n")
+            crlf.write_bytes(b"one\r\ntwo\r\n")
+            self.assertEqual(canonical_bytes(lf), canonical_bytes(crlf))
+
     def test_marketplace_and_plugin_identity_agree(self):
         marketplace = json.loads(
             (ROOT / ".agents" / "plugins" / "marketplace.json").read_text(

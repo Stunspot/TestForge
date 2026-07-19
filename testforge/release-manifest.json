@@ -1126,5 +1126,5 @@
       "sha256": "ce0c4eeed8c0be9e89180d8c761f9f254431ff1a05f78b7351506a69cf22b8a0"
     }
   ],
-  "note": "release-manifest.json is excluded from its own hash list"
+  "note": "release-manifest.json is excluded from its own hash list; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

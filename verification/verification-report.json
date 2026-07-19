@@ -9,7 +9,7 @@
     "builder_claude_folder_profiles": 2,
     "builder_claude_zip_profiles": 2,
     "builder_plugin_codex_profiles": 2,
-    "deterministic_tests": 61,
+    "deterministic_tests": 62,
     "canonical_package_verifier": true,
     "evaluation_cases_structurally_valid": 10,
     "declared_customer_documents_linted": 16,

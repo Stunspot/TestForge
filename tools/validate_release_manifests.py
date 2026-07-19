@@ -25,6 +25,26 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def canonical_bytes(path: Path) -> bytes:
+    data = path.read_bytes()
+    if b"\x00" in data:
+        return data
+    try:
+        text = data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return data
+    return text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+
+
+def canonical_record(path: Path, root: Path) -> dict[str, object]:
+    data = canonical_bytes(path)
+    return {
+        "path": path.relative_to(root).as_posix(),
+        "size": len(data),
+        "sha256": hashlib.sha256(data).hexdigest(),
+    }
+
+
 def files(root: Path, excluded_file: Path) -> list[Path]:
     return sorted(
         (
@@ -45,14 +65,7 @@ def validate_manifest(root: Path, expected_package: str) -> list[str]:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8-sig"))
     except (OSError, json.JSONDecodeError) as exc:
         return [f"invalid manifest {manifest_path}: {exc}"]
-    actual = [
-        {
-            "path": path.relative_to(root).as_posix(),
-            "size": path.stat().st_size,
-            "sha256": sha256(path),
-        }
-        for path in files(root, manifest_path)
-    ]
+    actual = [canonical_record(path, root) for path in files(root, manifest_path)]
     if manifest.get("package") != expected_package:
         errors.append(f"unexpected package name in {manifest_path}")
     if manifest.get("version") != VERSION:

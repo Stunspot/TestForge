@@ -38,7 +38,7 @@
     {
       "path": "BUILD-NOTE.md",
       "size": 2540,
-      "sha256": "832a36acc864e232fb3492ab1d1d2596b643c7e280767a1196ef838396c26b01"
+      "sha256": "b6f3521d6f7c618b092fb0bf7810fe6ae467decec2e9a8670f345904b6f3a539"
     },
     {
       "path": "BUILD-WEEK.md",
@@ -1167,8 +1167,8 @@
     },
     {
       "path": "testforge/release-manifest.json",
-      "size": 42792,
-      "sha256": "2bc7f30b3015802c7736a06a32bccb4ba5514e6b12c27f937b2b7f4eda4d65f0"
+      "size": 41741,
+      "sha256": "a49a57c9eff99c2ace439082d7fa339adf4f8110a021d0daa1ed67c610797e6b"
     },
     {
       "path": "testforge/scripts/assemble_report.py",
@@ -1767,8 +1767,8 @@
     },
     {
       "path": "tests/test_public_distribution.py",
-      "size": 2807,
-      "sha256": "e22dfb58737a314fbcef1f404a57f97a35ba7662f095022ef1691db0da72683f"
+      "size": 3269,
+      "sha256": "1c9bd4333518a9ae3fe804655877a8b71db7a62c9a2e8f3a129cc3f15658294e"
     },
     {
       "path": "tools/augment-evals/.gitignore",
@@ -1872,13 +1872,13 @@
     },
     {
       "path": "tools/rebuild_public_release.py",
-      "size": 3268,
-      "sha256": "5ee927edf58be405336d926f927ebebd63f39e80b04df1e29860a0844f7884ab"
+      "size": 3752,
+      "sha256": "f412fc2b9adc27ace58ae3724b1ef8ddd890249660d63188fe0eadf2816b3368"
     },
     {
       "path": "tools/validate_release_manifests.py",
-      "size": 3866,
-      "sha256": "f0ca53159fa905a045c9ba920f7a2b2a8b81f30e573b2664daf3f3723de33377"
+      "size": 4271,
+      "sha256": "f6ae1967a0c80a7a008b4f6a877fc3878ff899d13ab3bd450b58228da2a38797"
     },
     {
       "path": "TRADEMARKS.md",
@@ -1908,13 +1908,13 @@
     {
       "path": "verification/verification-report.json",
       "size": 1596,
-      "sha256": "e87977961d10df0d0e7fde6a2db993b72d765d060f17e64c75ffe51583815183"
+      "sha256": "f5a525f8004d0603e093d1fb0d10a2a12f75f7c1425243e8c9c2ff88ace4e755"
     },
     {
       "path": "verification/verification-report.md",
       "size": 1432,
-      "sha256": "34012bfe384ed2f994b2911761490f61a507ab851dfa897c09b9d76e4d8e4f55"
+      "sha256": "239b0f3e89acce5c32c997b2602f6f295d8015db8a3cbc474cd933eeebec5226"
     }
   ],
-  "note": "release-manifest.json is excluded from its own hash list"
+  "note": "release-manifest.json is excluded from its own hash list; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

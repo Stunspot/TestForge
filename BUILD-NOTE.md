@@ -15,7 +15,7 @@ The declared 16-file customer corpus covers orientation, plugin and standalone i
 - Current Codex profiles pass both plugin skill folders, and distribution tests confirm byte parity with canonical skills.
 - All 16 declared customer Markdown files pass Hesperos structural lint.
 - A fresh exact-content Hesperos review returned zero material findings and `REVIEW_PASS_WITH_CONDITIONS`; its exact request, response, and input custody are retained.
-- Eleven TestForge tool and host-packaging tests, 46 evaluation-testbed tests, and four public-distribution tests pass.
+- Eleven TestForge tool and host-packaging tests, 46 evaluation-testbed tests, and five public-distribution tests pass.
 - Canonical package verification and the ten-case evaluation envelope pass.
 - The stale CI command targeting a nonexistent nested plugin package was removed; CI now validates the real canonical package and release manifests.
 - Two consecutive deterministic rebuilds produced the same Claude archives.
