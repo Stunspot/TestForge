@@ -4,19 +4,28 @@
   "version": "1.1.2",
   "core_augment_version": "1.1.1",
   "review_date": "2026-07-20",
-  "scope": "Plugin-only host-compatibility patch; the TestForge Augment, both standalone skills, and both Claude archives remain byte-identical to v1.1.1",
+  "scope": "Plugin host-compatibility and OpenAI draft publication custody; the TestForge Augment, both standalone skills, and both Claude archives remain byte-identical to v1.1.1",
   "trigger": "A fresh Codex v0.144.5 task discovered both installed skills and opened bundled resources, but the host ignored all three plugin listing prompts because each exceeded 128 characters.",
   "changes": [
     "Shorten all three defaultPrompt entries to 128 characters or fewer while preserving their verification intent.",
     "Separate plugin version custody from the unchanged v1.1.1 Augment version in distribution tests.",
-    "Add a regression assertion for the current host prompt-length limit."
+    "Add a regression assertion for the current host prompt-length limit.",
+    "Build a deterministic OpenAI skills-only submission ZIP while preserving the full installable plugin manifest.",
+    "Create and populate the OpenAI plugin draft without checking owner attestations or submitting it for review."
   ],
   "evidence": {
-    "deterministic_tests": "66 passed; 0 failed",
+    "deterministic_tests": "67 passed; 0 failed",
     "plugin_audit": "verification/evidence/plugin-readiness-v1.1.2.json",
     "plugin_audit_result": "2 skills; zero errors and zero warnings",
     "prompt_lengths": [119, 126, 102],
     "archive_custody": "release-assets/v1.1.2/archive-custody.json",
+    "openai_submission_custody": "release-assets/v1.1.2/openai-submission-custody.json",
+    "portal_draft_upload_evidence": "release-assets/v1.1.2/portal-draft-upload-evidence.json",
+    "openai_draft": {
+      "plugin_id": "plugins_6a5e0f2981d48191a11548355b7ecbc5",
+      "submission_id": "appsub_6a5e0f299d848191b1cd16ae162ef105",
+      "state": "draft created and populated; both skills passed automated scanning; owner attestations unchecked; review submission not executed"
+    },
     "prior_fresh_task_activation": {
       "plugin_version": "1.1.1",
       "software_verification_resource": "references/core/risk-based-testing.md",
@@ -30,6 +39,12 @@
       "sha256": "ae04e5b090e48f94aa6316b38955bd82e38a75a202161db56f0d5fed539fdae7",
       "bytes": 865770,
       "members": 106
+    },
+    {
+      "name": "Plugin-TestForge-v1.1.2-OpenAI-Submission.zip",
+      "sha256": "1fa24574addae369eaecaf319100e231bf06deb31a4a8903c176c8b26a9ab452",
+      "bytes": 865270,
+      "members": 106
     }
   ],
   "unchanged_release_objects": [
@@ -42,7 +57,7 @@
   "material_findings": [],
   "conditions": [
     "Install v1.1.2 from the refreshed marketplace and repeat fresh-task skill and bundled-resource activation.",
-    "Official OpenAI Plugins Directory submission, approval, publication, and discoverability remain separate states."
+    "The OpenAI draft exists and both skills passed automated scanning, but owner policy attestations, submission for review, approval, publication, and discoverability remain separate states."
   ],
   "disposition": "REVIEW_PASS_WITH_CONDITIONS",
   "release_decision": "READY_WITH_RESIDUAL_RISK"

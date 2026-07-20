@@ -1,0 +1,36 @@
+{
+  "schema_version": "cd-openai-plugin-submission-custody/v1",
+  "plugin": {
+    "name": "testforge",
+    "version": "1.1.2"
+  },
+  "source_plugin_root": "testforge",
+  "top_level": "testforge-plugin",
+  "archive_name": "Plugin-TestForge-v1.1.2-OpenAI-Submission.zip",
+  "archive_sha256": "1fa24574addae369eaecaf319100e231bf06deb31a4a8903c176c8b26a9ab452",
+  "bytes": 865270,
+  "member_count": 106,
+  "source_manifest_sha256": "5130b07286a89ec9c3e837b2432a3dbb02f7ea5a9a6b5ef2715470ecd40feba8",
+  "submission_manifest_sha256": "c520ced3671ee355ba228e55604d809d09af3de41c56b41102500ef95d39874e",
+  "manifest_transform": {
+    "kept_interface_fields": [
+      "composerIcon",
+      "logo"
+    ],
+    "omitted_interface_fields": [
+      "brandColor",
+      "capabilities",
+      "category",
+      "defaultPrompt",
+      "developerName",
+      "displayName",
+      "longDescription",
+      "privacyPolicyURL",
+      "screenshots",
+      "shortDescription",
+      "termsOfServiceURL",
+      "websiteURL"
+    ]
+  },
+  "archive_paths_use_forward_slashes": true
+}

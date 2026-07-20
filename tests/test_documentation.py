@@ -20,7 +20,7 @@ class DocumentationCurrencyTests(unittest.TestCase):
     def test_customer_document_manifest_is_complete_and_coherent(self):
         documents = self.manifest["customer_docs"]
         self.assertEqual(len(documents), len(set(documents)))
-        self.assertEqual(18, len(documents))
+        self.assertEqual(19, len(documents))
         self.assertIn("testforge/docs/TERMS-OF-USE.md", documents)
         self.assertIn("ARCHIVE-CUSTODY.md", documents)
         self.assertIn(f"RELEASE-NOTES-v{CURRENT_VERSION}.md", documents)
