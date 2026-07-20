@@ -19,6 +19,7 @@
     "testforge/docs/SUPPORT-AND-VERSIONING.md",
     "RELEASE-NOTES-v1.1.1.md",
     "ARCHIVE-CUSTODY.md",
+    "PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md",
     "testforge/PROVENANCE.md"
   ],
   "moments": {
@@ -29,7 +30,7 @@
     "recovery": ["README.md", "testforge/docs/TROUBLESHOOTING.md", "testforge/docs/SUPPORT-AND-VERSIONING.md"],
     "privacy_security": ["testforge/docs/DATA-AND-PRIVACY.md", "testforge/docs/TERMS-OF-USE.md", "testforge/SECURITY.md"],
     "evidence_limits": ["testforge/docs/VALIDATION.md", "testforge/docs/LIMITATIONS.md"],
-    "support_maintenance": ["testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.1.md", "ARCHIVE-CUSTODY.md"],
+    "support_maintenance": ["testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.1.md", "ARCHIVE-CUSTODY.md", "PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md"],
     "provenance": ["testforge/PROVENANCE.md"]
   }
 }

@@ -44,6 +44,7 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
 - [`RELEASE-NOTES-v1.1.1.md`](RELEASE-NOTES-v1.1.1.md) - plugin-publication changes and exact untested boundary.
 - [`ARCHIVE-CUSTODY.md`](ARCHIVE-CUSTODY.md) - canonical Augment, plugin, standalone-skill, Claude, GitHub, and backup custody.
+- [`PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md`](PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md) - exact OpenAI draft listing, portal-specific upload custody, reviewer cases, and owner-only submission gate.
 - [`testforge/docs/SALES-DEMO.md`](testforge/docs/SALES-DEMO.md) - a compact proof-of-value scenario.
 - [`tools/augment-evals/`](tools/augment-evals/) - isolated Augment behavioral evaluation harness.
 - [`tools/augment-evals/README.md`](tools/augment-evals/README.md) - testbed setup, run, review, seal, promote and regression workflow.
@@ -61,7 +62,7 @@ Start a new Codex task, then invoke `$software-verification` or `$verification-r
 
 Download the latest release, unzip it and keep the `testforge/` tree together. Expose both directories under `testforge/skills/` through your Agent host's skill mechanism. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
 
-The GitHub release also preserves the complete Augment, the Codex plugin, and each bundled skill as separately named archives. This keeps `$software-verification` and `$verification-reviewer` independently recoverable without losing the complete two-skill product.
+The GitHub release also preserves the complete Augment, the installable Codex plugin, its distinct OpenAI skills-only portal upload, and each bundled skill as separately named archives. This keeps `$software-verification` and `$verification-reviewer` independently recoverable without losing the complete two-skill product. The OpenAI draft exists and both bundled skills passed automated scanning; accountable-owner attestations and submission for review remain pending.
 
 Then start with:
 

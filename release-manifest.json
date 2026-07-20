@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.1",
   "release_date": "2026-07-20",
-  "artifact_count": 423,
+  "artifact_count": 424,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -27,8 +27,8 @@
     },
     {
       "path": "ARCHIVE-CUSTODY.md",
-      "size": 1998,
-      "sha256": "bcdb3dc2ab15604c3ddd7e3a0cf0ca05fea994f84a862e54c13dcd87c92d316c"
+      "size": 2896,
+      "sha256": "425b0b6934970f7f08c0cfef076f22a8d5a19fb5e04e42a353c569119e731b1d"
     },
     {
       "path": "archive-plan-v1.1.2.json",
@@ -87,8 +87,8 @@
     },
     {
       "path": "documentation-manifest.json",
-      "size": 1591,
-      "sha256": "e18fc56494395b0ec7c00033f31ea5a022f71f34027902b60309d583934e0028"
+      "size": 1677,
+      "sha256": "e1a66509bec90a75b9e0ca8a7fe3734629eaeedd81eec72739c5875f089281e5"
     },
     {
       "path": "documentation-review.json",
@@ -127,8 +127,8 @@
     },
     {
       "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md",
-      "size": 8319,
-      "sha256": "4aac07a2b5f71dbc57d17facfcf977113dbf78b284b5c8fc592a41849aee4a9c"
+      "size": 10356,
+      "sha256": "80deaedd4a09d08a8c0f39a3fd9ce3d1a7ff3428212c9e2c8b067a535d53d601"
     },
     {
       "path": "plugins/testforge/.codex-plugin/plugin.json",
@@ -662,8 +662,8 @@
     },
     {
       "path": "README.md",
-      "size": 8321,
-      "sha256": "98caca5bba04d25a652d073e41d92b2fb130c8b8e433cb2e2f9980a5469cef91"
+      "size": 8721,
+      "sha256": "692953a48b51e18853fe19bc2626ce1bc9d24cf9a8d4c36c11176ccefd164a80"
     },
     {
       "path": "RELEASE-NOTES-v1.1.0.md",
@@ -1217,8 +1217,8 @@
     },
     {
       "path": "testforge/release-manifest.json",
-      "size": 41996,
-      "sha256": "2ceebfee9f8cfee217126091d2af6aed1bcc5d3ff0477061e739c6b685477226"
+      "size": 42133,
+      "sha256": "45903a62d228256652199523ff21594ee2acdc66f4d6f68f9dfffb9f7c72938f"
     },
     {
       "path": "testforge/scripts/assemble_report.py",
@@ -1818,12 +1818,12 @@
     {
       "path": "tests/test_documentation.py",
       "size": 3729,
-      "sha256": "6966fa1b8b9da566f9c52097e04e5654a069bbce6cbb407e4e4b0f2e913b4ebb"
+      "sha256": "1b47b54c993d72d2bc8ebd5921794a3f83ab993fd25ad49d2ab53d97b2947091"
     },
     {
       "path": "tests/test_public_distribution.py",
-      "size": 4517,
-      "sha256": "faa493e1c4d85e52ad4933e3c5ad28283e7c5246b77458e82f9df21251f162a4"
+      "size": 6286,
+      "sha256": "8027ec37dfb3c4381c4eb4c30ef3d5e264af886614dd287483cc5ba3350479b2"
     },
     {
       "path": "tools/augment-evals/.gitignore",
@@ -1926,9 +1926,14 @@
       "sha256": "44b5cf0276fe775cee1bb144666c4a3543690c610ff18073a6d958ff05e46920"
     },
     {
+      "path": "tools/build_openai_submission_archive.py",
+      "size": 7174,
+      "sha256": "af5dace6b88303b244233fc47191cce381cd250dc39b4806d348a3e9589bf3f7"
+    },
+    {
       "path": "tools/rebuild_public_release.py",
-      "size": 3869,
-      "sha256": "22cfb84d685bd30f16bfde49502d0a118fd2a501915f320fc143ce72ca185556"
+      "size": 4006,
+      "sha256": "1e55eb13ed19f519b5303997518f3ffef5602ccbb827b8d8e5dbd6954d5c8917"
     },
     {
       "path": "tools/validate_release_manifests.py",
@@ -2107,8 +2112,8 @@
     },
     {
       "path": "verification/release-summary-v1.1.2.json",
-      "size": 2310,
-      "sha256": "8dd00ab570d33033c2afcb4aafab6cd32b1434634b020354189a103c775f37a7"
+      "size": 3337,
+      "sha256": "f95e3d09d59878cd90c90912c65d87b717514895f95d74ec6f7f235a084f25e8"
     },
     {
       "path": "verification/verification-report.json",
@@ -2121,5 +2126,5 @@
       "sha256": "3077f2273126e425873c1ac76206602a07007deb8843171127e9d80f71c1e73c"
     }
   ],
-  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs release archives; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs the Augment and standalone skills, while release-assets/v1.1.2/archive-custody.json and openai-submission-custody.json govern plugin publication payloads; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

@@ -78,7 +78,7 @@ def write_manifest(root: Path, package_name: str) -> None:
         "release_date": RELEASE_DATE,
         "artifact_count": len(artifacts),
         "artifacts": artifacts,
-        "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs release archives; UTF-8 text hashes use canonical LF line endings for cross-platform validation",
+        "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs the Augment and standalone skills, while release-assets/v1.1.2/archive-custody.json and openai-submission-custody.json govern plugin publication payloads; UTF-8 text hashes use canonical LF line endings for cross-platform validation",
     }
     output.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 

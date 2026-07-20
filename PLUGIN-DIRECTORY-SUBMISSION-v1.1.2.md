@@ -1,28 +1,42 @@
 # TestForge Plugins Directory submission packet
 
-This packet maps the released TestForge plugin to the current OpenAI Plugins Directory form. It prepares a **Skills only** submission; it does not assert that a publisher identity is verified, that policy attestations have been made, or that OpenAI has reviewed or published the plugin.
+This packet maps the released TestForge plugin to the current OpenAI Plugins Directory form and records the created **Skills only** draft. Draft creation and publisher-identity selection are observed; owner policy attestations, submission for review, approval, publication, and discoverability remain separate states.
 
 ## Released object
 
 - Plugin version: `1.1.2`
 - Core Augment and standalone skill version: `1.1.1`
-- Upload: `release-assets/v1.1.2/Plugin-TestForge-v1.1.2.zip`
-- SHA-256: `ae04e5b090e48f94aa6316b38955bd82e38a75a202161db56f0d5fed539fdae7`
+- Installable plugin: `release-assets/v1.1.2/Plugin-TestForge-v1.1.2.zip`
+- Installable plugin SHA-256: `ae04e5b090e48f94aa6316b38955bd82e38a75a202161db56f0d5fed539fdae7`
+- OpenAI submission upload: `release-assets/v1.1.2/Plugin-TestForge-v1.1.2-OpenAI-Submission.zip`
+- Submission upload SHA-256: `5154636d71c9bb00fa8754071d843110fedd036e361036fd00dc2b42fcdb7db2`
+- Submission custody: `release-assets/v1.1.2/openai-submission-custody.json`
+- Draft-upload comparison: `release-assets/v1.1.2/portal-draft-upload-evidence.json`
 - Public release: <https://github.com/Stunspot/TestForge/releases/tag/v1.1.2>
 - Submission type: **Skills only**
+
+The installable plugin keeps its full local and marketplace `interface`. The governed portal upload is a deterministic channel derivative of the same 106-file plugin tree; only the archived manifest is transformed to retain `composerIcon` and `logo`. Every ZIP member path uses `/`; UTF-8 text is canonicalized to LF without a BOM; and members use stored ZIP entries so the archive is byte-identical across supported Python runtimes. The draft was created from a preflight ZIP with the same member names and raw member bytes; its ZIP container metadata was not deterministic. The live portal accepted this shape after rejecting the rich upload interface and its screenshot configuration.
+
+## Created draft
+
+- Plugin ID: `plugins_6a5e0f2981d48191a11548355b7ecbc5`
+- Submission ID: `appsub_6a5e0f299d848191b1cd16ae162ef105`
+- Draft URL: <https://platform.openai.com/plugins/plugins_6a5e0f2981d48191a11548355b7ecbc5/submissions/appsub_6a5e0f299d848191b1cd16ae162ef105>
+- Observed draft state on 2026-07-20: listing, three prompts, two skills, and capability tags saved; both skills passed automated scanning; policy attestations unchecked; review submission not executed.
 
 ## Info
 
 - Plugin name: **TestForge**
-- Short description: **Risk-ranked verification with an independent skeptic.**
+- Portal subtitle: **Risk-ranked code verification** (29 characters; the live form caps this field at 30)
 - Long description: **Turn software changes, repositories, defects, and release candidates into risk-ranked evidence, meaningful tests, captured execution, and a traceable release assessment, then challenge the result with an independent skeptical reviewer.**
-- Developer identity: select the verified **Collaborative Dynamics** identity in the portal; the accountable owner must confirm the identity and organization match before submission.
+- Developer identity: **Business — Collaborative Dynamics Inc** selected in the portal; the listing developer name is **Collaborative Dynamics Inc**.
 - Category: **Developer Tools**
 - Logo: `plugins/testforge/assets/testforge-icon-v1.1.1.png`
 - Website: <https://github.com/Stunspot/TestForge>
 - Support: <https://github.com/Stunspot/TestForge/issues>
 - Privacy: <https://github.com/Stunspot/TestForge/blob/main/testforge/docs/DATA-AND-PRIVACY.md>
 - Terms: <https://github.com/Stunspot/TestForge/blob/main/testforge/docs/TERMS-OF-USE.md>
+- Capabilities: separate **Interactive**, **Read**, and **Write** tags.
 
 ## Starter prompts
 
@@ -98,3 +112,5 @@ Initial public submission of the free TestForge skills-only plugin. TestForge co
 ## Accountable-owner gate
 
 Before selecting **Submit for Review**, the publisher must personally confirm the verified developer or business identity, organization and Apps Management authority, country availability, public URLs, and every policy attestation. Submission begins OpenAI review; approval, publisher release, and public discoverability are later observable states.
+
+The live 2026-07-20 skills-only form did not expose the documentation page's separate Testing, Global, or release-notes panels. The exact five positive cases, three negative cases, availability decision, and release notes remain preserved above for reviewer follow-up or a later portal revision; their repository presence does not mean they were transmitted in the current draft.

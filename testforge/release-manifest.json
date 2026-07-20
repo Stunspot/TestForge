@@ -1131,5 +1131,5 @@
       "sha256": "ce0c4eeed8c0be9e89180d8c761f9f254431ff1a05f78b7351506a69cf22b8a0"
     }
   ],
-  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs release archives; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs the Augment and standalone skills, while release-assets/v1.1.2/archive-custody.json and openai-submission-custody.json govern plugin publication payloads; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

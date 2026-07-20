@@ -1,0 +1,26 @@
+{
+  "schema_version": "cd-openai-plugin-draft-upload-evidence/v1",
+  "observed_on": "2026-07-20",
+  "plugin_id": "plugins_6a5e0f2981d48191a11548355b7ecbc5",
+  "submission_id": "appsub_6a5e0f299d848191b1cd16ae162ef105",
+  "skill_scan_result": "software-verification passed; verification-reviewer passed",
+  "owner_gate": "four policy attestations unchecked; review submission not executed",
+  "accepted_preflight_archive": {
+    "name": "Plugin-TestForge-v1.1.2-icons-only.zip",
+    "sha256": "7938793968025cfab1a75eeb935bbbc3edecc5a51bff33d4baae4b408c63ba5b",
+    "bytes": 866006,
+    "member_count": 106
+  },
+  "governed_release_archive": {
+    "name": "Plugin-TestForge-v1.1.2-OpenAI-Submission.zip",
+    "sha256": "5154636d71c9bb00fa8754071d843110fedd036e361036fd00dc2b42fcdb7db2",
+    "bytes": 954071,
+    "member_count": 106
+  },
+  "comparison": {
+    "member_names_match": true,
+    "raw_member_hashes_match": true,
+    "archive_bytes_match": false,
+    "explanation": "The accepted preflight ZIP and governed release ZIP contain identical named file bytes. ZIP timestamps and container metadata differ; only the governed release ZIP is deterministic."
+  }
+}

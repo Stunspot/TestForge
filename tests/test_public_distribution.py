@@ -1,7 +1,9 @@
 import json
 import subprocess
+import sys
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 from tools.validate_release_manifests import canonical_bytes
@@ -16,6 +18,50 @@ PLUGIN_VERSION = "1.1.2"
 
 
 class PublicDistributionTests(unittest.TestCase):
+    def test_openai_submission_archive_is_reproducible_and_portal_shaped(self):
+        tracked_archive = (
+            ROOT
+            / "release-assets"
+            / "v1.1.2"
+            / "Plugin-TestForge-v1.1.2-OpenAI-Submission.zip"
+        )
+        tracked_custody = (
+            ROOT / "release-assets" / "v1.1.2" / "openai-submission-custody.json"
+        )
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / tracked_archive.name
+            custody = Path(temporary) / "openai-submission-custody.json"
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(ROOT / "tools" / "build_openai_submission_archive.py"),
+                    str(PLUGIN),
+                    "--output",
+                    str(output),
+                    "--json-output",
+                    str(custody),
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(tracked_archive.read_bytes(), output.read_bytes())
+            self.assertEqual(
+                json.loads(tracked_custody.read_text(encoding="utf-8")),
+                json.loads(custody.read_text(encoding="utf-8")),
+            )
+
+        with zipfile.ZipFile(tracked_archive) as archive:
+            names = archive.namelist()
+            self.assertTrue(names)
+            self.assertTrue(all("\\" not in name for name in names))
+            manifest = json.loads(
+                archive.read("testforge-plugin/.codex-plugin/plugin.json").decode(
+                    "utf-8"
+                )
+            )
+            self.assertEqual({"composerIcon", "logo"}, set(manifest["interface"]))
+
     def test_release_hashes_are_line_ending_portable(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
