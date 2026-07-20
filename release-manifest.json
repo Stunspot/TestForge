@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.1",
   "release_date": "2026-07-20",
-  "artifact_count": 422,
+  "artifact_count": 423,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -124,6 +124,11 @@
       "path": "NOTICE.md",
       "size": 680,
       "sha256": "1eb736dd6a4ad57c2959d0efd5f273622d095224d6e1efd72c22fac25d4d381a"
+    },
+    {
+      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md",
+      "size": 8319,
+      "sha256": "4aac07a2b5f71dbc57d17facfcf977113dbf78b284b5c8fc592a41849aee4a9c"
     },
     {
       "path": "plugins/testforge/.codex-plugin/plugin.json",
