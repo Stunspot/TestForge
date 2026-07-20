@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.1",
   "release_date": "2026-07-20",
-  "artifact_count": 421,
+  "artifact_count": 422,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -1934,6 +1934,11 @@
       "path": "TRADEMARKS.md",
       "size": 762,
       "sha256": "463e2f6627994a433b459ae9942f76db0b70facee91c296219e9ace917db77bd"
+    },
+    {
+      "path": "verification/evidence/fresh-host-activation-v1.1.2.json",
+      "size": 1105,
+      "sha256": "f3468566990cf9ca323acf3af3f69e17629565e8a02b4f83138ffc6cdae41abf"
     },
     {
       "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run1/api-response.json",
