@@ -1,6 +1,6 @@
 {
   "name": "testforge",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Risk-driven software verification and independent evidence review for coding Agents.",
   "author": {
     "name": "Collaborative Dynamics",
@@ -32,9 +32,9 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Verify this repository before it ships: reconstruct the blast radius, rank catastrophic risks, run safe authorized checks, and issue a traceable release assessment.",
-      "Challenge this completed verification package for missed catastrophic risks, weak oracles, broken traceability, and unsupported confidence.",
-      "Turn this failing test or bug report into the smallest credible evidence set that distinguishes product, test, environment, and uncertainty failures."
+      "Verify this repository: map impact, rank catastrophic risks, run safe checks, and issue a traceable release assessment.",
+      "Challenge this verification package for catastrophic omissions, weak oracles, broken traceability, and unsupported confidence.",
+      "Turn this failure into evidence that distinguishes product, test, environment, and uncertainty causes."
     ],
     "brandColor": "#48CBE8",
     "composerIcon": "./assets/testforge-icon-v1.1.1.png",

@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.1",
   "release_date": "2026-07-20",
-  "artifact_count": 418,
+  "artifact_count": 421,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -29,6 +29,11 @@
       "path": "ARCHIVE-CUSTODY.md",
       "size": 1998,
       "sha256": "bcdb3dc2ab15604c3ddd7e3a0cf0ca05fea994f84a862e54c13dcd87c92d316c"
+    },
+    {
+      "path": "archive-plan-v1.1.2.json",
+      "size": 330,
+      "sha256": "e6e252419fbd8707ed6020551c695bb30d63b15c5574a52b24e18a2c994eeaf2"
     },
     {
       "path": "archive-plan.json",
@@ -122,8 +127,8 @@
     },
     {
       "path": "plugins/testforge/.codex-plugin/plugin.json",
-      "size": 2119,
-      "sha256": "94d8fd3669d657618a7e012aaee5721f6cc1bd53754b28c793df24dddf134889"
+      "size": 2014,
+      "sha256": "5130b07286a89ec9c3e837b2432a3dbb02f7ea5a9a6b5ef2715470ecd40feba8"
     },
     {
       "path": "plugins/testforge/assets/testforge-answer-sheet-v1.1.1.svg",
@@ -1812,8 +1817,8 @@
     },
     {
       "path": "tests/test_public_distribution.py",
-      "size": 4347,
-      "sha256": "9b338c1bf9ed04e9d834e1d3eca72a462a0bc91b2419b92f04be51ac8d52ef5b"
+      "size": 4517,
+      "sha256": "faa493e1c4d85e52ad4933e3c5ad28283e7c5246b77458e82f9df21251f162a4"
     },
     {
       "path": "tools/augment-evals/.gitignore",
@@ -2081,9 +2086,19 @@
       "sha256": "53b5d5d9817d4627e84a0aec211c91904d20cd01549b6db6e7563e8958c37edd"
     },
     {
+      "path": "verification/evidence/plugin-readiness-v1.1.2.json",
+      "size": 229,
+      "sha256": "39b995b6ecde0121e3951081f45022148de456ff83467aa332b8745938e96819"
+    },
+    {
       "path": "verification/release-summary-v1.1.1.json",
       "size": 3821,
       "sha256": "92d50fda786fe3881dc9dd9dbbfe3e7414dd5cff86f47451e0a3cb675b8a44df"
+    },
+    {
+      "path": "verification/release-summary-v1.1.2.json",
+      "size": 2310,
+      "sha256": "8dd00ab570d33033c2afcb4aafab6cd32b1434634b020354189a103c775f37a7"
     },
     {
       "path": "verification/verification-report.json",

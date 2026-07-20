@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "testforge"
 PLUGIN = ROOT / "plugins" / "testforge"
 PLUGIN_SKILLS = PLUGIN / "skills"
-VERSION = "1.1.1"
+PACKAGE_VERSION = "1.1.1"
+PLUGIN_VERSION = "1.1.2"
 
 
 class PublicDistributionTests(unittest.TestCase):
@@ -39,11 +40,14 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertEqual("./plugins/testforge", entry["source"]["path"])
         self.assertEqual(entry["name"], manifest["name"])
         self.assertEqual("./skills/", manifest["skills"])
-        self.assertEqual(VERSION, manifest["version"])
+        self.assertEqual(PLUGIN_VERSION, manifest["version"])
         package_manifest = (CANONICAL / "package-manifest.yaml").read_text(
             encoding="utf-8"
         )
-        self.assertIn(f"version: {VERSION}\n", package_manifest)
+        self.assertIn(f"version: {PACKAGE_VERSION}\n", package_manifest)
+
+        for prompt in manifest["interface"]["defaultPrompt"]:
+            self.assertLessEqual(len(prompt), 128, prompt)
 
         for key in ("privacyPolicyURL", "termsOfServiceURL"):
             self.assertTrue(manifest["interface"][key].startswith("https://"))

@@ -1,0 +1,49 @@
+{
+  "schema_version": "cd-independent-release-review/v1",
+  "product": "TestForge Codex plugin",
+  "version": "1.1.2",
+  "core_augment_version": "1.1.1",
+  "review_date": "2026-07-20",
+  "scope": "Plugin-only host-compatibility patch; the TestForge Augment, both standalone skills, and both Claude archives remain byte-identical to v1.1.1",
+  "trigger": "A fresh Codex v0.144.5 task discovered both installed skills and opened bundled resources, but the host ignored all three plugin listing prompts because each exceeded 128 characters.",
+  "changes": [
+    "Shorten all three defaultPrompt entries to 128 characters or fewer while preserving their verification intent.",
+    "Separate plugin version custody from the unchanged v1.1.1 Augment version in distribution tests.",
+    "Add a regression assertion for the current host prompt-length limit."
+  ],
+  "evidence": {
+    "deterministic_tests": "66 passed; 0 failed",
+    "plugin_audit": "verification/evidence/plugin-readiness-v1.1.2.json",
+    "plugin_audit_result": "2 skills; zero errors and zero warnings",
+    "prompt_lengths": [119, 126, 102],
+    "archive_custody": "release-assets/v1.1.2/archive-custody.json",
+    "prior_fresh_task_activation": {
+      "plugin_version": "1.1.1",
+      "software_verification_resource": "references/core/risk-based-testing.md",
+      "verification_reviewer_resource": "review-rubric.md",
+      "activation": "passed with ignored-listing-prompt warnings"
+    }
+  },
+  "archives": [
+    {
+      "name": "Plugin-TestForge-v1.1.2.zip",
+      "sha256": "ae04e5b090e48f94aa6316b38955bd82e38a75a202161db56f0d5fed539fdae7",
+      "bytes": 865770,
+      "members": 106
+    }
+  ],
+  "unchanged_release_objects": [
+    "TestForge-v1.1.1.zip",
+    "Skill-software-verification--TestForge-v1.1.1.zip",
+    "Skill-verification-reviewer--TestForge-v1.1.1.zip",
+    "software-verification-v1.1.1.zip",
+    "verification-reviewer-v1.1.1.zip"
+  ],
+  "material_findings": [],
+  "conditions": [
+    "Install v1.1.2 from the refreshed marketplace and repeat fresh-task skill and bundled-resource activation.",
+    "Official OpenAI Plugins Directory submission, approval, publication, and discoverability remain separate states."
+  ],
+  "disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "release_decision": "READY_WITH_RESIDUAL_RISK"
+}
