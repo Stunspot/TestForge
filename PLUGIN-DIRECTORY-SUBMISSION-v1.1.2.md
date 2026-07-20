@@ -9,13 +9,13 @@ This packet maps the released TestForge plugin to the current OpenAI Plugins Dir
 - Installable plugin: `release-assets/v1.1.2/Plugin-TestForge-v1.1.2.zip`
 - Installable plugin SHA-256: `ae04e5b090e48f94aa6316b38955bd82e38a75a202161db56f0d5fed539fdae7`
 - OpenAI submission upload: `release-assets/v1.1.2/Plugin-TestForge-v1.1.2-OpenAI-Submission.zip`
-- Submission upload SHA-256: `1fa24574addae369eaecaf319100e231bf06deb31a4a8903c176c8b26a9ab452`
+- Submission upload SHA-256: `5154636d71c9bb00fa8754071d843110fedd036e361036fd00dc2b42fcdb7db2`
 - Submission custody: `release-assets/v1.1.2/openai-submission-custody.json`
 - Draft-upload comparison: `release-assets/v1.1.2/portal-draft-upload-evidence.json`
 - Public release: <https://github.com/Stunspot/TestForge/releases/tag/v1.1.2>
 - Submission type: **Skills only**
 
-The installable plugin keeps its full local and marketplace `interface`. The governed portal upload is a deterministic channel derivative of the same 106-file plugin tree; only the archived manifest is transformed to retain `composerIcon` and `logo`. Every ZIP member path uses `/`. The draft was created from a preflight ZIP with the same member names and raw member bytes; its ZIP container metadata was not deterministic. The live portal accepted this shape after rejecting the rich upload interface and its screenshot configuration.
+The installable plugin keeps its full local and marketplace `interface`. The governed portal upload is a deterministic channel derivative of the same 106-file plugin tree; only the archived manifest is transformed to retain `composerIcon` and `logo`. Every ZIP member path uses `/`; UTF-8 text is canonicalized to LF without a BOM; and members use stored ZIP entries so the archive is byte-identical across supported Python runtimes. The draft was created from a preflight ZIP with the same member names and raw member bytes; its ZIP container metadata was not deterministic. The live portal accepted this shape after rejecting the rich upload interface and its screenshot configuration.
 
 ## Created draft
 

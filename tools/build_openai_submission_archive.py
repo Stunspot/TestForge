@@ -28,6 +28,19 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def canonical_archive_bytes(path: Path) -> tuple[bytes, bool]:
+    """Return cross-platform bytes while preserving non-UTF-8 and binary files."""
+    data = path.read_bytes()
+    if b"\x00" in data:
+        return data, False
+    try:
+        text = data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return data, False
+    canonical = text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+    return canonical, canonical != data
+
+
 def regular_files(root: Path) -> list[Path]:
     return sorted(
         path
@@ -89,24 +102,29 @@ def build(plugin_root: Path, output: Path, top_level: str) -> dict[str, object]:
         raise ValueError(f"plugin root does not exist: {plugin_root}")
     manifest, transform = submission_manifest(plugin_root)
     rendered_manifest = (json.dumps(manifest, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
-    source_manifest = (plugin_root / MANIFEST_PATH).read_bytes()
+    source_manifest, _ = canonical_archive_bytes(plugin_root / MANIFEST_PATH)
     files = regular_files(plugin_root)
+    normalized_text_members: list[str] = []
     output = output.resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
 
     with zipfile.ZipFile(
         output,
         "w",
-        compression=zipfile.ZIP_DEFLATED,
-        compresslevel=9,
+        compression=zipfile.ZIP_STORED,
     ) as archive:
         for path in files:
             relative = PurePosixPath(path.relative_to(plugin_root).as_posix())
             name = PurePosixPath(top_level, relative).as_posix()
             info = zipfile.ZipInfo(name, FIXED_TIME)
-            info.compress_type = zipfile.ZIP_DEFLATED
+            info.compress_type = zipfile.ZIP_STORED
             info.external_attr = 0o644 << 16
-            data = rendered_manifest if relative == MANIFEST_PATH else path.read_bytes()
+            if relative == MANIFEST_PATH:
+                data = rendered_manifest
+            else:
+                data, normalized = canonical_archive_bytes(path)
+                if normalized:
+                    normalized_text_members.append(relative.as_posix())
             archive.writestr(info, data)
 
     with zipfile.ZipFile(output) as archive:
@@ -129,6 +147,9 @@ def build(plugin_root: Path, output: Path, top_level: str) -> dict[str, object]:
         "member_count": len(files),
         "source_manifest_sha256": sha256_bytes(source_manifest),
         "submission_manifest_sha256": sha256_bytes(rendered_manifest),
+        "text_canonicalization": "UTF-8 text is stored as LF without a BOM; binary and non-UTF-8 bytes are preserved",
+        "normalized_text_member_count": len(normalized_text_members),
+        "zip_compression": "stored",
         "manifest_transform": transform,
         "archive_paths_use_forward_slashes": True,
     }

@@ -127,8 +127,8 @@
     },
     {
       "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md",
-      "size": 10205,
-      "sha256": "c17f3d3d7c170ad77526459a857399e1bd13406025005c5ae179aa691a3dffbf"
+      "size": 10356,
+      "sha256": "80deaedd4a09d08a8c0f39a3fd9ce3d1a7ff3428212c9e2c8b067a535d53d601"
     },
     {
       "path": "plugins/testforge/.codex-plugin/plugin.json",
@@ -1927,8 +1927,8 @@
     },
     {
       "path": "tools/build_openai_submission_archive.py",
-      "size": 6075,
-      "sha256": "b8ea1f91229cf8c74deff292984f5e5ffad0671f71bde3c5010b456304c1c9ea"
+      "size": 6963,
+      "sha256": "2e08a949d06deb2c25940ee3089a60d66b7fc6a1cd9f5fd964ef573643d08a47"
     },
     {
       "path": "tools/rebuild_public_release.py",
@@ -2113,7 +2113,7 @@
     {
       "path": "verification/release-summary-v1.1.2.json",
       "size": 3337,
-      "sha256": "8154c83a522361ff9a593229dff53dc37bcb33b6eb51481d3a8bba7a762b148d"
+      "sha256": "f95e3d09d59878cd90c90912c65d87b717514895f95d74ec6f7f235a084f25e8"
     },
     {
       "path": "verification/verification-report.json",
