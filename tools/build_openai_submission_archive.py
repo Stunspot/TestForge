@@ -43,9 +43,15 @@ def canonical_archive_bytes(path: Path) -> tuple[bytes, bool]:
 
 def regular_files(root: Path) -> list[Path]:
     return sorted(
-        path
-        for path in root.rglob("*")
-        if path.is_file() and not EXCLUDED_PARTS.intersection(path.relative_to(root).parts)
+        (
+            path
+            for path in root.rglob("*")
+            if path.is_file() and not EXCLUDED_PARTS.intersection(path.relative_to(root).parts)
+        ),
+        key=lambda path: (
+            path.relative_to(root).as_posix().casefold(),
+            path.relative_to(root).as_posix(),
+        ),
     )
 
 

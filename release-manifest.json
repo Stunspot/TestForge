@@ -1927,8 +1927,8 @@
     },
     {
       "path": "tools/build_openai_submission_archive.py",
-      "size": 6963,
-      "sha256": "2e08a949d06deb2c25940ee3089a60d66b7fc6a1cd9f5fd964ef573643d08a47"
+      "size": 7139,
+      "sha256": "c6e1a0b8288c5a11ed676a827be7ea0dcbcb0d26b3ad17a12753e49fc202c525"
     },
     {
       "path": "tools/rebuild_public_release.py",
