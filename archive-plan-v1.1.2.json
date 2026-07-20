@@ -1,0 +1,13 @@
+{
+  "schema_version": "cd-augment-archive-plan/v1",
+  "product": {"name": "TestForge Codex plugin", "version": "1.1.2"},
+  "artifacts": [
+    {
+      "id": "plugin",
+      "kind": "plugin",
+      "source": "plugins/testforge",
+      "archive_name": "Plugin-TestForge-v1.1.2.zip",
+      "top_level": "testforge-plugin"
+    }
+  ]
+}

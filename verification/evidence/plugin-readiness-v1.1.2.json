@@ -1,0 +1,12 @@
+{
+  "schema_version": "cd-plugin-readiness-audit/v1",
+  "plugin_root": "plugins/testforge",
+  "name": "testforge",
+  "version": "1.1.2",
+  "skill_count": 2,
+  "issues": [],
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

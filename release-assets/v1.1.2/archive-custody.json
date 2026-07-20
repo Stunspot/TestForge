@@ -1,0 +1,21 @@
+{
+  "schema_version": "cd-augment-archive-custody/v1",
+  "product": {
+    "name": "TestForge Codex plugin",
+    "version": "1.1.2"
+  },
+  "created_at": "2026-07-20T10:55:50.286746+00:00",
+  "artifacts": [
+    {
+      "top_level": "testforge-plugin",
+      "source_tree_sha256": "d2738cee88f58cc878af88ff9f7a1f211a214b3ae32e388148fd1c3cfd065003",
+      "archive_sha256": "ae04e5b090e48f94aa6316b38955bd82e38a75a202161db56f0d5fed539fdae7",
+      "bytes": 865770,
+      "member_count": 106,
+      "id": "plugin",
+      "kind": "plugin",
+      "source": "plugins/testforge",
+      "archive_name": "Plugin-TestForge-v1.1.2.zip"
+    }
+  ]
+}
