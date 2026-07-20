@@ -123,6 +123,7 @@ def build(plugin_root: Path, output: Path, top_level: str) -> dict[str, object]:
             relative = PurePosixPath(path.relative_to(plugin_root).as_posix())
             name = PurePosixPath(top_level, relative).as_posix()
             info = zipfile.ZipInfo(name, FIXED_TIME)
+            info.create_system = 0
             info.compress_type = zipfile.ZIP_STORED
             info.external_attr = 0o644 << 16
             if relative == MANIFEST_PATH:
