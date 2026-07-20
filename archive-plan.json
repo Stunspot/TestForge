@@ -1,0 +1,10 @@
+{
+  "schema_version": "cd-augment-archive-plan/v1",
+  "product": {"name": "TestForge", "version": "1.1.1"},
+  "artifacts": [
+    {"id": "augment", "kind": "augment", "source": "testforge", "archive_name": "TestForge-v1.1.1.zip", "top_level": "testforge"},
+    {"id": "plugin", "kind": "plugin", "source": "plugins/testforge", "archive_name": "Plugin-TestForge-v1.1.1.zip", "top_level": "testforge-plugin"},
+    {"id": "skill-software-verification", "kind": "standalone-skill", "source": "testforge/skills/software-verification", "archive_name": "Skill-software-verification--TestForge-v1.1.1.zip", "top_level": "software-verification"},
+    {"id": "skill-verification-reviewer", "kind": "standalone-skill", "source": "testforge/skills/verification-reviewer", "archive_name": "Skill-verification-reviewer--TestForge-v1.1.1.zip", "top_level": "verification-reviewer"}
+  ]
+}

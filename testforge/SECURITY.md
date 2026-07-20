@@ -6,4 +6,4 @@ TestForge defaults to local, non-production, non-destructive verification. It re
 
 Active security checks require explicit target authorization, bounded scope, a non-production default, rate and concurrency limits, prohibited-action boundaries, and evidence-handling rules. Without them, TestForge produces a security-focused review and safe test plan only.
 
-Report vulnerabilities through Collaborative Dynamics' customer support channel. Do not include live credentials or unnecessary proprietary code in a report.
+Report ordinary defects through the [TestForge issue tracker](https://github.com/Stunspot/TestForge/issues) using a synthetic or sanitized reproduction. For a suspected vulnerability that cannot be safely disclosed in public, request a private reporting route through [Collaborative Dynamics](https://collaborative-dynamics.com). Do not include live credentials or unnecessary proprietary code in a report.

@@ -40,9 +40,10 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 
 ## Repository map
 
-- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.0.
+- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.1.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
-- [`RELEASE-NOTES-v1.1.0.md`](RELEASE-NOTES-v1.1.0.md) - dual-host release changes and exact untested boundary.
+- [`RELEASE-NOTES-v1.1.1.md`](RELEASE-NOTES-v1.1.1.md) - plugin-publication changes and exact untested boundary.
+- [`ARCHIVE-CUSTODY.md`](ARCHIVE-CUSTODY.md) - canonical Augment, plugin, standalone-skill, Claude, GitHub, and backup custody.
 - [`testforge/docs/SALES-DEMO.md`](testforge/docs/SALES-DEMO.md) - a compact proof-of-value scenario.
 - [`tools/augment-evals/`](tools/augment-evals/) - isolated Augment behavioral evaluation harness.
 - [`tools/augment-evals/README.md`](tools/augment-evals/README.md) - testbed setup, run, review, seal, promote and regression workflow.
@@ -54,11 +55,13 @@ codex plugin marketplace add Stunspot/TestForge
 codex plugin add testforge@cd-testforge
 ```
 
-Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles one canonical TestForge v1.1.0 package behind both entry points so their doctrine, tools, examples, and status vocabulary stay aligned. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
+Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v1.1.1 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
 
 ## Quick start: use the standalone Agent SKILLs
 
 Download the latest release, unzip it and keep the `testforge/` tree together. Expose both directories under `testforge/skills/` through your Agent host's skill mechanism. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
+
+The GitHub release also preserves the complete Augment, the Codex plugin, and each bundled skill as separately named archives. This keeps `$software-verification` and `$verification-reviewer` independently recoverable without losing the complete two-skill product.
 
 Then start with:
 

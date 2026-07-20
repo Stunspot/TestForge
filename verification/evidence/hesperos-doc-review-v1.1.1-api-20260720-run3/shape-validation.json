@@ -1,0 +1,7 @@
+{
+    "format":  "cd-documentation-review-shape-validation/v1",
+    "valid":  false,
+    "errors":  [
+                   "unsupported assurance term on line 11"
+               ]
+}

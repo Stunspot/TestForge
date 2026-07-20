@@ -1,0 +1,16 @@
+{
+    "format":  "cd-documentation-review-execution/v1",
+    "review_run_id":  "hesperos-doc-review-v1.1.1-api-20260720-run3",
+    "fresh_context":  true,
+    "reviewer":  "Hesperos exact-content documentation review",
+    "model":  "gpt-oss:20b",
+    "provider":  "local Ollama UTF-8 API",
+    "context_length":  65536,
+    "temperature":  0,
+    "seed":  47,
+    "thinking":  false,
+    "started_at":  "2026-07-20T09:28:54.1051375+00:00",
+    "ended_at":  "2026-07-20T09:32:51.0776980+00:00",
+    "response_evidence":  "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run3/review-response.md",
+    "response_sha256":  "6df05692b02dcd1c304fe58e84e142c2941bba1b47d9b881e9fb2931c7fe3538"
+}

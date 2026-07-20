@@ -1,0 +1,102 @@
+{
+    "format":  "cd-documentation-review-input-custody/v1",
+    "run_id":  "hesperos-doc-review-v1.1.1-api-20260720-run3",
+    "manifest":  {
+                     "path":  "documentation-manifest.json",
+                     "sha256":  "e18fc56494395b0ec7c00033f31ea5a022f71f34027902b60309d583934e0028"
+                 },
+    "files":  [
+                  {
+                      "path":  "README.md",
+                      "sha256":  "98caca5bba04d25a652d073e41d92b2fb130c8b8e433cb2e2f9980a5469cef91",
+                      "bytes":  8321
+                  },
+                  {
+                      "path":  "testforge/README.md",
+                      "sha256":  "3e6f517b87836508a9832f6170858a774a42a367d9c8a5f90aca30c449504c32",
+                      "bytes":  2665
+                  },
+                  {
+                      "path":  "testforge/docs/HOST-COMPATIBILITY.md",
+                      "sha256":  "f6389619e06a529031bf6c5154c4729d6c1c952b3838f420d2e521ea679a5d0e",
+                      "bytes":  1596
+                  },
+                  {
+                      "path":  "testforge/docs/INSTALL-CODEX.md",
+                      "sha256":  "d8e4a251f9e2a34976e00de53947ed10eff8ee7ee36f215ac11c8da1cbc71f1f",
+                      "bytes":  1267
+                  },
+                  {
+                      "path":  "testforge/docs/INSTALL-CLAUDE.md",
+                      "sha256":  "a51fd77e067348edb98ef5d3f6fb95bc0747c4919b7365f4d2cf1b44c8b84306",
+                      "bytes":  1274
+                  },
+                  {
+                      "path":  "testforge/docs/QUICK-START.md",
+                      "sha256":  "0f1f48fc04014f097ab929e407d4d12cd8640a6860b14a01bf96134fcda8fbad",
+                      "bytes":  2650
+                  },
+                  {
+                      "path":  "testforge/docs/WORKFLOWS.md",
+                      "sha256":  "b3d3e30a3b30214bf2d1afc75a98fe06eb2d7b28b9220650e82c6678f7cbf725",
+                      "bytes":  2106
+                  },
+                  {
+                      "path":  "testforge/docs/CAPABILITY-MATRIX.md",
+                      "sha256":  "fa3c14a4eb3da2806de7019a6cfb196ebdeaf14e4fa4a5a554eef54988e4d09e",
+                      "bytes":  1319
+                  },
+                  {
+                      "path":  "testforge/docs/TROUBLESHOOTING.md",
+                      "sha256":  "1d4a6ecab38dbcb177045ea37b119a5bac13942497a80e60d17f36aaccff292d",
+                      "bytes":  1313
+                  },
+                  {
+                      "path":  "testforge/docs/DATA-AND-PRIVACY.md",
+                      "sha256":  "45f6cad5e016697af5c25d722ef7ef0fab41da198352d96e66c3772c24e464f2",
+                      "bytes":  1953
+                  },
+                  {
+                      "path":  "testforge/docs/TERMS-OF-USE.md",
+                      "sha256":  "26c7d924cf0162ec4135898ca7e6d987c2f5208d83768948df404611b56c8ac7",
+                      "bytes":  3712
+                  },
+                  {
+                      "path":  "testforge/SECURITY.md",
+                      "sha256":  "187af3cd5880877410649fb60ca112a9cdf04a6c97fb9c188ce8513339d63521",
+                      "bytes":  1260
+                  },
+                  {
+                      "path":  "testforge/docs/VALIDATION.md",
+                      "sha256":  "5cd09dce1f87d6e61d47ab5563700550e06fffb80d0fd6eba6c19beec495c473",
+                      "bytes":  1282
+                  },
+                  {
+                      "path":  "testforge/docs/LIMITATIONS.md",
+                      "sha256":  "68e226cbf1e01a849c27395a94f1806191b2d6a0bb44fc62525aad65cf96b164",
+                      "bytes":  1220
+                  },
+                  {
+                      "path":  "testforge/docs/SUPPORT-AND-VERSIONING.md",
+                      "sha256":  "df038085775458bdad65f28572748f1e4764644cf241860a000452d9f22f15d7",
+                      "bytes":  1133
+                  },
+                  {
+                      "path":  "RELEASE-NOTES-v1.1.1.md",
+                      "sha256":  "0e05a580395eb10d704d2d84d1ded797218db362712f518b802189199446ea7b",
+                      "bytes":  2164
+                  },
+                  {
+                      "path":  "ARCHIVE-CUSTODY.md",
+                      "sha256":  "bcdb3dc2ab15604c3ddd7e3a0cf0ca05fea994f84a862e54c13dcd87c92d316c",
+                      "bytes":  1998
+                  },
+                  {
+                      "path":  "testforge/PROVENANCE.md",
+                      "sha256":  "9a64e7bbcbf949aac9aba8bbddc117dccaf1e68991fea2150f883dc58dc6ae3e",
+                      "bytes":  1422
+                  }
+              ],
+    "prompt_sha256":  "fad711f067f784cf838ee8c0476a22151f4fa3df8b3aa8ea51a79098042a0d14",
+    "format_reminder_sha256":  "160dcc150b97a07841c7d1144a760c8d37feccfd03b40a2cca61a05ddbbde328"
+}

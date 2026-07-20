@@ -1,0 +1,80 @@
+{
+  "schema_version": "cd-independent-release-review/v1",
+  "product": "TestForge",
+  "version": "1.1.1",
+  "review_date": "2026-07-20",
+  "review_mode": "verification-reviewer and documentation-accessibility-reviewer challenge after final local rebuild",
+  "candidate_scope": "Public repository candidate, complete two-skill Augment, Codex plugin, two standalone skills, and two Claude.ai upload archives",
+  "evidence": {
+    "deterministic_tests": {
+      "passed": 66,
+      "failed": 0,
+      "groups": {
+        "package_and_core": 11,
+        "evaluation_harness": 46,
+        "distribution_and_documentation": 9
+      }
+    },
+    "package_verifier": "226 files checked; zero errors and zero warnings",
+    "eval_contract": "10 cases; valid TestForge dialect; 11 declared dimensions",
+    "builder_profiles": [
+      "bundle",
+      "canonical software-verification Codex",
+      "canonical software-verification Claude",
+      "canonical verification-reviewer Codex",
+      "canonical verification-reviewer Claude",
+      "plugin software-verification Codex",
+      "plugin verification-reviewer Codex"
+    ],
+    "plugin_audit": "verification/evidence/plugin-readiness-v1.1.1.json",
+    "plugin_audit_result": "2 skills; zero errors and zero warnings",
+    "documentation_review": "documentation-review.json",
+    "documentation_fingerprint": "0b56836066452c9c91bc6219800a18cafff841e442c842b915a3bba44a14390d",
+    "documentation_result": "REVIEW_PASS_WITH_CONDITIONS; zero unresolved material findings",
+    "release_report": "verification/verification-report.json",
+    "archive_custody": "release-assets/v1.1.1/archive-custody.json",
+    "release_manifest_validation": "valid; repository and package inventories plus Claude archive parity matched"
+  },
+  "archives": [
+    {
+      "name": "TestForge-v1.1.1.zip",
+      "sha256": "d0ebaaf1dfa609998e7898bb781208955bb99859a995b91eebe4a3f99195bef4",
+      "bytes": 200424,
+      "members": 226
+    },
+    {
+      "name": "Plugin-TestForge-v1.1.1.zip",
+      "sha256": "8d8e1757de8ccf372221b26c0878357226e66e482962a38ebcbaef3cc03d1c2c",
+      "bytes": 865820,
+      "members": 106
+    },
+    {
+      "name": "Skill-software-verification--TestForge-v1.1.1.zip",
+      "sha256": "126889cb85278d80dd9cc12d3c2dcef072511cb45e6f851de71896fc66ab8cfa",
+      "bytes": 73894,
+      "members": 91
+    },
+    {
+      "name": "Skill-verification-reviewer--TestForge-v1.1.1.zip",
+      "sha256": "d7f9ec1faa9fbe38a8c595cdbb8a01ad1de084a1e2b403f60a66b7016aaadcd2",
+      "bytes": 9619,
+      "members": 9
+    }
+  ],
+  "challenge_results": {
+    "version_and_manifest_drift": "not found",
+    "missing_subskill_or_archive": "not found",
+    "plugin_listing_or_asset_breakage": "not found; version-bound raster icon and both skill entry points exist",
+    "customer_path_or_recovery_dead_end": "not found in the declared 18-document corpus",
+    "unsupported_readiness_claim": "not found; static, behavioral, live-host, directory, accessibility, compliance, and outcome evidence remain separated",
+    "private_path_or cache_debris": "not found by package and distribution checks"
+  },
+  "material_findings": [],
+  "conditions": [
+    "Fresh Codex plugin installation, discovery, activation, runtime-resource access, and representative first success remain publication-stage checks.",
+    "Live Claude upload and activation, broad repeated-model behavior, representative-user and assistive-technology testing, accessibility conformance, legal review, production outcomes, and customer outcomes remain unexecuted.",
+    "GitHub publication and official OpenAI Plugins Directory approval are separate observable states and are not established by this pre-publication review."
+  ],
+  "disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "release_decision": "READY_WITH_RESIDUAL_RISK"
+}

@@ -4,7 +4,7 @@ Claude capabilities, eligible plans, organization controls, and interface labels
 
 1. Confirm the account or organization exposes custom Skills and any execution capability needed for deterministic scripts.
 2. Follow the current host workflow for uploading a custom skill.
-3. Upload `claude-ai/software-verification-v1.1.0.zip` and `claude-ai/verification-reviewer-v1.1.0.zip` separately.
+3. Upload `claude-ai/software-verification-v1.1.1.zip` and `claude-ai/verification-reviewer-v1.1.1.zip` separately.
 4. Enable both skills if the host provides an enablement control.
 5. Start a new conversation and test the operator and reviewer separately.
 

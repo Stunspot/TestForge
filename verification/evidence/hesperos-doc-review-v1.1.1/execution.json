@@ -1,0 +1,26 @@
+{
+  "format": "cd-documentation-review-execution/v1",
+  "review_run_id": "run-20260720T-doc-9453f99a",
+  "fresh_context": true,
+  "reviewer": "documentation-accessibility-reviewer operating the Hesperos contract",
+  "model": "gpt-oss:20b",
+  "provider": "local Ollama UTF-8 API",
+  "context_length": 65536,
+  "temperature": 0,
+  "seed": 42,
+  "thinking": false,
+  "context_selection": "Explicit reviewer contract, documentation manifest, and exact UTF-8 contents of all 18 declared customer files.",
+  "attempts": 4,
+  "rejected_response_shapes": [
+    "A shell-transport pass changed the exact recovery category file list and introduced an unsupported privacy-law compliance phrase."
+  ],
+  "rejected_results": [
+    "The interrupted predecessor run exhausted local memory before returning review evidence.",
+    "A direct CLI response was rejected because its recovery category did not match the exact requested file list and its privacy narrative outran the documents.",
+    "A second CLI response was rejected after the shell transport converted valid UTF-8 em dashes into question marks and produced two false findings contradicted by direct file inspection."
+  ],
+  "final_transport": "Ollama HTTP API with an explicit UTF-8 request body",
+  "final_disposition": "REVIEW_PASS_WITH_CONDITIONS",
+  "final_material_findings": 0,
+  "response_evidence": "verification/evidence/hesperos-doc-review-v1.1.1/review-response.md"
+}

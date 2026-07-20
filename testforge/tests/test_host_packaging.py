@@ -34,7 +34,7 @@ class HostPackagingTests(unittest.TestCase):
 
     def test_claude_archives_are_safe_and_match_source(self):
         for skill in SKILLS:
-            archive_path = CLAUDE / f"{skill}-v1.1.0.zip"
+            archive_path = CLAUDE / f"{skill}-v1.1.1.zip"
             self.assertTrue(archive_path.is_file(), archive_path)
             with tempfile.TemporaryDirectory() as temporary:
                 with zipfile.ZipFile(archive_path) as archive:
