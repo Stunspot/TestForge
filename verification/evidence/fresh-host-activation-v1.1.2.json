@@ -1,0 +1,33 @@
+{
+  "schema_version": "cd-codex-plugin-activation/v1",
+  "product": "TestForge Codex plugin",
+  "plugin_version": "1.1.2",
+  "observed_at": "2026-07-20",
+  "host": "OpenAI Codex CLI 0.144.5",
+  "installation": {
+    "marketplace": "cd-testforge",
+    "plugin": "testforge",
+    "status": "installed and enabled",
+    "version": "1.1.2"
+  },
+  "fresh_task": {
+    "ephemeral": true,
+    "sandbox": "read-only",
+    "software_verification_skill_loaded": true,
+    "software_verification_resource": "references/core/risk-based-testing.md",
+    "verification_reviewer_skill_loaded": true,
+    "verification_reviewer_resource": "review-rubric.md",
+    "activation": "PASS"
+  },
+  "prompt_compatibility": {
+    "testforge_default_prompt_warnings": 0,
+    "result": "PASS"
+  },
+  "unrelated_host_warnings_excluded": [
+    "another installed plugin has a starter prompt above the host limit",
+    "a remote Canva bundle name mismatch",
+    "a stale local model-cache schema",
+    "another installed skill has icon paths outside its plugin assets directory",
+    "PowerShell shell snapshots are unsupported"
+  ]
+}
