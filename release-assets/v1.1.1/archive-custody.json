@@ -1,0 +1,54 @@
+{
+  "schema_version": "cd-augment-archive-custody/v1",
+  "product": {
+    "name": "TestForge",
+    "version": "1.1.1"
+  },
+  "created_at": "2026-07-20T10:33:20.941302+00:00",
+  "artifacts": [
+    {
+      "top_level": "testforge",
+      "source_tree_sha256": "d583947de8453ea69ae84e1e4577ea85b8618524c65cb9dd2c1117234f0d14f1",
+      "archive_sha256": "d0ebaaf1dfa609998e7898bb781208955bb99859a995b91eebe4a3f99195bef4",
+      "bytes": 200424,
+      "member_count": 226,
+      "id": "augment",
+      "kind": "augment",
+      "source": "testforge",
+      "archive_name": "TestForge-v1.1.1.zip"
+    },
+    {
+      "top_level": "testforge-plugin",
+      "source_tree_sha256": "a3376e2cc00934ddd1c1801281087c941324b13204a00dc8c9eecc78c81bf685",
+      "archive_sha256": "8d8e1757de8ccf372221b26c0878357226e66e482962a38ebcbaef3cc03d1c2c",
+      "bytes": 865820,
+      "member_count": 106,
+      "id": "plugin",
+      "kind": "plugin",
+      "source": "plugins/testforge",
+      "archive_name": "Plugin-TestForge-v1.1.1.zip"
+    },
+    {
+      "top_level": "software-verification",
+      "source_tree_sha256": "621df2a3342d68f1c06c8fcf4050a44269c8b0eb5219fb593130c92bfb0e1f55",
+      "archive_sha256": "126889cb85278d80dd9cc12d3c2dcef072511cb45e6f851de71896fc66ab8cfa",
+      "bytes": 73894,
+      "member_count": 91,
+      "id": "skill-software-verification",
+      "kind": "standalone-skill",
+      "source": "testforge/skills/software-verification",
+      "archive_name": "Skill-software-verification--TestForge-v1.1.1.zip"
+    },
+    {
+      "top_level": "verification-reviewer",
+      "source_tree_sha256": "79215a59d6b3561aefc77f86ea62481881461f8567aaf32571f57c4638661c9e",
+      "archive_sha256": "d7f9ec1faa9fbe38a8c595cdbb8a01ad1de084a1e2b403f60a66b7016aaadcd2",
+      "bytes": 9619,
+      "member_count": 9,
+      "id": "skill-verification-reviewer",
+      "kind": "standalone-skill",
+      "source": "testforge/skills/verification-reviewer",
+      "archive_name": "Skill-verification-reviewer--TestForge-v1.1.1.zip"
+    }
+  ]
+}

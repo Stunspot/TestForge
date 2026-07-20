@@ -12,11 +12,13 @@
     "testforge/docs/CAPABILITY-MATRIX.md",
     "testforge/docs/TROUBLESHOOTING.md",
     "testforge/docs/DATA-AND-PRIVACY.md",
+    "testforge/docs/TERMS-OF-USE.md",
     "testforge/SECURITY.md",
     "testforge/docs/VALIDATION.md",
     "testforge/docs/LIMITATIONS.md",
     "testforge/docs/SUPPORT-AND-VERSIONING.md",
-    "RELEASE-NOTES-v1.1.0.md",
+    "RELEASE-NOTES-v1.1.1.md",
+    "ARCHIVE-CUSTODY.md",
     "testforge/PROVENANCE.md"
   ],
   "moments": {
@@ -25,9 +27,9 @@
     "first_value": ["testforge/docs/QUICK-START.md"],
     "normal_use": ["testforge/docs/WORKFLOWS.md", "testforge/docs/CAPABILITY-MATRIX.md"],
     "recovery": ["README.md", "testforge/docs/TROUBLESHOOTING.md", "testforge/docs/SUPPORT-AND-VERSIONING.md"],
-    "privacy_security": ["testforge/docs/DATA-AND-PRIVACY.md", "testforge/SECURITY.md"],
+    "privacy_security": ["testforge/docs/DATA-AND-PRIVACY.md", "testforge/docs/TERMS-OF-USE.md", "testforge/SECURITY.md"],
     "evidence_limits": ["testforge/docs/VALIDATION.md", "testforge/docs/LIMITATIONS.md"],
-    "support_maintenance": ["testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.0.md"],
+    "support_maintenance": ["testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.1.md", "ARCHIVE-CUSTODY.md"],
     "provenance": ["testforge/PROVENANCE.md"]
   }
 }

@@ -3,18 +3,19 @@
   "fresh_context": true,
   "disposition": "REVIEW_PASS_WITH_CONDITIONS",
   "unresolved_material_findings": 0,
-  "documentation_fingerprint": "b13863cf1a728c83ae649d2482c3ebf992005b1e5d919ec634b05e08216130a4",
+  "documentation_fingerprint": "0b56836066452c9c91bc6219800a18cafff841e442c842b915a3bba44a14390d",
   "reviewed_files": [
     "README.md", "testforge/README.md", "testforge/docs/HOST-COMPATIBILITY.md", "testforge/docs/INSTALL-CODEX.md",
     "testforge/docs/INSTALL-CLAUDE.md", "testforge/docs/QUICK-START.md", "testforge/docs/WORKFLOWS.md",
     "testforge/docs/CAPABILITY-MATRIX.md", "testforge/docs/TROUBLESHOOTING.md", "testforge/docs/DATA-AND-PRIVACY.md",
-    "testforge/SECURITY.md", "testforge/docs/VALIDATION.md", "testforge/docs/LIMITATIONS.md",
-    "testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.0.md", "testforge/PROVENANCE.md"
+    "testforge/docs/TERMS-OF-USE.md", "testforge/SECURITY.md", "testforge/docs/VALIDATION.md",
+    "testforge/docs/LIMITATIONS.md", "testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.1.md",
+    "ARCHIVE-CUSTODY.md", "testforge/PROVENANCE.md"
   ],
-  "reviewer": "hesperos-documentation via documentation-accessibility-reviewer and local gpt-oss:20b",
-  "review_run_id": "run-20260719T063837Z-b13863cf",
-  "review_input_evidence": "verification/evidence/hesperos-doc-review-v1/review-input-custody.json",
-  "evidence_directory": "verification/evidence/hesperos-doc-review-v1",
+  "reviewer": "Hesperos exact-content review using local gpt-oss:20b, followed by deterministic response-shape validation",
+  "review_run_id": "hesperos-doc-review-v1.1.1-api-20260720-run2",
+  "review_input_evidence": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-input-evidence.json",
+  "evidence_directory": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2",
   "conditions": [
     "Fresh standalone Codex activation, live Claude upload and activation, current Claude interface verification, live resource loading, script execution under customer permissions, clean installation, and representative first-success behavior remain unexecuted.",
     "Broad repeated-model behavior, representative developer, browser, keyboard, screen-reader, localization, and accessibility-conformance testing remain unexecuted.",

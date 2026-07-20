@@ -1,0 +1,36 @@
+{
+  "format": "cd-documentation-review-input/v1",
+  "review_run_id": "hesperos-doc-review-v1.1.1-api-20260720-run2",
+  "contents_supplied": true,
+  "documentation_fingerprint": "0b56836066452c9c91bc6219800a18cafff841e442c842b915a3bba44a14390d",
+  "supplied_files": [
+    "README.md",
+    "testforge/README.md",
+    "testforge/docs/HOST-COMPATIBILITY.md",
+    "testforge/docs/INSTALL-CODEX.md",
+    "testforge/docs/INSTALL-CLAUDE.md",
+    "testforge/docs/QUICK-START.md",
+    "testforge/docs/WORKFLOWS.md",
+    "testforge/docs/CAPABILITY-MATRIX.md",
+    "testforge/docs/TROUBLESHOOTING.md",
+    "testforge/docs/DATA-AND-PRIVACY.md",
+    "testforge/docs/TERMS-OF-USE.md",
+    "testforge/SECURITY.md",
+    "testforge/docs/VALIDATION.md",
+    "testforge/docs/LIMITATIONS.md",
+    "testforge/docs/SUPPORT-AND-VERSIONING.md",
+    "RELEASE-NOTES-v1.1.1.md",
+    "ARCHIVE-CUSTODY.md",
+    "testforge/PROVENANCE.md"
+  ],
+  "transport": "Local Ollama fresh-context UTF-8 API with an explicit documentation manifest and exact file contents",
+  "review_response_evidence": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-response.md",
+  "execution_evidence": [
+    "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-request.md",
+    "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-input-custody.json",
+    "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/execution.json",
+    "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/api-response.json",
+    "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/shape-validation.json",
+    "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-response.md"
+  ]
+}

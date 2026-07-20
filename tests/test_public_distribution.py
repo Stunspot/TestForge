@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "testforge"
 PLUGIN = ROOT / "plugins" / "testforge"
 PLUGIN_SKILLS = PLUGIN / "skills"
+VERSION = "1.1.1"
 
 
 class PublicDistributionTests(unittest.TestCase):
@@ -38,13 +39,25 @@ class PublicDistributionTests(unittest.TestCase):
         self.assertEqual("./plugins/testforge", entry["source"]["path"])
         self.assertEqual(entry["name"], manifest["name"])
         self.assertEqual("./skills/", manifest["skills"])
+        self.assertEqual(VERSION, manifest["version"])
+        package_manifest = (CANONICAL / "package-manifest.yaml").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn(f"version: {VERSION}\n", package_manifest)
+
+        for key in ("privacyPolicyURL", "termsOfServiceURL"):
+            self.assertTrue(manifest["interface"][key].startswith("https://"))
+        self.assertIn("DATA-AND-PRIVACY.md", manifest["interface"]["privacyPolicyURL"])
+        self.assertIn("TERMS-OF-USE.md", manifest["interface"]["termsOfServiceURL"])
 
     def test_plugin_assets_and_skill_entrypoints_exist(self):
         manifest = json.loads(
             (PLUGIN / ".codex-plugin" / "plugin.json").read_text(encoding="utf-8")
         )
-        for key in ("composerIcon", "logo"):
-            target = PLUGIN / manifest["interface"][key].removeprefix("./")
+        asset_paths = [manifest["interface"][key] for key in ("composerIcon", "logo")]
+        asset_paths.extend(manifest["interface"].get("screenshots", []))
+        for relative in asset_paths:
+            target = PLUGIN / relative.removeprefix("./")
             self.assertTrue(target.is_file(), target)
             self.assertEqual(b"\x89PNG\r\n\x1a\n", target.read_bytes()[:8])
         for skill in ("software-verification", "verification-reviewer"):
@@ -84,6 +97,14 @@ class PublicDistributionTests(unittest.TestCase):
             )
         ]
         self.assertEqual([], debris)
+
+    def test_declared_customer_documents_exist(self):
+        documentation = json.loads(
+            (ROOT / "documentation-manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertGreaterEqual(len(documentation["customer_docs"]), 17)
+        for relative in documentation["customer_docs"]:
+            self.assertTrue((ROOT / relative).is_file(), relative)
 
 
 if __name__ == "__main__":

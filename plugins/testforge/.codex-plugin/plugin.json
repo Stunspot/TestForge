@@ -1,7 +1,7 @@
 {
   "name": "testforge",
-  "version": "1.1.0",
-  "description": "Make local coding Agents verify better, then test and remember every Augment you build.",
+  "version": "1.1.1",
+  "description": "Risk-driven software verification and independent evidence review for coding Agents.",
   "author": {
     "name": "Collaborative Dynamics",
     "url": "https://collaborative-dynamics.com"
@@ -19,10 +19,12 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "TestForge",
-    "shortDescription": "A quality ratchet for local Agent competence.",
-    "longDescription": "Give inexpensive local coding Agents a risk model, evidence discipline, and independent reviewer, then turn every Agent capability into a test, reengineering, baseline, and regression loop that moves quality upward.",
+    "shortDescription": "Risk-ranked verification with an independent skeptic.",
+    "longDescription": "Turn software changes, repositories, defects, and release candidates into risk-ranked evidence, meaningful tests, captured execution, and a traceable release assessment, then challenge the result with an independent skeptical reviewer.",
     "developerName": "Collaborative Dynamics",
     "websiteURL": "https://github.com/Stunspot/TestForge",
+    "privacyPolicyURL": "https://github.com/Stunspot/TestForge/blob/main/testforge/docs/DATA-AND-PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/Stunspot/TestForge/blob/main/testforge/docs/TERMS-OF-USE.md",
     "category": "Developer Tools",
     "capabilities": [
       "Interactive",
@@ -30,13 +32,13 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Make this local Agent verify the repository before it ships.",
-      "Find the catastrophic risks this test plan may have missed.",
-      "Test this Augment and preserve a reviewed behavioral baseline."
+      "Verify this repository before it ships: reconstruct the blast radius, rank catastrophic risks, run safe authorized checks, and issue a traceable release assessment.",
+      "Challenge this completed verification package for missed catastrophic risks, weak oracles, broken traceability, and unsupported confidence.",
+      "Turn this failing test or bug report into the smallest credible evidence set that distinguishes product, test, environment, and uncertainty failures."
     ],
     "brandColor": "#48CBE8",
-    "composerIcon": "./assets/testforge-icon.png",
-    "logo": "./assets/testforge-icon.png",
+    "composerIcon": "./assets/testforge-icon-v1.1.1.png",
+    "logo": "./assets/testforge-icon-v1.1.1.png",
     "screenshots": [
       "./assets/testforge-social-preview.png"
     ]

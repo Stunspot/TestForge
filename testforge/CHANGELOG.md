@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 — 2026-07-20
+
+- Prepare the skills-only Codex plugin for official directory review with exact privacy and terms links.
+- Align the plugin listing with the two bundled verification skills instead of implying that the repository-only behavioral-evaluation harness is installed.
+- Refresh customer privacy, terms, support, security, installation, and publication guidance.
+- Extend public-distribution tests to lock version parity, legal URLs, listing assets, and customer-document reachability.
+
 ## 1.1.0 — 2026-07-18
 
 - Make the operator and reviewer independently self-contained without changing their verification doctrine.

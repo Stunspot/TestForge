@@ -2,7 +2,7 @@
 
 ## Install
 
-Each v1.1.0 skill is self-contained. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
+Each v1.1.1 skill is self-contained. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
 
 Use [Install in Codex](INSTALL-CODEX.md) or [Install in Claude](INSTALL-CLAUDE.md). Install and verify both skills separately. Structural validation proves the package shape; successful discovery requires a fresh host task or conversation.
 

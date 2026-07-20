@@ -1,9 +1,9 @@
 {
   "format_version": "1.0",
   "package": "testforge-public-repository",
-  "version": "1.1.0",
-  "release_date": "2026-07-18",
-  "artifact_count": 382,
+  "version": "1.1.1",
+  "release_date": "2026-07-20",
+  "artifact_count": 418,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -24,6 +24,16 @@
       "path": ".gitignore",
       "size": 109,
       "sha256": "44a67a3829a561ab0f17ca6845aaca8a3abdad18d8b3279e93eb7e0fce4f4b67"
+    },
+    {
+      "path": "ARCHIVE-CUSTODY.md",
+      "size": 1998,
+      "sha256": "bcdb3dc2ab15604c3ddd7e3a0cf0ca05fea994f84a862e54c13dcd87c92d316c"
+    },
+    {
+      "path": "archive-plan.json",
+      "size": 872,
+      "sha256": "60ec047aceb0e73ea1029d0e93b9244783c1a466349ce5c0ebd17a6f844c106c"
     },
     {
       "path": "assets/testforge-social-preview.png",
@@ -51,7 +61,17 @@
       "sha256": "126889cb85278d80dd9cc12d3c2dcef072511cb45e6f851de71896fc66ab8cfa"
     },
     {
+      "path": "claude-ai/software-verification-v1.1.1.zip",
+      "size": 73894,
+      "sha256": "126889cb85278d80dd9cc12d3c2dcef072511cb45e6f851de71896fc66ab8cfa"
+    },
+    {
       "path": "claude-ai/verification-reviewer-v1.1.0.zip",
+      "size": 9619,
+      "sha256": "d7f9ec1faa9fbe38a8c595cdbb8a01ad1de084a1e2b403f60a66b7016aaadcd2"
+    },
+    {
+      "path": "claude-ai/verification-reviewer-v1.1.1.zip",
       "size": 9619,
       "sha256": "d7f9ec1faa9fbe38a8c595cdbb8a01ad1de084a1e2b403f60a66b7016aaadcd2"
     },
@@ -62,13 +82,13 @@
     },
     {
       "path": "documentation-manifest.json",
-      "size": 1471,
-      "sha256": "708ce87bf1c5dee32473ed6b7054f41eaef57716643ef6a220ec1197d673b35b"
+      "size": 1591,
+      "sha256": "e18fc56494395b0ec7c00033f31ea5a022f71f34027902b60309d583934e0028"
     },
     {
       "path": "documentation-review.json",
-      "size": 1725,
-      "sha256": "1448b25286ab4998f39f86e9bcfe029e723f853e937f8875c95fe6bfaf133508"
+      "size": 1866,
+      "sha256": "b2784c45c4090b67096e57334330a5fc3c0ff6fa87655cf6d9f4a2241cff411b"
     },
     {
       "path": "judge-fixture/tenant-access/access_policy.py",
@@ -102,8 +122,18 @@
     },
     {
       "path": "plugins/testforge/.codex-plugin/plugin.json",
-      "size": 1592,
-      "sha256": "62eec79eb67054ed0051762ad160552ec76f6cdcbee65bbc421988c89161a373"
+      "size": 2119,
+      "sha256": "94d8fd3669d657618a7e012aaee5721f6cc1bd53754b28c793df24dddf134889"
+    },
+    {
+      "path": "plugins/testforge/assets/testforge-answer-sheet-v1.1.1.svg",
+      "size": 1704,
+      "sha256": "58c5bc9e97ca2f4bac6b8f59ebe474a43763e5d743a1e05b2bf2570f9e560d64"
+    },
+    {
+      "path": "plugins/testforge/assets/testforge-icon-v1.1.1.png",
+      "size": 144730,
+      "sha256": "f00f55d62c3fc332c160f84df8bfa2790ee6edd06f8f1d0ae0256e2421681693"
     },
     {
       "path": "plugins/testforge/assets/testforge-icon.png",
@@ -622,13 +652,18 @@
     },
     {
       "path": "README.md",
-      "size": 7829,
-      "sha256": "f9fa7fbab31dff8954ddf085e121822475ccc6ff8dc743e5773a9372cb64de5c"
+      "size": 8321,
+      "sha256": "98caca5bba04d25a652d073e41d92b2fb130c8b8e433cb2e2f9980a5469cef91"
     },
     {
       "path": "RELEASE-NOTES-v1.1.0.md",
       "size": 1323,
       "sha256": "4590c27d32d7b5d38dcf8054289421b42ec3daec91ba9993a430bc57cf758287"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.1.1.md",
+      "size": 2164,
+      "sha256": "0e05a580395eb10d704d2d84d1ded797218db362712f518b802189199446ea7b"
     },
     {
       "path": "RELEASE-NOTES.md",
@@ -637,8 +672,8 @@
     },
     {
       "path": "SECURITY.md",
-      "size": 832,
-      "sha256": "1e9d5193825dc601b40d9a81658a63518e8b4f947062fba38b191b5250a2a4a3"
+      "size": 939,
+      "sha256": "e985dce607e80fa60c9290cdea64e5f90b2ef0f2d999210f86de5e5d4c857ed9"
     },
     {
       "path": "testforge/adapters/claude-code.md",
@@ -742,8 +777,8 @@
     },
     {
       "path": "testforge/CHANGELOG.md",
-      "size": 3368,
-      "sha256": "33c9fc20751cc3e5225adb369a8546ff9633f926d99a7fa5e07398aa2e427668"
+      "size": 3873,
+      "sha256": "132c6f394045781b12eac4aa1bc33031a3ad789cbec974abbbe9b92f4b31e226"
     },
     {
       "path": "testforge/docs/CAPABILITY-MATRIX.md",
@@ -752,18 +787,18 @@
     },
     {
       "path": "testforge/docs/DATA-AND-PRIVACY.md",
-      "size": 963,
-      "sha256": "1b8d35c48fe1678eab99bedc29aefb325fbdc70acf8db36da3c1c27f81c5f31b"
+      "size": 1953,
+      "sha256": "45f6cad5e016697af5c25d722ef7ef0fab41da198352d96e66c3772c24e464f2"
     },
     {
       "path": "testforge/docs/HOST-COMPATIBILITY.md",
-      "size": 1566,
-      "sha256": "52690969e818eff377307260aeec2d362ab8d71ecc6470323873d097e892a75c"
+      "size": 1596,
+      "sha256": "f6389619e06a529031bf6c5154c4729d6c1c952b3838f420d2e521ea679a5d0e"
     },
     {
       "path": "testforge/docs/INSTALL-CLAUDE.md",
       "size": 1274,
-      "sha256": "5add5d3cc6f2b037ee7398c8d48a7a0f5d6b4895ccd34bb843449ed94b07185b"
+      "sha256": "a51fd77e067348edb98ef5d3f6fb95bc0747c4919b7365f4d2cf1b44c8b84306"
     },
     {
       "path": "testforge/docs/INSTALL-CODEX.md",
@@ -778,7 +813,7 @@
     {
       "path": "testforge/docs/QUICK-START.md",
       "size": 2650,
-      "sha256": "77f308a3e132a8e98a6d7d1f77019a24af35b59f43aeb8e64a767cb7457cc530"
+      "sha256": "0f1f48fc04014f097ab929e407d4d12cd8640a6860b14a01bf96134fcda8fbad"
     },
     {
       "path": "testforge/docs/SALES-DEMO.md",
@@ -787,13 +822,18 @@
     },
     {
       "path": "testforge/docs/SUPPORT-AND-VERSIONING.md",
-      "size": 779,
-      "sha256": "5c5d2e46940e3cc69b6e8630a8bc9047b7518ad9e726e765b9f10097e34f591c"
+      "size": 1133,
+      "sha256": "df038085775458bdad65f28572748f1e4764644cf241860a000452d9f22f15d7"
     },
     {
       "path": "testforge/docs/SUPPORTED-ENVIRONMENTS.md",
       "size": 1046,
       "sha256": "c9113c412443ef506e2db8450199b85efa33e11105493e74e75739776a737f6c"
+    },
+    {
+      "path": "testforge/docs/TERMS-OF-USE.md",
+      "size": 3712,
+      "sha256": "26c7d924cf0162ec4135898ca7e6d987c2f5208d83768948df404611b56c8ac7"
     },
     {
       "path": "testforge/docs/TROUBLESHOOTING.md",
@@ -813,7 +853,7 @@
     {
       "path": "testforge/evals/eval-manifest.yaml",
       "size": 736,
-      "sha256": "89e11569d895ef7334ca7c503326a1acb1b1ea2c2daf183cd84e37db5bdba9c9"
+      "sha256": "0a86fd0d7b060a667a35ebbc007c88f7e278f756d0b3ca7f82164c18782c5eac"
     },
     {
       "path": "testforge/evals/failure-triage-cases.yaml",
@@ -833,7 +873,7 @@
     {
       "path": "testforge/evals/README.md",
       "size": 1625,
-      "sha256": "68d6019d6b372bb249e1f2bf49724b6c468fac67868780b3ecbc3f26b2b50697"
+      "sha256": "08126298434433322c248876d57ab6606b1abc81ebb2b9943d048898428d59df"
     },
     {
       "path": "testforge/evals/risk-coverage-cases.yaml",
@@ -1038,12 +1078,12 @@
     {
       "path": "testforge/package-manifest.yaml",
       "size": 1191,
-      "sha256": "6763b67037c1c1d5dae7a8a4c5714906d2b2958d817874fbc929849a0e4b4a69"
+      "sha256": "966d45889e263ec6cae02ca5d14ce6d9b823c7010f894827162ea81e87a22b0c"
     },
     {
       "path": "testforge/PROVENANCE.md",
-      "size": 1238,
-      "sha256": "96a5dd3072346bb6a29350902500b6ac183495d26d10f832308476fd22e01589"
+      "size": 1422,
+      "sha256": "9a64e7bbcbf949aac9aba8bbddc117dccaf1e68991fea2150f883dc58dc6ae3e"
     },
     {
       "path": "testforge/README.md",
@@ -1167,8 +1207,8 @@
     },
     {
       "path": "testforge/release-manifest.json",
-      "size": 41741,
-      "sha256": "a49a57c9eff99c2ace439082d7fa339adf4f8110a021d0daa1ed67c610797e6b"
+      "size": 41996,
+      "sha256": "2ceebfee9f8cfee217126091d2af6aed1bcc5d3ff0477061e739c6b685477226"
     },
     {
       "path": "testforge/scripts/assemble_report.py",
@@ -1178,7 +1218,7 @@
     {
       "path": "testforge/scripts/build_release_manifest.py",
       "size": 1733,
-      "sha256": "88040fe9bd5c9239b1cd820253bc742c24c240cb78c40ad58342965d3e046c9b"
+      "sha256": "e537ffe88ce59fad97b223a3af59f58e0facfce489f2a61551b9f03aa0300fe8"
     },
     {
       "path": "testforge/scripts/capture_command.py",
@@ -1247,8 +1287,8 @@
     },
     {
       "path": "testforge/SECURITY.md",
-      "size": 1011,
-      "sha256": "cb8938a0406654214468a8b4fb4ebf35163be0534c16f2b77472ae3ed73dbbcf"
+      "size": 1260,
+      "sha256": "187af3cd5880877410649fb60ca112a9cdf04a6c97fb9c188ce8513339d63521"
     },
     {
       "path": "testforge/skills/software-verification/activation-examples.md",
@@ -1758,7 +1798,7 @@
     {
       "path": "testforge/tests/test_host_packaging.py",
       "size": 1826,
-      "sha256": "79ef104867da0e8998c83e0de0325cace7ac9cf86cbb6c0d9e0bb4707013c0e2"
+      "sha256": "29cc02495c6f932ca21bee68f9d4b11995d03a4fe1fe290781844ba2ffb2cd13"
     },
     {
       "path": "testforge/tests/test_tools.py",
@@ -1766,9 +1806,14 @@
       "sha256": "ce0c4eeed8c0be9e89180d8c761f9f254431ff1a05f78b7351506a69cf22b8a0"
     },
     {
+      "path": "tests/test_documentation.py",
+      "size": 3729,
+      "sha256": "6966fa1b8b9da566f9c52097e04e5654a069bbce6cbb407e4e4b0f2e913b4ebb"
+    },
+    {
       "path": "tests/test_public_distribution.py",
-      "size": 3269,
-      "sha256": "1c9bd4333518a9ae3fe804655877a8b71db7a62c9a2e8f3a129cc3f15658294e"
+      "size": 4347,
+      "sha256": "9b338c1bf9ed04e9d834e1d3eca72a462a0bc91b2419b92f04be51ac8d52ef5b"
     },
     {
       "path": "tools/augment-evals/.gitignore",
@@ -1872,18 +1917,143 @@
     },
     {
       "path": "tools/rebuild_public_release.py",
-      "size": 3752,
-      "sha256": "f412fc2b9adc27ace58ae3724b1ef8ddd890249660d63188fe0eadf2816b3368"
+      "size": 3869,
+      "sha256": "22cfb84d685bd30f16bfde49502d0a118fd2a501915f320fc143ce72ca185556"
     },
     {
       "path": "tools/validate_release_manifests.py",
-      "size": 4271,
-      "sha256": "f6ae1967a0c80a7a008b4f6a877fc3878ff899d13ab3bd450b58228da2a38797"
+      "size": 4289,
+      "sha256": "fac03f5b5329481dc97a5a7fc204b5f7ad5bb9c266006be8ecd46a89feec4394"
     },
     {
       "path": "TRADEMARKS.md",
       "size": 762,
       "sha256": "463e2f6627994a433b459ae9942f76db0b70facee91c296219e9ace917db77bd"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run1/api-response.json",
+      "size": 28175,
+      "sha256": "c7c8deaa4584e817249de2f6d31e2572203388a256b99db65b7b5731a0d312ea"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run1/execution.json",
+      "size": 703,
+      "sha256": "527d23e13723a44188bfca8be6c531b816e67cd9593e92a7aec98e2b1b191f86"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run1/review-input-custody.json",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run1/review-request.md",
+      "size": 4374,
+      "sha256": "76eb315c955fd2da50cab72b7134caac3490ff9a4a704bf2ca54c2b0b5fd93d3"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run1/review-response.md",
+      "size": 3840,
+      "sha256": "57bce9c44362ebbcb17629c7b3f29bd056bf017270420e858294c58e4b877119"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/api-response.json",
+      "size": 46581,
+      "sha256": "d517a15839b37f58a0f09a0669b63574a51d6298bc5d0cfb12efd547f4607b35"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/execution.json",
+      "size": 703,
+      "sha256": "b15c4a565fe6d958113ce82e3724d06f711e6761c7ab2c6f25c17dee6ee145e7"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-input-custody.json",
+      "size": 4894,
+      "sha256": "17c91dd0558a7dde837098ddc27a038c304fea061fc09751d5ec2fb87c3c299e"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-input-evidence.json",
+      "size": 1743,
+      "sha256": "9cc2dcce9b3f6b5f81ae3ae4e343374ab483184c42c925e6c8e2bd681cebfa05"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-request.md",
+      "size": 4374,
+      "sha256": "76eb315c955fd2da50cab72b7134caac3490ff9a4a704bf2ca54c2b0b5fd93d3"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/review-response.md",
+      "size": 3943,
+      "sha256": "14ad92b84f4043102e357fcdeda7bc6a8a388b49e2f1620cc1ec6ccac115c857"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run2/shape-validation.json",
+      "size": 121,
+      "sha256": "29e1ec8b97c76302b4b9212193c865cb0b2a2b4cfac42f05f4df69734aca4e47"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run3/api-response.json",
+      "size": 36498,
+      "sha256": "f4d7a2a7de5c66e0ad242bbe97c82410cb0066d64461ed53d4f71fdb2fabd09f"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run3/execution.json",
+      "size": 703,
+      "sha256": "c554fbd5c5251f4af94c7f5481f6c9b297c2422815c875f1cc4268b2b28b6c90"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run3/review-input-custody.json",
+      "size": 4894,
+      "sha256": "ab12f04b18ea5998cd7281305baa0509095f22540707612bb8ccf2aeba451ac6"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run3/review-request.md",
+      "size": 4374,
+      "sha256": "76eb315c955fd2da50cab72b7134caac3490ff9a4a704bf2ca54c2b0b5fd93d3"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run3/review-response.md",
+      "size": 3837,
+      "sha256": "6df05692b02dcd1c304fe58e84e142c2941bba1b47d9b881e9fb2931c7fe3538"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run3/shape-validation.json",
+      "size": 180,
+      "sha256": "8572f553a9be5ff06822e98629164a4d46e38fe50c0a21cf6a4712b140bce850"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run4/api-response.json",
+      "size": 51724,
+      "sha256": "1e3abc13770903007d0e6cc491debc7f305d1e99030b50783112e7a166dbe3f2"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run4/review-request.md",
+      "size": 4374,
+      "sha256": "76eb315c955fd2da50cab72b7134caac3490ff9a4a704bf2ca54c2b0b5fd93d3"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1-api-20260720-run4/review-response.md",
+      "size": 4828,
+      "sha256": "986dd84d407ef583970cdb50ca075b19c80b1742634be711b279f91ed98f5938"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1/execution.json",
+      "size": 1427,
+      "sha256": "ab777c49598e2fc95154c32556c31899427f716463098c188af44b4d4f8cf731"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1/review-input-custody.json",
+      "size": 1497,
+      "sha256": "2cb636783287ed0e7f77e115d037c8efdb0cf9738279930cd972aff490965158"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1/review-request.md",
+      "size": 4374,
+      "sha256": "76eb315c955fd2da50cab72b7134caac3490ff9a4a704bf2ca54c2b0b5fd93d3"
+    },
+    {
+      "path": "verification/evidence/hesperos-doc-review-v1.1.1/review-response.md",
+      "size": 4265,
+      "sha256": "4f88a44a000388d0850dba25ed1297bb32f8a8549dc1d56ef84a0325923cab3c"
     },
     {
       "path": "verification/evidence/hesperos-doc-review-v1/execution.json",
@@ -1906,15 +2076,25 @@
       "sha256": "5268ec875e01de0cf7ca05873915a5637756a7c3a022dbb3988912ea8f963ee3"
     },
     {
+      "path": "verification/evidence/plugin-readiness-v1.1.1.json",
+      "size": 229,
+      "sha256": "53b5d5d9817d4627e84a0aec211c91904d20cd01549b6db6e7563e8958c37edd"
+    },
+    {
+      "path": "verification/release-summary-v1.1.1.json",
+      "size": 3821,
+      "sha256": "92d50fda786fe3881dc9dd9dbbfe3e7414dd5cff86f47451e0a3cb675b8a44df"
+    },
+    {
       "path": "verification/verification-report.json",
-      "size": 1596,
-      "sha256": "f5a525f8004d0603e093d1fb0d10a2a12f75f7c1425243e8c9c2ff88ace4e755"
+      "size": 2187,
+      "sha256": "53088e4ad84568c46051a68c317b9bf7f0a7ab93556720abc7ea6c2cca3cd1cf"
     },
     {
       "path": "verification/verification-report.md",
-      "size": 1432,
-      "sha256": "239b0f3e89acce5c32c997b2602f6f295d8015db8a3cbc474cd933eeebec5226"
+      "size": 2027,
+      "sha256": "3077f2273126e425873c1ac76206602a07007deb8843171127e9d80f71c1e73c"
     }
   ],
-  "note": "release-manifest.json is excluded from its own hash list; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs release archives; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

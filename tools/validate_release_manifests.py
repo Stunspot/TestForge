@@ -12,9 +12,9 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 PACKAGE = REPO / "testforge"
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 SKILLS = ("software-verification", "verification-reviewer")
-EXCLUDED = {"__pycache__", ".pytest_cache", ".git"}
+EXCLUDED = {"__pycache__", ".pytest_cache", ".git", "release-assets"}
 
 
 def sha256(path: Path) -> str:
