@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "id": "EVAL-ORACLE-001",
+      "dimensions": ["oracle_quality", "security_boundary", "layer_selection"],
+      "input": "Write tests for a password-reset endpoint. Current test asserts 202 for known email. Requirement: do not reveal whether the account exists, and a reset link may be used once for 15 minutes.",
+      "expected_behaviors": [
+        "Builds oracles for response indistinguishability, token expiry, single use, account state, and absence of duplicate active tokens or secret leakage.",
+        "Uses API/integration evidence for persistence and authorization semantics rather than status-only or mock-call assertions.",
+        "Keeps email delivery or clock behavior controlled without erasing token semantics."
+      ],
+      "acceptable_variation": ["May split token-policy unit tests from persistence/API tests."],
+      "failure_signals": ["Asserts only 202", "Snapshots the response without comparing account existence", "Mocks token storage while claiming single-use evidence"]
+    },
+    {
+      "id": "EVAL-ORACLE-002",
+      "dimensions": ["oracle_quality", "risk_quality"],
+      "input": "A cache invalidation function returns true after deleting one key. The feature changes a product price shared across region and currency variants. Existing tests assert true. What should the regression evidence look like?",
+      "expected_behaviors": [
+        "Defines the user-visible invariant over all affected variants and stale reads, not the boolean return.",
+        "Models key derivation and invalidation blast radius, including forbidden eviction of unrelated products.",
+        "Proposes an integration-level observation of subsequent reads where that boundary matters."
+      ],
+      "acceptable_variation": ["May recommend a key-derivation unit property plus cache integration scenario."],
+      "failure_signals": ["Keeps the boolean as the primary oracle", "Equates call count with invalidation", "Generates unrelated load tests"]
+    }
+  ]
+}

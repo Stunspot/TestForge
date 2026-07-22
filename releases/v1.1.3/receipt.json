@@ -1,0 +1,14 @@
+{
+  "backup": "backups/TestForge-v1.1.3.zip",
+  "backup_checksum": "backups/TestForge-v1.1.3.zip.sha256",
+  "backup_sha256": "a67f451147ebb5fe55342763300a0f5a606130169344aa5dc1e1c7bc4d6c636c",
+  "canonical_checksum": "TestForge-v1.1.3.zip.sha256",
+  "canonical_zip": "TestForge-v1.1.3.zip",
+  "canonical_zip_member_count": 260,
+  "canonical_zip_sha256": "a67f451147ebb5fe55342763300a0f5a606130169344aa5dc1e1c7bc4d6c636c",
+  "copy_not_move_verified": true,
+  "family": "testforge",
+  "schema": "cd-settled-family-build-receipt/v1",
+  "status": "local-staged",
+  "version": "1.1.3"
+}

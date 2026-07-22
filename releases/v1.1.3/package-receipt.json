@@ -1,0 +1,7 @@
+{
+  "claim_boundary": "Static package evidence only; installation, discovery, invocation, health, publication, and customer value require separate evidence.",
+  "family": "testforge",
+  "schema": "cd-settled-family-package-receipt/v1",
+  "status": "static-package-built",
+  "version": "1.1.3"
+}

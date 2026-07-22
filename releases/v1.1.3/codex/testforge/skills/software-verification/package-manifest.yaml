@@ -1,0 +1,30 @@
+name: testforge
+display_name: "TestForge: Software Verification Operator"
+version: 1.0.0
+publisher: Collaborative Dynamics
+release_date: 2026-07-16
+canonical_human_record: Markdown
+canonical_machine_record: JSON
+entry_points:
+  operator: skills/software-verification/SKILL.md
+  reviewer: skills/verification-reviewer/SKILL.md
+  manifest_template: assets/templates/verification-manifest.json
+  fallback: fallback/master-prompt.md
+runtime:
+  required: compatible LLM skill host
+  deterministic_tools: Python 3.10+ standard library
+  optional: repository file access, Git, local shell, target test framework
+supported_first_release:
+  - TypeScript with Jest or Vitest guidance
+  - Python with pytest or unittest detection
+  - generic scenario-only degradation for unsupported stacks
+release_statuses:
+  - READY
+  - READY_WITH_RESIDUAL_RISK
+  - NOT_READY
+  - INSUFFICIENT_EVIDENCE
+  - BLOCKED_BY_ENVIRONMENT
+authority:
+  model: analysis, test design, artifact drafting, evidence interpretation
+  deterministic: inspection, validation, normalization, command result capture
+  human: consequential edits, installs, active security, production access, external actions, regulated release decisions

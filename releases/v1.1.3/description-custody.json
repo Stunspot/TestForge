@@ -1,0 +1,12 @@
+{
+  "software-verification": {
+    "model_visible_description": "🧪 Software verification and release proof.",
+    "relationship": "identical",
+    "ui_short_description": "🧪 Software verification and release proof."
+  },
+  "verification-reviewer": {
+    "model_visible_description": "🔍 Challenge existing verification evidence now. Naming a future reviewer or review burden is route design, not activation.",
+    "relationship": "intentionally-distinct",
+    "ui_short_description": "🔍 Challenge existing verification evidence now."
+  }
+}

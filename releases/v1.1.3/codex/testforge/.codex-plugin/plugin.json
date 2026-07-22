@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "Collaborative Dynamics",
+    "url": "https://collaborative-dynamics.com"
+  },
+  "description": "Risk-based software verification, evidence-backed release judgment, and adversarial review of verification claims.",
+  "interface": {
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Design evidence that tests the actual capability claim."
+    ],
+    "developerName": "Collaborative Dynamics",
+    "displayName": "TestForge",
+    "longDescription": "Risk-based software verification, evidence-backed release judgment, and adversarial review of verification claims.",
+    "shortDescription": "🧪 Change uncertainty → release proof and challenge."
+  },
+  "license": "Split license; see LICENSE.md",
+  "name": "testforge",
+  "repository": "https://github.com/Stunspot/TestForge",
+  "skills": "./skills/",
+  "version": "1.1.3"
+}
