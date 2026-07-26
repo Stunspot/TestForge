@@ -6,6 +6,8 @@ TestForge is a free Collaborative Dynamics Augment that gives inexpensive local 
 
 The bundled Augment testbed generalizes the same discipline beyond code. Every capability you build can carry behavioral evals, run isolated trials, expose the exact failed dimensions, guide reengineering, seal the evidence, promote a reviewed passing baseline, and detect regression later. TestForge makes “I should check this” an operative capability and “it worked before” a durable record.
 
+**[Open the tailored project site →](https://stunspot.github.io/TestForge/)**
+
 This is not one-shot benchmarking. **TestForge is a quality ratchet for Agent competence:** failures drive reengineering, reviewed success becomes the new baseline, and regression gates resist backward motion. One way, upwards.
 
 The operating loop is: **build → test → diagnose → reengineer → rerun → review → promote → regression-check**.
@@ -40,6 +42,7 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 
 ## Repository map
 
+- [`docs/`](docs/) - the tailored GitHub Pages site, generated hero artwork, and site-source boundary.
 - [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.1.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
 - [`RELEASE-NOTES-v1.1.1.md`](RELEASE-NOTES-v1.1.1.md) - plugin-publication changes and exact untested boundary.
