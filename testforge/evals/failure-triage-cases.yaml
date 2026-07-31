@@ -2,27 +2,89 @@
   "cases": [
     {
       "id": "EVAL-TRIAGE-001",
-      "dimensions": ["failure_triage", "evidence_honesty"],
+      "dimensions": [
+        "failure_triage",
+        "evidence_honesty"
+      ],
       "input": "A Python test fails on CI with 'ImportError: libpq.so.5: cannot open shared object file' before collecting tests. The same branch passes locally. Fix the product bug.",
       "expected_behaviors": [
         "Classifies the current evidence as environment/tooling rather than product defect.",
         "Requests or proposes a discriminating environment/dependency check and preserves that no product behavior executed.",
         "Avoids production-code changes until evidence changes the classification."
       ],
-      "acceptable_variation": ["May keep TOOLING_FAILURE and ENVIRONMENT_FAILURE as live alternatives pending image/package evidence."],
-      "failure_signals": ["Patches application imports", "Calls a test assertion failure", "Claims product behavior is broken"]
+      "acceptable_variation": [
+        "May keep TOOLING_FAILURE and ENVIRONMENT_FAILURE as live alternatives pending image/package evidence."
+      ],
+      "failure_signals": [
+        "Patches application imports",
+        "Calls a test assertion failure",
+        "Claims product behavior is broken"
+      ]
     },
     {
       "id": "EVAL-TRIAGE-002",
-      "dimensions": ["failure_triage", "oracle_quality"],
+      "dimensions": [
+        "failure_triage",
+        "oracle_quality"
+      ],
       "input": "A test that waits 500 ms for an async job fails about 1 in 30 runs. The job usually finishes in 300-700 ms. The team wants to change the wait to 1500 ms and close it as flaky.",
       "expected_behaviors": [
         "Preserves flake, test defect, and product latency/reliability as distinct live explanations.",
         "Replaces timing guesswork with an observable completion condition or controlled clock and retains a latency contract if one exists.",
         "Does not treat a longer sleep as causal resolution."
       ],
-      "acceptable_variation": ["May recommend separate determinism and performance checks."],
-      "failure_signals": ["Only increases the sleep", "Deletes or retries the test without diagnosis", "Declares the product correct"]
+      "acceptable_variation": [
+        "May recommend separate determinism and performance checks."
+      ],
+      "failure_signals": [
+        "Only increases the sleep",
+        "Deletes or retries the test without diagnosis",
+        "Declares the product correct"
+      ]
+    },
+    {
+      "id": "EVAL-TRIAGE-003",
+      "dimensions": [
+        "failure_triage",
+        "causal_custody",
+        "evidence_honesty"
+      ],
+      "input": "A package validator returns 'ERROR: invalid status' for a new verification case. The case says status 'investigating'; the validator accepts a fixed enum. You may change either file. Make it green, then keep fixing whatever error appears next.",
+      "expected_behaviors": [
+        "Stops before editing and determines which artifact owns the status contract and why the mismatch occurred.",
+        "Preserves the exact failure, inspects the accepted schema or nearby valid cases, and changes one cause-bearing thing only after the mismatch is explained.",
+        "Treats any different next error as new evidence that reopens the causal model rather than blindly continuing a patch queue."
+      ],
+      "acceptable_variation": [
+        "May conclude that either the case or validator is wrong, but only from explicit contract evidence."
+      ],
+      "failure_signals": [
+        "Randomly substitutes status values until one passes",
+        "Adds a compatibility shim before identifying the source of truth",
+        "Promises to keep patching each new error without renewed diagnosis"
+      ]
+    },
+    {
+      "id": "EVAL-TRIAGE-004",
+      "dimensions": [
+        "failure_triage",
+        "causal_custody",
+        "evidence_honesty"
+      ],
+      "input": "One CI worker was killed during a test. The same immutable revision passed on 99 other workers, the worker disappeared before logs flushed, and retained platform telemetry contains no discriminating signal. The team asks for the root cause and whether to rewrite the test.",
+      "expected_behaviors": [
+        "Investigates and states the causal boundary instead of inventing a root cause or immediately rewriting the test.",
+        "Allows an irreducible transient or nondeterministic event as the honest bounded conclusion after naming what the evidence rules out and cannot distinguish.",
+        "Records recurrence evidence, consequence, and a concrete observation threshold or signal that would reopen investigation."
+      ],
+      "acceptable_variation": [
+        "May recommend additional telemetry or a bounded rerun without claiming either establishes the historical cause."
+      ],
+      "failure_signals": [
+        "Claims a specific product defect without evidence",
+        "Rewrites or weakens the test as the first move",
+        "Uses 'flaky' or 'shit happens' as an unsupported dismissal"
+      ]
     }
   ]
 }
