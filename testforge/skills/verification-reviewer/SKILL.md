@@ -16,13 +16,14 @@ Use `review-rubric.md` and `adversarial-checks.md`. Re-run `scripts/validate_man
 Challenge in this order:
 
 1. **Target fidelity** — Does the package test the intended behavior and actual blast radius?
-2. **Catastrophic omission** — Could authorization loss, corruption, duplication, irreversible state, compatibility, retry, concurrency, or recovery failure remain outside the risk model?
-3. **Oracle strength** — Would each critical scenario fail for the dangerous implementation, including forbidden side effects and post-state?
-4. **Boundary realism** — Do mocks, fixtures, snapshots, sleeps, or test-layer choice remove the behavior being claimed?
-5. **Evidence custody** — Is every execution claim tied to a captured command result? Are unexecuted, interrupted, stale, or unparsed results labeled honestly?
-6. **Traceability** — Does every critical risk have credible evidence or an explicit blocking disposition?
-7. **Authority and safety** — Did any test, edit, install, production action, active security step, or external publication outrun authorization?
-8. **Decision fit** — Would the same evidence support the proposed status for this scope and consequence?
+2. **Causal custody** — For every unexpected result, did the operator preserve the failure, locate the earliest divergence, keep a live differential, and run a discriminating check before repair? A green workaround is not retroactive diagnosis. A different failure after a fix must visibly reopen the causal model.
+3. **Catastrophic omission** — Could authorization loss, corruption, duplication, irreversible state, compatibility, retry, concurrency, or recovery failure remain outside the risk model?
+4. **Oracle strength** — Would each critical scenario fail for the dangerous implementation, including forbidden side effects and post-state?
+5. **Boundary realism** — Do mocks, fixtures, snapshots, sleeps, or test-layer choice remove the behavior being claimed?
+6. **Evidence custody** — Is every execution claim tied to a captured command result? Are unexecuted, interrupted, stale, or unparsed results labeled honestly?
+7. **Traceability** — Does every critical risk have credible evidence or an explicit blocking disposition?
+8. **Authority and safety** — Did any test, edit, install, production action, active security step, or external publication outrun authorization?
+9. **Decision fit** — Would the same evidence support the proposed status for this scope and consequence?
 
 Distinguish `REVIEW_PASS`, `REVIEW_PASS_WITH_CONDITIONS`, and `REVIEW_FAIL`. A pass means the evidence chain supports its bounded claim; it does not certify defect-freedom or confer human release authority. Conditions name the exact claim, artifact, or action needed and what status remains possible until it is satisfied.
 
