@@ -1,0 +1,8 @@
+name: TestForge line-ending policy
+description: Verify the Collaborative Dynamics LF, Windows-command, binary, and byte-custody contract.
+runs:
+  using: composite
+  steps:
+    - name: Verify line-ending policy
+      shell: bash
+      run: python "$GITHUB_ACTION_PATH/../tools/verify_line_endings.py" --root "$GITHUB_WORKSPACE"

@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.1",
   "release_date": "2026-07-20",
-  "artifact_count": 687,
+  "artifact_count": 698,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -11,14 +11,24 @@
       "sha256": "4f1010e892c432ba62b62c2d611af692b19cdfaeb24a7d1e8aa0d0d034421ed7"
     },
     {
+      "path": ".editorconfig",
+      "size": 112,
+      "sha256": "3f98ae7d1a00751db3e32bdb4b2b3f53df8417d08946469bae79db6fb6e15334"
+    },
+    {
       "path": ".gitattributes",
-      "size": 125,
-      "sha256": "a6e4397b4120000046fa9bfacb31df844160cab51b0fb7a45d084241c0c04910"
+      "size": 221,
+      "sha256": "138131eed771585ddd21d950e40821fc669a4b48210d879a43dfdf8fabdbe712"
+    },
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "size": 781,
+      "sha256": "7a060c30a1d7bd0995ab6ddbe75a4140402f0eea4227637095cc814f0874a6c4"
     },
     {
       "path": ".github/workflows/test.yml",
-      "size": 828,
-      "sha256": "c63e6515daf1b0d1af1f9de91d9c0ac2bccc0d99ce758364231f18aa85747c0a"
+      "size": 1098,
+      "sha256": "95c53e37b928d33c264b01e69cd35e68d34a33046673d72b3bc69301b5d86652"
     },
     {
       "path": ".gitignore",
@@ -86,6 +96,31 @@
       "sha256": "57bf58033a9570984271c4e39ec79387ff09af9cbd9e81bb2736ade080452399"
     },
     {
+      "path": "docs/.nojekyll",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/assets/testforge-hero.png",
+      "size": 1481766,
+      "sha256": "d327ba98cb45afbe7a939e0f265eb51db98a50258d5ba8c117e6573e98c7d05b"
+    },
+    {
+      "path": "docs/index.html",
+      "size": 17593,
+      "sha256": "aab19b819b6c772cb70f2604e65001715b081005d280750eed042c198867e9cc"
+    },
+    {
+      "path": "docs/SITE-SOURCE.md",
+      "size": 1835,
+      "sha256": "428deaaf6ae81cde85aae1551c3afa51d84d95f256672df17b20298e884c4cf5"
+    },
+    {
+      "path": "docs/style.css",
+      "size": 16589,
+      "sha256": "1c9cd32a619426ba4c0925dc710c3c9944beabf0b3c7979b188010f5452de1e4"
+    },
+    {
       "path": "documentation-manifest.json",
       "size": 1677,
       "sha256": "e1a66509bec90a75b9e0ca8a7fe3734629eaeedd81eec72739c5875f089281e5"
@@ -119,6 +154,16 @@
       "path": "LICENSE.md",
       "size": 2770,
       "sha256": "ed7874c404bbcf284cb8e3a10ffe2f4c13b0dffec6238215d2171df658fb124e"
+    },
+    {
+      "path": "line-ending-policy/action.yml",
+      "size": 327,
+      "sha256": "b0160dbc726839c2a8433e877ff6d486d09c2016f8091192da33bba1afe0704d"
+    },
+    {
+      "path": "line-ending-policy/README.md",
+      "size": 1455,
+      "sha256": "7652ef8b6cf2f63fed3416445692b36c442fc767369bc7c0dd353d69b452b002"
     },
     {
       "path": "NOTICE.md",
@@ -662,8 +707,8 @@
     },
     {
       "path": "README.md",
-      "size": 8721,
-      "sha256": "692953a48b51e18853fe19bc2626ce1bc9d24cf9a8d4c36c11176ccefd164a80"
+      "size": 8905,
+      "sha256": "6c0bf259a9c61e94a9e9704d448d0ba92133c05a6f3acc073091dc9aac4251c3"
     },
     {
       "path": "RELEASE-NOTES-v1.1.0.md",
@@ -3136,9 +3181,14 @@
       "sha256": "1b47b54c993d72d2bc8ebd5921794a3f83ab993fd25ad49d2ab53d97b2947091"
     },
     {
+      "path": "tests/test_line_ending_policy.py",
+      "size": 5373,
+      "sha256": "c41bd426a3573101df09d45cb59e6f14f988da7c5d809dfd345ad485b349cb9a"
+    },
+    {
       "path": "tests/test_public_distribution.py",
-      "size": 6286,
-      "sha256": "8027ec37dfb3c4381c4eb4c30ef3d5e264af886614dd287483cc5ba3350479b2"
+      "size": 6559,
+      "sha256": "f4361101c9359066f3e9963124acfc01a0d14b72e3b7611aaffe40f9a34efb1a"
     },
     {
       "path": "tools/augment-evals/.gitignore",
@@ -3254,6 +3304,11 @@
       "path": "tools/validate_release_manifests.py",
       "size": 4289,
       "sha256": "fac03f5b5329481dc97a5a7fc204b5f7ad5bb9c266006be8ecd46a89feec4394"
+    },
+    {
+      "path": "tools/verify_line_endings.py",
+      "size": 13672,
+      "sha256": "e225276be3d42734cfbed5c25f7c33e840f4fb7531e6126545339bf2daaa3ec1"
     },
     {
       "path": "TRADEMARKS.md",

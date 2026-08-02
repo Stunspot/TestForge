@@ -148,6 +148,11 @@ class PublicDistributionTests(unittest.TestCase):
         ]
         self.assertEqual([], debris)
 
+    def test_public_line_ending_action_uses_canonical_verifier(self):
+        action = (ROOT / "line-ending-policy" / "action.yml").read_text(encoding="utf-8")
+        self.assertIn("tools/verify_line_endings.py", action)
+        self.assertIn("GITHUB_WORKSPACE", action)
+
     def test_declared_customer_documents_exist(self):
         documentation = json.loads(
             (ROOT / "documentation-manifest.json").read_text(encoding="utf-8")
