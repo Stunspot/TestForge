@@ -8,6 +8,16 @@ permissions:
   contents: read
 
 jobs:
+  line-ending-policy:
+    name: line-ending-policy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -B tools/verify_line_endings.py --root .
+
   test:
     strategy:
       fail-fast: false
