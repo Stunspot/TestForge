@@ -3177,8 +3177,8 @@
     },
     {
       "path": "tests/test_bootstrap_repository.py",
-      "size": 2926,
-      "sha256": "908507642dfb9df345c52cfc7adae144b557806ec361b7fc3f9fe475af75f559"
+      "size": 3059,
+      "sha256": "97a022ad54b1ca308b8a779132701bfd5f151b21409539c5476231fcfe9d110e"
     },
     {
       "path": "tests/test_documentation.py",
@@ -3298,7 +3298,7 @@
     {
       "path": "tools/bootstrap_repository.py",
       "size": 4962,
-      "sha256": "680667e466b47c8ca396a58a95cf7384cb9fa5fea347ef2ef61a2e7f2df435a0"
+      "sha256": "5b7b53b83516bb1422b2b828c1d91637a074c0d71401086db3876e60bfb37605"
     },
     {
       "path": "tools/build_openai_submission_archive.py",
