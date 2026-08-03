@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.1",
   "release_date": "2026-07-20",
-  "artifact_count": 698,
+  "artifact_count": 700,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -707,8 +707,8 @@
     },
     {
       "path": "README.md",
-      "size": 8905,
-      "sha256": "6c0bf259a9c61e94a9e9704d448d0ba92133c05a6f3acc073091dc9aac4251c3"
+      "size": 9469,
+      "sha256": "6fa87f3aa0e638c67e45f496804f8367e99e5a4e516810b463036442e87e1dbc"
     },
     {
       "path": "RELEASE-NOTES-v1.1.0.md",
@@ -3176,6 +3176,11 @@
       "sha256": "ce0c4eeed8c0be9e89180d8c761f9f254431ff1a05f78b7351506a69cf22b8a0"
     },
     {
+      "path": "tests/test_bootstrap_repository.py",
+      "size": 2926,
+      "sha256": "908507642dfb9df345c52cfc7adae144b557806ec361b7fc3f9fe475af75f559"
+    },
+    {
       "path": "tests/test_documentation.py",
       "size": 3729,
       "sha256": "1b47b54c993d72d2bc8ebd5921794a3f83ab993fd25ad49d2ab53d97b2947091"
@@ -3289,6 +3294,11 @@
       "path": "tools/augment-evals/tests/test_ollama_context_adapter.py",
       "size": 11261,
       "sha256": "44b5cf0276fe775cee1bb144666c4a3543690c610ff18073a6d958ff05e46920"
+    },
+    {
+      "path": "tools/bootstrap_repository.py",
+      "size": 4962,
+      "sha256": "680667e466b47c8ca396a58a95cf7384cb9fa5fea347ef2ef61a2e7f2df435a0"
     },
     {
       "path": "tools/build_openai_submission_archive.py",
