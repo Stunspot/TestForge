@@ -92,6 +92,16 @@ py tools\augment-evals\augment_eval.py validate testforge
 
 Then choose a supplied adapter or create one using the documented adapter contract. Local Ollama and signed-in Codex CLI examples are included. Raw runs remain local under `evaluation-results/`; reviewed compact baselines can be promoted into Git-tracked records.
 
+## Bootstrap a repository with the line-ending gate
+
+Run the bootstrap before the repository's first real commit:
+
+```text
+python -B tools/bootstrap_repository.py PATH_TO_REPOSITORY --action-revision REVIEWED_TESTFORGE_COMMIT_SHA --apply
+```
+
+The operation writes the canonical `.gitattributes`, `.editorconfig`, and pinned `line-ending-policy` workflow. It is idempotent and refuses to overwrite a differing repository contract. Account-level repository creation and reconciliation automation should call this operation rather than copying the policy templates.
+
 ## Trust and evidence
 
 The release contains synthetic planted-defect examples, deterministic package tooling, canonical eval cases and reviewed local baselines. Read the exact exercised and unexercised boundaries in [`testforge/docs/LIMITATIONS.md`](testforge/docs/LIMITATIONS.md), [`testforge/SECURITY.md`](testforge/SECURITY.md) and the testbed README.
