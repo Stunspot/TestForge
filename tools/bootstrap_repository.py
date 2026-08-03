@@ -77,7 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: Stunspot/TestForge/line-ending-policy@{action_revision.lower()}
+      - uses: Stunspot/testforge/line-ending-policy@{action_revision.lower()}
 """.encode("utf-8")
 
 

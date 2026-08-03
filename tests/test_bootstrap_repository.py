@@ -75,6 +75,10 @@ class BootstrapRepositoryTests(unittest.TestCase):
         self.assertFalse((self.root / ".editorconfig").exists())
 
     def test_action_revision_requires_a_full_commit_sha(self):
+        self.assertIn(
+            b"uses: Stunspot/testforge/line-ending-policy@",
+            render_workflow(REVISION),
+        )
         with self.assertRaisesRegex(ValueError, "40-character"):
             render_workflow("main")
 
