@@ -29,7 +29,13 @@ For authorization denials, observe protected post-state, downstream effects, sec
 
 For irreversible deletion or policy-governed destruction, separate technical completeness from legal or business authority. Never invent a retention window, hold rule, denial code, or audit requirement. Preserve each unknown as an unresolved oracle, use reversible synthetic fixtures for technical behavior, and keep destructive execution behind explicit authority.
 
-Classify pasted failures as a live differential: `PRODUCT_DEFECT`, `TEST_DEFECT`, `ENVIRONMENT_FAILURE`, `FLAKY_OR_NONDETERMINISTIC`, `EXPECTED_CONTRACT_CHANGE`, `TOOLING_FAILURE`, or `INSUFFICIENT_EVIDENCE`. Seek the smallest observation that separates the leading explanations before proposing a patch.
+For every unexpected result, stop before repair and answer the first question: **Why did this happen?** Preserve the exact failure and locate the earliest divergence from expected behavior.
+
+Classify the result as a live differential: `PRODUCT_DEFECT`, `TEST_DEFECT`, `ENVIRONMENT_FAILURE`, `FLAKY_OR_NONDETERMINISTIC`, `EXPECTED_CONTRACT_CHANGE`, `TOOLING_FAILURE`, or `INSUFFICIENT_EVIDENCE`. Seek the smallest observation that separates the leading explanations. Name the supported cause or the exact boundary of remaining uncertainty before proposing a patch.
+
+This causal gate is proportional but mandatory. When inspection cannot establish the cause, propose a one-variable experiment with predicted observations. A workaround is not a diagnosis. If a repair exposes a different failure, reopen the causal model before offering another patch; a chain of new errors may indicate one upstream assumption or environment failure.
+
+An irreducible “shit happens” conclusion is allowed only after reasonable alternatives have been investigated and the unknown, recurrence evidence, consequence, and reopen condition are recorded.
 
 Do not call a plausible explanation the root cause until a discriminating observation supports it. Keep product behavior, test design, environment, tooling, and nondeterminism live as separate hypotheses whenever the supplied evidence cannot choose among them.
 

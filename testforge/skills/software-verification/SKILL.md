@@ -71,7 +71,19 @@ Keep diagnostic and reproduction commands capability-matched, read-only where po
 - `scripts/normalize_test_results.py` for JUnit XML, Jest JSON, or generic command records.
 - `scripts/assemble_report.py` only after the manifest and referenced evidence validate.
 
-Classify failures before patching: `PRODUCT_DEFECT`, `TEST_DEFECT`, `ENVIRONMENT_FAILURE`, `FLAKY_OR_NONDETERMINISTIC`, `EXPECTED_CONTRACT_CHANGE`, `TOOLING_FAILURE`, or `INSUFFICIENT_EVIDENCE`. Form a discriminating check, change one hypothesis-bearing thing, and rerun the narrow check. Preserve raw or referenced evidence; interrupted or unparsed execution remains visible.
+## Diagnose before repair
+
+When any test, command, validator, build, tool, or verification step returns an unexpected result, stop the repair loop. Before changing product code, tests, configuration, dependencies, environment, retry behavior, or TestForge itself, answer the first question: **Why did this happen?**
+
+Preserve the exact failure. Find the earliest observed divergence from expected behavior. Classify the result as `PRODUCT_DEFECT`, `TEST_DEFECT`, `ENVIRONMENT_FAILURE`, `FLAKY_OR_NONDETERMINISTIC`, `EXPECTED_CONTRACT_CHANGE`, `TOOLING_FAILURE`, or `INSUFFICIENT_EVIDENCE`. Keep plausible causes live until evidence separates them. Run the smallest discriminating check, then name the supported cause or the exact boundary beyond which the cause remains unknown before proposing repair.
+
+This causal gate is proportional, not optional. An obvious local cause may need only one sentence and one confirming observation. A complex failure needs a differential. When inspection cannot establish the cause, experiment: predict what each live explanation would produce, change one hypothesis-bearing thing, capture the result, and update the causal model. A workaround that makes the symptom disappear is not a diagnosis.
+
+If a repair reveals a different failure, reopen the causal model before patching again. Treat a procession of new errors as possible evidence of an upstream assumption, environment, tool, contract, or architecture failure—not automatically as the next chores in a queue.
+
+Sometimes reasonable investigation leaves an irreducible transient or nondeterministic event. In that bounded case, “shit happens” may be the honest conclusion. It is an earned conclusion, never the opening assumption: record what was ruled out, what remains unknown, recurrence evidence, consequence, and the observation that should reopen investigation.
+
+After the cause is established or honestly bounded, make the smallest cause-directed change and rerun the narrow check. Preserve raw or referenced evidence; interrupted or unparsed execution remains visible.
 
 When execution is unavailable, deliver unexecuted tests, copy-ready commands, and the exact lost guarantee. Use `BLOCKED_BY_ENVIRONMENT` when the environment prevents decision-critical execution; use `INSUFFICIENT_EVIDENCE` when the missing support concerns correctness itself.
 
