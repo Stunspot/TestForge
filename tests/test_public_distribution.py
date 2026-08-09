@@ -13,8 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "testforge"
 PLUGIN = ROOT / "plugins" / "testforge"
 PLUGIN_SKILLS = PLUGIN / "skills"
-PACKAGE_VERSION = "1.1.1"
-PLUGIN_VERSION = "1.1.2"
+PACKAGE_VERSION = "1.1.4"
+PLUGIN_VERSION = "1.1.4"
 
 
 class PublicDistributionTests(unittest.TestCase):
@@ -22,11 +22,11 @@ class PublicDistributionTests(unittest.TestCase):
         tracked_archive = (
             ROOT
             / "release-assets"
-            / "v1.1.2"
-            / "Plugin-TestForge-v1.1.2-OpenAI-Submission.zip"
+            / "v1.1.4"
+            / "Plugin-TestForge-v1.1.4-OpenAI-Submission.zip"
         )
         tracked_custody = (
-            ROOT / "release-assets" / "v1.1.2" / "openai-submission-custody.json"
+            ROOT / "release-assets" / "v1.1.4" / "openai-submission-custody.json"
         )
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / tracked_archive.name

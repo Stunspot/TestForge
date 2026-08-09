@@ -11,8 +11,8 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 PACKAGE = REPO / "testforge"
-VERSION = "1.1.1"
-RELEASE_DATE = "2026-07-20"
+VERSION = "1.1.4"
+RELEASE_DATE = "2026-08-08"
 SKILLS = ("software-verification", "verification-reviewer")
 FIXED_TIME = (2026, 1, 1, 0, 0, 0)
 EXCLUDED = {"__pycache__", ".pytest_cache", ".git", "release-assets"}
@@ -78,7 +78,7 @@ def write_manifest(root: Path, package_name: str) -> None:
         "release_date": RELEASE_DATE,
         "artifact_count": len(artifacts),
         "artifacts": artifacts,
-        "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; release-assets/v1.1.1/archive-custody.json governs the Augment and standalone skills, while release-assets/v1.1.2/archive-custody.json and openai-submission-custody.json govern plugin publication payloads; UTF-8 text hashes use canonical LF line endings for cross-platform validation",
+        "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.4 governs the dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json governs the separate OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation",
     }
     output.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 

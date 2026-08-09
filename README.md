@@ -43,11 +43,11 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 ## Repository map
 
 - [`docs/`](docs/) - the tailored GitHub Pages site, generated hero artwork, and site-source boundary.
-- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.1.
+- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.4.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
-- [`RELEASE-NOTES-v1.1.1.md`](RELEASE-NOTES-v1.1.1.md) - plugin-publication changes and exact untested boundary.
+- [`RELEASE-NOTES-v1.1.4.md`](RELEASE-NOTES-v1.1.4.md) - plugin-publication changes and exact untested boundary.
 - [`ARCHIVE-CUSTODY.md`](ARCHIVE-CUSTODY.md) - canonical Augment, plugin, standalone-skill, Claude, GitHub, and backup custody.
-- [`PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md`](PLUGIN-DIRECTORY-SUBMISSION-v1.1.2.md) - exact OpenAI draft listing, portal-specific upload custody, reviewer cases, and owner-only submission gate.
+- [`PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md`](PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md) - exact OpenAI draft listing, portal-specific upload custody, reviewer cases, and owner-only submission gate.
 - [`testforge/docs/SALES-DEMO.md`](testforge/docs/SALES-DEMO.md) - a compact proof-of-value scenario.
 - [`tools/augment-evals/`](tools/augment-evals/) - isolated Augment behavioral evaluation harness.
 - [`tools/augment-evals/README.md`](tools/augment-evals/README.md) - testbed setup, run, review, seal, promote and regression workflow.
@@ -59,7 +59,7 @@ codex plugin marketplace add Stunspot/TestForge
 codex plugin add testforge@cd-testforge
 ```
 
-Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v1.1.1 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
+Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v1.1.4 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
 
 ## Quick start: use the standalone Agent SKILLs
 

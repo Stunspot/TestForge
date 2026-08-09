@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.4 — 2026-08-08
+
+- Synchronize the operator with the current TestForge last-tripwire doctrine.
+- Align package, plugin, evaluation, and customer-release versions.
+- Rebuild deterministic Codex and Claude distributions with explicit removal and rollback routes.
+- Keep the independent reviewer lean and self-contained.
+
 ## 1.1.1 — 2026-07-20
 
 - Prepare the skills-only Codex plugin for official directory review with exact privacy and terms links.

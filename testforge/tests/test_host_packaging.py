@@ -7,7 +7,7 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[2]
 PACKAGE = REPO / "testforge"
-CLAUDE = REPO / "claude-ai"
+CLAUDE = REPO / "releases" / "v1.1.4" / "claude"
 SKILLS = ("software-verification", "verification-reviewer")
 
 
@@ -34,15 +34,14 @@ class HostPackagingTests(unittest.TestCase):
 
     def test_claude_archives_are_safe_and_match_source(self):
         for skill in SKILLS:
-            archive_path = CLAUDE / f"{skill}-v1.1.1.zip"
+            archive_path = CLAUDE / f"{skill}-v1.1.4.zip"
             self.assertTrue(archive_path.is_file(), archive_path)
             with tempfile.TemporaryDirectory() as temporary:
                 with zipfile.ZipFile(archive_path) as archive:
                     names = [PurePosixPath(name.replace("\\", "/")) for name in archive.namelist() if name]
-                    self.assertEqual({name.parts[0] for name in names}, {skill})
                     self.assertTrue(all(not name.is_absolute() and ".." not in name.parts for name in names))
                     archive.extractall(temporary)
-                self.assertEqual(snapshot(PACKAGE / "skills" / skill), snapshot(Path(temporary) / skill))
+                self.assertEqual(snapshot(PACKAGE / "skills" / skill), snapshot(Path(temporary)))
 
 
 if __name__ == "__main__":
