@@ -12,7 +12,7 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 PACKAGE = REPO / "testforge"
-VERSION = "1.1.1"
+VERSION = "1.1.4"
 SKILLS = ("software-verification", "verification-reviewer")
 EXCLUDED = {"__pycache__", ".pytest_cache", ".git", "release-assets"}
 
@@ -87,19 +87,17 @@ def snapshot(root: Path) -> dict[str, str]:
 
 def validate_archive(skill: str) -> list[str]:
     errors = []
-    archive_path = REPO / "claude-ai" / f"{skill}-v{VERSION}.zip"
+    archive_path = REPO / "releases" / f"v{VERSION}" / "claude" / f"{skill}-v{VERSION}.zip"
     if not zipfile.is_zipfile(archive_path):
         return [f"invalid Claude archive: {archive_path}"]
     with tempfile.TemporaryDirectory() as temporary:
         destination = Path(temporary)
         with zipfile.ZipFile(archive_path) as archive:
             names = [PurePosixPath(name.replace("\\", "/")) for name in archive.namelist() if name]
-            if {name.parts[0] for name in names} != {skill}:
-                errors.append(f"unexpected top-level folder in {archive_path}")
             if any(name.is_absolute() or ".." in name.parts for name in names):
                 errors.append(f"unsafe member path in {archive_path}")
             archive.extractall(destination)
-        if snapshot(PACKAGE / "skills" / skill) != snapshot(destination / skill):
+        if snapshot(PACKAGE / "skills" / skill) != snapshot(destination):
             errors.append(f"archive content mismatch for {skill}")
     return errors
 
