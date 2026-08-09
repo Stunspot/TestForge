@@ -732,13 +732,13 @@
     },
     {
       "path": "release-docs/INSTALL-CLAUDE.md",
-      "size": 2188,
-      "sha256": "0251c631795e047dcb649d93bbbe3832a5448b2a73722ab115f3b8d155f868de"
+      "size": 2220,
+      "sha256": "72a40633b2865a6e234200efac84fdfe39ffefd74f4d544ebf037cdfdf1317b3"
     },
     {
       "path": "release-docs/INSTALL-CODEX.md",
-      "size": 2661,
-      "sha256": "f17491174d8c2f2f47e7868de83db911a20b0f12577f13eccbfea872cf82e2dc"
+      "size": 2677,
+      "sha256": "c6d9d886ba7217274a5c50adf40dfedd4de64da2c473afa7847e18bf8f1d5d04"
     },
     {
       "path": "release-docs/LIMITATIONS.md",
@@ -747,18 +747,18 @@
     },
     {
       "path": "release-docs/MAINTAINER-GUIDE.md",
-      "size": 1758,
-      "sha256": "ae2a9d3bf035fede4d8281c37629278d6bc84590fae7628438147a6554d88b07"
+      "size": 1838,
+      "sha256": "7048f74914a6d619585fbc99524357adc52de4a91d8af2a22068eb854f5cffe5"
     },
     {
       "path": "release-docs/PACKAGE-REFERENCE.md",
-      "size": 721,
-      "sha256": "2e1e9296f48c7cc8d75825e0648c9cfcd444f9ef07a1c5b80fdbeee67db9a583"
+      "size": 801,
+      "sha256": "a0753d931811c0592706998e2722031c78600c50595edba8145a185820d11a48"
     },
     {
       "path": "release-docs/PROVENANCE.md",
-      "size": 928,
-      "sha256": "7484389adbaf4f79faa6ea24a759533a20550529396a40d89bb4f644c2d8f7af"
+      "size": 976,
+      "sha256": "df99acaba7d516b1abe5715489d39fea0549bcf209ad2fec457120af7c99a417"
     },
     {
       "path": "release-docs/QUICK-START.md",
@@ -772,13 +772,13 @@
     },
     {
       "path": "release-docs/SUPPORT.md",
-      "size": 1843,
-      "sha256": "21817ba964078e3a2dcd1e34bab8b81996c817149ffb01f642b0cc68869c8136"
+      "size": 1891,
+      "sha256": "d31057314b85ea47755e3f8fb90af855f3a8b0888deeadbf3f0c051b898ec0fa"
     },
     {
       "path": "release-docs/VALIDATION.md",
-      "size": 1341,
-      "sha256": "9b964d5eb495c25fa9070f22ce583ddcfebb742f629ab802f4c3dbf003f04fb9"
+      "size": 1357,
+      "sha256": "0097d2dd2e1eb2347739b83a815079f5b9d65ead546b7373a62d086b665137d9"
     },
     {
       "path": "RELEASE-NOTES-v1.1.0.md",
@@ -4032,8 +4032,8 @@
     },
     {
       "path": "tools/build_public_release_v114.py",
-      "size": 6072,
-      "sha256": "7c0c5ae56ed477fd6584f4a1c68da61ebea03ad1972cd5b82d664ad0ab47d805"
+      "size": 6211,
+      "sha256": "1e492d11a02832ebfa57808b1ac9893c69b88c70ab4e39b845761d2aa3ae8d20"
     },
     {
       "path": "tools/rebuild_public_release.py",

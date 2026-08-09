@@ -11,7 +11,7 @@ Python 3.10+ is recommended for the portable verifier but is not required by the
 ## Procedure
 
 1. From the extracted release root, run `python tools/verify_release.py .` and require `"ok": true`.
-2. Confirm the payload contains [plugin.json](../codex/testforge/.codex-plugin/plugin.json) and a `codex/testforge/skills/` directory.
+2. Confirm the payload contains [plugin.json](../releases/v1.1.4/codex/testforge/.codex-plugin/plugin.json) and a `codex/testforge/skills/` directory.
 3. In Codex's supported local-plugin import flow, select the complete `codex/testforge/` directory. If the host instead uses a configured plugin source directory, copy that whole directory there unchanged; do not copy individual skill files out of it.
 4. Let Codex reload plugins, then open a fresh task so discovery is tested without stale task state.
 5. Confirm `TestForge` and its expected handles are listed by the host.

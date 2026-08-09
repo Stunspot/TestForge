@@ -15,11 +15,11 @@ Build each release from the maintained repository on a clean release branch. A p
 
 ## Evidence pointers
 
-- [manifest.json](../manifest.json): exact Codex source-file hashes and Claude archive receipts.
-- [verification-report.json](../verification-report.json): portable post-build verification.
-- [description-custody.json](../description-custody.json): customer-facing product description custody.
-- [package-receipt.json](../package-receipt.json): package identity and static claim boundary.
-- [receipt.json](../receipt.json): release identity and evidence boundary.
+- [manifest.json](../releases/v1.1.4/manifest.json): exact Codex source-file hashes and Claude archive receipts.
+- [verification-report.json](../releases/v1.1.4/verification-report.json): portable post-build verification.
+- [description-custody.json](../releases/v1.1.4/description-custody.json): customer-facing product description custody.
+- [package-receipt.json](../releases/v1.1.4/package-receipt.json): package identity and static claim boundary.
+- [receipt.json](../releases/v1.1.4/receipt.json): release identity and evidence boundary.
 - `TestForge-v1.1.4.zip.sha256`: detached canonical archive digest.
 
 Never infer installation, discovery, invocation, or healthy behavior from a passing static package check.

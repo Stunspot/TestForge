@@ -73,9 +73,11 @@ def main() -> int:
     shutil.copytree(ROOT / "plugins" / "testforge", OUT / "codex" / "testforge")
     shutil.copy2(ROOT / "tools" / "verify_family_release.py", OUT / "tools" / "verify_release.py")
     for name in DOCS:
-        shutil.copy2(ROOT / "release-docs" / name, OUT / "docs" / name)
-
-    manifest = {        "claude_archives": [],
+        text = (ROOT / "release-docs" / name).read_text(encoding="utf-8")
+        text = text.replace("../releases/v1.1.4/", "../")
+        (OUT / "docs" / name).write_text(text, encoding="utf-8", newline="\n")
+    manifest = {
+        "claude_archives": [],
         "excluded_generated_caches": {handle: [] for handle in HANDLES},
         "excluded_local_configuration": {handle: [] for handle in HANDLES},
         "family": {

@@ -10,8 +10,8 @@ Python 3.10+ is recommended for the portable verifier but is not required by the
 
 ## Available archives
 
-- [software-verification ZIP](../claude/software-verification-v1.1.4.zip)
-- [verification-reviewer ZIP](../claude/verification-reviewer-v1.1.4.zip)
+- [software-verification ZIP](../releases/v1.1.4/claude/software-verification-v1.1.4.zip)
+- [verification-reviewer ZIP](../releases/v1.1.4/claude/verification-reviewer-v1.1.4.zip)
 
 ## Procedure
 

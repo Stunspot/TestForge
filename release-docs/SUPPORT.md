@@ -17,9 +17,9 @@ Do not include credentials, private corpus content, customer data, or unrelated 
 - Installation method and exact step that failed
 - Expected result and observed result
 - Output from `python tools/verify_release.py .`
-- [manifest.json](../manifest.json)
-- [verification-report.json](../verification-report.json)
-- [description-custody.json](../description-custody.json)
+- [manifest.json](../releases/v1.1.4/manifest.json)
+- [verification-report.json](../releases/v1.1.4/verification-report.json)
+- [description-custody.json](../releases/v1.1.4/description-custody.json)
 - Whether failure occurs during packaging, installation, discovery, invocation, tool use, or output review
 
 ## Issue body

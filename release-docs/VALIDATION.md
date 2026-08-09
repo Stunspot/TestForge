@@ -10,7 +10,7 @@
    ```
 
 3. Require exit code `0`, `"ok": true`, and an empty findings list.
-4. Compare the result with [verification-report.json](../verification-report.json).
+4. Compare the result with [verification-report.json](../releases/v1.1.4/verification-report.json).
 
 The verifier checks manifest-to-Codex byte parity, Claude ZIP hashes and members, ZIP path safety, plugin metadata, the documentation set, and private-topology leakage.
 
