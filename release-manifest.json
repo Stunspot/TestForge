@@ -2782,8 +2782,8 @@
     },
     {
       "path": "releases/v1.1.5/claude/software-verification-v1.1.5.zip",
-      "size": 72230,
-      "sha256": "49db0b5c5347b2d0b76925255ad01a25f9646991495e95487606a3ce373a3a95"
+      "size": 70724,
+      "sha256": "3ebb72bf3018c2ac40d28f06952e9c637a6cc4a12050d29972e0682bf35b8e5a"
     },
     {
       "path": "releases/v1.1.5/claude/verification-reviewer-v1.1.5.zip",
@@ -3077,8 +3077,8 @@
     },
     {
       "path": "releases/v1.1.5/codex/testforge/skills/software-verification/fallback/master-prompt.md",
-      "size": 7311,
-      "sha256": "966aef30d792733f58db539b9932f08bcf249ed36971e1f53622b9bdc6e2b876"
+      "size": 3392,
+      "sha256": "795b73f2bb758bf3113988b1f5b3639556dfef148f78059656fd5f275f4a7102"
     },
     {
       "path": "releases/v1.1.5/codex/testforge/skills/software-verification/fallback/output-templates.md",
@@ -3398,12 +3398,12 @@
     {
       "path": "releases/v1.1.5/manifest.json",
       "size": 21449,
-      "sha256": "b734941258d7d793f24a5fe561367a783ab962a926a6c18340dcc7dea0b6748a"
+      "sha256": "ff169b173ad33c1ec60a5c3ce38633d7e50e962b4703429d510d3e94670281ea"
     },
     {
       "path": "releases/v1.1.5/package-receipt.json",
       "size": 751,
-      "sha256": "0c6f702c011b2ea86ffaa120740188d710ec43fb3ba0164eec5cc54ec66405cb"
+      "sha256": "8f1c7495f4bae57f5bda6940ff167a59b9ef70470594e91d0dc13585f1f02161"
     },
     {
       "path": "releases/v1.1.5/receipt.json",
@@ -3412,13 +3412,13 @@
     },
     {
       "path": "releases/v1.1.5/TestForge-v1.1.5.zip",
-      "size": 967704,
-      "sha256": "814b83e29a194f04e062dacb0b471c262b9d3f5049abdd8da838f92c95a4b0c7"
+      "size": 964667,
+      "sha256": "f78fd64de375126f6acede00874574867eda2efbb86501e6172c8f92ff08de1d"
     },
     {
       "path": "releases/v1.1.5/TestForge-v1.1.5.zip.sha256",
       "size": 87,
-      "sha256": "22c08545b5e2574ea10806ce7a04440bef438414a063c7e3308010580d92ab94"
+      "sha256": "d2fdc654ae39ce749ef72e7dfbcf04bd44bee27141e73c0377c89415ea2101ab"
     },
     {
       "path": "releases/v1.1.5/tools/verify_release.py",
