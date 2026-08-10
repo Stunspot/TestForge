@@ -21,7 +21,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("package", type=Path)
     parser.add_argument("--package-name", default="testforge")
-    parser.add_argument("--version", default="1.1.4")
+    parser.add_argument("--version", default="1.1.5")
     parser.add_argument("--release-date", default="2026-07-18")
     args = parser.parse_args()
     root = args.package.resolve()

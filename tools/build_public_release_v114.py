@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the deterministic TestForge v1.1.4 dual-host customer release."""
+"""Build the deterministic TestForge v1.1.5 dual-host customer release."""
 
 from __future__ import annotations
 
@@ -12,8 +12,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.1.4"
-DATE = "2026-08-08"
+VERSION = "1.1.5"
+DATE = "2026-08-10"
 OUT = ROOT / "releases" / f"v{VERSION}"
 PREFIX = f"testforge-v{VERSION}"
 HANDLES = ("software-verification", "verification-reviewer")
@@ -23,7 +23,7 @@ DOCS = (
     "MAINTAINER-GUIDE.md", "PACKAGE-REFERENCE.md", "DESCRIPTION-CUSTODY.md",
     "PROVENANCE.md", "HOST-EVIDENCE-BOUNDARY.md",
 )
-ZIP_TIME = (2026, 8, 8, 12, 0, 0)
+ZIP_TIME = (2026, 8, 10, 12, 0, 0)
 
 
 def digest(data: bytes) -> str:
@@ -74,7 +74,7 @@ def main() -> int:
     shutil.copy2(ROOT / "tools" / "verify_family_release.py", OUT / "tools" / "verify_release.py")
     for name in DOCS:
         text = (ROOT / "release-docs" / name).read_text(encoding="utf-8")
-        text = text.replace("../releases/v1.1.4/", "../")
+        text = text.replace("../releases/v1.1.5/", "../")
         (OUT / "docs" / name).write_text(text, encoding="utf-8", newline="\n")
     manifest = {
         "claude_archives": [],

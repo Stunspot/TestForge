@@ -7,7 +7,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_VERSION = "1.1.4"
+CURRENT_VERSION = "1.1.5"
 LINK_PATTERN = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
 

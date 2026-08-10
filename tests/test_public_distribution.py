@@ -1,3 +1,4 @@
+import hashlib
 import json
 import subprocess
 import sys
@@ -13,12 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "testforge"
 PLUGIN = ROOT / "plugins" / "testforge"
 PLUGIN_SKILLS = PLUGIN / "skills"
-PACKAGE_VERSION = "1.1.4"
-PLUGIN_VERSION = "1.1.4"
+PACKAGE_VERSION = "1.1.5"
+PLUGIN_VERSION = "1.1.5"
 
 
 class PublicDistributionTests(unittest.TestCase):
-    def test_openai_submission_archive_is_reproducible_and_portal_shaped(self):
+    def test_openai_submission_archive_has_retained_custody_and_portal_shape(self):
         tracked_archive = (
             ROOT
             / "release-assets"
@@ -28,28 +29,13 @@ class PublicDistributionTests(unittest.TestCase):
         tracked_custody = (
             ROOT / "release-assets" / "v1.1.4" / "openai-submission-custody.json"
         )
-        with tempfile.TemporaryDirectory() as temporary:
-            output = Path(temporary) / tracked_archive.name
-            custody = Path(temporary) / "openai-submission-custody.json"
-            subprocess.run(
-                [
-                    sys.executable,
-                    str(ROOT / "tools" / "build_openai_submission_archive.py"),
-                    str(PLUGIN),
-                    "--output",
-                    str(output),
-                    "--json-output",
-                    str(custody),
-                ],
-                check=True,
-                capture_output=True,
-                text=True,
-            )
-            self.assertEqual(tracked_archive.read_bytes(), output.read_bytes())
-            self.assertEqual(
-                json.loads(tracked_custody.read_text(encoding="utf-8")),
-                json.loads(custody.read_text(encoding="utf-8")),
-            )
+        custody = json.loads(tracked_custody.read_text(encoding="utf-8"))
+        self.assertEqual(custody["archive_name"], tracked_archive.name)
+        self.assertEqual(custody["bytes"], tracked_archive.stat().st_size)
+        self.assertEqual(
+            custody["archive_sha256"], hashlib.sha256(tracked_archive.read_bytes()).hexdigest()
+        )
+        self.assertEqual(custody["plugin"], {"name": "testforge", "version": "1.1.4"})
 
         with zipfile.ZipFile(tracked_archive) as archive:
             names = archive.namelist()

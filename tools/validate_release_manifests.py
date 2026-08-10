@@ -12,7 +12,7 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 PACKAGE = REPO / "testforge"
-VERSION = "1.1.4"
+VERSION = "1.1.5"
 SKILLS = ("software-verification", "verification-reviewer")
 EXCLUDED = {"__pycache__", ".pytest_cache", ".git", "release-assets"}
 
