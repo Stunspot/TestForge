@@ -11,15 +11,15 @@ Do not include credentials, private corpus content, customer data, or unrelated 
 ## Evidence bundle
 
 - Family: `testforge`
-- Version: `1.1.4`
+- Version: `1.1.5`
 - Intended handle
 - Host name and host version
 - Installation method and exact step that failed
 - Expected result and observed result
 - Output from `python tools/verify_release.py .`
-- [manifest.json](../releases/v1.1.4/manifest.json)
-- [verification-report.json](../releases/v1.1.4/verification-report.json)
-- [description-custody.json](../releases/v1.1.4/description-custody.json)
+- [manifest.json](../releases/v1.1.5/manifest.json)
+- [verification-report.json](../releases/v1.1.5/verification-report.json)
+- [description-custody.json](../releases/v1.1.5/description-custody.json)
 - Whether failure occurs during packaging, installation, discovery, invocation, tool use, or output review
 
 ## Issue body

@@ -13,13 +13,13 @@ package-receipt.json
 verification-report.json
 ```
 
-The canonical archive is `TestForge-v1.1.4.zip`. The release tree contains `receipt.json`. The `.sha256` file lives beside the archive because an archive cannot contain its own final digest.
+The canonical archive is `TestForge-v1.1.5.zip`. The release tree contains `receipt.json`. The `.sha256` file lives beside the archive because an archive cannot contain its own final digest.
 
 ## Key records
 
-- [Plugin manifest](../releases/v1.1.4/codex/testforge/.codex-plugin/plugin.json)
-- [Release manifest](../releases/v1.1.4/manifest.json)
-- [Description custody](../releases/v1.1.4/description-custody.json)
-- [Portable verification report](../releases/v1.1.4/verification-report.json)
-- [Package receipt](../releases/v1.1.4/package-receipt.json)
+- [Plugin manifest](../releases/v1.1.5/codex/testforge/.codex-plugin/plugin.json)
+- [Release manifest](../releases/v1.1.5/manifest.json)
+- [Description custody](../releases/v1.1.5/description-custody.json)
+- [Portable verification report](../releases/v1.1.5/verification-report.json)
+- [Package receipt](../releases/v1.1.5/package-receipt.json)
 - [Validation procedure](VALIDATION.md)

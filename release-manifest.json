@@ -1,9 +1,9 @@
 {
   "format_version": "1.0",
   "package": "testforge-public-repository",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "release_date": "2026-08-08",
-  "artifact_count": 847,
+  "artifact_count": 980,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -81,6 +81,11 @@
       "sha256": "126889cb85278d80dd9cc12d3c2dcef072511cb45e6f851de71896fc66ab8cfa"
     },
     {
+      "path": "claude-ai/software-verification-v1.1.5.zip",
+      "size": 74728,
+      "sha256": "af9d809dd45f1a45bc26d816deefb9aee5ca3e07f31331440521cd732aa74f62"
+    },
+    {
       "path": "claude-ai/verification-reviewer-v1.1.0.zip",
       "size": 9619,
       "sha256": "d7f9ec1faa9fbe38a8c595cdbb8a01ad1de084a1e2b403f60a66b7016aaadcd2"
@@ -89,6 +94,11 @@
       "path": "claude-ai/verification-reviewer-v1.1.1.zip",
       "size": 9619,
       "sha256": "d7f9ec1faa9fbe38a8c595cdbb8a01ad1de084a1e2b403f60a66b7016aaadcd2"
+    },
+    {
+      "path": "claude-ai/verification-reviewer-v1.1.5.zip",
+      "size": 9721,
+      "sha256": "c882eacec514e23647e1e298b9919a89e3b85ded06649041cf924c91994308ba"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -123,7 +133,7 @@
     {
       "path": "documentation-manifest.json",
       "size": 1677,
-      "sha256": "0e7f877934da3c45ba534b163978200e899a73003da3114c202a53ecd669b454"
+      "sha256": "7efd1c2dd0c0f38b658c1de4a9d7a25101063fccb9a5887c2d73d289ede45554"
     },
     {
       "path": "documentation-review.json",
@@ -183,7 +193,7 @@
     {
       "path": "plugins/testforge/.codex-plugin/plugin.json",
       "size": 2014,
-      "sha256": "3a346920e880727f9a773d2775ab2fa42e078f56ab161942ff44537df4132c80"
+      "sha256": "db974d166363cbdb1df9cf6ee69bf63fa34b12813754b58f1d7ffa4bf4d67396"
     },
     {
       "path": "plugins/testforge/assets/testforge-answer-sheet-v1.1.1.svg",
@@ -662,8 +672,8 @@
     },
     {
       "path": "plugins/testforge/skills/software-verification/SKILL.md",
-      "size": 11116,
-      "sha256": "bf1c3494f4698976b568601d4b76ea381c21b54b4a163bc06700bc05d870e5ba"
+      "size": 11997,
+      "sha256": "77f54f84ee60259e17f2405bc9981723228a6a4e8d5b16f5063fc444e2c561de"
     },
     {
       "path": "plugins/testforge/skills/verification-reviewer/adversarial-checks.md",
@@ -707,13 +717,13 @@
     },
     {
       "path": "plugins/testforge/skills/verification-reviewer/SKILL.md",
-      "size": 3191,
-      "sha256": "9919a2a33c382424a7a872204aad52dd6c4862650d5dcec97e00143e9d337157"
+      "size": 3424,
+      "sha256": "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b"
     },
     {
       "path": "README.md",
       "size": 9469,
-      "sha256": "320667e69e0814b4b63bc11a2157b104fc822617c8211bce3b7cf58bf0e1bdb2"
+      "sha256": "71738816c9f895ce017d3bed9843b211413ac353136ec85ca35d009e5ee1c5b4"
     },
     {
       "path": "release-docs/CAPABILITIES.md",
@@ -733,12 +743,12 @@
     {
       "path": "release-docs/INSTALL-CLAUDE.md",
       "size": 2220,
-      "sha256": "72a40633b2865a6e234200efac84fdfe39ffefd74f4d544ebf037cdfdf1317b3"
+      "sha256": "8a7f5c8b0f0c78f70ea7657e0d68be88319fb4c0989c028966e859d133fa797e"
     },
     {
       "path": "release-docs/INSTALL-CODEX.md",
       "size": 2677,
-      "sha256": "c6d9d886ba7217274a5c50adf40dfedd4de64da2c473afa7847e18bf8f1d5d04"
+      "sha256": "799323c909ca654c0b60c7e0c25ebedfb266dc968aa56b4b10d460ac2f78e627"
     },
     {
       "path": "release-docs/LIMITATIONS.md",
@@ -748,22 +758,22 @@
     {
       "path": "release-docs/MAINTAINER-GUIDE.md",
       "size": 1838,
-      "sha256": "7048f74914a6d619585fbc99524357adc52de4a91d8af2a22068eb854f5cffe5"
+      "sha256": "91af3566b82226f04f29091b9751b1c6c139bbb0d57bbe7aef6316635bf37c7d"
     },
     {
       "path": "release-docs/PACKAGE-REFERENCE.md",
       "size": 801,
-      "sha256": "a0753d931811c0592706998e2722031c78600c50595edba8145a185820d11a48"
+      "sha256": "48a1a25aec70cafefd1f14bf6cc70188820a0320857d15ab68eec739ae35fd1d"
     },
     {
       "path": "release-docs/PROVENANCE.md",
       "size": 976,
-      "sha256": "df99acaba7d516b1abe5715489d39fea0549bcf209ad2fec457120af7c99a417"
+      "sha256": "a47f4b0da4699482133ac72df87e305684929adf71d5d9dfefaf4fa283d1719b"
     },
     {
       "path": "release-docs/QUICK-START.md",
       "size": 2844,
-      "sha256": "b84893fc9d16bcf67a44268b8a8c043d76c28d9a66b59156e869eb450ed5585d"
+      "sha256": "7b7663631e63f69dbf7b63170a0081200576c9b0d72cbc7257f2cb3a4e1bd46e"
     },
     {
       "path": "release-docs/README.md",
@@ -773,12 +783,12 @@
     {
       "path": "release-docs/SUPPORT.md",
       "size": 1891,
-      "sha256": "d31057314b85ea47755e3f8fb90af855f3a8b0888deeadbf3f0c051b898ec0fa"
+      "sha256": "8b384f697493ef70f3eded812d669b155b21e9234e638ae5155ad312c24057c6"
     },
     {
       "path": "release-docs/VALIDATION.md",
       "size": 1357,
-      "sha256": "0097d2dd2e1eb2347739b83a815079f5b9d65ead546b7373a62d086b665137d9"
+      "sha256": "77178868e7957a9c39ed873577713a24434c03255f642b0e8aef3fa6a4af7633"
     },
     {
       "path": "RELEASE-NOTES-v1.1.0.md",
@@ -794,6 +804,11 @@
       "path": "RELEASE-NOTES-v1.1.4.md",
       "size": 1332,
       "sha256": "6d10c02cea544ee9a4205fca79272a7da0b90459031238c81a0311df6d5bfe49"
+    },
+    {
+      "path": "RELEASE-NOTES-v1.1.5.md",
+      "size": 897,
+      "sha256": "b0585c749c2604c75e2d3f0a4b3cc660bb5350d638973da814637ed6e4f4e84b"
     },
     {
       "path": "RELEASE-NOTES.md",
@@ -2766,6 +2781,656 @@
       "sha256": "7c217386c8184780fefb28c8cdce7186bdd2db87d1a3596cca8e66776fdbff03"
     },
     {
+      "path": "releases/v1.1.5/claude/software-verification-v1.1.5.zip",
+      "size": 72230,
+      "sha256": "49db0b5c5347b2d0b76925255ad01a25f9646991495e95487606a3ce373a3a95"
+    },
+    {
+      "path": "releases/v1.1.5/claude/verification-reviewer-v1.1.5.zip",
+      "size": 9325,
+      "sha256": "1ee3722c5bb4372b24fc6703246eab3e32218c42087ea1b5ce3ceb404b549a11"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/.codex-plugin/plugin.json",
+      "size": 2014,
+      "sha256": "db974d166363cbdb1df9cf6ee69bf63fa34b12813754b58f1d7ffa4bf4d67396"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/assets/testforge-answer-sheet-v1.1.1.svg",
+      "size": 1704,
+      "sha256": "58c5bc9e97ca2f4bac6b8f59ebe474a43763e5d743a1e05b2bf2570f9e560d64"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/assets/testforge-icon-v1.1.1.png",
+      "size": 144730,
+      "sha256": "f00f55d62c3fc332c160f84df8bfa2790ee6edd06f8f1d0ae0256e2421681693"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/assets/testforge-icon.png",
+      "size": 30392,
+      "sha256": "85725355c5c7ac1516a156d3cc37ca74e1dee314418bc300252d8436d0ce2ce6"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/assets/testforge-social-preview.png",
+      "size": 600421,
+      "sha256": "9eb81f699f7b8bfdfa4b6ec41cee2883563d1d8de79bed2298167b90c212ec12"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/LICENSE.md",
+      "size": 2770,
+      "sha256": "ed7874c404bbcf284cb8e3a10ffe2f4c13b0dffec6238215d2171df658fb124e"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/activation-examples.md",
+      "size": 872,
+      "sha256": "e3853e7d12286cff702204f510d1f645e927cb14cccc10831504211b939a298a"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/agents/openai.yaml",
+      "size": 287,
+      "sha256": "2962db6ccdfa093fed9625e8ff74ac15d954e76b605b151a4638c8390e35bda5"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/ci/github-actions-node.yml",
+      "size": 371,
+      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/ci/github-actions-python.yml",
+      "size": 416,
+      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/schemas/finding.schema.json",
+      "size": 940,
+      "sha256": "957010afdf5f07c73600eb6a4945920507d89a65f0316a33d372256d924517d8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/schemas/normalized-results.schema.json",
+      "size": 1212,
+      "sha256": "6c6b814387a9c4d1904ad2ab7b8dac27e8f017c58869b774ae983284f157076a"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/schemas/scenario.schema.json",
+      "size": 1095,
+      "sha256": "8c5c962078b8696adf1b2f3a063dc4badd3f11368998549d30b31f11af3159e6"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/schemas/verification-manifest.schema.json",
+      "size": 6097,
+      "sha256": "f6a7afd4e0a47c0566972a695301e929d2b970dbdb39b25d1a2c854b697434e9"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/execution-record.json",
+      "size": 261,
+      "sha256": "5891ec0997c384712a7af882b2ae408dd72e5641938d87b754e500e0f40b294f"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/exploratory-charter.md",
+      "size": 400,
+      "sha256": "9595b177d6737907c2a368c028e639754b96ea36cee55f8d05b6b22764ae332d"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/failure-triage.md",
+      "size": 462,
+      "sha256": "de959f3fc53d24e24c427e2d0fc28093724c227fcb840b5e715a3a099c71a34a"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/residual-risk-ledger.md",
+      "size": 357,
+      "sha256": "4b785b71a5575623e9a7ec615aae63452d1f00e64933daca210e30e41075671c"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/risk-register.md",
+      "size": 428,
+      "sha256": "1ee52cdc230e2566c80980e495cdfe10572e3027dd06d36499b55d3c295a60ae"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/traceability-matrix.md",
+      "size": 314,
+      "sha256": "f410da235e3132da596db2f49cbb4b722a2a8043e305bb77617780403c4f02f2"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/verification-brief.md",
+      "size": 529,
+      "sha256": "e1dc1aace15d01d3d4899d0900e013593989844e324ea999ee13a94dcf5d2eb9"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/verification-manifest.json",
+      "size": 656,
+      "sha256": "7cbc354a1d595fc83bc7f3c340f11d95d1ef5519d80a18d8b25778eee80027d4"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/assets/templates/verification-report.md",
+      "size": 577,
+      "sha256": "62ec2673fd6dc59798f11a6eb29a563425902384e0c16442b555f2ea294a4732"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/demonstration.md",
+      "size": 1154,
+      "sha256": "79b9c312ac0beb5ad1db13e592471bb17b50478e84ef01fe57332474005d20b7"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/expected/execution-record.json",
+      "size": 2377,
+      "sha256": "b75c17350eb9ddbe19a6b4453a8fda84ea0334e881be410cc5731b34f17593d9"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/expected/normalized-results.json",
+      "size": 488,
+      "sha256": "c705e3c3601662efe5f902a342a00ca3022f3de811e188405b94b18e3fb37539"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/expected/test_parser.py",
+      "size": 711,
+      "sha256": "9208da5701987e239da66fa915d1251752e14e1dc8b91efd01f996a36684b732"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/expected/verification-manifest.json",
+      "size": 3507,
+      "sha256": "25464cfd9e022c6552fe4472c0e30b15dd00206ac6879763f565ed040cfc588c"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/expected/verification-report.md",
+      "size": 1342,
+      "sha256": "9704e1cad7d7209de4be5cc4608ec6f3fed888835cd13553f0cdc94dc8d170e7"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/input/__init__.py",
+      "size": 32,
+      "sha256": "26990ab1c2ae4084bd2a053ad1034d6b841a6bba672310ea18f8cb1465ff6768"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/input/parser.py",
+      "size": 424,
+      "sha256": "6c093ed263999b34087b13f8808835ebdcc7d4fc338ac1b84507537ce1d524a4"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/parser-edge-cases/walkthrough.md",
+      "size": 622,
+      "sha256": "c56f5ad0f2119c71430bb3867cdab698be2faca5296ba2b3a8b03bba6ccf3cbf"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/demonstration.md",
+      "size": 1121,
+      "sha256": "ee7f8468d3b58267d9ea7ae7c586c6146d1170e845951f131b05d9140bd86560"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/execution-record.json",
+      "size": 1590,
+      "sha256": "4f4dc1c8b1a0d2bfc123e1f19d8b97cb76616072a541019c71b9db324baa02e1"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/fix.patch",
+      "size": 182,
+      "sha256": "ac25b78e442fca77af45c010db3d78c40fdd7d7a95c7dd91d8c28e731ea97ec1"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/fixed/__init__.py",
+      "size": 55,
+      "sha256": "215a6c48237941a704a18aa26275c0f3f8a08daf101a29dfa3d4aeb74a3a9c46"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/fixed/reporting.py",
+      "size": 245,
+      "sha256": "763ecada5563d3071e504d0bde3d5ce23119533f175c2306133455a0a6bbd32d"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/normalized-results.json",
+      "size": 493,
+      "sha256": "2a369ee9cbdf08392c2c184cf461ab38c31c42544dcc8c9084669b98fddb908f"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/post-fix-execution-record.json",
+      "size": 666,
+      "sha256": "b4c27688c7ee6a7f440f80259c7487da5ae713632a569d211d0c3134aabbcee7"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/test_date_filter.py",
+      "size": 724,
+      "sha256": "9f06d2369bc6c1555f21be0851933b9844fe8e4dc1c1aac91be7c1d50d5e6735"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/test_fixed_date_filter.py",
+      "size": 699,
+      "sha256": "930818616350f022d7e30ba7cf695efc9bf0ea6c7b22e1642542e4416c923312"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/verification-manifest.json",
+      "size": 3058,
+      "sha256": "2d05ecb10a9aebbe7f7ea72fab2329003332b2f4a8a9aa3f7a5723167c5ab775"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/expected/verification-report.md",
+      "size": 1242,
+      "sha256": "f102762d6e96b84237c4e69aff7b886adba9c95c48929a09d925ef4caf94e1a3"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/input/__init__.py",
+      "size": 35,
+      "sha256": "a1c8127a300481f6b0e58d0c1bb065e8a12890371ca31f4f0036d6a600f7d4d5"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/input/reporting.py",
+      "size": 297,
+      "sha256": "2f2c1428f625ba446a8c2186fd31bd86384da18422068b95a04193e528e3c0e0"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/input/test_existing.py",
+      "size": 380,
+      "sha256": "ce1a4750a22339c37746e22c6d90c97170ca3e8af59bea3d787cf6ad2d493f4d"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/python-regression/walkthrough.md",
+      "size": 980,
+      "sha256": "099338f50dc2c9040b9088cdbfa6655cb76ea489d14752d487ce9354478ca752"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/demonstration.md",
+      "size": 1526,
+      "sha256": "8918aaf3cb32c9becec71de3921c3ddbe1374974cfa12093990249df9e3b00ee"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/expected/cancelSubscription.integration.test.ts",
+      "size": 1669,
+      "sha256": "da54677fc911097532f6c2aa884628fb8b5a020310a7489c574b30a0531305b0"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/expected/verification-manifest.json",
+      "size": 4397,
+      "sha256": "3e2576623477eae00a23c9e32ea1eba65dc69d50123530155e12c5788ad5634d"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/expected/verification-report.md",
+      "size": 1522,
+      "sha256": "9e989c27cd189bf229623c6394fd209c27f6165d8db086759d9fd20078754116"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/input/package.json",
+      "size": 190,
+      "sha256": "ad82654146816ffc43a5e54605e0a9c9d5617e906641015fb1eb5ea35292d20c"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/input/requirement.md",
+      "size": 318,
+      "sha256": "c5baeed90136df1aff2c7f37a425d74a0fca00fdd296c58ea4e3a201178efdfa"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/input/src/subscriptionService.ts",
+      "size": 1215,
+      "sha256": "19adc36944add9a785eac1936f7d320338f296e1d2aaadb215a9d0d65ba1ea0f"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/input/tests/cancelSubscription.test.ts",
+      "size": 674,
+      "sha256": "50a846aa9cb9ba93f4b3fabec21b84414c53eb609c4258ff5fa91515baa29e5e"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/examples/typescript-api-change/walkthrough.md",
+      "size": 936,
+      "sha256": "8568661d5dc92f78d23f4571b0e15c885993cfda56c6ce0d9660a1fefc2b685b"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/fallback/intake-card.md",
+      "size": 543,
+      "sha256": "7f496d9a10aaeee805a60e1777a4337ad6f293532ede1c16d051128bc1695d70"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/fallback/master-prompt.md",
+      "size": 7311,
+      "sha256": "966aef30d792733f58db539b9932f08bcf249ed36971e1f53622b9bdc6e2b876"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/fallback/output-templates.md",
+      "size": 785,
+      "sha256": "dba5c2a713a2cdcb0a328db9a7a41b41de3dc7ad90cbcba020bb187078978639"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/fallback/review-prompt.md",
+      "size": 1438,
+      "sha256": "77015ca574ebfbe190eb503b39fe914133ff3ee88c09336263f1cb500d86b670"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/output-contract.md",
+      "size": 1255,
+      "sha256": "786ec4297051b86734c4814d4e088a7968d26383e22b1e27bca3381b58d66f0a"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/core/boundary-and-equivalence.md",
+      "size": 955,
+      "sha256": "455b2f606ad76b0a8d7e063507d348e9574b5201338c8c3c08cddfce09181cfd"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/core/oracle-design.md",
+      "size": 1033,
+      "sha256": "b3015eadd9c55bdb2d1fbb05fcca0ecfed8795dea7af047be8f5ddec760c8033"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/core/release-assessment.md",
+      "size": 1442,
+      "sha256": "c40c82b16c5316bd0643a90a33286584b92535500b40b7de705e38bc26566153"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/core/risk-based-testing.md",
+      "size": 1728,
+      "sha256": "6e74815e26680111d8a7194ad8d64593454a94d8b8a8b1ecd4d0f9de218a30c4"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/core/state-transition-testing.md",
+      "size": 797,
+      "sha256": "227037dbf8cf9fb2d95e8ee4f9b262682d38378643787fd2dab1bd0e3b08d945"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/core/test-layer-selection.md",
+      "size": 1615,
+      "sha256": "ef5691c3849e664601f824be321da1a6f22d7d292bfcef4b58ae9346ff812b70"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/core/test-smells.md",
+      "size": 1222,
+      "sha256": "493568a4cb3feae487a9b9456d47c6500e4781b130ae42c6b65e7754a0b7585d"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/reliability/concurrency-and-races.md",
+      "size": 650,
+      "sha256": "6b0628bcd4bf00fbdb764d89b087a4c0d7661d5df386e9639d2da20df711a0f8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/reliability/dependency-failure-modes.md",
+      "size": 748,
+      "sha256": "b57632c4188e7ea9f84eda2078efc33368abe1e61eabc56d47fbb8c9d13297aa"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/reliability/observability-verification.md",
+      "size": 625,
+      "sha256": "b1fe93d1c67c579b457f973a26c84911cc99c5caddebdd1f7c0e06a41ffe6dd8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/reliability/retries-idempotency-timeouts.md",
+      "size": 778,
+      "sha256": "dfd2c4164f7cbd74f84776f695da43479c8934ae22702057df70c6899e468cdb"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/security/authorization-testing.md",
+      "size": 669,
+      "sha256": "f65d58465c53fc64e59650bd744ee87dec435efec1c0cdcdaf0c01c298ea3376"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/security/input-and-parser-security.md",
+      "size": 523,
+      "sha256": "82ada5f47330260a8a0820013d5f75aa5eb8e1de401e8e2408d7c8365a601681"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/security/safe-testing-boundaries.md",
+      "size": 768,
+      "sha256": "eaba06a902822c672af3a55915ef5d9650aa9dd4f1f43cf93be79a4d926e27ac"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/security/secrets-and-config-review.md",
+      "size": 529,
+      "sha256": "36add90a748d545ae1276ad8007dd4f3cc3f4189cc9550dc6abea3d79c5c5c96"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/specialized/contract-testing.md",
+      "size": 512,
+      "sha256": "bbb3cb8ccdd135a14136af3d9649634560dce62c1501961fa335222274a8de5f"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/specialized/migration-testing.md",
+      "size": 508,
+      "sha256": "681875be0a4910ee1cfd8747f7dd391f48c55c29026c6b1fb59aa9eaf3001e2c"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/specialized/parser-and-compiler-testing.md",
+      "size": 660,
+      "sha256": "60161d47ffa95241b43d035b6c588548a73fe1773cb74f1c2996b5041b91431f"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/specialized/property-based-testing.md",
+      "size": 596,
+      "sha256": "648b1e5440c6a639cdf2ccaa60a872d84c666332353e2b1fb7c851a684060004"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/stacks/generic-adapter.md",
+      "size": 689,
+      "sha256": "5aca6159f4e73277d2895dea3ec6b9843f1f9f74e6ae79585331464f2be1b8a8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/stacks/python-pytest.md",
+      "size": 684,
+      "sha256": "4e0fd68fe34648dd3224cfc42f3cd8bbfa66b7de46c025614d6c2f9956afc7e9"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/references/stacks/typescript-vitest-jest.md",
+      "size": 881,
+      "sha256": "eccd25b5d3f96c67b0d5668e2912272c811496108ea9324f3c8620e6da2d9461"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/assemble_report.py",
+      "size": 2926,
+      "sha256": "e9499fbd7a36055c203aa6575bcef0651dd0ad9329153374cf6b294e2f124d77"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/capture_command.py",
+      "size": 2454,
+      "sha256": "2c65a44c7d9fb298e8126fffcd78ccff8c8b138e78a6f00bb44cfce715c8b9e2"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/common/__init__.py",
+      "size": 74,
+      "sha256": "e29efe317da7e746892083a5918fa21076e7f1a1cbacfcc752552663cda5ffc8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/common/command_result.py",
+      "size": 546,
+      "sha256": "c6ee9db9175ab18087bdbbc34b54e291d15fce245c462e30d8fcecd44b9c76a2"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/common/filesystem.py",
+      "size": 2095,
+      "sha256": "822c21c4f60f50d4e709249fbd74b67a61d2aab51a16785787147bbd3bbc47eb"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/detect_test_stack.py",
+      "size": 4073,
+      "sha256": "206c85e2f81edc37dffbb219a9eabfb320199f3b19f9ed44989cd211fb019717"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/inspect_repo.py",
+      "size": 3967,
+      "sha256": "7eb04aa787b41dd5095399441dab95edc5232d4b9bfb6f989633a56024d17410"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/normalize_test_results.py",
+      "size": 5087,
+      "sha256": "0affac55fd7235e750373dfec53a0da585d5b77127d7251feab2a98c3797bbaf"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/scan_test_smells.py",
+      "size": 2999,
+      "sha256": "5f63e0ba814b7a2da8bd11abae6dbd394903579ca6560ba77d4a451a335d23eb"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/summarize_diff.py",
+      "size": 3144,
+      "sha256": "99826e53b2ddbdafc568475c527c7c19ae9511539ca09742e46859a45f099dc0"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/validate_eval_suite.py",
+      "size": 1373,
+      "sha256": "99883297ea16a400c681f8fcfa297c6d1bf1cc8ad38b8031f44b73d20969b304"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/validate_manifest.py",
+      "size": 8700,
+      "sha256": "b9060b689167727547c6b7230d7081bc1454dfc7fca284e286b67597005b8a14"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/scripts/validate_traceability.py",
+      "size": 3170,
+      "sha256": "0004ea50991870a5265100cad94a896e9d1a11ab61daa7e740551b2a6e15e1f8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/software-verification/SKILL.md",
+      "size": 11997,
+      "sha256": "77f54f84ee60259e17f2405bc9981723228a6a4e8d5b16f5063fc444e2c561de"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/adversarial-checks.md",
+      "size": 994,
+      "sha256": "92f3bb679ec9e08617d0c950617d171ae689d6c35c59d921fc781325c0ca039a"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/agents/openai.yaml",
+      "size": 272,
+      "sha256": "e5f43c244cd420d0817e6612de22513e79ee39d629a6e9c3b94aefc54e8765b0"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/review-rubric.md",
+      "size": 1748,
+      "sha256": "519299144228feb8f8dc4293a8532af43a50f83e59df1fb04dfe0c35f9a3043a"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/scripts/common/__init__.py",
+      "size": 74,
+      "sha256": "e29efe317da7e746892083a5918fa21076e7f1a1cbacfcc752552663cda5ffc8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/scripts/common/command_result.py",
+      "size": 546,
+      "sha256": "c6ee9db9175ab18087bdbbc34b54e291d15fce245c462e30d8fcecd44b9c76a2"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/scripts/common/filesystem.py",
+      "size": 2095,
+      "sha256": "822c21c4f60f50d4e709249fbd74b67a61d2aab51a16785787147bbd3bbc47eb"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/scripts/validate_manifest.py",
+      "size": 8700,
+      "sha256": "b9060b689167727547c6b7230d7081bc1454dfc7fca284e286b67597005b8a14"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/scripts/validate_traceability.py",
+      "size": 3170,
+      "sha256": "0004ea50991870a5265100cad94a896e9d1a11ab61daa7e740551b2a6e15e1f8"
+    },
+    {
+      "path": "releases/v1.1.5/codex/testforge/skills/verification-reviewer/SKILL.md",
+      "size": 3424,
+      "sha256": "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b"
+    },
+    {
+      "path": "releases/v1.1.5/description-custody.json",
+      "size": 299,
+      "sha256": "60a58e27f8f754626b6cf94a07dae5a77fe0206674bf42ba5181690d36e7ee6b"
+    },
+    {
+      "path": "releases/v1.1.5/docs/CAPABILITIES.md",
+      "size": 966,
+      "sha256": "60bbe597a517b99197c38b135b7568f5d24fc3dd8e3a62bf4919f1307075c715"
+    },
+    {
+      "path": "releases/v1.1.5/docs/DESCRIPTION-CUSTODY.md",
+      "size": 697,
+      "sha256": "e02215f9cb9a35a87ca907926e06237648e28ec7374472324a3cdd7cebb4d922"
+    },
+    {
+      "path": "releases/v1.1.5/docs/HOST-EVIDENCE-BOUNDARY.md",
+      "size": 864,
+      "sha256": "cc578954c05ba77698c268f0f46ae1f1a6458cb3861b7f6f5483a7d7fba054bc"
+    },
+    {
+      "path": "releases/v1.1.5/docs/INSTALL-CLAUDE.md",
+      "size": 2188,
+      "sha256": "fe5a6493681916cc523c8fec4bef3f25afb7ebe0f3666f456c58e5ff19ec0e1f"
+    },
+    {
+      "path": "releases/v1.1.5/docs/INSTALL-CODEX.md",
+      "size": 2661,
+      "sha256": "a63405f1a40c16b536e3e1f0838b4d64b6075bcf8883aa5768ca4e3f84681722"
+    },
+    {
+      "path": "releases/v1.1.5/docs/LIMITATIONS.md",
+      "size": 788,
+      "sha256": "128e5faeeec8027250f70d2301270de1c07597d29349d6e270055bdd482510b5"
+    },
+    {
+      "path": "releases/v1.1.5/docs/MAINTAINER-GUIDE.md",
+      "size": 1758,
+      "sha256": "36846ee437a3683ed7f3a1eb3f0988038981bfd8e9263fe5a19b9bdcce2623d4"
+    },
+    {
+      "path": "releases/v1.1.5/docs/PACKAGE-REFERENCE.md",
+      "size": 721,
+      "sha256": "7dfe32a2d59b04445c227b5843a3633bbe7456c04c73417a278297232085bd66"
+    },
+    {
+      "path": "releases/v1.1.5/docs/PROVENANCE.md",
+      "size": 928,
+      "sha256": "7484389adbaf4f79faa6ea24a759533a20550529396a40d89bb4f644c2d8f7af"
+    },
+    {
+      "path": "releases/v1.1.5/docs/QUICK-START.md",
+      "size": 2844,
+      "sha256": "7b7663631e63f69dbf7b63170a0081200576c9b0d72cbc7257f2cb3a4e1bd46e"
+    },
+    {
+      "path": "releases/v1.1.5/docs/README.md",
+      "size": 1145,
+      "sha256": "5e84ccd0c591efcbf95a2b40b96192514438d12b2bb25a33f5a2c65e1e06706d"
+    },
+    {
+      "path": "releases/v1.1.5/docs/SUPPORT.md",
+      "size": 1843,
+      "sha256": "1d4ddd0a3325f1945de7f3513f85ccbdeca5536ec83b9957f8b8ddd69a9540c5"
+    },
+    {
+      "path": "releases/v1.1.5/docs/VALIDATION.md",
+      "size": 1341,
+      "sha256": "c6cbebc2f0d9221894ef21c82a121046dfcda2731add624e599ebefeff6f78e2"
+    },
+    {
+      "path": "releases/v1.1.5/LICENSE.md",
+      "size": 2770,
+      "sha256": "ed7874c404bbcf284cb8e3a10ffe2f4c13b0dffec6238215d2171df658fb124e"
+    },
+    {
+      "path": "releases/v1.1.5/manifest.json",
+      "size": 21449,
+      "sha256": "b734941258d7d793f24a5fe561367a783ab962a926a6c18340dcc7dea0b6748a"
+    },
+    {
+      "path": "releases/v1.1.5/package-receipt.json",
+      "size": 751,
+      "sha256": "0c6f702c011b2ea86ffaa120740188d710ec43fb3ba0164eec5cc54ec66405cb"
+    },
+    {
+      "path": "releases/v1.1.5/receipt.json",
+      "size": 283,
+      "sha256": "badf95428ea057eef40612844f58d40f87c5a26491f4c9648c68c2ca6df2e6d9"
+    },
+    {
+      "path": "releases/v1.1.5/TestForge-v1.1.5.zip",
+      "size": 967704,
+      "sha256": "814b83e29a194f04e062dacb0b471c262b9d3f5049abdd8da838f92c95a4b0c7"
+    },
+    {
+      "path": "releases/v1.1.5/TestForge-v1.1.5.zip.sha256",
+      "size": 87,
+      "sha256": "22c08545b5e2574ea10806ce7a04440bef438414a063c7e3308010580d92ab94"
+    },
+    {
+      "path": "releases/v1.1.5/tools/verify_release.py",
+      "size": 11270,
+      "sha256": "7820ca460a19ff344ef3f7088f3edca558f0e9dd4bb9d8e2be3405709e6ad8b8"
+    },
+    {
+      "path": "releases/v1.1.5/verification-report.json",
+      "size": 276,
+      "sha256": "7c217386c8184780fefb28c8cdce7186bdd2db87d1a3596cca8e66776fdbff03"
+    },
+    {
       "path": "SECURITY.md",
       "size": 939,
       "sha256": "e985dce607e80fa60c9290cdea64e5f90b2ef0f2d999210f86de5e5d4c857ed9"
@@ -2873,7 +3538,7 @@
     {
       "path": "testforge/CHANGELOG.md",
       "size": 4200,
-      "sha256": "d20ca5924eae14adcafebdeecbbb87460c8437a92390982174b319e29271d62c"
+      "sha256": "f01d10f45b33c382931c998c8cdbfca83cd7d15a81ba73ff2234df622a4aa7a2"
     },
     {
       "path": "testforge/docs/CAPABILITY-MATRIX.md",
@@ -2883,17 +3548,17 @@
     {
       "path": "testforge/docs/DATA-AND-PRIVACY.md",
       "size": 1953,
-      "sha256": "09298d05bf40c0d388be8dbb616bd2a8029972b1d4d434e152e31cd8772198a0"
+      "sha256": "5587cc1505e129d9fcaa0f7cdb67f4d909de0f4ac55d98811bd2f136fd1d71d8"
     },
     {
       "path": "testforge/docs/HOST-COMPATIBILITY.md",
       "size": 1596,
-      "sha256": "314c5ca390b07f06b18dc2007927d19585ffffdb63eec0a0984999ed9ced1819"
+      "sha256": "0cda530cc8c44cda1b025a3c31f5f1a5c54b827a6095f4c22c107ae6c5e1dc96"
     },
     {
       "path": "testforge/docs/INSTALL-CLAUDE.md",
       "size": 1274,
-      "sha256": "fc6a1fd013f03fc838240776b76428aefbb8d15dec792e3b8c0863edcf644463"
+      "sha256": "d631221e175425e4f112a42455979e08d0366e1c71efb5c1c1d93f1c3770122a"
     },
     {
       "path": "testforge/docs/INSTALL-CODEX.md",
@@ -2908,7 +3573,7 @@
     {
       "path": "testforge/docs/QUICK-START.md",
       "size": 2650,
-      "sha256": "841d43a96dc783a6126d660df8c492ab21483ed7582b39fae82571d2b8193a99"
+      "sha256": "ea31faa7d2ef61dc62efdd1f5dccd885925f449ee2657af303e10649d145a1a2"
     },
     {
       "path": "testforge/docs/SALES-DEMO.md",
@@ -2948,7 +3613,7 @@
     {
       "path": "testforge/evals/eval-manifest.yaml",
       "size": 736,
-      "sha256": "8bb590c8952d838cd4b2530fca9b52db3626178d5ae33193705680489a8b95ee"
+      "sha256": "f204f44d67b6c8d8c3ed67cf71d05f70a37a7f57072afa886c6090bd78a62b61"
     },
     {
       "path": "testforge/evals/failure-triage-cases.yaml",
@@ -2968,7 +3633,7 @@
     {
       "path": "testforge/evals/README.md",
       "size": 1625,
-      "sha256": "00fdf66cb3ce4f321f8132a6b6831e1f9a14ef5a107ea0a49fec937cd2edf116"
+      "sha256": "a99e6c7b301154e822c3c7d1c41450697c906d6e119aa5a4383dca02a78e6810"
     },
     {
       "path": "testforge/evals/risk-coverage-cases.yaml",
@@ -3152,8 +3817,8 @@
     },
     {
       "path": "testforge/fallback/master-prompt.md",
-      "size": 6681,
-      "sha256": "e30074ef31e69328f211c909174c34cc5c359a99581588b6d92ee31c8792309b"
+      "size": 7311,
+      "sha256": "966aef30d792733f58db539b9932f08bcf249ed36971e1f53622b9bdc6e2b876"
     },
     {
       "path": "testforge/fallback/output-templates.md",
@@ -3173,12 +3838,12 @@
     {
       "path": "testforge/package-manifest.yaml",
       "size": 1191,
-      "sha256": "d11df30134c25810ec3f021e72b602dc15edf277f7f4c9f722508fe182d774eb"
+      "sha256": "91db75ad2c9e1d319a257c0afb408d8e1a00f02ecfa1c5d487d4f275c6d13eac"
     },
     {
       "path": "testforge/PROVENANCE.md",
       "size": 1422,
-      "sha256": "419944f8bd1a3dcbe144dcf80dff81dd851d78a9f46e6df9193233b50230efbd"
+      "sha256": "0fb95029625f4f302f106d36de999db7bc3c55618e7cf8fa86b0d9a3d7114e55"
     },
     {
       "path": "testforge/README.md",
@@ -3303,7 +3968,7 @@
     {
       "path": "testforge/release-manifest.json",
       "size": 42083,
-      "sha256": "dd3098e8ed8ee4c4f332d4abae63885d14c79d010de03d2731cb0efb50134aff"
+      "sha256": "7d77d06316d7d0d5480fd8623ee1bb66de4c667447c45ed5c7116aecd7ea5c8a"
     },
     {
       "path": "testforge/scripts/assemble_report.py",
@@ -3313,7 +3978,7 @@
     {
       "path": "testforge/scripts/build_release_manifest.py",
       "size": 1733,
-      "sha256": "64506a526c1e12636538f1658e407a97a17430f9642c8ced5057fc28f1d843bd"
+      "sha256": "65ac07c48cb9e624c5221a1dc9135d484fff1cab21b0b9c5ef593698d9be8ba0"
     },
     {
       "path": "testforge/scripts/capture_command.py",
@@ -3837,8 +4502,8 @@
     },
     {
       "path": "testforge/skills/software-verification/SKILL.md",
-      "size": 11116,
-      "sha256": "bf1c3494f4698976b568601d4b76ea381c21b54b4a163bc06700bc05d870e5ba"
+      "size": 11997,
+      "sha256": "77f54f84ee60259e17f2405bc9981723228a6a4e8d5b16f5063fc444e2c561de"
     },
     {
       "path": "testforge/skills/verification-reviewer/adversarial-checks.md",
@@ -3882,8 +4547,8 @@
     },
     {
       "path": "testforge/skills/verification-reviewer/SKILL.md",
-      "size": 3191,
-      "sha256": "9919a2a33c382424a7a872204aad52dd6c4862650d5dcec97e00143e9d337157"
+      "size": 3424,
+      "sha256": "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b"
     },
     {
       "path": "testforge/tests/__init__.py",
@@ -3893,7 +4558,7 @@
     {
       "path": "testforge/tests/test_host_packaging.py",
       "size": 1758,
-      "sha256": "9f39b99aac996007cda3db0a8c123a0653064526090cce7909162053c64279c7"
+      "sha256": "32443098353a3fbb9b6e6091b4645cecd6aaa282c8258f46fce282cd1c30f894"
     },
     {
       "path": "testforge/tests/test_tools.py",
@@ -3908,7 +4573,7 @@
     {
       "path": "tests/test_documentation.py",
       "size": 3729,
-      "sha256": "d02543e876ff9f64f65acbf63f7e68eb0851768cc5357e07072ff581b6066383"
+      "sha256": "7c8f0115ed3ba027e4782b76d46f0eeac08fd80d4cb2345be98e1ef1fffc7f7a"
     },
     {
       "path": "tests/test_line_ending_policy.py",
@@ -3917,8 +4582,8 @@
     },
     {
       "path": "tests/test_public_distribution.py",
-      "size": 6559,
-      "sha256": "b5cf3f45c3035afe423d45d2adda303ef08dcdb2331d928b6ade2245b5d1e99d"
+      "size": 6110,
+      "sha256": "a561431baee72450d9c16d76c99dadc427556614ffb555c0886e3d20d7d537ab"
     },
     {
       "path": "tools/augment-evals/.gitignore",
@@ -4032,18 +4697,18 @@
     },
     {
       "path": "tools/build_public_release_v114.py",
-      "size": 6211,
-      "sha256": "1e492d11a02832ebfa57808b1ac9893c69b88c70ab4e39b845761d2aa3ae8d20"
+      "size": 6212,
+      "sha256": "3cb614a0a38f38b034eaf6c7cd99a4449d066be07e8b93a99d41dc77b3035c9f"
     },
     {
       "path": "tools/rebuild_public_release.py",
       "size": 3955,
-      "sha256": "190080c82b5f4020bbe033220423e66faf5291e6cbaf1d620e57290eb4f13695"
+      "sha256": "ed53d19fd83b013cc6934ae978c8bbbeefa25a1ab66c0da81801ff3f0db792b5"
     },
     {
       "path": "tools/validate_release_manifests.py",
       "size": 4166,
-      "sha256": "018693e183b6977dbc656d273e5e59368825fcaa1fa3aaefda5685e0ea2361db"
+      "sha256": "1198cdfd421473ab24102d2c31a864431e5a29dd2cff43a5bda69fb1f57edd9e"
     },
     {
       "path": "tools/verify_family_release.py",
@@ -4241,5 +4906,5 @@
       "sha256": "3077f2273126e425873c1ac76206602a07007deb8843171127e9d80f71c1e73c"
     }
   ],
-  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.4 governs the dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json governs the separate OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.5 governs the dual-host customer kit, while release-assets/v1.1.5/openai-submission-custody.json governs the separate OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

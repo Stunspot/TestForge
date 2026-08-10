@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.4 — 2026-08-08
+## 1.1.5 — 2026-08-08
 
 - Synchronize the operator with the current TestForge last-tripwire doctrine.
 - Align package, plugin, evaluation, and customer-release versions.
