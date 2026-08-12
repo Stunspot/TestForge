@@ -3,7 +3,7 @@
     {
       "file": "claude/software-verification-v1.1.6.zip",
       "handle": "software-verification",
-      "sha256": "2d199e6277b5b2f91ff3b493a40e94bc9679de8a61589427d201ecdf1a311415"
+      "sha256": "738bc8d1969dbad3067f6bcf4ba65646a382cee43ecaadbbd9658458bea11995"
     },
     {
       "file": "claude/verification-reviewer-v1.1.6.zip",
@@ -63,12 +63,12 @@
         {
           "bytes": 371,
           "path": "assets/ci/github-actions-node.yml",
-          "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+          "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
         },
         {
           "bytes": 416,
           "path": "assets/ci/github-actions-python.yml",
-          "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+          "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
         },
         {
           "bytes": 940,

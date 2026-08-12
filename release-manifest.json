@@ -23,12 +23,12 @@
     {
       "path": ".github/workflows/deploy-pages.yml",
       "size": 781,
-      "sha256": "7a060c30a1d7bd0995ab6ddbe75a4140402f0eea4227637095cc814f0874a6c4"
+      "sha256": "06411a7dcef287bfab89e8ab01978d1182e83c3b25cecde716c4660faba19b03"
     },
     {
       "path": ".github/workflows/test.yml",
       "size": 1119,
-      "sha256": "bd1001fd391b82ecb2891170af77adad460a8a930f2cf6193f309ce31985c445"
+      "sha256": "3f328e9f5474370f6f191bdb9ef928c16efcfa1e0586945ce1cb3e9ec87c92c2"
     },
     {
       "path": ".gitignore",
@@ -87,8 +87,8 @@
     },
     {
       "path": "claude-ai/software-verification-v1.1.6.zip",
-      "size": 86571,
-      "sha256": "e017c573b93ea165bd300775fa8ddb26fec0e63596a31cd7f77d2ce468518952"
+      "size": 86569,
+      "sha256": "3485f982d9d7f770b9077bc9da122498ff5ce135ae60e07e7aa8fa8209d5a52f"
     },
     {
       "path": "claude-ai/verification-reviewer-v1.1.0.zip",
@@ -243,12 +243,12 @@
     {
       "path": "plugins/testforge/skills/software-verification/assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "plugins/testforge/skills/software-verification/assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "plugins/testforge/skills/software-verification/assets/schemas/finding.schema.json",
@@ -3472,8 +3472,8 @@
     },
     {
       "path": "releases/v1.1.6/claude/software-verification-v1.1.6.zip",
-      "size": 82347,
-      "sha256": "2d199e6277b5b2f91ff3b493a40e94bc9679de8a61589427d201ecdf1a311415"
+      "size": 82345,
+      "sha256": "738bc8d1969dbad3067f6bcf4ba65646a382cee43ecaadbbd9658458bea11995"
     },
     {
       "path": "releases/v1.1.6/claude/verification-reviewer-v1.1.6.zip",
@@ -3523,12 +3523,12 @@
     {
       "path": "releases/v1.1.6/codex/testforge/skills/software-verification/assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "releases/v1.1.6/codex/testforge/skills/software-verification/assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "releases/v1.1.6/codex/testforge/skills/software-verification/assets/schemas/finding.schema.json",
@@ -4113,12 +4113,12 @@
     {
       "path": "releases/v1.1.6/manifest.json",
       "size": 22448,
-      "sha256": "e5386b678e55d618d44e5df5579043424582ecef66e5807a6db76d3b10d9cb0e"
+      "sha256": "eb6f041fa3a6b915842caf576a392b2d5847a4312c726a75a7092cfd2a1f9252"
     },
     {
       "path": "releases/v1.1.6/package-receipt.json",
       "size": 751,
-      "sha256": "b8bbb1999f39bde57ef971e0fe5010ea189760bf4be1f62bbab8b2b0b867b44d"
+      "sha256": "fc553de3da9a9a159e82b97d8f7aaf8d632feafef5e2ab92419726c078536371"
     },
     {
       "path": "releases/v1.1.6/receipt.json",
@@ -4127,13 +4127,13 @@
     },
     {
       "path": "releases/v1.1.6/TestForge-v1.1.6.zip",
-      "size": 989026,
-      "sha256": "71c7842a5aa0fad3648bb84ca629084975850b7861327297d9932600951e8502"
+      "size": 989024,
+      "sha256": "4dd052672923192f59ec2866eb2fedef697ca1f98f00a99341c3d8fe062b0594"
     },
     {
       "path": "releases/v1.1.6/TestForge-v1.1.6.zip.sha256",
       "size": 87,
-      "sha256": "8c0d52165c3d863476da3fa72c8dffaad27666086682e91e79b07931b047570f"
+      "sha256": "5a2490fe6d01728a6864188c259d44224f115f98aee42ed9b9794a980659afea"
     },
     {
       "path": "releases/v1.1.6/tools/verify_release.py",
@@ -4178,12 +4178,12 @@
     {
       "path": "testforge/assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "testforge/assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "testforge/assets/schemas/finding.schema.json",
@@ -4688,7 +4688,7 @@
     {
       "path": "testforge/release-manifest.json",
       "size": 43504,
-      "sha256": "6ee31054573043bb3a4059540cf89294e2297986f5344250c7e9c4bfb62aae91"
+      "sha256": "613d13d095a482c68f68d5c8740482371e2c0734de76d7b9bdc9c8b4023cfbd0"
     },
     {
       "path": "testforge/scripts/assemble_report.py",
@@ -4783,12 +4783,12 @@
     {
       "path": "testforge/skills/software-verification/assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "testforge/skills/software-verification/assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "testforge/skills/software-verification/assets/schemas/finding.schema.json",
@@ -5468,7 +5468,7 @@
     {
       "path": "tools/bootstrap_repository.py",
       "size": 4962,
-      "sha256": "5b7b53b83516bb1422b2b828c1d91637a074c0d71401086db3876e60bfb37605"
+      "sha256": "9ad096874de670eb5494cebd7e35192273de0e8faaa8e80fe46541526b711532"
     },
     {
       "path": "tools/build_openai_submission_archive.py",
