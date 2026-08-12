@@ -80,6 +80,8 @@ class ContextCustodyTests(unittest.TestCase):
             self.assertIn("Never add an execution", prompt)
             self.assertIn("do not require that material to have been supplied", prompt)
             self.assertIn("stack-neutral placeholder helper is acceptable", prompt)
+            self.assertIn("independently recompute the result", prompt)
+            self.assertIn("Never claim the response states a value", prompt)
             self.assertNotIn("OPERATING DOCTRINE", prompt)
 
     def test_explicit_context_files_exclude_unselected_examples(self):
@@ -205,6 +207,38 @@ class ContextCustodyTests(unittest.TestCase):
         self.assertIn("post_event_count equals pre_event_count", discipline)
         self.assertIn("rather than raw interpolated queries", discipline)
         self.assertIn("Never compare protected data equal to a denied response", discipline)
+
+    def test_metered_discipline_replaces_generic_target_test_scaffolding(self):
+        discipline = adapter.response_discipline(
+            "A private hosted runner hit a billing limit and its allowance is unknown."
+        )
+
+        self.assertIn("Capacity, Expansion, Decision, Substitute, and Authority", discipline)
+        self.assertIn("at most 350 words", discipline)
+        self.assertIn("Never assume an unspecified reserve is zero", discipline)
+        self.assertIn("do not narrate internal debate", discipline)
+        self.assertIn("one retry means two attempts", discipline)
+        self.assertIn("raw runner-minute total", discipline)
+        self.assertIn("does not prove the hosted provider runner images", discipline)
+        self.assertIn("Never output a dispatch command", discipline)
+        self.assertNotIn("produce the requested concrete", discipline)
+
+    def test_neutral_discipline_does_not_supply_metered_acceptance_content(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            package = Path(tmp)
+            (package / "SKILL.md").write_text("Operator doctrine.", encoding="utf-8")
+            prompt, judge = adapter.build_model_prompt(
+                "A private hosted runner hit a billing limit and its allowance is unknown.",
+                package,
+                ["SKILL.md"],
+                "neutral",
+            )
+
+        self.assertFalse(judge)
+        self.assertIn("Return a concise final answer", prompt)
+        self.assertNotIn("Capacity, Expansion, Decision, Substitute, and Authority", prompt)
+        self.assertNotIn("one retry means two attempts", prompt)
+        self.assertNotIn("maximum paid minutes", prompt)
 
     def test_reasoning_mode_is_forwarded_to_ollama(self):
         response = io.BytesIO(json.dumps({"response": "visible output"}).encode("utf-8"))

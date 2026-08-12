@@ -6,6 +6,8 @@ Invoke `$software-verification` with the requirement, repository or diff, target
 
 Run only authorized checks in the relevant environment. Capture commands, exit codes, raw outputs, versions, timestamps, and artifact paths. Classify failures as product defects, test defects, environment failures, flaky behavior, or insufficient evidence. Keep designed, written, executed, passed, and interpreted states distinct.
 
+For any quota-limited or paid verification route, record a fresh authoritative capacity snapshot and expand the whole planned run before dispatch. Include duplicate triggers, matrix fan-out, retries, runner ceilings, provider billing multipliers, the allowance refresh boundary, and a retained reserve. A hold from `scripts/assess_metered_verification.py` blocks automatic invocation. Paid overage requires a one-shot human authorization bound to the exact execution and plan; technical availability is not permission.
+
 ## Challenge the evidence independently
 
 After the operator has produced a manifest, tests, execution records, findings, residual-risk ledger, and proposed status, open a fresh task with `$verification-reviewer`. Supply the complete package and target claim. The reviewer should attack catastrophic omissions, oracle weakness, misleading mocks or fixtures, broken traceability, unsafe testing, and confidence that outruns execution.

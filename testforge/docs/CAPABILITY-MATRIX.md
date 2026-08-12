@@ -11,6 +11,7 @@
 | TypeScript Jest/Vitest authoring | Doctrine | target framework locally available | Included guidance |
 | Python pytest/unittest authoring | Doctrine | target framework locally available | Included guidance |
 | Local test execution | Coordination | shell + target environment + authorization | Capability-dependent |
+| Metered test capacity preflight | Script + doctrine | current provider/account observation | Included; holds unknown, stale, insufficient, or unauthorized paid execution |
 | GitHub PR context | Adapter | authorized connector or CLI | Capability-dependent overlay |
 | Browser/Playwright, mutation, fault injection, deep CI integration | No | later expansion | Deferred |
 | Active penetration testing, compliance certification, formal proof | No | different product/authority | Out of scope |

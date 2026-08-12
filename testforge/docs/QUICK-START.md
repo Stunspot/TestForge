@@ -2,7 +2,7 @@
 
 ## Install
 
-Each v1.1.5 skill is self-contained. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
+Each v1.1.6 skill is self-contained. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
 
 Use [Install in Codex](INSTALL-CODEX.md) or [Install in Claude](INSTALL-CLAUDE.md). Install and verify both skills separately. Structural validation proves the package shape; successful discovery requires a fresh host task or conversation.
 
@@ -19,6 +19,8 @@ Copy both complete skill directories into `~/.claude/skills/` for personal use o
 5. Run `$verification-reviewer` with the completed manifest, tests, evidence, findings, and proposed status.
 6. Treat the report's status as evidence-backed advice; the accountable human retains release authority where consequence requires it.
 
+Before hosted CI, device farms, browser farms, or any other finite or paid test service, require a current capacity observation for the exact account that will be charged. Count the complete run—including duplicate triggers, matrix jobs, retries, runner ceilings, and billing multipliers—then retain a human-set reserve. If capacity is unknown, stale, across its refresh boundary, or insufficient, TestForge holds the hosted run and proposes the smallest credible local, clean-host, self-hosted, or batched substitute. It never launches a job just to ask the meter whether the job was affordable.
+
 First success is not a green command. It is a bounded evidence package that connects important risks to meaningful oracles, captured executions, findings, residual uncertainty, and a release status no stronger than that proof.
 
 ## Deterministic tools
@@ -31,10 +33,13 @@ python scripts/detect_test_stack.py <repository> --output stack.json
 python scripts/validate_manifest.py <manifest.json> --root <project-root>
 python scripts/validate_traceability.py <manifest.json>
 python scripts/scan_test_smells.py <test-path>
+python scripts/assess_metered_verification.py <metered-plan.json>
 python scripts/assemble_report.py <manifest.json> --output verification-report.md
 ```
 
 See each command's `--help`. Use `scripts/capture_command.py` only after reviewing the explicit command.
+
+For the metered preflight, copy `assets/templates/metered-verification-plan.json` into the target project's working area and replace every example identity, timestamp, allowance, reserve, and expanded job with a current observation and the exact planned run. The full field contract is `assets/schemas/metered-verification-plan.schema.json`. Format the decision with `assets/templates/metered-verification-response.md`. The assessor can permit included-capacity execution or hold a route; it cannot authenticate human authority or permit paid dispatch.
 
 The reviewer carries its own manifest and traceability validators. Run it in a fresh context when practical. If it is unavailable, record that the independent challenge was not exercised; same-context self-review is not an equivalent guarantee.
 

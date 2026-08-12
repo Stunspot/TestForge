@@ -41,6 +41,16 @@ The included Ollama context adapter is fully local. For subject episodes it supp
 
 Adapters may set Ollama reasoning to `auto`, `on`, or `off`. Use `off` for models such as `qwen35` when evaluation output must appear in the ordinary response channel rather than being consumed by hidden reasoning. Use `--case CASE-ID` on `run` or `prepare` for a recorded smoke run; repeat the option to select several cases.
 
+Use `adapters/ollama-qwen35-metered-context.json` for the TestForge metered-capacity regression cases. It models progressive disclosure by loading the operator entry point, metered-capacity doctrine, and release-assessment doctrine rather than truncating a whole-package context before the relevant material reaches the local model.
+
+Use `adapters/ollama-qwen35-metered-neutral.json` when the evidence claim concerns the packaged TestForge doctrine itself. It loads the same progressively disclosed package material but adds only generic concision guidance; unlike the adaptive profile, it does not inject case-family answer content. Results from the adaptive profile establish the combined host-adapter behavior and must not be represented as package-only behavioral evidence.
+
+`adapters/ollama-devstral-metered-neutral.json` provides the same package-only evidence boundary with the local Devstral coding model. Use a separate model family as judge and retain the exact model pair in the run record; a pass establishes only that bounded configuration, never universal model behavior.
+
+`adapters/ollama-qwen25-coder-judge.json` provides a separate local JSON judge when the subject model should not adjudicate its own response.
+
+`adapters/ollama-devstral-judge.json` provides a separate model-family JSON judge for literal rubric review when same-family judging would weaken independence or a judge repeatedly misreads explicit evidence.
+
 The bundled `gpt-oss:20b` profile remains experimental. In the 2026-07-17 local judge smoke, default reasoning exhausted the response budget without visible final text, while reasoning-off returned malformed non-JSON. Do not use it as a scoring judge until a recorded adapter check produces schema-valid output.
 
 ## Validate a generated package
@@ -121,7 +131,7 @@ py tools\augment-evals\augment_eval.py check `
   --max-invalid 0
 ```
 
-The check blocks score or demonstrated-rate drops beyond tolerance, invalid episodes above allowance, indispensable-gate regressions, and claim-status regressions. A changed package fingerprint is reported as a warning because cross-revision comparison is often the point of a regression run.
+The check blocks score or demonstrated-rate drops beyond tolerance, more invalid episodes than allowed, indispensable-gate regressions, and claim-status regressions. A changed package fingerprint is reported as a warning because cross-revision comparison is often the point of a regression run.
 
 ## Adapter contract
 
