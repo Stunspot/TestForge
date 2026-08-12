@@ -1,0 +1,32 @@
+{
+  "protocol_version": "1.0",
+  "name": "ollama-qwen35-metered-context",
+  "command": [
+    "py",
+    "-X",
+    "utf8",
+    "{harness_root}\\adapters\\ollama_context_adapter.py",
+    "--model",
+    "qwen35",
+    "--context-length",
+    "32768",
+    "--num-predict",
+    "2048",
+    "--context-file",
+    "skills/software-verification/SKILL.md",
+    "--context-file",
+    "skills/software-verification/references/core/metered-verification.md",
+    "--context-file",
+    "skills/software-verification/references/core/release-assessment.md",
+    "--thinking",
+    "off"
+  ],
+  "input_mode": "prompt",
+  "output_mode": "stdout",
+  "supports_interaction": false,
+  "timeout_seconds": 1800,
+  "working_directory": "{package_root}",
+  "tracked_files": [
+    "{harness_root}\\adapters\\ollama_context_adapter.py"
+  ]
+}

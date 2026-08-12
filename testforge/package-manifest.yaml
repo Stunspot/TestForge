@@ -1,14 +1,16 @@
 name: testforge
 display_name: "TestForge: Software Verification Operator"
-version: 1.1.5
+version: 1.1.6
 publisher: Collaborative Dynamics
-release_date: 2026-08-08
+release_date: 2026-08-12
 canonical_human_record: Markdown
 canonical_machine_record: JSON
 entry_points:
   operator: skills/software-verification/SKILL.md
   reviewer: skills/verification-reviewer/SKILL.md
   manifest_template: assets/templates/verification-manifest.json
+  metered_plan_template: skills/software-verification/assets/templates/metered-verification-plan.json
+  metered_plan_schema: skills/software-verification/assets/schemas/metered-verification-plan.schema.json
   fallback: fallback/master-prompt.md
 runtime:
   required: compatible LLM skill host
