@@ -14,3 +14,14 @@ Keep every folder intact. The operator needs its doctrine, templates, examples, 
 4. Confirm each skill can reach its referenced resources.
 
 Success for one skill does not prove the other is installed. If either skill does not appear, preserve the visible symptom, verify the final folder or plugin state, restart Codex, and follow [Troubleshooting](TROUBLESHOOTING.md) before rebuilding the package.
+## Update
+
+Before replacing anything, record the installed TestForge version and preserve any verification manifests or evidence you intend to keep. For the marketplace plugin, use the host's plugin manager to remove the installed `testforge@cd-testforge` entry, then run the two current marketplace installation commands again and start a new task. For standalone skills, replace both complete skill folders from the same release; do not mix operator and reviewer versions.
+
+Repeat both discovery probes after every update. An updated file tree does not establish that a running task loaded the new version.
+
+## Remove and clean up
+
+For the marketplace path, remove `testforge@cd-testforge` through the Codex plugin manager and start a new task to confirm both TestForge handles are absent. For standalone installation, delete only the two exact installed folders named `software-verification` and `verification-reviewer` after resolving their full paths; do not remove the surrounding skills directory.
+
+TestForge has no service account, telemetry store, daemon, or product database to delete. Verification manifests, reports, raw command captures, test files, promoted baselines, and evaluation runs are ordinary local project artifacts. Review them for retention, then archive or delete them under the project's own data policy. Removing TestForge does not automatically remove those records or any data retained by Codex, configured models, Git hosts, or external tools.

@@ -1,5 +1,6 @@
 import json
 import re
+import struct
 import subprocess
 import unittest
 from pathlib import Path
@@ -20,7 +21,7 @@ class DocumentationCurrencyTests(unittest.TestCase):
     def test_customer_document_manifest_is_complete_and_coherent(self):
         documents = self.manifest["customer_docs"]
         self.assertEqual(len(documents), len(set(documents)))
-        self.assertEqual(19, len(documents))
+        self.assertEqual(49, len(documents))
         self.assertIn("testforge/docs/TERMS-OF-USE.md", documents)
         self.assertIn("ARCHIVE-CUSTODY.md", documents)
         self.assertIn(f"RELEASE-NOTES-v{CURRENT_VERSION}.md", documents)
@@ -59,6 +60,43 @@ class DocumentationCurrencyTests(unittest.TestCase):
         ).lower()
         self.assertNotIn("once published", customer_text)
 
+    def test_pages_journey_and_visual_roles_are_distinct(self):
+        index = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        for section_id in (
+            "start",
+            "chain",
+            "status",
+            "ratchet",
+            "evals",
+            "install",
+            "troubleshooting",
+            "privacy",
+            "evidence",
+        ):
+            self.assertIn(f'id="{section_id}"', index)
+        self.assertIn("assets/testforge-readme-hero.png", readme)
+        self.assertIn('src="assets/testforge-hero.png"', index)
+        self.assertIn("assets/testforge-social-preview.png", index)
+        self.assertTrue((ROOT / "docs" / "404.html").is_file())
+
+        def png_dimensions(path: Path) -> tuple[int, int]:
+            data = path.read_bytes()
+            self.assertEqual(b"\x89PNG\r\n\x1a\n", data[:8])
+            return struct.unpack(">II", data[16:24])
+
+        roles = {
+            "readme": ROOT / "assets" / "testforge-readme-hero.png",
+            "pages": ROOT / "docs" / "assets" / "testforge-hero.png",
+            "social": ROOT / "assets" / "testforge-social-preview.png",
+        }
+        self.assertEqual({"readme", "pages", "social"}, set(roles))
+        dimensions = {name: png_dimensions(path) for name, path in roles.items()}
+        self.assertEqual((1600, 640), dimensions["readme"])
+        self.assertEqual((1200, 800), dimensions["pages"])
+        self.assertEqual((1280, 640), dimensions["social"])
+        self.assertEqual(3, len({width / height for width, height in dimensions.values()}))
+        self.assertEqual(3, len({path.read_bytes() for path in roles.values()}))
     def test_all_tracked_markdown_local_links_resolve(self):
         tracked = subprocess.run(
             ["git", "ls-files", "*.md"],

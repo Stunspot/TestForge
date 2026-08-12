@@ -127,13 +127,13 @@
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "size": 1274,
-      "sha256": "d631221e175425e4f112a42455979e08d0366e1c71efb5c1c1d93f1c3770122a"
+      "size": 2317,
+      "sha256": "6c9a621dd54ca2fc4bda9bad25650d83b72da5efe451d9a4e59cc13ddbc0dad0"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "size": 1267,
-      "sha256": "d8e4a251f9e2a34976e00de53947ed10eff8ee7ee36f215ac11c8da1cbc71f1f"
+      "size": 2743,
+      "sha256": "085dc6d43c13a31de00df8d9e8cd9dfe7da6446dc3580f6df942b8d5866863cf"
     },
     {
       "path": "docs/LIMITATIONS.md",
@@ -1131,5 +1131,5 @@
       "sha256": "ce0c4eeed8c0be9e89180d8c761f9f254431ff1a05f78b7351506a69cf22b8a0"
     }
   ],
-  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.5 governs the dual-host customer kit, while release-assets/v1.1.5/openai-submission-custody.json governs the separate OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.5 governs the frozen dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json governs the latest retained OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

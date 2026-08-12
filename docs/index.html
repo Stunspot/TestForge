@@ -9,8 +9,8 @@
   <meta property="og:title" content="TestForge">
   <meta property="og:description" content="Software verification that argues back.">
   <meta property="og:url" content="https://stunspot.github.io/TestForge/">
-  <meta property="og:image" content="https://stunspot.github.io/TestForge/assets/testforge-hero.png">
-  <meta property="og:image:alt" content="A software change passes through risk gates, test oracles, captured evidence, independent review, and a one-way regression ratchet.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Stunspot/TestForge/main/assets/testforge-social-preview.png">
+  <meta property="og:image:alt" content="TestForge — software verification that argues back.">
   <meta name="twitter:card" content="summary_large_image">
   <title>TestForge · Software Verification That Argues Back</title>
   <link rel="stylesheet" href="style.css">
@@ -22,11 +22,12 @@
     <nav aria-label="Primary">
       <a class="brand" href="#top" aria-label="TestForge home"><span class="brand-mark" aria-hidden="true">TF</span><span>TestForge</span></a>
       <div class="nav-links">
-        <a href="#chain">Evidence chain</a>
-        <a href="#ratchet">Quality ratchet</a>
-        <a href="#status">Status</a>
-        <a href="#evals">Augment evals</a>
+        <a href="#start">Start</a>
+        <a href="#chain">Method</a>
         <a href="#install">Install</a>
+        <a href="#troubleshooting">Recover</a>
+        <a href="#privacy">Boundaries</a>
+        <a href="#evidence">Evidence</a>
         <a href="https://github.com/Stunspot/TestForge">GitHub</a>
       </div>
     </nav>
@@ -45,10 +46,27 @@
         <p class="quiet">Free Collaborative Dynamics Augment · two matched SKILLs · deterministic tools · independent review · behavioral eval testbed</p>
       </div>
       <figure class="hero-visual">
-        <img src="assets/testforge-hero.png" width="1600" height="900" alt="A software change passes through ranked risk gates, discriminating test oracles, captured evidence, independent review, and a one-way regression ratchet that resists backward motion.">
+        <img src="assets/testforge-hero.png" width="1200" height="800" alt="A precision quality gate checks three evidence paths and diverts a failed path into a separate reject tray.">
       </figure>
     </section>
 
+
+    <section class="section start-section" id="start">
+      <div class="section-heading">
+        <p class="eyebrow">Begin successfully</p>
+        <h2>Bring a finished candidate and a release claim worth attacking.</h2>
+        <p>TestForge is for developers, release owners, coding-Agent operators, and Augment builders who need evidence stronger than “the tests are green.” It is not a product-design workshop, penetration-testing authorization, compliance certification, or proof that defects do not exist.</p>
+      </div>
+      <div class="journey-grid">
+        <article><span>INPUT</span><h3>What to supply</h3><p>A bounded target and revision; the intended behavior or requirement; relevant diff, source, tests, logs, and environment facts; plus explicit authority for any consequential action.</p></article>
+        <article><span>OUTPUT</span><h3>What to expect</h3><p>An impact map, ranked risks, invariants, scenarios, tests or commands, captured execution evidence, classified findings, residual risks, reviewer disposition, and exactly one bounded release status.</p></article>
+        <article><span>FIRST RUN</span><h3>What success looks like</h3><p>The operator distinguishes observed, inferred, assumed, unresolved, executed, and authorized claims; links critical risks to credible evidence; and refuses confidence that the evidence cannot support.</p></article>
+      </div>
+      <div class="prompt-grid first-prompt">
+        <blockquote><code>$software-verification Verify this completed candidate at revision &lt;REVISION&gt;. The intended behavior is &lt;REQUIREMENT&gt;. Inspect the available source and tests, run only safe authorized checks, and issue an evidence-backed release assessment.</code></blockquote>
+        <blockquote><code>$verification-reviewer Independently challenge the resulting verification package. Find the smallest consequential break in its evidence chain and judge whether the proposed status is supportable.</code></blockquote>
+      </div>
+    </section>
     <section class="section wager-section">
       <div class="section-heading">
         <p class="eyebrow">The practical wager</p>
@@ -195,29 +213,41 @@
 
     <section class="section install-section" id="install">
       <div class="section-heading">
-        <p class="eyebrow">Install or inspect</p>
-        <h2>Use the matched plugin, standalone skills, or the repository testbed.</h2>
+        <p class="eyebrow">Install, verify, maintain</p>
+        <h2>Use matched operator and reviewer versions. A copied file is not an activated capability.</h2>
       </div>
       <div class="install-grid">
         <article>
           <span>CODEX PLUGIN</span>
           <code>codex plugin marketplace add Stunspot/TestForge</code>
           <code>codex plugin add testforge@cd-testforge</code>
-          <p>Installs the two aligned self-contained verification skills.</p>
+          <p>Start a new task. Invoke <code>$software-verification</code>, then use a second fresh task to invoke <code>$verification-reviewer</code>. Verify that each can reach its package-relative resources.</p>
         </article>
         <article>
-          <span>STANDALONE SKILLS</span>
-          <p>Download the release, keep the `testforge/` tree together, and expose both directories under `testforge/skills/` through the host’s skill mechanism.</p>
+          <span>CODEX STANDALONE</span>
+          <p>Copy both complete folders under <code>testforge/skills/</code> into the personal Codex skills directory. Keep every reference, template, example, fallback, and script with its owning skill.</p>
+          <p>On Windows, the final paths normally end in <code>.codex\skills\&lt;skill-name&gt;\SKILL.md</code>. Restart and probe both handles separately.</p>
         </article>
         <article>
-          <span>BEHAVIORAL EVALS</span>
-          <code>py -m pip install -r tools\augment-evals\requirements.txt</code>
-          <code>py tools\augment-evals\augment_eval.py validate testforge</code>
-          <p>Raw runs remain local; reviewed compact baselines may be promoted into Git-tracked records.</p>
+          <span>CLAUDE</span>
+          <p>Confirm the account exposes custom Skills. Upload <code>claude-ai/software-verification-v1.1.5.zip</code> and <code>claude-ai/verification-reviewer-v1.1.5.zip</code> separately, enable both when required, and test each in a new conversation.</p>
+          <p>Live upload, discovery, resource loading, script execution, and reviewer handoff were not exercised for this release.</p>
+        </article>
+        <article>
+          <span>OTHER HOSTS</span>
+          <p>A host must load Markdown skill instructions and preserve package-relative resources. Otherwise use the fileless fallback. Deterministic tools require Python 3.10+; unsupported stacks degrade to generic scenario and command planning.</p>
+        </article>
+        <article>
+          <span>UPDATE</span>
+          <p>Record the installed version and preserve required evidence. Replace both skills from the same release, start a fresh task or conversation, and repeat both discovery and resource probes. Never mix operator and reviewer versions.</p>
+        </article>
+        <article>
+          <span>REMOVE &amp; CLEAN</span>
+          <p>Remove or disable the plugin and both skills through the host manager, or delete only the two exact standalone folders. TestForge has no account, daemon, telemetry store, or product database. Local manifests, reports, tests, raw captures, baselines, and eval runs remain ordinary files until you archive or delete them under project policy.</p>
         </article>
       </div>
+      <p class="install-note">Detailed routes: <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/INSTALL-CODEX.md">Codex lifecycle</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/INSTALL-CLAUDE.md">Claude lifecycle</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/HOST-COMPATIBILITY.md">host boundary</a>.</p>
     </section>
-
     <section class="section prompt-section">
       <div class="section-heading">
         <p class="eyebrow">Start from the change</p>
@@ -229,6 +259,61 @@
       </div>
     </section>
 
+
+    <section class="section troubleshooting-section" id="troubleshooting">
+      <div class="section-heading">
+        <p class="eyebrow">Troubleshoot and recover</p>
+        <h2>Preserve the symptom before rebuilding anything.</h2>
+      </div>
+      <div class="recovery-grid">
+        <article><h3>The skill does not appear</h3><p>Start a fresh task, verify the plugin state or final folder path, confirm the complete folder—not a lone <code>SKILL.md</code>—is installed, and check host or organization enablement.</p></article>
+        <article><h3>The response is generic</h3><p>Invoke the handle explicitly, state the target and release claim, and verify package-relative doctrine is reachable. Do not treat a plausible answer as proof the skill loaded.</p></article>
+        <article><h3>A command cannot run</h3><p>Record the command, working directory, exit code, exact error, and unavailable guarantee. Classify product, test, environment, or tooling cause before changing anything.</p></article>
+        <article><h3>Evidence or status is wrong</h3><p>Stop the cycle, retain raw evidence, and use the reviewer in a fresh context. A product defect returns the candidate upstream; it is not repaired inside that TestForge cycle.</p></article>
+      </div>
+      <p class="install-note"><a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/TROUBLESHOOTING.md">Full troubleshooting guide</a> · <a href="https://github.com/Stunspot/TestForge/issues">sanitized issue tracker</a>.</p>
+    </section>
+
+    <section class="section privacy-section" id="privacy">
+      <div class="section-heading">
+        <p class="eyebrow">Privacy, storage, network, security</p>
+        <h2>The skills are local. The host and tools still have their own data boundaries.</h2>
+      </div>
+      <div class="boundary-grid">
+        <article><h3>Product behavior</h3><p>The v1.1.5 skills-only plugin includes no account, telemetry, analytics, hosted service, connector, MCP server, hook, or automatic network request. Deterministic scripts touch only paths and commands the user chooses.</p></article>
+        <article><h3>Host behavior</h3><p>Prompts, repositories, logs, uploads, model calls, retention, training, residency, and connector traffic are governed by Codex, Claude, configured models, Git hosts, and any authorized tools—not by TestForge.</p></article>
+        <article><h3>Local records</h3><p>Verification manifests, reports, raw command captures, generated tests, evaluation runs, seals, and promoted baselines may contain sensitive project evidence. Store and delete them under an approved retention policy.</p></article>
+        <article><h3>Security boundary</h3><p>Imported files and tool output are untrusted evidence. Active security work needs a named target, explicit permission, non-production default, time window, rate limits, prohibited actions, handling rules, and a stop contact.</p></article>
+      </div>
+      <p class="install-note"><a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/DATA-AND-PRIVACY.md">Data and privacy</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/SECURITY.md">security policy</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/TERMS-OF-USE.md">terms</a>.</p>
+    </section>
+
+    <section class="section evidence-section" id="evidence">
+      <div class="section-heading">
+        <p class="eyebrow">Provenance and evidence status</p>
+        <h2>Know exactly what has—and has not—been established.</h2>
+      </div>
+      <div class="evidence-table-wrap" tabindex="0" aria-label="TestForge evidence status table">
+        <table>
+          <thead><tr><th>Claim</th><th>Current evidence</th><th>Boundary</th></tr></thead>
+          <tbody>
+            <tr><td>Constructed and packaged</td><td>v1.1.5 source, plugin tree, current Claude archives, manifests, and retained frozen-release receipts</td><td>Does not prove host installation or live behavior</td></tr>
+            <tr><td>Deterministic behavior</td><td>Repository-local tool, package, distribution, documentation, and eval-harness suites</td><td>Only exercised commands, fixtures, Python version, and environment</td></tr>
+            <tr><td>Behavioral evaluation</td><td>Named model/context baselines and a deliberately failed fresh-package smoke</td><td>Single-trial, model-, context-, case-, and judge-bounded; not universal model quality</td></tr>
+            <tr><td>OpenAI directory</td><td>Latest retained portal packet is v1.1.4 and repository-tested</td><td>No claim of upload, approval, publication, or discoverability</td></tr>
+            <tr><td>Host activation</td><td>Installation probes are documented</td><td>Current live Codex and Claude activation remain separate observations</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="evidence-links">
+        <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/VALIDATION.md">Validation</a>
+        <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/LIMITATIONS.md">Limitations</a>
+        <a href="https://github.com/Stunspot/TestForge/blob/main/ARCHIVE-CUSTODY.md">Archive custody</a>
+        <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/PROVENANCE.md">Provenance</a>
+        <a href="https://github.com/Stunspot/TestForge/blob/main/LICENSE.md">License</a>
+        <a href="https://github.com/Stunspot/TestForge/blob/main/CONTRIBUTING.md">Contribute</a>
+      </div>
+    </section>
     <section class="section boundaries-section">
       <div class="boundary-copy">
         <p class="eyebrow">Trust and authority</p>
@@ -245,7 +330,7 @@
 
   <footer>
     <p><strong>TestForge</strong> · Collaborative Dynamics · Built with Codex and GPT-5.6 during OpenAI Build Week.</p>
-    <p><a href="https://github.com/Stunspot/TestForge">Repository</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/BUILD-WEEK.md">Build record</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/LICENSE.md">License</a></p>
+    <p><a href="https://github.com/Stunspot/TestForge">Repository</a> · <a href="https://github.com/Stunspot/TestForge/releases/latest">Release</a> · <a href="https://github.com/Stunspot/TestForge/issues">Support</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/testforge/docs/DATA-AND-PRIVACY.md">Privacy</a> · <a href="https://github.com/Stunspot/TestForge/blob/main/LICENSE.md">License</a></p>
   </footer>
 </body>
 </html>

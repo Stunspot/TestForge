@@ -1,4 +1,6 @@
-# TestForge v1.1.0 maintenance build note
+# Historical TestForge v1.1.0 maintenance build note
+
+> Historical record: this file describes the v1.1.0 maintenance event. It is not the current installation, archive-custody, or validation authority. Use `README.md`, `RELEASE-NOTES-v1.1.5.md`, `ARCHIVE-CUSTODY.md`, and the current `testforge/docs/` guides.
 
 ## Result
 

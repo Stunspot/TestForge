@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.5",
   "release_date": "2026-08-08",
-  "artifact_count": 980,
+  "artifact_count": 982,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -37,8 +37,8 @@
     },
     {
       "path": "ARCHIVE-CUSTODY.md",
-      "size": 2896,
-      "sha256": "425b0b6934970f7f08c0cfef076f22a8d5a19fb5e04e42a353c569119e731b1d"
+      "size": 3246,
+      "sha256": "0fac3506f937abc0769d48aa1c57b29eadfd83ea11d6310488b25090971b2278"
     },
     {
       "path": "archive-plan-v1.1.2.json",
@@ -49,6 +49,11 @@
       "path": "archive-plan.json",
       "size": 872,
       "sha256": "60ec047aceb0e73ea1029d0e93b9244783c1a466349ce5c0ebd17a6f844c106c"
+    },
+    {
+      "path": "assets/testforge-readme-hero.png",
+      "size": 2236720,
+      "sha256": "6891298c9e6d0cea15e72a249ecaba2d6546dbe841578b239ad19dc0d2b09a03"
     },
     {
       "path": "assets/testforge-social-preview.png",
@@ -62,8 +67,8 @@
     },
     {
       "path": "BUILD-NOTE.md",
-      "size": 2540,
-      "sha256": "b6f3521d6f7c618b092fb0bf7810fe6ae467decec2e9a8670f345904b6f3a539"
+      "size": 2809,
+      "sha256": "522794aba0693fefdc28905a0bb7f9310d70e1aefed1294988b0ae63a71aff87"
     },
     {
       "path": "BUILD-WEEK.md",
@@ -111,29 +116,34 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "docs/404.html",
+      "size": 1579,
+      "sha256": "99b1f755194e2f8d4ac0775327bc90496b764ee1331400f68a2c62142e1f407e"
+    },
+    {
       "path": "docs/assets/testforge-hero.png",
-      "size": 1481766,
-      "sha256": "d327ba98cb45afbe7a939e0f265eb51db98a50258d5ba8c117e6573e98c7d05b"
+      "size": 2212223,
+      "sha256": "f639f84c2c597053ca04c010be36201c46011596dfbeec9b7ca4e76e38a68bf8"
     },
     {
       "path": "docs/index.html",
-      "size": 17593,
-      "sha256": "aab19b819b6c772cb70f2604e65001715b081005d280750eed042c198867e9cc"
+      "size": 27157,
+      "sha256": "5bef275716b6d453f8d305dc10249705b7a1b11ad6dee4638f0cd137f3c2537e"
     },
     {
       "path": "docs/SITE-SOURCE.md",
-      "size": 1835,
-      "sha256": "428deaaf6ae81cde85aae1551c3afa51d84d95f256672df17b20298e884c4cf5"
+      "size": 2178,
+      "sha256": "587fd2a272411dc0ca217bcc2f0390469ee348653a1e79f4f54025298ffbe6f8"
     },
     {
       "path": "docs/style.css",
-      "size": 16589,
-      "sha256": "1c9cd32a619426ba4c0925dc710c3c9944beabf0b3c7979b188010f5452de1e4"
+      "size": 19819,
+      "sha256": "f3f1b17a5646f75b66bbc58773c24bcb3d537af979318629b5d65584ea3bdebd"
     },
     {
       "path": "documentation-manifest.json",
-      "size": 1677,
-      "sha256": "7efd1c2dd0c0f38b658c1de4a9d7a25101063fccb9a5887c2d73d289ede45554"
+      "size": 6820,
+      "sha256": "c9b67408e4622092999b1dc49b9d57f0b67360120b1a7929e30a3f5b2408f87f"
     },
     {
       "path": "documentation-review.json",
@@ -722,8 +732,8 @@
     },
     {
       "path": "README.md",
-      "size": 9469,
-      "sha256": "71738816c9f895ce017d3bed9843b211413ac353136ec85ca35d009e5ee1c5b4"
+      "size": 9575,
+      "sha256": "7f8d7dd42e0daf8ae352c0b5923695cb4a441e581ee0bdc71a577a2261e90da4"
     },
     {
       "path": "release-docs/CAPABILITIES.md",
@@ -757,8 +767,8 @@
     },
     {
       "path": "release-docs/MAINTAINER-GUIDE.md",
-      "size": 1838,
-      "sha256": "91af3566b82226f04f29091b9751b1c6c139bbb0d57bbe7aef6316635bf37c7d"
+      "size": 1875,
+      "sha256": "b13d3bbfa3573b841e03b39ca956504f9490631c25af105428423927d27e0af0"
     },
     {
       "path": "release-docs/PACKAGE-REFERENCE.md",
@@ -812,8 +822,8 @@
     },
     {
       "path": "RELEASE-NOTES.md",
-      "size": 3321,
-      "sha256": "27c78497964978957d8bc928670ee6adc5c9c9e2979c733c5a16ff098b1a2dcf"
+      "size": 1089,
+      "sha256": "58bc14d694d8e349cbaf97f47b892b6392d10b1c7f845874f76d5168db032388"
     },
     {
       "path": "releases/v1.1.3/claude/software-verification-v1.1.3.zip",
@@ -3557,13 +3567,13 @@
     },
     {
       "path": "testforge/docs/INSTALL-CLAUDE.md",
-      "size": 1274,
-      "sha256": "d631221e175425e4f112a42455979e08d0366e1c71efb5c1c1d93f1c3770122a"
+      "size": 2317,
+      "sha256": "6c9a621dd54ca2fc4bda9bad25650d83b72da5efe451d9a4e59cc13ddbc0dad0"
     },
     {
       "path": "testforge/docs/INSTALL-CODEX.md",
-      "size": 1267,
-      "sha256": "d8e4a251f9e2a34976e00de53947ed10eff8ee7ee36f215ac11c8da1cbc71f1f"
+      "size": 2743,
+      "sha256": "085dc6d43c13a31de00df8d9e8cd9dfe7da6446dc3580f6df942b8d5866863cf"
     },
     {
       "path": "testforge/docs/LIMITATIONS.md",
@@ -3967,8 +3977,8 @@
     },
     {
       "path": "testforge/release-manifest.json",
-      "size": 42083,
-      "sha256": "7d77d06316d7d0d5480fd8623ee1bb66de4c667447c45ed5c7116aecd7ea5c8a"
+      "size": 42097,
+      "sha256": "bd5fa3169515894b15af7019ff6153e7b7441afe7c0718aea3aabde3ca2fe61e"
     },
     {
       "path": "testforge/scripts/assemble_report.py",
@@ -4572,8 +4582,8 @@
     },
     {
       "path": "tests/test_documentation.py",
-      "size": 3729,
-      "sha256": "7c8f0115ed3ba027e4782b76d46f0eeac08fd80d4cb2345be98e1ef1fffc7f7a"
+      "size": 5466,
+      "sha256": "96cdfdcd982c80f363becffdf38f690becfdcd2e8c8cbe31e480428c552eb0b6"
     },
     {
       "path": "tests/test_line_ending_policy.py",
@@ -4702,13 +4712,13 @@
     },
     {
       "path": "tools/rebuild_public_release.py",
-      "size": 3955,
-      "sha256": "ed53d19fd83b013cc6934ae978c8bbbeefa25a1ab66c0da81801ff3f0db792b5"
+      "size": 4268,
+      "sha256": "32b3a0d32a4d7a537476125333db59db7c3057a660765cbe81f52e5d27be11e5"
     },
     {
       "path": "tools/validate_release_manifests.py",
-      "size": 4166,
-      "sha256": "1198cdfd421473ab24102d2c31a864431e5a29dd2cff43a5bda69fb1f57edd9e"
+      "size": 4458,
+      "sha256": "4ab605eea110e3a4aed6826d4bd0e4b46d117a5a0d44600bfeace9f68d9aa661"
     },
     {
       "path": "tools/verify_family_release.py",
@@ -4906,5 +4916,5 @@
       "sha256": "3077f2273126e425873c1ac76206602a07007deb8843171127e9d80f71c1e73c"
     }
   ],
-  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.5 governs the dual-host customer kit, while release-assets/v1.1.5/openai-submission-custody.json governs the separate OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.5 governs the frozen dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json governs the latest retained OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }
