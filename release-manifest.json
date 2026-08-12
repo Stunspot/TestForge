@@ -67,13 +67,13 @@
     },
     {
       "path": "BUILD-NOTE.md",
-      "size": 2809,
-      "sha256": "522794aba0693fefdc28905a0bb7f9310d70e1aefed1294988b0ae63a71aff87"
+      "size": 2829,
+      "sha256": "cd6d587a238a65766bf0da59ea35d2b6abe5a84255138d453532134fab4fd6c0"
     },
     {
       "path": "BUILD-WEEK.md",
-      "size": 10210,
-      "sha256": "d425220d1501d59cdfdce8401e8d66ca95a752cf545f33daff36b77b8ff95d05"
+      "size": 10477,
+      "sha256": "efd9fbf932b23cfb03d667f4055da3059c1ae2e0e1800f65253f2dd3501f8c0c"
     },
     {
       "path": "claude-ai/software-verification-v1.1.0.zip",
