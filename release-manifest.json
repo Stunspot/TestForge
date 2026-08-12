@@ -72,8 +72,8 @@
     },
     {
       "path": "BUILD-WEEK.md",
-      "size": 10477,
-      "sha256": "efd9fbf932b23cfb03d667f4055da3059c1ae2e0e1800f65253f2dd3501f8c0c"
+      "size": 10509,
+      "sha256": "b8c06a6148caa2279226345c192cb4e6a9411196be3cd2ff37620d194761e8f8"
     },
     {
       "path": "claude-ai/software-verification-v1.1.0.zip",
@@ -177,8 +177,8 @@
     },
     {
       "path": "JUDGE-QUICKSTART.md",
-      "size": 3703,
-      "sha256": "dd493b3a35c6f8d032beb2ef7302462d2df645ff94f56266591c020fd7041a3d"
+      "size": 3707,
+      "sha256": "13bf30896cebe30e2589ac8216a935ea39f08ff90b5bf9c25255f17bcddf9a96"
     },
     {
       "path": "LICENSE.md",

@@ -38,7 +38,7 @@ A later Codex task used TestForge to design and harden the CD Augment behavioral
 - Deterministic local checks: 9 TestForge tests, 46 testbed tests, and 4 public-distribution tests
 - Behavioral suite: 10 cases across 11 dimensions, with indispensable gates for evidence honesty, security boundaries, and release judgment
 
-The Devpost form should use the primary Session ID above. It is the task where the majority of TestForge's core functionality was built. The later Omnicompetence task expanded the testbed and handled publication, but it is not a substitute for the primary build task.
+The Devpost form should use the primary Session ID listed in this Build evidence section. It is the task where the majority of TestForge's core functionality was built. The later Omnicompetence task expanded the testbed and handled publication, but it is not a substitute for the primary build task.
 
 ## Product architecture
 

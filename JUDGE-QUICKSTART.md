@@ -80,7 +80,7 @@ Python 3.10 or newer is required. PyYAML is the testbed's only third-party depen
 
 ## Supported paths
 
-- Codex plugin: repository-native two-command installation above.
+- Codex plugin: repository-native two-command installation in step 1.
 - Codex standalone SKILLs: install the portable `testforge/` bundle while preserving package-relative resources.
 - Claude Code: structurally compatible SKILL instructions with documented host boundaries.
 - Other Agent hosts: Markdown skill loading, local-shell adapter, GitHub adapter, or copy-paste fallback.
