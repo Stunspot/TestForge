@@ -1,23 +1,21 @@
 {
-  "schema": "portfolio-remediation-verification/v1",
-  "repository": "https://github.com/Stunspot/TestForge",
-  "reviewed_commit": "0c935166bc35baafb39108dd888812e64023c0aa",
-  "governed_fingerprint": "ff21cef0cb1e7155769a9a4a06688b2b240eb2662c0dc6ca92c1cfb57d71fee7",
-  "readme_content": "PASS_LOCAL_CANDIDATE",
-  "pages_content": "PASS_LOCAL_CANDIDATE",
-  "rendered_pages": "LIVE_VERIFICATION_FAIL_SUPERSEDED_REMOTE",
-  "readme_hero": "PASS_LOCAL_CANDIDATE",
-  "pages_hero": "PASS_LOCAL_CANDIDATE_LIVE_OLD",
-  "social_card_file": "PASS_LOCAL_CANDIDATE",
-  "repository_social_card_wiring": "NOT_EXECUTED_UI_REQUIRED",
-  "hesperos": "PASS",
-  "accessibility": "PASS_STATIC_DEPLOYED_NOT_TESTED",
-  "adversarial": "PASS_LOCAL_PUBLICATION_BLOCKED",
-  "final_status": "BLOCKED",
-  "blockers": [
-    "GitHub-hosted Actions capacity is user-reported exhausted; publication would trigger five hosted jobs and is not authorized.",
-    "Main requires line-ending-policy under ruleset 20247129.",
-    "Repository social-preview configuration is null and supported upload requires the GitHub Settings UI, which is out of scope by explicit instruction.",
-    "The reviewed candidate is therefore not live and cannot receive rendered/live approval."
-  ]
+    "schema":  "portfolio-remediation-verification/v1",
+    "repository":  "https://github.com/Stunspot/TestForge",
+    "reviewed_commit":  "0c935166bc35baafb39108dd888812e64023c0aa",
+    "governed_fingerprint":  "ff21cef0cb1e7155769a9a4a06688b2b240eb2662c0dc6ca92c1cfb57d71fee7",
+    "readme_content":  "PASS_LOCAL_CANDIDATE",
+    "pages_content":  "PASS_LOCAL_CANDIDATE",
+    "rendered_pages":  "LIVE_VERIFICATION_FAIL_SUPERSEDED_REMOTE",
+    "readme_hero":  "PASS_LOCAL_CANDIDATE",
+    "pages_hero":  "PASS_LOCAL_CANDIDATE_LIVE_OLD",
+    "social_card_file":  "PASS_LOCAL_CANDIDATE",
+    "repository_social_card_wiring":  "PASS_LIVE_EXACT_CANDIDATE",
+    "hesperos":  "PASS",
+    "accessibility":  "PASS_STATIC_DEPLOYED_NOT_TESTED",
+    "adversarial":  "READY_WITH_RESIDUAL_RISK",
+    "final_status":  "READY_WITH_RESIDUAL_RISK",
+    "blockers":  [
+                     "Reviewed candidate is not yet merged to main or deployed; exact live README, Pages, routes, links, and assets remain post-publication oracles.",
+                     "GUI browser rendering and assistive-technology behavior remain NOT TESTED."
+                 ]
 }

@@ -1,0 +1,26 @@
+{
+  "format": "testforge-publication-resolution/v1",
+  "observed_at": "2026-08-12",
+  "repository_visibility": "public",
+  "reviewed_commit": "0c935166bc35baafb39108dd888812e64023c0aa",
+  "governed_fingerprint": "ff21cef0cb1e7155769a9a4a06688b2b240eb2662c0dc6ca92c1cfb57d71fee7",
+  "supersedes_current_blocking_decision_in": "adversarial-review.md and the prior verification-manifest disposition; historical observations remain retained",
+  "capacity_correction": "Exhausted private-repository allowance does not bill standard GitHub-hosted runners in this public repository",
+  "planned_jobs": {
+    "feature_branch_push": 4,
+    "pull_request": 4,
+    "main_push": 4,
+    "pages_deployment": 1,
+    "automatic_retries": 0,
+    "total": 13,
+    "billable_minutes": 0
+  },
+  "ruleset_id": 20247129,
+  "ruleset_change_required": false,
+  "repository_social_preview": {
+    "url": "https://repository-images.githubusercontent.com/1302637373/0922f05b-e6c8-457b-ae48-20dfdfa23e09",
+    "sha256": "9eb81f699f7b8bfdfa4b6ec41cee2883563d1d8de79bed2298167b90c212ec12",
+    "candidate_exact": true
+  },
+  "status": "PUBLICATION_AUTHORIZED_WITH_EXISTING_RULESET"
+}
