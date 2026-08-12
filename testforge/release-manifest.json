@@ -33,12 +33,12 @@
     {
       "path": "assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "assets/schemas/finding.schema.json",
@@ -633,12 +633,12 @@
     {
       "path": "skills/software-verification/assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "skills/software-verification/assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "skills/software-verification/assets/schemas/finding.schema.json",
