@@ -1,36 +1,31 @@
 # Hesperos documentation review — TestForge
 
-Receipt: `TESTFORGE-HESPEROS-0c93516-ff21cef0-20260812`
+Receipt: `TESTFORGE-HESPEROS-441a22b-af19aa44-20260812`
 
-- Reviewed content commit: `0c935166bc35baafb39108dd888812e64023c0aa`
-- Governed fingerprint: `ff21cef0cb1e7155769a9a4a06688b2b240eb2662c0dc6ca92c1cfb57d71fee7`
-- Governed files: 63; the complete 49-entry customer-document manifest plus presentation assets/styles and the source used to validate claims
-- Review disposition: `CONTENT PASS — LOCAL CANDIDATE`; publication and rendered-candidate approval remain separate
+- Reviewed content commit: `441a22b8ac1f6fda9c4d7ba355f5cca19f365d1c`
+- Governed fingerprint: `af19aa440e63bfd1d4fd8e4d9e6c516dabf03892747743b1de138600e191c7b3`
+- Governed files: 77; all 49 declared customer documents plus presentation, release, workflow, implementation, manifest, and test sources used to check their claims
+- Review disposition: `CONTENT PASS — LOCAL CANDIDATE`; publication and deployed-source verification remain separate
 
-## Full-cycle result
+## Full documentation cycle
 
-1. Discovery and source custody: read the root README, every current customer-facing document in `documentation-manifest.json`, every release document, Pages source, both skill entrypoints, package/output contracts, release manifests, and the verification code/tests needed to check claims.
-2. Audience and journey: rebuilt the Pages path for maintainers, release engineers, AI-product builders, and reviewers. The journey now covers product fit, inputs and outputs, first success, workflows, Codex plugin and standalone installation, Claude installation, verification, update, removal, cleanup, recovery, privacy, network/storage boundaries, evidence status, support, contribution, licensing, and terms.
-3. Authorship: replaced the thin release-oriented web experience with a usable customer path; added a real 404 recovery page; reconciled README, release notes, archive custody, package docs, and site claims.
-4. Evidence control: removed unsupported claims that the current release contained a portal payload or had passed an automated external scan. The current/frozen v1.1.5 kit and separate retained v1.1.4 portal packet are now distinguished.
-5. Review and repair: fixed stale v1.0.2 release notes, stale archive custody, a nonexistent v1.1.5 portal-custody reference, incomplete lifecycle instructions, missing Pages guidance, broken visual-role reuse, CRLF generation in current manifests, mobile navigation, light-section links/focus, and responsive grid regressions.
-6. Final reread: the complete governed customer-document set was reread after authorship. Subsequent changes were limited to Pages CSS accessibility/responsiveness, followed by a targeted source reread and complete documentation/test rerun before the bound commit.
+1. Read the root README top to bottom and read all 49 current customer-facing documents declared by `documentation-manifest.json` top to bottom (1,864 lines before final two targeted reference repairs).
+2. Read the Pages HTML and recovery page completely, then checked their navigation, anchors, metadata, customer route, and source boundary.
+3. Read the operator and reviewer SKILL entrypoints, metered-verification doctrine, assessor, schema, templates, current package/release manifests, workflows, and tests needed to verify documentation claims.
+4. Reconciled the documentation with v1.1.6 after the remediation branch met a newer public main: current release identity, current/frozen archive custody, hosted-capacity safeguards, action triggers, package counts, test counts, and evidence boundaries now agree.
+5. Repaired a historical v1.1.0 note that named v1.1.5 as the current release authority; labeled old Build Week counts as an explicit v1.0.2 snapshot; replaced two reflow-fragile “above” references with stable step/section references.
+6. Reran Hesperos accessible-Markdown lint over all 47 declared Markdown documents: 46 pass without findings; the sole retained heuristic hit is the unmodified standard MIT sentence “The above copyright notice…”. Legal text was correctly preserved.
+7. Re-ran local-link, release-identity, manifest, package, and external-link checks after the final content changes. All 22 unique external customer URLs returned HTTP 200.
 
 ## Customer-journey verdicts
 
-- What it is / audience / problem: PASS
-- Capabilities and boundaries: PASS
-- Installation on every supported host: PASS
-- Installation verification and first successful use: PASS
-- Representative workflows and realistic inputs/outputs: PASS
-- Configuration and host-specific behavior: PASS
-- Troubleshooting and recovery: PASS
-- Update, removal, and data cleanup: PASS
-- Privacy, storage, network, and security boundaries: PASS
-- Limitations and unsupported claims: PASS
-- Provenance, validation, and evidence state: PASS
-- Support, contribution, licensing, and terms: PASS
-- Local Pages content and navigation: PASS
-- Deployed candidate Pages: NOT TESTED — candidate is intentionally unpublished
+- Product, audience, problem, capabilities, and boundaries: PASS
+- Supported-host installation, verification, update, removal, rollback, and cleanup: PASS
+- First successful use, realistic inputs/outputs, normal workflows, and metered configuration: PASS
+- Troubleshooting, recovery, privacy, storage, network, and security boundaries: PASS
+- Limitations, unsupported claims, provenance, validation, evidence state, support, contribution, license, and terms: PASS
+- Local Pages content, navigation, recovery, and metadata source: PASS
+- Deployed final Pages bytes and navigation: pending publication
+- GUI-rendered browser experience: NOT TESTED under the explicit no-browser constraint
 
 Any change to a governed file or the reviewed content commit invalidates this receipt.

@@ -1,33 +1,27 @@
 # Adversarial verification — TestForge
 
-Receipt: `TESTFORGE-ADVERSARIAL-0c93516-ff21cef0-20260812`
+Receipt: `TESTFORGE-ADVERSARIAL-441a22b-af19aa44-20260812`
 
-- Candidate: `0c935166bc35baafb39108dd888812e64023c0aa`
-- Fingerprint: `ff21cef0cb1e7155769a9a4a06688b2b240eb2662c0dc6ca92c1cfb57d71fee7`
-- Local candidate disposition: `PASS`
-- Public release disposition: `BLOCKED — PUBLICATION NOT EXECUTED`
+- Candidate: `441a22b8ac1f6fda9c4d7ba355f5cca19f365d1c`
+- Fingerprint: `af19aa440e63bfd1d4fd8e4d9e6c516dabf03892747743b1de138600e191c7b3`
+- Local candidate disposition: `REVIEW_PASS`
+- Publication disposition: `READY_TO_PUBLISH`; live exact-content oracles remain mandatory
 
 ## Challenges performed
 
-- Re-read customer claims against both skill sources, package manifest, current/frozen release manifests, validators, and tests.
-- Challenged current-vs-frozen release identity, host support, portal publication/scanning, activation language, privacy/network behavior, and evidence authority.
-- Exercised all local tests and validators after the final content change.
-- Verified every local Pages route, fragment, and asset for index and 404.
-- Opened all three final visual files and separately challenged role identity, text requirements, crop, hierarchy, contrast, distinctness, and wiring.
-- Re-examined responsive CSS after a focus-color change and caught/repaired corrupted mobile grid declarations before the bound commit.
-- Queried the live repository, Pages configuration, rendered HTML bytes/markers, live hero bytes, main-branch rule, and repository Open Graph configuration without mutation.
+- Re-read every declared customer document and attacked current-vs-historical release identity, supported hosts, activation language, privacy/network claims, portal state, release authority, cleanup, support, and licensing against actual package sources and tests.
+- Reconciled remediation content with newer v1.1.6 main rather than overwriting the release: current package, frozen archive, retained v1.1.4 portal packet, workflows, documentation, and evidence now stay distinct.
+- Found and repaired the stale v1.1.5 current-authority pointer, ambiguous historical Build Week counts, and two unstable directional references. The verbatim MIT clause was preserved.
+- Challenged documentation structure separately from substance: 49-document full read, Hesperos lint, local-link tests, 22 external URLs, and current-release checks all pass.
+- Reopened all three images and challenged role distinction, identity, crop safety, hierarchy, contrast, artifacts, required social text, and wiring. All pass.
+- Challenged the merged product claims through 98 unit/harness tests, 233-file package verification, 12-case eval validation, current manifests, frozen v1.1.6 verification, and line-ending checks. All pass.
+- Corrected the prior false Actions blocker: this is a public repository and standard hosted runners are free; the complete 13-job remediation graph has zero billable minutes.
 
-## Remote facts at review time
+## Remaining publication oracles
 
-- Remote `main`: `93120abaa39c26a6f0ec494bdff0c7e6f92344cf`
-- Pages: built from `main:/docs` at `https://stunspot.github.io/TestForge/`
-- Live index: HTTP 200, 17,593 bytes, but lacks the candidate `start`, `troubleshooting`, `privacy`, and `evidence` sections and lacks the candidate social-card reference
-- Live Pages hero: HTTP 200, 1,481,766 bytes — the superseded generic server-room image, not the reviewed 2,212,223-byte candidate
-- GitHub repository Open Graph image: unconfigured (`open_graph_image_url` null)
-- Main protection: ruleset `20247129`, required status `line-ending-policy`, no observed bypass path
+- PR checks pass on the synchronized exact head and protected merge completes without ruleset weakening.
+- Main checks and Pages deployment pass for the final merge commit.
+- Live raw README, Pages HTML/CSS/404, navigation/fragments, assets, metadata, and repository Open Graph bytes equal the reviewed candidate.
+- GUI-rendered browser and assistive-technology behavior remain `NOT TESTED`; no later receipt may promote them without direct execution.
 
-## Blocking decision
-
-A push would trigger four GitHub-hosted test jobs (one line-ending job and a three-OS matrix) plus a Pages deployment. The user has stated that hosted Actions capacity is exhausted and instructed that it not be consumed. Therefore publication is intentionally NOT EXECUTED. The candidate cannot receive a live repository/Pages/assets PASS until capacity or an authorized alternative exists. GitHub repository social-preview upload also remains unexecuted because the supported control is the repository Settings UI and browser/GUI control is explicitly out of scope.
-
-No live PASS is inferred from the existing 200 response. Any governed-file change invalidates this receipt.
+Any governed-file change invalidates this review.

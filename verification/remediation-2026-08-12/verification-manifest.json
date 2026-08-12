@@ -1,21 +1,21 @@
 {
-    "schema":  "portfolio-remediation-verification/v1",
-    "repository":  "https://github.com/Stunspot/TestForge",
-    "reviewed_commit":  "0c935166bc35baafb39108dd888812e64023c0aa",
-    "governed_fingerprint":  "ff21cef0cb1e7155769a9a4a06688b2b240eb2662c0dc6ca92c1cfb57d71fee7",
-    "readme_content":  "PASS_LOCAL_CANDIDATE",
-    "pages_content":  "PASS_LOCAL_CANDIDATE",
-    "rendered_pages":  "LIVE_VERIFICATION_FAIL_SUPERSEDED_REMOTE",
-    "readme_hero":  "PASS_LOCAL_CANDIDATE",
-    "pages_hero":  "PASS_LOCAL_CANDIDATE_LIVE_OLD",
-    "social_card_file":  "PASS_LOCAL_CANDIDATE",
-    "repository_social_card_wiring":  "PASS_LIVE_EXACT_CANDIDATE",
-    "hesperos":  "PASS",
-    "accessibility":  "PASS_STATIC_DEPLOYED_NOT_TESTED",
-    "adversarial":  "READY_WITH_RESIDUAL_RISK",
-    "final_status":  "READY_WITH_RESIDUAL_RISK",
-    "blockers":  [
-                     "Reviewed candidate is not yet merged to main or deployed; exact live README, Pages, routes, links, and assets remain post-publication oracles.",
-                     "GUI browser rendering and assistive-technology behavior remain NOT TESTED."
-                 ]
+  "schema": "portfolio-remediation-verification/v1",
+  "repository": "https://github.com/Stunspot/TestForge",
+  "reviewed_commit": "441a22b8ac1f6fda9c4d7ba355f5cca19f365d1c",
+  "governed_fingerprint": "af19aa440e63bfd1d4fd8e4d9e6c516dabf03892747743b1de138600e191c7b3",
+  "readme_content": "PASS_LOCAL_CANDIDATE",
+  "pages_content": "PASS_LOCAL_CANDIDATE",
+  "rendered_pages": "NOT_TESTED_GUI",
+  "readme_hero": "PASS_PIXEL_REVIEWED",
+  "pages_hero": "PASS_PIXEL_REVIEWED",
+  "social_card_file": "PASS_PIXEL_REVIEWED_EXACT_TEXT",
+  "repository_social_card_wiring": "PASS_LIVE_EXACT_CANDIDATE",
+  "hesperos": "PASS",
+  "accessibility": "PASS_STATIC_GUI_AND_AT_NOT_TESTED",
+  "adversarial": "REVIEW_PASS_WITH_LIVE_CONDITIONS",
+  "final_status": "REMEDIATED_NOT_YET_LIVE",
+  "blockers": [
+    "Protected merge and exact live-source verification remain to be executed.",
+    "GUI browser rendering and assistive-technology behavior remain NOT TESTED."
+  ]
 }

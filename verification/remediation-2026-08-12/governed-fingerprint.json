@@ -1,324 +1,394 @@
 {
-  "schema": "portfolio-documentation-fingerprint/v1",
-  "commit": "0c935166bc35baafb39108dd888812e64023c0aa",
-  "algorithm": "sha256(path UTF-8 + NUL + lowercase file SHA-256 + LF), records sorted case-insensitively",
-  "file_count": 63,
-  "collection_sha256": "ff21cef0cb1e7155769a9a4a06688b2b240eb2662c0dc6ca92c1cfb57d71fee7",
-  "files": [
-    {
-      "path": "ARCHIVE-CUSTODY.md",
-      "sha256": "0fac3506f937abc0769d48aa1c57b29eadfd83ea11d6310488b25090971b2278",
-      "bytes": 3246
-    },
-    {
-      "path": "assets/testforge-readme-hero.png",
-      "sha256": "6891298c9e6d0cea15e72a249ecaba2d6546dbe841578b239ad19dc0d2b09a03",
-      "bytes": 2236720
-    },
-    {
-      "path": "assets/testforge-social-preview.png",
-      "sha256": "9eb81f699f7b8bfdfa4b6ec41cee2883563d1d8de79bed2298167b90c212ec12",
-      "bytes": 600421
-    },
-    {
-      "path": "ATTRIBUTION.md",
-      "sha256": "72142ee7e0deca5f96a0e67037fbb0750a1b50c05dccf1409f36ab58469ff8c8",
-      "bytes": 638
-    },
-    {
-      "path": "BUILD-NOTE.md",
-      "sha256": "522794aba0693fefdc28905a0bb7f9310d70e1aefed1294988b0ae63a71aff87",
-      "bytes": 2809
-    },
-    {
-      "path": "BUILD-WEEK.md",
-      "sha256": "d425220d1501d59cdfdce8401e8d66ca95a752cf545f33daff36b77b8ff95d05",
-      "bytes": 10210
-    },
-    {
-      "path": "CONTRIBUTING.md",
-      "sha256": "57bf58033a9570984271c4e39ec79387ff09af9cbd9e81bb2736ade080452399",
-      "bytes": 959
-    },
-    {
-      "path": "docs/.nojekyll",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0
-    },
-    {
-      "path": "docs/404.html",
-      "sha256": "99b1f755194e2f8d4ac0775327bc90496b764ee1331400f68a2c62142e1f407e",
-      "bytes": 1579
-    },
-    {
-      "path": "docs/assets/testforge-hero.png",
-      "sha256": "f639f84c2c597053ca04c010be36201c46011596dfbeec9b7ca4e76e38a68bf8",
-      "bytes": 2212223
-    },
-    {
-      "path": "docs/index.html",
-      "sha256": "5bef275716b6d453f8d305dc10249705b7a1b11ad6dee4638f0cd137f3c2537e",
-      "bytes": 27157
-    },
-    {
-      "path": "docs/SITE-SOURCE.md",
-      "sha256": "587fd2a272411dc0ca217bcc2f0390469ee348653a1e79f4f54025298ffbe6f8",
-      "bytes": 2178
-    },
-    {
-      "path": "docs/style.css",
-      "sha256": "f3f1b17a5646f75b66bbc58773c24bcb3d537af979318629b5d65584ea3bdebd",
-      "bytes": 19819
-    },
-    {
-      "path": "JUDGE-QUICKSTART.md",
-      "sha256": "dd493b3a35c6f8d032beb2ef7302462d2df645ff94f56266591c020fd7041a3d",
-      "bytes": 3703
-    },
-    {
-      "path": "LICENSE.md",
-      "sha256": "ed7874c404bbcf284cb8e3a10ffe2f4c13b0dffec6238215d2171df658fb124e",
-      "bytes": 2770
-    },
-    {
-      "path": "NOTICE.md",
-      "sha256": "1eb736dd6a4ad57c2959d0efd5f273622d095224d6e1efd72c22fac25d4d381a",
-      "bytes": 680
-    },
-    {
-      "path": "PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md",
-      "sha256": "e742372198a68c883024eef8e1bf49bb3042684e58e18bea0280dd9d33aa1482",
-      "bytes": 2460
-    },
-    {
-      "path": "README.md",
-      "sha256": "7f8d7dd42e0daf8ae352c0b5923695cb4a441e581ee0bdc71a577a2261e90da4",
-      "bytes": 9575
-    },
-    {
-      "path": "release-docs/CAPABILITIES.md",
-      "sha256": "60bbe597a517b99197c38b135b7568f5d24fc3dd8e3a62bf4919f1307075c715",
-      "bytes": 966
-    },
-    {
-      "path": "release-docs/DESCRIPTION-CUSTODY.md",
-      "sha256": "e02215f9cb9a35a87ca907926e06237648e28ec7374472324a3cdd7cebb4d922",
-      "bytes": 697
-    },
-    {
-      "path": "release-docs/HOST-EVIDENCE-BOUNDARY.md",
-      "sha256": "cc578954c05ba77698c268f0f46ae1f1a6458cb3861b7f6f5483a7d7fba054bc",
-      "bytes": 864
-    },
-    {
-      "path": "release-docs/INSTALL-CLAUDE.md",
-      "sha256": "8a7f5c8b0f0c78f70ea7657e0d68be88319fb4c0989c028966e859d133fa797e",
-      "bytes": 2220
-    },
-    {
-      "path": "release-docs/INSTALL-CODEX.md",
-      "sha256": "799323c909ca654c0b60c7e0c25ebedfb266dc968aa56b4b10d460ac2f78e627",
-      "bytes": 2677
-    },
-    {
-      "path": "release-docs/LIMITATIONS.md",
-      "sha256": "128e5faeeec8027250f70d2301270de1c07597d29349d6e270055bdd482510b5",
-      "bytes": 788
-    },
-    {
-      "path": "release-docs/MAINTAINER-GUIDE.md",
-      "sha256": "b13d3bbfa3573b841e03b39ca956504f9490631c25af105428423927d27e0af0",
-      "bytes": 1875
-    },
-    {
-      "path": "release-docs/PACKAGE-REFERENCE.md",
-      "sha256": "48a1a25aec70cafefd1f14bf6cc70188820a0320857d15ab68eec739ae35fd1d",
-      "bytes": 801
-    },
-    {
-      "path": "release-docs/PROVENANCE.md",
-      "sha256": "a47f4b0da4699482133ac72df87e305684929adf71d5d9dfefaf4fa283d1719b",
-      "bytes": 976
-    },
-    {
-      "path": "release-docs/QUICK-START.md",
-      "sha256": "7b7663631e63f69dbf7b63170a0081200576c9b0d72cbc7257f2cb3a4e1bd46e",
-      "bytes": 2844
-    },
-    {
-      "path": "release-docs/README.md",
-      "sha256": "5e84ccd0c591efcbf95a2b40b96192514438d12b2bb25a33f5a2c65e1e06706d",
-      "bytes": 1145
-    },
-    {
-      "path": "release-docs/SUPPORT.md",
-      "sha256": "8b384f697493ef70f3eded812d669b155b21e9234e638ae5155ad312c24057c6",
-      "bytes": 1891
-    },
-    {
-      "path": "release-docs/VALIDATION.md",
-      "sha256": "77178868e7957a9c39ed873577713a24434c03255f642b0e8aef3fa6a4af7633",
-      "bytes": 1357
-    },
-    {
-      "path": "release-manifest.json",
-      "sha256": "c0fe9af8f6dca1516bb3572d13fac6e8faf0bb6506c0812cdc08e82ed1b6c0ab",
-      "bytes": 207183
-    },
-    {
-      "path": "RELEASE-NOTES-v1.1.5.md",
-      "sha256": "b0585c749c2604c75e2d3f0a4b3cc660bb5350d638973da814637ed6e4f4e84b",
-      "bytes": 897
-    },
-    {
-      "path": "RELEASE-NOTES.md",
-      "sha256": "58bc14d694d8e349cbaf97f47b892b6392d10b1c7f845874f76d5168db032388",
-      "bytes": 1089
-    },
-    {
-      "path": "SECURITY.md",
-      "sha256": "e985dce607e80fa60c9290cdea64e5f90b2ef0f2d999210f86de5e5d4c857ed9",
-      "bytes": 939
-    },
-    {
-      "path": "testforge/assets/templates/verification-manifest.json",
-      "sha256": "7cbc354a1d595fc83bc7f3c340f11d95d1ef5519d80a18d8b25778eee80027d4",
-      "bytes": 656
-    },
-    {
-      "path": "testforge/CHANGELOG.md",
-      "sha256": "f01d10f45b33c382931c998c8cdbfca83cd7d15a81ba73ff2234df622a4aa7a2",
-      "bytes": 4200
-    },
-    {
-      "path": "testforge/docs/CAPABILITY-MATRIX.md",
-      "sha256": "fa3c14a4eb3da2806de7019a6cfb196ebdeaf14e4fa4a5a554eef54988e4d09e",
-      "bytes": 1319
-    },
-    {
-      "path": "testforge/docs/DATA-AND-PRIVACY.md",
-      "sha256": "5587cc1505e129d9fcaa0f7cdb67f4d909de0f4ac55d98811bd2f136fd1d71d8",
-      "bytes": 1953
-    },
-    {
-      "path": "testforge/docs/HOST-COMPATIBILITY.md",
-      "sha256": "0cda530cc8c44cda1b025a3c31f5f1a5c54b827a6095f4c22c107ae6c5e1dc96",
-      "bytes": 1596
-    },
-    {
-      "path": "testforge/docs/INSTALL-CLAUDE.md",
-      "sha256": "6c9a621dd54ca2fc4bda9bad25650d83b72da5efe451d9a4e59cc13ddbc0dad0",
-      "bytes": 2317
-    },
-    {
-      "path": "testforge/docs/INSTALL-CODEX.md",
-      "sha256": "085dc6d43c13a31de00df8d9e8cd9dfe7da6446dc3580f6df942b8d5866863cf",
-      "bytes": 2743
-    },
-    {
-      "path": "testforge/docs/LIMITATIONS.md",
-      "sha256": "68e226cbf1e01a849c27395a94f1806191b2d6a0bb44fc62525aad65cf96b164",
-      "bytes": 1220
-    },
-    {
-      "path": "testforge/docs/QUICK-START.md",
-      "sha256": "ea31faa7d2ef61dc62efdd1f5dccd885925f449ee2657af303e10649d145a1a2",
-      "bytes": 2650
-    },
-    {
-      "path": "testforge/docs/SALES-DEMO.md",
-      "sha256": "31edbc66dc07aa1a94d2652aa23a2dbb736b42f5e1cc54cbe8f57c5f4e5a0b9b",
-      "bytes": 1028
-    },
-    {
-      "path": "testforge/docs/SUPPORT-AND-VERSIONING.md",
-      "sha256": "df038085775458bdad65f28572748f1e4764644cf241860a000452d9f22f15d7",
-      "bytes": 1133
-    },
-    {
-      "path": "testforge/docs/SUPPORTED-ENVIRONMENTS.md",
-      "sha256": "c9113c412443ef506e2db8450199b85efa33e11105493e74e75739776a737f6c",
-      "bytes": 1046
-    },
-    {
-      "path": "testforge/docs/TERMS-OF-USE.md",
-      "sha256": "26c7d924cf0162ec4135898ca7e6d987c2f5208d83768948df404611b56c8ac7",
-      "bytes": 3712
-    },
-    {
-      "path": "testforge/docs/TROUBLESHOOTING.md",
-      "sha256": "1d4a6ecab38dbcb177045ea37b119a5bac13942497a80e60d17f36aaccff292d",
-      "bytes": 1313
-    },
-    {
-      "path": "testforge/docs/VALIDATION.md",
-      "sha256": "5cd09dce1f87d6e61d47ab5563700550e06fffb80d0fd6eba6c19beec495c473",
-      "bytes": 1282
-    },
-    {
-      "path": "testforge/docs/WORKFLOWS.md",
-      "sha256": "b3d3e30a3b30214bf2d1afc75a98fe06eb2d7b28b9220650e82c6678f7cbf725",
-      "bytes": 2106
-    },
-    {
-      "path": "testforge/package-manifest.yaml",
-      "sha256": "91db75ad2c9e1d319a257c0afb408d8e1a00f02ecfa1c5d487d4f275c6d13eac",
-      "bytes": 1191
-    },
-    {
-      "path": "testforge/PROVENANCE.md",
-      "sha256": "0fb95029625f4f302f106d36de999db7bc3c55618e7cf8fa86b0d9a3d7114e55",
-      "bytes": 1422
-    },
-    {
-      "path": "testforge/README.md",
-      "sha256": "3e6f517b87836508a9832f6170858a774a42a367d9c8a5f90aca30c449504c32",
-      "bytes": 2665
-    },
-    {
-      "path": "testforge/release-manifest.json",
-      "sha256": "bd5fa3169515894b15af7019ff6153e7b7441afe7c0718aea3aabde3ca2fe61e",
-      "bytes": 42097
-    },
-    {
-      "path": "testforge/SECURITY.md",
-      "sha256": "187af3cd5880877410649fb60ca112a9cdf04a6c97fb9c188ce8513339d63521",
-      "bytes": 1260
-    },
-    {
-      "path": "testforge/skills/software-verification/SKILL.md",
-      "sha256": "77f54f84ee60259e17f2405bc9981723228a6a4e8d5b16f5063fc444e2c561de",
-      "bytes": 11997
-    },
-    {
-      "path": "testforge/skills/verification-reviewer/SKILL.md",
-      "sha256": "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b",
-      "bytes": 3424
-    },
-    {
-      "path": "tests/test_documentation.py",
-      "sha256": "96cdfdcd982c80f363becffdf38f690becfdcd2e8c8cbe31e480428c552eb0b6",
-      "bytes": 5466
-    },
-    {
-      "path": "tools/augment-evals/README.md",
-      "sha256": "b974cb1daf25f44a60f8c2845e6e36337e3259ded38d02704df5c927e390f3d2",
-      "bytes": 9923
-    },
-    {
-      "path": "tools/rebuild_public_release.py",
-      "sha256": "32b3a0d32a4d7a537476125333db59db7c3057a660765cbe81f52e5d27be11e5",
-      "bytes": 4268
-    },
-    {
-      "path": "tools/validate_release_manifests.py",
-      "sha256": "4ab605eea110e3a4aed6826d4bd0e4b46d117a5a0d44600bfeace9f68d9aa661",
-      "bytes": 4458
-    },
-    {
-      "path": "TRADEMARKS.md",
-      "sha256": "463e2f6627994a433b459ae9942f76db0b70facee91c296219e9ace917db77bd",
-      "bytes": 762
-    }
-  ]
+    "schema":  "portfolio-documentation-fingerprint/v1",
+    "commit":  "441a22b8ac1f6fda9c4d7ba355f5cca19f365d1c",
+    "algorithm":  "sha256(path UTF-8 + NUL + lowercase file SHA-256 + LF), records sorted case-insensitively",
+    "file_count":  77,
+    "collection_sha256":  "af19aa440e63bfd1d4fd8e4d9e6c516dabf03892747743b1de138600e191c7b3",
+    "files":  [
+                  {
+                      "path":  ".agents/plugins/marketplace.json",
+                      "sha256":  "4f1010e892c432ba62b62c2d611af692b19cdfaeb24a7d1e8aa0d0d034421ed7",
+                      "bytes":  397
+                  },
+                  {
+                      "path":  ".github/workflows/deploy-pages.yml",
+                      "sha256":  "06411a7dcef287bfab89e8ab01978d1182e83c3b25cecde716c4660faba19b03",
+                      "bytes":  781
+                  },
+                  {
+                      "path":  ".github/workflows/test.yml",
+                      "sha256":  "3f328e9f5474370f6f191bdb9ef928c16efcfa1e0586945ce1cb3e9ec87c92c2",
+                      "bytes":  1119
+                  },
+                  {
+                      "path":  "ARCHIVE-CUSTODY.md",
+                      "sha256":  "f00ba461b43c3bc170d13f5270f8a74ac5bb635b1e5401f99c602e13bd2805ec",
+                      "bytes":  3337
+                  },
+                  {
+                      "path":  "assets/testforge-readme-hero.png",
+                      "sha256":  "6891298c9e6d0cea15e72a249ecaba2d6546dbe841578b239ad19dc0d2b09a03",
+                      "bytes":  2236720
+                  },
+                  {
+                      "path":  "assets/testforge-social-preview.png",
+                      "sha256":  "9eb81f699f7b8bfdfa4b6ec41cee2883563d1d8de79bed2298167b90c212ec12",
+                      "bytes":  600421
+                  },
+                  {
+                      "path":  "ATTRIBUTION.md",
+                      "sha256":  "72142ee7e0deca5f96a0e67037fbb0750a1b50c05dccf1409f36ab58469ff8c8",
+                      "bytes":  638
+                  },
+                  {
+                      "path":  "BUILD-NOTE.md",
+                      "sha256":  "cd6d587a238a65766bf0da59ea35d2b6abe5a84255138d453532134fab4fd6c0",
+                      "bytes":  2829
+                  },
+                  {
+                      "path":  "BUILD-WEEK.md",
+                      "sha256":  "b8c06a6148caa2279226345c192cb4e6a9411196be3cd2ff37620d194761e8f8",
+                      "bytes":  10509
+                  },
+                  {
+                      "path":  "CONTRIBUTING.md",
+                      "sha256":  "57bf58033a9570984271c4e39ec79387ff09af9cbd9e81bb2736ade080452399",
+                      "bytes":  959
+                  },
+                  {
+                      "path":  "docs/.nojekyll",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "docs/404.html",
+                      "sha256":  "99b1f755194e2f8d4ac0775327bc90496b764ee1331400f68a2c62142e1f407e",
+                      "bytes":  1579
+                  },
+                  {
+                      "path":  "docs/assets/testforge-hero.png",
+                      "sha256":  "f639f84c2c597053ca04c010be36201c46011596dfbeec9b7ca4e76e38a68bf8",
+                      "bytes":  2212223
+                  },
+                  {
+                      "path":  "docs/index.html",
+                      "sha256":  "0e756a1481d70ce36b6f8157403022c29d24cc3288d33a7e87b7f8c2435c1701",
+                      "bytes":  27157
+                  },
+                  {
+                      "path":  "docs/SITE-SOURCE.md",
+                      "sha256":  "587fd2a272411dc0ca217bcc2f0390469ee348653a1e79f4f54025298ffbe6f8",
+                      "bytes":  2178
+                  },
+                  {
+                      "path":  "docs/style.css",
+                      "sha256":  "f3f1b17a5646f75b66bbc58773c24bcb3d537af979318629b5d65584ea3bdebd",
+                      "bytes":  19819
+                  },
+                  {
+                      "path":  "documentation-manifest.json",
+                      "sha256":  "2a654257294da78f94eebc0b6b7d02789cf0456d46d9fbd5268eff39a76d0f7d",
+                      "bytes":  6820
+                  },
+                  {
+                      "path":  "JUDGE-QUICKSTART.md",
+                      "sha256":  "13bf30896cebe30e2589ac8216a935ea39f08ff90b5bf9c25255f17bcddf9a96",
+                      "bytes":  3707
+                  },
+                  {
+                      "path":  "LICENSE.md",
+                      "sha256":  "ed7874c404bbcf284cb8e3a10ffe2f4c13b0dffec6238215d2171df658fb124e",
+                      "bytes":  2770
+                  },
+                  {
+                      "path":  "NOTICE.md",
+                      "sha256":  "1eb736dd6a4ad57c2959d0efd5f273622d095224d6e1efd72c22fac25d4d381a",
+                      "bytes":  680
+                  },
+                  {
+                      "path":  "PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md",
+                      "sha256":  "e742372198a68c883024eef8e1bf49bb3042684e58e18bea0280dd9d33aa1482",
+                      "bytes":  2460
+                  },
+                  {
+                      "path":  "plugins/testforge/.codex-plugin/plugin.json",
+                      "sha256":  "711c6192c83691fcf99cf5134af64af08ea95cd23e62a63341dbbbb3638ef7bf",
+                      "bytes":  2014
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "12c06960e476f9c0b742b383068d10109d81408d810446f7334bf0b234214e23",
+                      "bytes":  9574
+                  },
+                  {
+                      "path":  "release-docs/CAPABILITIES.md",
+                      "sha256":  "cd2c64f84b2dd1e2acfe9b6fe1366436741b22154ba41da7c64f6a288c421bf0",
+                      "bytes":  1093
+                  },
+                  {
+                      "path":  "release-docs/DESCRIPTION-CUSTODY.md",
+                      "sha256":  "e02215f9cb9a35a87ca907926e06237648e28ec7374472324a3cdd7cebb4d922",
+                      "bytes":  697
+                  },
+                  {
+                      "path":  "release-docs/HOST-EVIDENCE-BOUNDARY.md",
+                      "sha256":  "cc578954c05ba77698c268f0f46ae1f1a6458cb3861b7f6f5483a7d7fba054bc",
+                      "bytes":  864
+                  },
+                  {
+                      "path":  "release-docs/INSTALL-CLAUDE.md",
+                      "sha256":  "6f502be8decda520365c1105bf1cb33e6c32a1084191a5e71a5a60d7594a1b37",
+                      "bytes":  2220
+                  },
+                  {
+                      "path":  "release-docs/INSTALL-CODEX.md",
+                      "sha256":  "aa5295ec9d8d7e4985e513aabe854f313dd41f102c0e436a751f2783090b6a5d",
+                      "bytes":  2677
+                  },
+                  {
+                      "path":  "release-docs/LIMITATIONS.md",
+                      "sha256":  "caea704ad7b697c68791d3ee635ba7675215abd6d1cd0723d3d086ae742eed5a",
+                      "bytes":  1140
+                  },
+                  {
+                      "path":  "release-docs/MAINTAINER-GUIDE.md",
+                      "sha256":  "5cdb0b9f0772adf27bc22e9ce7b4b8e0e6987e01b6397481ce52060e834e1d31",
+                      "bytes":  1870
+                  },
+                  {
+                      "path":  "release-docs/PACKAGE-REFERENCE.md",
+                      "sha256":  "323197609d929916d5beb6616853f7fd13507c528b7f7817c057123a19e0d7bc",
+                      "bytes":  1069
+                  },
+                  {
+                      "path":  "release-docs/PROVENANCE.md",
+                      "sha256":  "a4b5e781990ad9d3789cc27458632391f26f82f6ee18b152e476a54f20b287c8",
+                      "bytes":  976
+                  },
+                  {
+                      "path":  "release-docs/QUICK-START.md",
+                      "sha256":  "7c220473e582e40693e46da4e674ba9627b60117c38d1d50537444f1eb3e459e",
+                      "bytes":  3673
+                  },
+                  {
+                      "path":  "release-docs/README.md",
+                      "sha256":  "5e84ccd0c591efcbf95a2b40b96192514438d12b2bb25a33f5a2c65e1e06706d",
+                      "bytes":  1145
+                  },
+                  {
+                      "path":  "release-docs/SUPPORT.md",
+                      "sha256":  "98ea076e19d8c1590b71052db76c1f195dc9132aad3a2ecd3a119015e22e2557",
+                      "bytes":  1891
+                  },
+                  {
+                      "path":  "release-docs/VALIDATION.md",
+                      "sha256":  "d61e2c540ace20531dba614fbe45a8851357e9cfd957ea40f9c687d5736308c1",
+                      "bytes":  1357
+                  },
+                  {
+                      "path":  "release-manifest.json",
+                      "sha256":  "844af2f0305633118d07bf046392dc81d19cb3c7c51147b06b237aca7ea61c1b",
+                      "bytes":  241395
+                  },
+                  {
+                      "path":  "RELEASE-NOTES.md",
+                      "sha256":  "9dfa7e6e4013b693a3785357624a5e631e3afdf0bcace5379c3ca4b388e072ed",
+                      "bytes":  1678
+                  },
+                  {
+                      "path":  "RELEASE-NOTES-v1.1.6.md",
+                      "sha256":  "d6dcf66c4e78caa585d0407ddb08ec4ba4eab5277d87628782a3f571f90bfc6b",
+                      "bytes":  1921
+                  },
+                  {
+                      "path":  "SECURITY.md",
+                      "sha256":  "e985dce607e80fa60c9290cdea64e5f90b2ef0f2d999210f86de5e5d4c857ed9",
+                      "bytes":  939
+                  },
+                  {
+                      "path":  "testforge/CHANGELOG.md",
+                      "sha256":  "08627c37a6baa0318c8109b14ce528a3da32c764fb067c814261a4126508459b",
+                      "bytes":  5237
+                  },
+                  {
+                      "path":  "testforge/docs/CAPABILITY-MATRIX.md",
+                      "sha256":  "9fa2fb634c3717fa2fcb1521dab18c8a778951d469fad389d2f1a82049201db8",
+                      "bytes":  1493
+                  },
+                  {
+                      "path":  "testforge/docs/DATA-AND-PRIVACY.md",
+                      "sha256":  "32cb38baf04ee85e983890ce44c2f06a0a678497f37d4b556c000e55fb4c9e7b",
+                      "bytes":  1953
+                  },
+                  {
+                      "path":  "testforge/docs/HOST-COMPATIBILITY.md",
+                      "sha256":  "277c40a768557356b0aa278c787dd2acf72a93ce4d9a65afccd6c6c81e703f90",
+                      "bytes":  1596
+                  },
+                  {
+                      "path":  "testforge/docs/INSTALL-CLAUDE.md",
+                      "sha256":  "82927330ec8eead0166ca10280b0a7008d48b2e061bbc7a6b22efe94ff10353b",
+                      "bytes":  2317
+                  },
+                  {
+                      "path":  "testforge/docs/INSTALL-CODEX.md",
+                      "sha256":  "085dc6d43c13a31de00df8d9e8cd9dfe7da6446dc3580f6df942b8d5866863cf",
+                      "bytes":  2743
+                  },
+                  {
+                      "path":  "testforge/docs/LIMITATIONS.md",
+                      "sha256":  "5d7f93fedc61ad1fa69b07bbff9fdc4cb0025b223756a50daf8dd75b02ad763e",
+                      "bytes":  1408
+                  },
+                  {
+                      "path":  "testforge/docs/QUICK-START.md",
+                      "sha256":  "32e57c9f4916b95027699d4926c0ba3557678eac7a780e62f811d720be75c9a7",
+                      "bytes":  3872
+                  },
+                  {
+                      "path":  "testforge/docs/SALES-DEMO.md",
+                      "sha256":  "31edbc66dc07aa1a94d2652aa23a2dbb736b42f5e1cc54cbe8f57c5f4e5a0b9b",
+                      "bytes":  1028
+                  },
+                  {
+                      "path":  "testforge/docs/SUPPORT-AND-VERSIONING.md",
+                      "sha256":  "df038085775458bdad65f28572748f1e4764644cf241860a000452d9f22f15d7",
+                      "bytes":  1133
+                  },
+                  {
+                      "path":  "testforge/docs/SUPPORTED-ENVIRONMENTS.md",
+                      "sha256":  "c9113c412443ef506e2db8450199b85efa33e11105493e74e75739776a737f6c",
+                      "bytes":  1046
+                  },
+                  {
+                      "path":  "testforge/docs/TERMS-OF-USE.md",
+                      "sha256":  "26c7d924cf0162ec4135898ca7e6d987c2f5208d83768948df404611b56c8ac7",
+                      "bytes":  3712
+                  },
+                  {
+                      "path":  "testforge/docs/TROUBLESHOOTING.md",
+                      "sha256":  "1d4a6ecab38dbcb177045ea37b119a5bac13942497a80e60d17f36aaccff292d",
+                      "bytes":  1313
+                  },
+                  {
+                      "path":  "testforge/docs/VALIDATION.md",
+                      "sha256":  "5cd09dce1f87d6e61d47ab5563700550e06fffb80d0fd6eba6c19beec495c473",
+                      "bytes":  1282
+                  },
+                  {
+                      "path":  "testforge/docs/WORKFLOWS.md",
+                      "sha256":  "b245c76b1948ead728fbb5865486e42a3da4c1f5ec386079ebcb2403fc5a9248",
+                      "bytes":  2626
+                  },
+                  {
+                      "path":  "testforge/package-manifest.yaml",
+                      "sha256":  "8e81ea34da6e525ab7450646cae899bbc16d8adf3d309b45094629de8cab394d",
+                      "bytes":  1398
+                  },
+                  {
+                      "path":  "testforge/PROVENANCE.md",
+                      "sha256":  "20871f4b40814f93ccb34d1e5a9c9e12b7c283e134c1266889900b3c922936fb",
+                      "bytes":  1452
+                  },
+                  {
+                      "path":  "testforge/README.md",
+                      "sha256":  "3e6f517b87836508a9832f6170858a774a42a367d9c8a5f90aca30c449504c32",
+                      "bytes":  2665
+                  },
+                  {
+                      "path":  "testforge/release-manifest.json",
+                      "sha256":  "4f3f9cfa32a3a9b5a086aa2f626d80e8cb22174f45adf42a07ded7b97fb39340",
+                      "bytes":  43504
+                  },
+                  {
+                      "path":  "testforge/SECURITY.md",
+                      "sha256":  "187af3cd5880877410649fb60ca112a9cdf04a6c97fb9c188ce8513339d63521",
+                      "bytes":  1260
+                  },
+                  {
+                      "path":  "testforge/skills/software-verification/assets/schemas/metered-verification-plan.schema.json",
+                      "sha256":  "5ace038f1f1766d5798ecdcd2edbf7c5687c1fa46427b4765b2452da760e9cbe",
+                      "bytes":  2287
+                  },
+                  {
+                      "path":  "testforge/skills/software-verification/assets/templates/metered-verification-plan.json",
+                      "sha256":  "4ca2744d5a000d478f1896b5e69e7d5a2caba0e5d0d36945132f99cb75ef815b",
+                      "bytes":  788
+                  },
+                  {
+                      "path":  "testforge/skills/software-verification/assets/templates/metered-verification-response.md",
+                      "sha256":  "4d7e1d712109519b840e140d39a018249db030920d74fed24c100d5c2974a972",
+                      "bytes":  3310
+                  },
+                  {
+                      "path":  "testforge/skills/software-verification/references/core/metered-verification.md",
+                      "sha256":  "1bdf07ebfac077b2f15a3b1e89486294dcb1e87ae8436f7f57c84f4b037e9a9f",
+                      "bytes":  7243
+                  },
+                  {
+                      "path":  "testforge/skills/software-verification/scripts/assess_metered_verification.py",
+                      "sha256":  "30e073c1f864f34e87dc2ec5c58d3784469ead684ca1791263b367f9aaf0e4d9",
+                      "bytes":  9785
+                  },
+                  {
+                      "path":  "testforge/skills/software-verification/SKILL.md",
+                      "sha256":  "1c8c50843e76c263377224c137e9fa7d1c46551b12e62b04b0976eea6ddbe3b3",
+                      "bytes":  17250
+                  },
+                  {
+                      "path":  "testforge/skills/verification-reviewer/SKILL.md",
+                      "sha256":  "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b",
+                      "bytes":  3424
+                  },
+                  {
+                      "path":  "testforge/tests/test_host_packaging.py",
+                      "sha256":  "b444e2bfec9469683f62313510e6216b287da56c3c5d6fbf85deb3f59aa325fe",
+                      "bytes":  1758
+                  },
+                  {
+                      "path":  "testforge/tests/test_metered_verification.py",
+                      "sha256":  "f9015909fba5a6449e4dc67ba871e850afee872a7e56f0682af9f8983bf92f2b",
+                      "bytes":  9757
+                  },
+                  {
+                      "path":  "tests/test_documentation.py",
+                      "sha256":  "ad6d803501ec2381a8603f8cfe28188b2c50fe3e13a920e08ae5611d560875fe",
+                      "bytes":  5466
+                  },
+                  {
+                      "path":  "tests/test_public_distribution.py",
+                      "sha256":  "a9a2af48b28749007edd7887529495a575cba629b80539bd4b3c66a5d04ad913",
+                      "bytes":  6110
+                  },
+                  {
+                      "path":  "tests/test_release_identity.py",
+                      "sha256":  "10a449823ec863ef489165635806fab9d316ec36f73923737429262c4ca0b2c8",
+                      "bytes":  3132
+                  },
+                  {
+                      "path":  "tools/augment-evals/augment_eval.py",
+                      "sha256":  "6ebc4f5a01b4cf59754a00b0344aca508751286677082be8410f46434ba920f8",
+                      "bytes":  69105
+                  },
+                  {
+                      "path":  "tools/augment-evals/README.md",
+                      "sha256":  "80b0dd9474e2e4fb44d82595d1d3ea97749c5235c68b43d2fe737a0a60e91e34",
+                      "bytes":  11365
+                  },
+                  {
+                      "path":  "tools/rebuild_public_release.py",
+                      "sha256":  "f6e4fa00425c170aa5a8385d9ce0a39ae6fe9f8af632e8f2d3eafdd0e4907e3b",
+                      "bytes":  4346
+                  },
+                  {
+                      "path":  "tools/validate_release_manifests.py",
+                      "sha256":  "4f2ca918673e0db9073c824fd204e6d3962b6efeffb4cd205043a71cbcf1c556",
+                      "bytes":  4503
+                  },
+                  {
+                      "path":  "TRADEMARKS.md",
+                      "sha256":  "463e2f6627994a433b459ae9942f76db0b70facee91c296219e9ace917db77bd",
+                      "bytes":  762
+                  }
+              ]
 }
