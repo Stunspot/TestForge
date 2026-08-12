@@ -43,9 +43,9 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 ## Repository map
 
 - [`docs/`](docs/) - the tailored GitHub Pages site, generated hero artwork, and site-source boundary.
-- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.5.
+- [`testforge/`](testforge/) - the complete portable TestForge Augment v1.1.6.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
-- [`RELEASE-NOTES-v1.1.5.md`](RELEASE-NOTES-v1.1.5.md) - current verification-cycle custody rule and package boundary.
+- [`RELEASE-NOTES-v1.1.6.md`](RELEASE-NOTES-v1.1.6.md) - metered-verification safeguards and exact evidence boundary.
 - [`ARCHIVE-CUSTODY.md`](ARCHIVE-CUSTODY.md) - canonical Augment, plugin, standalone-skill, Claude, GitHub, and backup custody.
 - [`PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md`](PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md) - exact OpenAI draft listing, portal-specific upload custody, reviewer cases, and owner-only submission gate.
 - [`testforge/docs/SALES-DEMO.md`](testforge/docs/SALES-DEMO.md) - a compact proof-of-value scenario.
@@ -59,13 +59,13 @@ codex plugin marketplace add Stunspot/TestForge
 codex plugin add testforge@cd-testforge
 ```
 
-Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v1.1.5 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
+Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v1.1.6 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
 
 ## Quick start: use the standalone Agent SKILLs
 
 Download the latest release, unzip it and keep the `testforge/` tree together. Expose both directories under `testforge/skills/` through your Agent host's skill mechanism. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
 
-The frozen v1.1.5 release kit preserves the complete Augment, Codex plugin source, and both Claude skill archives with static package receipts. The maintained repository separately exposes current Claude upload archives. The latest retained OpenAI skills-only portal packet is v1.1.4; it is built and repository-tested, but this repository does not claim it was uploaded, scanned by the current portal, approved, published, or made discoverable. See [archive custody](ARCHIVE-CUSTODY.md) for exact object identities and boundaries.
+The frozen v1.1.6 release kit preserves the complete Augment, Codex plugin source, and both Claude skill archives with static package receipts. The maintained repository separately exposes current Claude upload archives. The latest retained OpenAI skills-only portal packet is v1.1.4; it is built and repository-tested, but this repository does not claim it was uploaded, scanned by the current portal, approved, published, or made discoverable. See [archive custody](ARCHIVE-CUSTODY.md) for exact object identities and boundaries.
 
 Then start with:
 

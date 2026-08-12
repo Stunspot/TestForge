@@ -1,9 +1,9 @@
 {
   "format_version": "1.0",
   "package": "testforge",
-  "version": "1.1.5",
-  "release_date": "2026-08-08",
-  "artifact_count": 225,
+  "version": "1.1.6",
+  "release_date": "2026-08-12",
+  "artifact_count": 232,
   "artifacts": [
     {
       "path": "adapters/claude-code.md",
@@ -33,12 +33,12 @@
     {
       "path": "assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "assets/schemas/finding.schema.json",
@@ -107,28 +107,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 4200,
-      "sha256": "f01d10f45b33c382931c998c8cdbfca83cd7d15a81ba73ff2234df622a4aa7a2"
+      "size": 5237,
+      "sha256": "08627c37a6baa0318c8109b14ce528a3da32c764fb067c814261a4126508459b"
     },
     {
       "path": "docs/CAPABILITY-MATRIX.md",
-      "size": 1319,
-      "sha256": "fa3c14a4eb3da2806de7019a6cfb196ebdeaf14e4fa4a5a554eef54988e4d09e"
+      "size": 1493,
+      "sha256": "9fa2fb634c3717fa2fcb1521dab18c8a778951d469fad389d2f1a82049201db8"
     },
     {
       "path": "docs/DATA-AND-PRIVACY.md",
       "size": 1953,
-      "sha256": "5587cc1505e129d9fcaa0f7cdb67f4d909de0f4ac55d98811bd2f136fd1d71d8"
+      "sha256": "32cb38baf04ee85e983890ce44c2f06a0a678497f37d4b556c000e55fb4c9e7b"
     },
     {
       "path": "docs/HOST-COMPATIBILITY.md",
       "size": 1596,
-      "sha256": "0cda530cc8c44cda1b025a3c31f5f1a5c54b827a6095f4c22c107ae6c5e1dc96"
+      "sha256": "277c40a768557356b0aa278c787dd2acf72a93ce4d9a65afccd6c6c81e703f90"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
       "size": 2317,
-      "sha256": "6c9a621dd54ca2fc4bda9bad25650d83b72da5efe451d9a4e59cc13ddbc0dad0"
+      "sha256": "82927330ec8eead0166ca10280b0a7008d48b2e061bbc7a6b22efe94ff10353b"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
@@ -137,13 +137,13 @@
     },
     {
       "path": "docs/LIMITATIONS.md",
-      "size": 1220,
-      "sha256": "68e226cbf1e01a849c27395a94f1806191b2d6a0bb44fc62525aad65cf96b164"
+      "size": 1408,
+      "sha256": "5d7f93fedc61ad1fa69b07bbff9fdc4cb0025b223756a50daf8dd75b02ad763e"
     },
     {
       "path": "docs/QUICK-START.md",
-      "size": 2650,
-      "sha256": "ea31faa7d2ef61dc62efdd1f5dccd885925f449ee2657af303e10649d145a1a2"
+      "size": 3872,
+      "sha256": "32e57c9f4916b95027699d4926c0ba3557678eac7a780e62f811d720be75c9a7"
     },
     {
       "path": "docs/SALES-DEMO.md",
@@ -177,13 +177,13 @@
     },
     {
       "path": "docs/WORKFLOWS.md",
-      "size": 2106,
-      "sha256": "b3d3e30a3b30214bf2d1afc75a98fe06eb2d7b28b9220650e82c6678f7cbf725"
+      "size": 2626,
+      "sha256": "b245c76b1948ead728fbb5865486e42a3da4c1f5ec386079ebcb2403fc5a9248"
     },
     {
       "path": "evals/eval-manifest.yaml",
-      "size": 736,
-      "sha256": "f204f44d67b6c8d8c3ed67cf71d05f70a37a7f57072afa886c6090bd78a62b61"
+      "size": 784,
+      "sha256": "831e6c6aba9ef35e1091f0ccdf0151690405302225c82ef289cf847b7984033f"
     },
     {
       "path": "evals/failure-triage-cases.yaml",
@@ -196,6 +196,11 @@
       "sha256": "7690b8f223fd4c1429f7a22e626a64d3e94c63c48beb8bc43fbf754d9aa59ae5"
     },
     {
+      "path": "evals/metered-capacity-cases.yaml",
+      "size": 3792,
+      "sha256": "ee52ac4b7e0296bf194833e15503427bfaeb41d4afdd4efb0c4ef7eb71f3df5f"
+    },
+    {
       "path": "evals/oracle-quality-cases.yaml",
       "size": 2190,
       "sha256": "2c3e021132aaed30d06b7e1bae5bd5274c858829a81966e1eeb1b07c037f0f46"
@@ -203,7 +208,7 @@
     {
       "path": "evals/README.md",
       "size": 1625,
-      "sha256": "a99e6c7b301154e822c3c7d1c41450697c906d6e119aa5a4383dca02a78e6810"
+      "sha256": "663e798f2b88b5224b5d12bcabf8eb1c7a7d23f99c00f6fa41c27552589e24e4"
     },
     {
       "path": "evals/risk-coverage-cases.yaml",
@@ -387,8 +392,8 @@
     },
     {
       "path": "fallback/master-prompt.md",
-      "size": 7311,
-      "sha256": "966aef30d792733f58db539b9932f08bcf249ed36971e1f53622b9bdc6e2b876"
+      "size": 8579,
+      "sha256": "cc585a8edb29b0de6fb44132b50f9c27f77bbb25be1f09f33eec7cdabca22175"
     },
     {
       "path": "fallback/output-templates.md",
@@ -407,13 +412,13 @@
     },
     {
       "path": "package-manifest.yaml",
-      "size": 1191,
-      "sha256": "91db75ad2c9e1d319a257c0afb408d8e1a00f02ecfa1c5d487d4f275c6d13eac"
+      "size": 1398,
+      "sha256": "8e81ea34da6e525ab7450646cae899bbc16d8adf3d309b45094629de8cab394d"
     },
     {
       "path": "PROVENANCE.md",
-      "size": 1422,
-      "sha256": "0fb95029625f4f302f106d36de999db7bc3c55618e7cf8fa86b0d9a3d7114e55"
+      "size": 1452,
+      "sha256": "20871f4b40814f93ccb34d1e5a9c9e12b7c283e134c1266889900b3c922936fb"
     },
     {
       "path": "README.md",
@@ -543,7 +548,7 @@
     {
       "path": "scripts/build_release_manifest.py",
       "size": 1733,
-      "sha256": "65ac07c48cb9e624c5221a1dc9135d484fff1cab21b0b9c5ef593698d9be8ba0"
+      "sha256": "18a89c081edc01d8559152e6e0765896345d01ef83bbbb0d9465fa02a176d11f"
     },
     {
       "path": "scripts/capture_command.py",
@@ -628,17 +633,22 @@
     {
       "path": "skills/software-verification/assets/ci/github-actions-node.yml",
       "size": 371,
-      "sha256": "8415e5eb973672f63fdd4199cf801bfb81cd2c248cf8755dac102176b39a9e75"
+      "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
     },
     {
       "path": "skills/software-verification/assets/ci/github-actions-python.yml",
       "size": 416,
-      "sha256": "08fb38e408b9713231988666614610406362f5afba697af4d3acf6759cfb6b85"
+      "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
     },
     {
       "path": "skills/software-verification/assets/schemas/finding.schema.json",
       "size": 940,
       "sha256": "957010afdf5f07c73600eb6a4945920507d89a65f0316a33d372256d924517d8"
+    },
+    {
+      "path": "skills/software-verification/assets/schemas/metered-verification-plan.schema.json",
+      "size": 2287,
+      "sha256": "5ace038f1f1766d5798ecdcd2edbf7c5687c1fa46427b4765b2452da760e9cbe"
     },
     {
       "path": "skills/software-verification/assets/schemas/normalized-results.schema.json",
@@ -669,6 +679,16 @@
       "path": "skills/software-verification/assets/templates/failure-triage.md",
       "size": 462,
       "sha256": "de959f3fc53d24e24c427e2d0fc28093724c227fcb840b5e715a3a099c71a34a"
+    },
+    {
+      "path": "skills/software-verification/assets/templates/metered-verification-plan.json",
+      "size": 788,
+      "sha256": "4ca2744d5a000d478f1896b5e69e7d5a2caba0e5d0d36945132f99cb75ef815b"
+    },
+    {
+      "path": "skills/software-verification/assets/templates/metered-verification-response.md",
+      "size": 3310,
+      "sha256": "4d7e1d712109519b840e140d39a018249db030920d74fed24c100d5c2974a972"
     },
     {
       "path": "skills/software-verification/assets/templates/residual-risk-ledger.md",
@@ -872,8 +892,8 @@
     },
     {
       "path": "skills/software-verification/fallback/master-prompt.md",
-      "size": 3392,
-      "sha256": "795b73f2bb758bf3113988b1f5b3639556dfef148f78059656fd5f275f4a7102"
+      "size": 4660,
+      "sha256": "f3b670555bd0a1299a035937f8b6f196149506e2cb8f2849babdf3f989441dff"
     },
     {
       "path": "skills/software-verification/fallback/output-templates.md",
@@ -894,6 +914,11 @@
       "path": "skills/software-verification/references/core/boundary-and-equivalence.md",
       "size": 955,
       "sha256": "455b2f606ad76b0a8d7e063507d348e9574b5201338c8c3c08cddfce09181cfd"
+    },
+    {
+      "path": "skills/software-verification/references/core/metered-verification.md",
+      "size": 7243,
+      "sha256": "1bdf07ebfac077b2f15a3b1e89486294dcb1e87ae8436f7f57c84f4b037e9a9f"
     },
     {
       "path": "skills/software-verification/references/core/oracle-design.md",
@@ -1006,6 +1031,11 @@
       "sha256": "e9499fbd7a36055c203aa6575bcef0651dd0ad9329153374cf6b294e2f124d77"
     },
     {
+      "path": "skills/software-verification/scripts/assess_metered_verification.py",
+      "size": 9785,
+      "sha256": "30e073c1f864f34e87dc2ec5c58d3784469ead684ca1791263b367f9aaf0e4d9"
+    },
+    {
       "path": "skills/software-verification/scripts/capture_command.py",
       "size": 2454,
       "sha256": "2c65a44c7d9fb298e8126fffcd78ccff8c8b138e78a6f00bb44cfce715c8b9e2"
@@ -1067,8 +1097,8 @@
     },
     {
       "path": "skills/software-verification/SKILL.md",
-      "size": 11997,
-      "sha256": "77f54f84ee60259e17f2405bc9981723228a6a4e8d5b16f5063fc444e2c561de"
+      "size": 17250,
+      "sha256": "1c8c50843e76c263377224c137e9fa7d1c46551b12e62b04b0976eea6ddbe3b3"
     },
     {
       "path": "skills/verification-reviewer/adversarial-checks.md",
@@ -1123,7 +1153,12 @@
     {
       "path": "tests/test_host_packaging.py",
       "size": 1758,
-      "sha256": "32443098353a3fbb9b6e6091b4645cecd6aaa282c8258f46fce282cd1c30f894"
+      "sha256": "b444e2bfec9469683f62313510e6216b287da56c3c5d6fbf85deb3f59aa325fe"
+    },
+    {
+      "path": "tests/test_metered_verification.py",
+      "size": 9757,
+      "sha256": "f9015909fba5a6449e4dc67ba871e850afee872a7e56f0682af9f8983bf92f2b"
     },
     {
       "path": "tests/test_tools.py",
@@ -1131,5 +1166,5 @@
       "sha256": "ce0c4eeed8c0be9e89180d8c761f9f254431ff1a05f78b7351506a69cf22b8a0"
     }
   ],
-  "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.5 governs the frozen dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json governs the latest retained OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json, release-assets/, and ignored local evaluation-results/ are excluded from this source-tree hash list; releases/v1.1.6 governs the dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json retains the separately reviewed OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

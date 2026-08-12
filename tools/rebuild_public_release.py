@@ -11,11 +11,17 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 PACKAGE = REPO / "testforge"
-VERSION = "1.1.5"
-RELEASE_DATE = "2026-08-08"
+VERSION = "1.1.6"
+RELEASE_DATE = "2026-08-12"
 SKILLS = ("software-verification", "verification-reviewer")
 FIXED_TIME = (2026, 1, 1, 0, 0, 0)
-EXCLUDED = {"__pycache__", ".pytest_cache", ".git", "release-assets"}
+EXCLUDED = {
+    "__pycache__",
+    ".pytest_cache",
+    ".git",
+    "evaluation-results",
+    "release-assets",
+}
 
 
 def sha256(path: Path) -> str:
@@ -86,7 +92,7 @@ def write_manifest(root: Path, package_name: str) -> None:
         "release_date": RELEASE_DATE,
         "artifact_count": len(artifacts),
         "artifacts": artifacts,
-        "note": "release-manifest.json and release-assets/ are excluded from this source-tree hash list; releases/v1.1.5 governs the frozen dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json governs the latest retained OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation",
+        "note": "release-manifest.json, release-assets/, and ignored local evaluation-results/ are excluded from this source-tree hash list; releases/v1.1.6 governs the dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json retains the separately reviewed OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation",
     }
     output.write_text(
         json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n"

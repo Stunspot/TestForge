@@ -7,5 +7,6 @@
 - The standard-library validator checks TestForge's required structure and semantics; it is not a complete general JSON Schema engine. Canonical JSON is always supported. Non-JSON YAML requires optional PyYAML.
 - Result normalization supports JUnit XML, common Jest JSON, captured command records, and generic JSON. Framework variations may remain `unparsed` with raw evidence preserved.
 - GitHub, CI, browser, API, issue-tracker, and external-system actions exist only when the host supplies and authorizes them.
+- TestForge can calculate a recorded metered-verification plan, but it cannot see an allowance the provider or operator does not expose. Unknown capacity produces a hold, not a probe run.
 - Fileless fallback cannot inspect, compile, execute, normalize, or validate. Its artifacts remain `UNEXECUTED`.
 - Behavioral eval files are evaluator-guided episodes. Static validation of their structure is not evidence that a model passes them.

@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.6 — 2026-08-12
+
+- Require a fresh, billing-scope-matched capacity observation before quota-limited verification.
+- Expand the complete planned run, including duplicate triggers, matrices, attempts, ceilings, and current provider multipliers.
+- Hold unknown, stale, insufficient, reserve-consuming, provider-refused, and unauthorized paid execution without launching a probe job.
+- Add a deterministic included-capacity assessor that rejects caller-supplied paid authority and never permits paid dispatch.
+- Package a JSON schema and worked plan template for the assessor input.
+- Package a five-field response template that preserves supplied snapshot facts and calculates reserve-aware paid capacity without ambiguous spend ranges.
+- Document the safeguard across first-use, workflow, capability, limitation, and release guidance.
+- Run branch-push CI only on `main`; pull requests retain the full cross-platform gate, avoiding duplicate branch push and pull-request runs while preserving pre-merge and merged-state evidence.
+
 ## 1.1.5 — 2026-08-08
 
 - Synchronize the operator with the current TestForge last-tripwire doctrine.
