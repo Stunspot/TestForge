@@ -18,8 +18,11 @@ The page does not claim defect freedom, compliance certification, production acc
 
 - `index.html` — semantic single-page project overview;
 - `style.css` — responsive presentation and accessibility treatment;
-- `assets/testforge-hero.png` — generated 1600×900 raster hero artwork;
+- `assets/testforge-hero.png` — 1200×800 role-specific Pages hero showing a three-path inspection gate;
+- `404.html` — maintained recovery route for stale or invalid links;
 - `.nojekyll` — direct static-file serving marker.
+
+The repository README uses the distinct 1600×640 `assets/testforge-readme-hero.png`. Social sharing uses the distinct 1280×640 `assets/testforge-social-preview.png`, which visibly contains the exact TestForge title and identifying line.
 
 ## Deployment
 

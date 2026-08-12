@@ -55,7 +55,15 @@ def canonical_record(path: Path, root: Path) -> dict[str, object]:
 def files(root: Path, excluded_file: Path | None = None) -> list[Path]:
     result = []
     for path in root.rglob("*"):
-        if not path.is_file() or any(part in EXCLUDED for part in path.relative_to(root).parts):
+        relative = path.relative_to(root)
+        if not path.is_file() or any(part in EXCLUDED for part in relative.parts):
+            continue
+        if (
+            root.resolve() == REPO.resolve()
+            and len(relative.parts) > 1
+            and relative.parts[0] == "verification"
+            and relative.parts[1].startswith("remediation-")
+        ):
             continue
         if excluded_file is not None and path.resolve() == excluded_file.resolve():
             continue
@@ -86,7 +94,9 @@ def write_manifest(root: Path, package_name: str) -> None:
         "artifacts": artifacts,
         "note": "release-manifest.json, release-assets/, and ignored local evaluation-results/ are excluded from this source-tree hash list; releases/v1.1.6 governs the dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json retains the separately reviewed OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation",
     }
-    output.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    output.write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n"
+    )
 
 
 def main() -> int:

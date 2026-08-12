@@ -1,36 +1,124 @@
 {
-  "format": "cd-customer-documentation/v1",
-  "landing_page": "README.md",
-  "customer_docs": [
-    "README.md",
-    "testforge/README.md",
-    "testforge/docs/HOST-COMPATIBILITY.md",
-    "testforge/docs/INSTALL-CODEX.md",
-    "testforge/docs/INSTALL-CLAUDE.md",
-    "testforge/docs/QUICK-START.md",
-    "testforge/docs/WORKFLOWS.md",
-    "testforge/docs/CAPABILITY-MATRIX.md",
-    "testforge/docs/TROUBLESHOOTING.md",
-    "testforge/docs/DATA-AND-PRIVACY.md",
-    "testforge/docs/TERMS-OF-USE.md",
-    "testforge/SECURITY.md",
-    "testforge/docs/VALIDATION.md",
-    "testforge/docs/LIMITATIONS.md",
-    "testforge/docs/SUPPORT-AND-VERSIONING.md",
-    "RELEASE-NOTES-v1.1.6.md",
-    "ARCHIVE-CUSTODY.md",
-    "PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md",
-    "testforge/PROVENANCE.md"
-  ],
-  "moments": {
-    "orientation": ["README.md", "testforge/README.md"],
-    "installation": ["testforge/docs/HOST-COMPATIBILITY.md", "testforge/docs/INSTALL-CODEX.md", "testforge/docs/INSTALL-CLAUDE.md"],
-    "first_value": ["testforge/docs/QUICK-START.md"],
-    "normal_use": ["testforge/docs/WORKFLOWS.md", "testforge/docs/CAPABILITY-MATRIX.md"],
-    "recovery": ["README.md", "testforge/docs/TROUBLESHOOTING.md", "testforge/docs/SUPPORT-AND-VERSIONING.md"],
-    "privacy_security": ["testforge/docs/DATA-AND-PRIVACY.md", "testforge/docs/TERMS-OF-USE.md", "testforge/SECURITY.md"],
-    "evidence_limits": ["testforge/docs/VALIDATION.md", "testforge/docs/LIMITATIONS.md"],
-    "support_maintenance": ["testforge/docs/SUPPORT-AND-VERSIONING.md", "RELEASE-NOTES-v1.1.6.md", "ARCHIVE-CUSTODY.md", "PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md"],
-    "provenance": ["testforge/PROVENANCE.md"]
-  }
+    "format":  "cd-customer-documentation/v1",
+    "landing_page":  "README.md",
+    "pages_landing":  "docs/index.html",
+    "customer_docs":  [
+                          "README.md",
+                          "docs/index.html",
+                          "docs/404.html",
+                          "docs/SITE-SOURCE.md",
+                          "testforge/README.md",
+                          "testforge/docs/HOST-COMPATIBILITY.md",
+                          "testforge/docs/INSTALL-CODEX.md",
+                          "testforge/docs/INSTALL-CLAUDE.md",
+                          "testforge/docs/QUICK-START.md",
+                          "testforge/docs/WORKFLOWS.md",
+                          "testforge/docs/CAPABILITY-MATRIX.md",
+                          "testforge/docs/TROUBLESHOOTING.md",
+                          "testforge/docs/DATA-AND-PRIVACY.md",
+                          "testforge/docs/TERMS-OF-USE.md",
+                          "testforge/SECURITY.md",
+                          "testforge/docs/VALIDATION.md",
+                          "testforge/docs/LIMITATIONS.md",
+                          "testforge/docs/SUPPORT-AND-VERSIONING.md",
+                          "testforge/docs/SUPPORTED-ENVIRONMENTS.md",
+                          "testforge/docs/SALES-DEMO.md",
+                          "testforge/CHANGELOG.md",
+                          "RELEASE-NOTES-v1.1.6.md",
+                          "RELEASE-NOTES.md",
+                          "ARCHIVE-CUSTODY.md",
+                          "PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md",
+                          "testforge/PROVENANCE.md",
+                          "SECURITY.md",
+                          "CONTRIBUTING.md",
+                          "LICENSE.md",
+                          "ATTRIBUTION.md",
+                          "TRADEMARKS.md",
+                          "NOTICE.md",
+                          "JUDGE-QUICKSTART.md",
+                          "BUILD-WEEK.md",
+                          "BUILD-NOTE.md",
+                          "tools/augment-evals/README.md",
+                          "release-docs/CAPABILITIES.md",
+                          "release-docs/DESCRIPTION-CUSTODY.md",
+                          "release-docs/HOST-EVIDENCE-BOUNDARY.md",
+                          "release-docs/INSTALL-CLAUDE.md",
+                          "release-docs/INSTALL-CODEX.md",
+                          "release-docs/LIMITATIONS.md",
+                          "release-docs/MAINTAINER-GUIDE.md",
+                          "release-docs/PACKAGE-REFERENCE.md",
+                          "release-docs/PROVENANCE.md",
+                          "release-docs/QUICK-START.md",
+                          "release-docs/README.md",
+                          "release-docs/SUPPORT.md",
+                          "release-docs/VALIDATION.md"
+                      ],
+    "moments":  {
+                    "orientation":  [
+                                        "README.md",
+                                        "docs/index.html",
+                                        "testforge/README.md",
+                                        "release-docs/README.md"
+                                    ],
+                    "installation":  [
+                                         "docs/index.html",
+                                         "testforge/docs/HOST-COMPATIBILITY.md",
+                                         "testforge/docs/INSTALL-CODEX.md",
+                                         "testforge/docs/INSTALL-CLAUDE.md",
+                                         "release-docs/INSTALL-CODEX.md",
+                                         "release-docs/INSTALL-CLAUDE.md"
+                                     ],
+                    "first_value":  [
+                                        "docs/index.html",
+                                        "testforge/docs/QUICK-START.md",
+                                        "JUDGE-QUICKSTART.md",
+                                        "release-docs/QUICK-START.md"
+                                    ],
+                    "normal_use":  [
+                                       "testforge/docs/WORKFLOWS.md",
+                                       "testforge/docs/CAPABILITY-MATRIX.md",
+                                       "tools/augment-evals/README.md"
+                                   ],
+                    "recovery":  [
+                                     "docs/404.html",
+                                     "docs/index.html",
+                                     "testforge/docs/TROUBLESHOOTING.md",
+                                     "testforge/docs/SUPPORT-AND-VERSIONING.md",
+                                     "release-docs/SUPPORT.md"
+                                 ],
+                    "privacy_security":  [
+                                             "docs/index.html",
+                                             "testforge/docs/DATA-AND-PRIVACY.md",
+                                             "testforge/docs/TERMS-OF-USE.md",
+                                             "testforge/SECURITY.md",
+                                             "SECURITY.md"
+                                         ],
+                    "evidence_limits":  [
+                                            "docs/index.html",
+                                            "testforge/docs/VALIDATION.md",
+                                            "testforge/docs/LIMITATIONS.md",
+                                            "release-docs/HOST-EVIDENCE-BOUNDARY.md",
+                                            "release-docs/VALIDATION.md"
+                                        ],
+                    "support_maintenance":  [
+                                                "CONTRIBUTING.md",
+                                                "RELEASE-NOTES-v1.1.6.md",
+                                                "RELEASE-NOTES.md",
+                                                "ARCHIVE-CUSTODY.md",
+                                                "release-docs/MAINTAINER-GUIDE.md"
+                                            ],
+                    "provenance_legal":  [
+                                             "testforge/PROVENANCE.md",
+                                             "ATTRIBUTION.md",
+                                             "LICENSE.md",
+                                             "NOTICE.md",
+                                             "TRADEMARKS.md",
+                                             "release-docs/PROVENANCE.md"
+                                         ]
+                },
+    "historical_context":  [
+                               "BUILD-WEEK.md",
+                               "BUILD-NOTE.md",
+                               "PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md"
+                           ]
 }

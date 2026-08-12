@@ -59,6 +59,12 @@ def files(root: Path, excluded_file: Path) -> list[Path]:
             if path.is_file()
             and path.resolve() != excluded_file.resolve()
             and not any(part in EXCLUDED for part in path.relative_to(root).parts)
+            and not (
+                root.resolve() == REPO.resolve()
+                and len(path.relative_to(root).parts) > 1
+                and path.relative_to(root).parts[0] == "verification"
+                and path.relative_to(root).parts[1].startswith("remediation-")
+            )
         ),
         key=lambda path: path.relative_to(root).as_posix().lower(),
     )

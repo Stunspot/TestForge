@@ -1,4 +1,4 @@
-![TestForge - software verification that argues back](assets/testforge-social-preview.png)
+![TestForge verification workbench: evidence is forged, measured, and challenged before release](assets/testforge-readme-hero.png)
 
 # TestForge
 
@@ -65,7 +65,7 @@ Start a new Codex task, then invoke `$software-verification` or `$verification-r
 
 Download the latest release, unzip it and keep the `testforge/` tree together. Expose both directories under `testforge/skills/` through your Agent host's skill mechanism. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
 
-The GitHub release also preserves the complete Augment, the installable Codex plugin, its distinct OpenAI skills-only portal upload, and each bundled skill as separately named archives. This keeps `$software-verification` and `$verification-reviewer` independently recoverable without losing the complete two-skill product. The OpenAI draft exists and both bundled skills passed automated scanning; accountable-owner attestations and submission for review remain pending.
+The frozen v1.1.6 release kit preserves the complete Augment, Codex plugin source, and both Claude skill archives with static package receipts. The maintained repository separately exposes current Claude upload archives. The latest retained OpenAI skills-only portal packet is v1.1.4; it is built and repository-tested, but this repository does not claim it was uploaded, scanned by the current portal, approved, published, or made discoverable. See [archive custody](ARCHIVE-CUSTODY.md) for exact object identities and boundaries.
 
 Then start with:
 

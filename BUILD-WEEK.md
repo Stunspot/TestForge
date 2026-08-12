@@ -27,6 +27,8 @@ A later Codex task used TestForge to design and harden the CD Augment behavioral
 
 ## Build evidence
 
+> Historical snapshot: the counts and release identity in this section describe the original v1.0.2 Build Week entry. They are not current v1.1.6 package or validation evidence; use the current README, release notes, archive custody, and validation guides for that.
+
 - Primary Codex build Session ID: `019f6a6e-8556-75c0-919c-0738a3cb1f84`
 - Primary build model recorded by Codex: `gpt-5.6-sol`
 - Primary build date: July 16, 2026
@@ -36,7 +38,7 @@ A later Codex task used TestForge to design and harden the CD Augment behavioral
 - Deterministic local checks: 9 TestForge tests, 46 testbed tests, and 4 public-distribution tests
 - Behavioral suite: 10 cases across 11 dimensions, with indispensable gates for evidence honesty, security boundaries, and release judgment
 
-The Devpost form should use the primary Session ID above. It is the task where the majority of TestForge's core functionality was built. The later Omnicompetence task expanded the testbed and handled publication, but it is not a substitute for the primary build task.
+The Devpost form should use the primary Session ID listed in this Build evidence section. It is the task where the majority of TestForge's core functionality was built. The later Omnicompetence task expanded the testbed and handled publication, but it is not a substitute for the primary build task.
 
 ## Product architecture
 

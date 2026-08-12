@@ -127,13 +127,13 @@
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
-      "size": 1274,
-      "sha256": "903f93ea711424b247c6f75340cf45d0abc6103ee98af820ccaa954d7023e32f"
+      "size": 2317,
+      "sha256": "82927330ec8eead0166ca10280b0a7008d48b2e061bbc7a6b22efe94ff10353b"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
-      "size": 1267,
-      "sha256": "d8e4a251f9e2a34976e00de53947ed10eff8ee7ee36f215ac11c8da1cbc71f1f"
+      "size": 2743,
+      "sha256": "085dc6d43c13a31de00df8d9e8cd9dfe7da6446dc3580f6df942b8d5866863cf"
     },
     {
       "path": "docs/LIMITATIONS.md",

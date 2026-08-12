@@ -1,27 +1,37 @@
 # TestForge archive custody
 
-TestForge is one two-skill Augment with several independently useful release objects. The canonical release keeps the complete product, its Codex plugin, and both standalone skills separately obtainable without pretending that a standalone skill is the whole product.
+TestForge v1.1.6 is one two-skill Augment with several distinct distribution objects. Keep their identity and evidence states separate: source presence is not installation, a valid archive is not discovery, discovery is not invocation, and none of those states proves healthy behavior or directory publication.
 
-| Object | Canonical release artifact | Use |
+## Current v1.1.6 objects
+
+| Object | Canonical location | Observed state and use |
 |---|---|---|
-| Complete Augment | `release-assets/v1.1.1/TestForge-v1.1.1.zip` | Portable two-skill TestForge capability with adapters, docs, evals, and tools |
-| Codex plugin | `release-assets/v1.1.1/Plugin-TestForge-v1.1.1.zip` | Branded Codex plugin with both skill entry points and listing assets |
-| Software Verification skill | `release-assets/v1.1.1/Skill-software-verification--TestForge-v1.1.1.zip` | Independent `$software-verification` installation and recovery |
-| Verification Reviewer skill | `release-assets/v1.1.1/Skill-verification-reviewer--TestForge-v1.1.1.zip` | Independent `$verification-reviewer` installation and recovery |
-| Claude.ai uploads | `claude-ai/software-verification-v1.1.1.zip` and `claude-ai/verification-reviewer-v1.1.1.zip` | Host-specific one-skill upload archives |
-| Source repository | Git tag `v1.1.1` and its GitHub source archives | Versioned source, documentation, tests, testbed, and provenance |
+| Maintained package | `testforge/` | Current two-skill source, tools, schemas, examples, evals, adapters, and customer documentation |
+| Codex marketplace plugin | `plugins/testforge/` plus `.agents/plugins/marketplace.json` | Repository-native plugin source for `testforge@cd-testforge`; static structure is repository-tested |
+| Claude operator upload | `claude-ai/software-verification-v1.1.6.zip` | Current one-skill upload archive; SHA-256 `3485f982d9d7f770b9077bc9da122498ff5ce135ae60e07e7aa8fa8209d5a52f` |
+| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.6.zip` | Current one-skill upload archive; SHA-256 `c882eacec514e23647e1e298b9919a89e3b85ded06649041cf924c91994308ba` |
+| Frozen v1.1.6 customer kit | `releases/v1.1.6/TestForge-v1.1.6.zip` | Canonical published release object retained unchanged; SHA-256 `4dd052672923192f59ec2866eb2fedef697ca1f98f00a99341c3d8fe062b0594` |
+| Frozen v1.1.6 receipts | `releases/v1.1.6/` | Static package, source-parity, and portable archive evidence; no fresh-host activation or customer-outcome claim |
+| Source release | Git tag `v1.1.6` and [GitHub release](https://github.com/Stunspot/TestForge/releases/tag/v1.1.6) | Published 2026-08-12; versioned public source and release boundary |
 
-## Plugin publication payloads
+The current `claude-ai/` archives and the frozen archives inside `releases/v1.1.6/claude/` are separate deterministic builds and are not byte-identical. Use the current `claude-ai/` objects for the repository installation guide. Use the frozen release directory to inspect the exact evidence and bytes retained for the v1.1.6 release event.
 
-TestForge plugin v1.1.2 preserves two deliberately different ZIPs:
+## OpenAI directory packet
 
-| Object | Canonical release artifact | Use |
-|---|---|---|
-| Installable Codex plugin | `release-assets/v1.1.2/Plugin-TestForge-v1.1.2.zip` | Normal Codex installation and marketplace distribution with the full interface manifest |
-| OpenAI skills-only submission | `release-assets/v1.1.2/Plugin-TestForge-v1.1.2-OpenAI-Submission.zip` | Deterministic portal upload whose archived interface retains only `composerIcon` and `logo` |
+The latest retained skills-only portal payload is still v1.1.4:
 
-`release-assets/v1.1.2/archive-custody.json` governs the installable plugin. `release-assets/v1.1.2/openai-submission-custody.json` separately records the portal derivative's archive hash, source and transformed manifest hashes, member count, and POSIX path requirement. The portal ZIP is not a replacement for the installable plugin.
+- archive: `release-assets/v1.1.4/Plugin-TestForge-v1.1.4-OpenAI-Submission.zip`;
+- custody: `release-assets/v1.1.4/openai-submission-custody.json`;
+- SHA-256: `9aecec78e407e6f368d0a5c613facbc4252a3f3ef545ba6686e74cf7f2404a46`;
+- state: built and repository-tested, not claimed uploaded, approved, published, or discoverable.
 
-`release-assets/v1.1.1/archive-custody.json` records exact hashes, sizes, member counts, source-tree digests, and extraction-parity results for the unchanged v1.1.1 Augment and skills. GitHub release assets and the latest-only convenience backup shelf must match the applicable custody records. Canonical assets are copied, never moved, to the backup shelf. Older same-family convenience copies may be removed only after the new copies match; unrelated products are untouched.
+There is no retained v1.1.6 portal archive or custody object. The repository-native v1.1.6 plugin remains the current Codex installation surface; the v1.1.4 portal packet is a separately governed historical submission candidate.
 
-The two standalone skill archives and their Claude.ai counterparts intentionally carry the same skill content under channel-appropriate names. Static package equality does not establish live Claude activation, live Codex discovery, or directory approval.
+## Maintenance rules
+
+- Rebuild current derivatives from maintained source; never edit ZIP members in place.
+- Do not alter `releases/` merely to make present documentation agree with a historical release.
+- Record archive name, byte size, SHA-256, member inventory, source revision, and claim boundary for each new object.
+- Verify extraction topology and package-relative dependencies before publication.
+- After publication, download the public asset and compare it with the governed local object.
+- Treat upload, automated scan, review submission, approval, publication, installation, discovery, invocation, and health as separate observed states.

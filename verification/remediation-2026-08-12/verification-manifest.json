@@ -1,0 +1,21 @@
+{
+  "schema": "portfolio-remediation-verification/v1",
+  "repository": "https://github.com/Stunspot/TestForge",
+  "reviewed_commit": "441a22b8ac1f6fda9c4d7ba355f5cca19f365d1c",
+  "governed_fingerprint": "af19aa440e63bfd1d4fd8e4d9e6c516dabf03892747743b1de138600e191c7b3",
+  "readme_content": "PASS_LOCAL_CANDIDATE",
+  "pages_content": "PASS_LOCAL_CANDIDATE",
+  "rendered_pages": "NOT_TESTED_GUI",
+  "readme_hero": "PASS_PIXEL_REVIEWED",
+  "pages_hero": "PASS_PIXEL_REVIEWED",
+  "social_card_file": "PASS_PIXEL_REVIEWED_EXACT_TEXT",
+  "repository_social_card_wiring": "PASS_LIVE_EXACT_CANDIDATE",
+  "hesperos": "PASS",
+  "accessibility": "PASS_STATIC_GUI_AND_AT_NOT_TESTED",
+  "adversarial": "REVIEW_PASS_WITH_LIVE_CONDITIONS",
+  "final_status": "REMEDIATED_NOT_YET_LIVE",
+  "blockers": [
+    "Protected merge and exact live-source verification remain to be executed.",
+    "GUI browser rendering and assistive-technology behavior remain NOT TESTED."
+  ]
+}

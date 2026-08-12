@@ -9,7 +9,7 @@ Build each release from the maintained repository on a clean release branch. A p
 3. Run it a second time and require the same SHA-256 digest.
 4. Run `python -B releases/v1.1.6/tools/verify_release.py releases/v1.1.6` and require `ok: true` with no findings.
 5. Run the repository unit suites, package validator, eval-suite validator, release-manifest validator, and line-ending verifier.
-6. Review all thirteen customer documents as a reader journey, including installation, first value, expected success, troubleshooting, removal, and rollback.
+6. Review every document declared by the current `documentation-manifest.json` as a reader journey, including installation, first value, expected success, troubleshooting, removal, and rollback.
 7. Require an independent skeptical review before publication.
 8. After publication, download the GitHub asset and compare its SHA-256 with the canonical repository artifact and release shelf copy.
 

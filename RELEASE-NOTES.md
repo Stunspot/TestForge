@@ -1,40 +1,15 @@
-# TestForge v1.0.2
+# TestForge release notes
 
-Version 1.0.2 is a bounded distribution correction. TestForge's public marketplace now uses the product-specific `cd-testforge` namespace, so installing it cannot replace a separately distributed Collaborative Dynamics marketplace such as CanopyOps. The customer command is now `codex plugin add testforge@cd-testforge`. Verification behavior and the v1.0.1 quality-ratchet evidence are unchanged.
+The current package release is **v1.1.6**. See [RELEASE-NOTES-v1.1.6.md](RELEASE-NOTES-v1.1.6.md) for the metered-verification safeguards and exact evidence boundary.
 
-## v1.0.1 quality-ratchet revision
+## Current release boundary
 
-Version 1.0.1 turns the Build Week evaluation loop back onto TestForge itself. A matched Qwen control/treatment run improved from 72.08 to 88.33 but retained one indispensable evidence-honesty failure: the model proposed removing a system package to reproduce a missing-library condition. This revision strengthens safe, read-only, capability-matched diagnosis and cleanly separates executed commands, proposed diagnostics, and unexecuted remediation. It also prevents a judge from hiding weak observable performance by mislabeling it as an invalid episode.
+Version 1.1.6 treats finite verification capacity as part of the test plan. Before recommending or invoking hosted CI, device or browser farms, paid cloud checks, or another quota-limited route, TestForge requires a fresh observation for the exact billing scope and calculates trigger duplication, matrix fan-out, retries, runner ceilings, billing multipliers, and retained reserve. Unknown, stale, insufficient, provider-refused, reserve-consuming, or unauthorized paid capacity produces a hold without launching a discovery job.
 
-Repeated test-diagnose-reengineer cycles then exposed and repaired context dilution, secret-workflow leakage into unrelated cases, incomplete authorization post-state checks, unsafe production-probe scaffolds, destructive-deletion authority gaps, and local-judge logic inversions. A later full local run reached 90.41 with zero failed or invalid episodes; single-trial behavioral results remain model-, context-, and judge-bounded.
+The v1.1.5 verification-cycle custody rule remains in force: a product defect or newly exposed product invariant ends the submitted candidate's TestForge cycle. The upstream repair returns later as a new frozen candidate with a new evidence cutoff. Only a defect proven to belong to TestForge's own test, tool, fixture, or execution environment may be corrected and rerun within the same cycle.
 
-It also adds repository-native Codex plugin installation, Build Week provenance, an isolated fictional judge case, public distribution-integrity tests, and a three-operating-system CI matrix.
+The maintained repository includes synchronized v1.1.6 package and plugin source plus current Claude upload archives. Static structure, hashes, parity, and deterministic checks do not prove live host activation, provider-meter accuracy, hosted-run success, directory publication, customer outcomes, or defect freedom.
 
-## Original v1.0.0 release
+## Historical notes
 
-TestForge is a free Collaborative Dynamics Augment that gives an Agent two complementary software-verification capabilities:
-
-- `$software-verification` builds a risk-ranked evidence chain from change to release assessment.
-- `$verification-reviewer` independently challenges that chain for omissions, weak oracles, misleading mocks and unsupported confidence.
-
-The repository also includes the CD Augment evaluation testbed for running isolated behavioral cases against Codex or local Ollama models, preserving hard gates and promoting reviewed regression baselines.
-
-## Included
-
-- complete portable TestForge Augment;
-- two Agent SKILLs and copy-paste fallbacks;
-- deterministic Python inspection, validation, normalization and reporting tools;
-- Python and TypeScript worked examples with planted defects;
-- risk, oracle, reliability, security and stack references;
-- canonical behavioral eval suite;
-- isolated Augment evaluation harness with Codex and Ollama adapters;
-- reviewed compact baselines;
-- Codex, Claude Code, GitHub, local-shell and plain-chat adapters.
-
-## License
-
-The release uses a split license: MIT for Python software and machine-readable schemas, and CC BY-ND 4.0 for authored Augment materials. The authentic, unmodified branded Augment may be redistributed, including inside a larger commercial product. See `LICENSE.md`, `ATTRIBUTION.md` and `TRADEMARKS.md`.
-
-## Evidence boundary
-
-The package and testbed deterministic suites pass locally. Supplied behavioral baselines record their model and context. TestForge provides evidence-bounded advice; it does not prove defect freedom, certify compliance or authorize a release.
+Version-specific records remain available as `RELEASE-NOTES-v*.md`. They describe their named releases and do not override current installation, privacy, support, or validation guidance.
