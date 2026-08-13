@@ -70,7 +70,7 @@ def main() -> int:
     (OUT / "docs").mkdir()
     (OUT / "tools").mkdir()
     shutil.copy2(ROOT / "LICENSE.md", OUT / "LICENSE.md")
-    shutil.copytree(ROOT / "plugins" / "testforge", OUT / "codex" / "testforge")
+    shutil.copytree(ROOT / "plugins" / "testforge", OUT / "codex" / "testforge", ignore=shutil.ignore_patterns("__pycache__", ".pytest_cache", "*.pyc", "*.pyo"))
     shutil.copy2(ROOT / "tools" / "verify_family_release.py", OUT / "tools" / "verify_release.py")
     for name in DOCS:
         text = (ROOT / "release-docs" / name).read_text(encoding="utf-8")
