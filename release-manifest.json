@@ -777,8 +777,8 @@
     },
     {
       "path": "README.md",
-      "size": 9626,
-      "sha256": "3fc8a703f883a6a71589eae826be2c6541000ea61b59c26429256ea357a3f303"
+      "size": 9621,
+      "sha256": "0c813b2ffa8e5bb910effd042420327de9b028759a90b5fa41705dbc53d4004e"
     },
     {
       "path": "release-docs/CAPABILITIES.md",
@@ -4987,8 +4987,8 @@
     },
     {
       "path": "testforge/docs/QUICK-START.md",
-      "size": 3872,
-      "sha256": "65dbc3e30babdcacac3ded7ad8f842bf33b6313401aef9dbd1eb07dac703bf55"
+      "size": 3877,
+      "sha256": "36bb7444342ca6898354b318ed6e8067290832009367f986362f67d97ea40f73"
     },
     {
       "path": "testforge/docs/SALES-DEMO.md",
@@ -5022,8 +5022,8 @@
     },
     {
       "path": "testforge/docs/WORKFLOWS.md",
-      "size": 2626,
-      "sha256": "b245c76b1948ead728fbb5865486e42a3da4c1f5ec386079ebcb2403fc5a9248"
+      "size": 2680,
+      "sha256": "61e9be59ad54be1e004fb7532053ca1f6e40ca88cc0dbd7e62c885aa2d801216"
     },
     {
       "path": "testforge/evals/eval-manifest.yaml",
@@ -5267,8 +5267,8 @@
     },
     {
       "path": "testforge/README.md",
-      "size": 2665,
-      "sha256": "3e6f517b87836508a9832f6170858a774a42a367d9c8a5f90aca30c449504c32"
+      "size": 2643,
+      "sha256": "0edaab24b3a291d5a5f69d0640c4f6f6afdaa19b6d3aa6f3b6603ee9c38a5e43"
     },
     {
       "path": "testforge/references/core/boundary-and-equivalence.md",
@@ -5388,7 +5388,7 @@
     {
       "path": "testforge/release-manifest.json",
       "size": 43504,
-      "sha256": "c16439e58d10fc2b411dc220643ea29d63fc4c911825d45f3b168eb1938e7f34"
+      "sha256": "a649a1117c0eff25422fe98f07e2d44f2849df415a70a89bf91819dc1afd6aea"
     },
     {
       "path": "testforge/scripts/assemble_report.py",

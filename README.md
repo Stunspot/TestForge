@@ -70,7 +70,7 @@ The frozen v1.1.7 release kit preserves the complete Augment, Codex plugin sourc
 Then start with:
 
 ```text
-$software-verification Verify this change. Reconstruct what could break, create the smallest credible evidence set, run only safe authorized checks, and give me an evidence-backed release assessment.
+$software-verification Verify this completed frozen candidate for release. Reconstruct what could break, run only decision-changing authorized checks, and give me one evidence-backed assessment.
 ```
 
 After the evidence package exists, use a fresh context when practical:

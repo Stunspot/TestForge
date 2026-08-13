@@ -1,8 +1,8 @@
 # Verification workflows
 
-## Verify a change or release candidate
+## Verify a frozen release candidate
 
-Invoke `$software-verification` with the requirement, repository or diff, target revision, environment, known failures, and authority boundary. Let it inspect the repository before asking questions. Require an impact map, ranked risks, invariants, smallest credible scenario set, oracle rationale, execution plan, and explicit success or stop conditions.
+Invoke `$software-verification` with the completed candidate, bounded release claim, target revision, repository, requirements, available evidence, environment, known failures, and authority boundary. Let it inspect the repository before asking questions. Require an impact map, ranked risks, invariants, smallest credible scenario set, oracle rationale, execution plan, and explicit success or stop conditions.
 
 Run only authorized checks in the relevant environment. Capture commands, exit codes, raw outputs, versions, timestamps, and artifact paths. Classify failures as product defects, test defects, environment failures, flaky behavior, or insufficient evidence. Keep designed, written, executed, passed, and interpreted states distinct.
 
