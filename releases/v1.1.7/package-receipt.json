@@ -1,0 +1,21 @@
+{
+  "schema": "cd-family-package-receipt/v1",
+  "family": "testforge",
+  "version": "1.1.7",
+  "built_at": "2026-08-13T12:00:00-05:00",
+  "status": "static-package-built",
+  "claim_boundary": "Static package and byte-parity evidence only; no host activation, live behavior, or publication claim.",
+  "codex_plugin": "codex/testforge",
+  "claude_archives": [
+    {
+      "file": "claude/software-verification-v1.1.7.zip",
+      "handle": "software-verification",
+      "sha256": "c06aa2e6fa5257f2b241b918cbfb76db1c16be733a08e57d5985e5dfed402ccd"
+    },
+    {
+      "file": "claude/verification-reviewer-v1.1.7.zip",
+      "handle": "verification-reviewer",
+      "sha256": "392c66672a6a0cb047b89f6267339fd1c31b51cd0856a130226be14b4ea2f6f0"
+    }
+  ]
+}

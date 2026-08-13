@@ -1,6 +1,6 @@
 # TestForge: provenance
 
-Each [manifest source record](../releases/v1.1.6/manifest.json) identifies a handle and exact included-file hash inventory without embedding an absolute selected-source path. [Description custody](../releases/v1.1.6/description-custody.json) binds the exact model-visible and UI-short prompt surfaces. [Package verification](../releases/v1.1.6/verification-report.json) binds the assembled Codex and Claude bytes.
+Each [manifest source record](../releases/v1.1.7/manifest.json) identifies a handle and exact included-file hash inventory without embedding an absolute selected-source path. [Description custody](../releases/v1.1.7/description-custody.json) binds the exact model-visible and UI-short prompt surfaces. [Package verification](../releases/v1.1.7/verification-report.json) binds the assembled Codex and Claude bytes.
 
 ## Promotion procedure
 

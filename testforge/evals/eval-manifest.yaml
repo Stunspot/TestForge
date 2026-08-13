@@ -1,6 +1,6 @@
 {
   "format_version": "1.0",
-  "package_version": "1.1.6",
+  "package_version": "1.1.7",
   "episode_mode": "isolated",
   "files": [
     "risk-coverage-cases.yaml",

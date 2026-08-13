@@ -21,8 +21,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("package", type=Path)
     parser.add_argument("--package-name", default="testforge")
-    parser.add_argument("--version", default="1.1.6")
-    parser.add_argument("--release-date", default="2026-08-12")
+    parser.add_argument("--version", default="1.1.7")
+    parser.add_argument("--release-date", default="2026-08-13")
     args = parser.parse_args()
     root = args.package.resolve()
     output = root / "release-manifest.json"

@@ -2,7 +2,7 @@
 
 ## Install
 
-Each v1.1.6 skill is self-contained. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
+Each v1.1.7 skill is self-contained. Python 3.10+ is required only for deterministic scripts; TestForge has no mandatory third-party package dependency.
 
 Use [Install in Codex](INSTALL-CODEX.md) or [Install in Claude](INSTALL-CLAUDE.md). Install and verify both skills separately. Structural validation proves the package shape; successful discovery requires a fresh host task or conversation.
 
@@ -12,7 +12,7 @@ Copy both complete skill directories into `~/.claude/skills/` for personal use o
 
 ## First verification
 
-1. Invoke `$software-verification` and give it a diff, repository path, failing test, bug report, requirement, or release candidate.
+1. Invoke `$software-verification` with a completed frozen candidate, its target revision, bounded release claim, and available evidence.
 2. Let it inspect existing manifests, tests, and conventions before answering questions.
 3. Keep the generated verification manifest in the target project's working area, not inside this installed package.
 4. Review any proposed command or repository edit. Approve consequential actions only within a bounded scope.

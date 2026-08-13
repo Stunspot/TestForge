@@ -1,8 +1,8 @@
 {
   "format_version": "1.0",
   "package": "testforge",
-  "version": "1.1.6",
-  "release_date": "2026-08-12",
+  "version": "1.1.7",
+  "release_date": "2026-08-13",
   "artifact_count": 232,
   "artifacts": [
     {
@@ -107,8 +107,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 5237,
-      "sha256": "08627c37a6baa0318c8109b14ce528a3da32c764fb067c814261a4126508459b"
+      "size": 5821,
+      "sha256": "40fc082be4b5a4cf22b07edda6bbbe178537e06c5a4729e706b31dd50ba7d0a3"
     },
     {
       "path": "docs/CAPABILITY-MATRIX.md",
@@ -118,17 +118,17 @@
     {
       "path": "docs/DATA-AND-PRIVACY.md",
       "size": 1953,
-      "sha256": "32cb38baf04ee85e983890ce44c2f06a0a678497f37d4b556c000e55fb4c9e7b"
+      "sha256": "f493bb788701be651904f520fd46fea4c13abb6e26ef88777ca443cf4663bb26"
     },
     {
       "path": "docs/HOST-COMPATIBILITY.md",
       "size": 1596,
-      "sha256": "277c40a768557356b0aa278c787dd2acf72a93ce4d9a65afccd6c6c81e703f90"
+      "sha256": "f5f4055f447f8e722f7a35a39073e95530c2749e26e8f639d406b273e84c11aa"
     },
     {
       "path": "docs/INSTALL-CLAUDE.md",
       "size": 2317,
-      "sha256": "82927330ec8eead0166ca10280b0a7008d48b2e061bbc7a6b22efe94ff10353b"
+      "sha256": "31c9b82352135cd29de50a63d71fba32ef8688d4c15e9368d97a2f3a23ad0362"
     },
     {
       "path": "docs/INSTALL-CODEX.md",
@@ -142,8 +142,8 @@
     },
     {
       "path": "docs/QUICK-START.md",
-      "size": 3872,
-      "sha256": "32e57c9f4916b95027699d4926c0ba3557678eac7a780e62f811d720be75c9a7"
+      "size": 3877,
+      "sha256": "36bb7444342ca6898354b318ed6e8067290832009367f986362f67d97ea40f73"
     },
     {
       "path": "docs/SALES-DEMO.md",
@@ -177,13 +177,13 @@
     },
     {
       "path": "docs/WORKFLOWS.md",
-      "size": 2626,
-      "sha256": "b245c76b1948ead728fbb5865486e42a3da4c1f5ec386079ebcb2403fc5a9248"
+      "size": 2680,
+      "sha256": "61e9be59ad54be1e004fb7532053ca1f6e40ca88cc0dbd7e62c885aa2d801216"
     },
     {
       "path": "evals/eval-manifest.yaml",
       "size": 784,
-      "sha256": "831e6c6aba9ef35e1091f0ccdf0151690405302225c82ef289cf847b7984033f"
+      "sha256": "3f94b5a046386c626b348ae14017138bfbf123972d164332766f3a42605b1149"
     },
     {
       "path": "evals/failure-triage-cases.yaml",
@@ -208,7 +208,7 @@
     {
       "path": "evals/README.md",
       "size": 1625,
-      "sha256": "663e798f2b88b5224b5d12bcabf8eb1c7a7d23f99c00f6fa41c27552589e24e4"
+      "sha256": "337e7cb02681dded3dee88b88b82e6b71cc901fcb00f30ea983921ba99d9a1e7"
     },
     {
       "path": "evals/risk-coverage-cases.yaml",
@@ -413,17 +413,17 @@
     {
       "path": "package-manifest.yaml",
       "size": 1398,
-      "sha256": "8e81ea34da6e525ab7450646cae899bbc16d8adf3d309b45094629de8cab394d"
+      "sha256": "69d4b78a925c36838a79817c6a64f2855a615fe29880058adca5d5fee5959da5"
     },
     {
       "path": "PROVENANCE.md",
-      "size": 1452,
-      "sha256": "20871f4b40814f93ccb34d1e5a9c9e12b7c283e134c1266889900b3c922936fb"
+      "size": 1591,
+      "sha256": "5138f4bdbbc86ca03843e77e8e0787a30d082a75a0e5ebbf5f6d0d125a1711b3"
     },
     {
       "path": "README.md",
-      "size": 2665,
-      "sha256": "3e6f517b87836508a9832f6170858a774a42a367d9c8a5f90aca30c449504c32"
+      "size": 2643,
+      "sha256": "0edaab24b3a291d5a5f69d0640c4f6f6afdaa19b6d3aa6f3b6603ee9c38a5e43"
     },
     {
       "path": "references/core/boundary-and-equivalence.md",
@@ -548,7 +548,7 @@
     {
       "path": "scripts/build_release_manifest.py",
       "size": 1733,
-      "sha256": "18a89c081edc01d8559152e6e0765896345d01ef83bbbb0d9465fa02a176d11f"
+      "sha256": "afc90aeaf21903bfd764664e727766151e72e034923ae94fd2043fc54f2e9581"
     },
     {
       "path": "scripts/capture_command.py",
@@ -622,13 +622,13 @@
     },
     {
       "path": "skills/software-verification/activation-examples.md",
-      "size": 872,
-      "sha256": "e3853e7d12286cff702204f510d1f645e927cb14cccc10831504211b939a298a"
+      "size": 949,
+      "sha256": "5b894ecfe69d30e1bf4d945162d9bf1eaa9032a5bbef4156c281047d28085b5d"
     },
     {
       "path": "skills/software-verification/agents/openai.yaml",
-      "size": 287,
-      "sha256": "2962db6ccdfa093fed9625e8ff74ac15d954e76b605b151a4638c8390e35bda5"
+      "size": 272,
+      "sha256": "383b3b5007cca797ca4ca84b2bc7f460102738c89b6e6c93c578987bf7f3ddf0"
     },
     {
       "path": "skills/software-verification/assets/ci/github-actions-node.yml",
@@ -892,8 +892,8 @@
     },
     {
       "path": "skills/software-verification/fallback/master-prompt.md",
-      "size": 4660,
-      "sha256": "f3b670555bd0a1299a035937f8b6f196149506e2cb8f2849babdf3f989441dff"
+      "size": 5405,
+      "sha256": "c89cb754ed3919779e148e347d89a24c0346692ac8f294ad73713e0b2b6e4dde"
     },
     {
       "path": "skills/software-verification/fallback/output-templates.md",
@@ -1097,8 +1097,8 @@
     },
     {
       "path": "skills/software-verification/SKILL.md",
-      "size": 17250,
-      "sha256": "1c8c50843e76c263377224c137e9fa7d1c46551b12e62b04b0976eea6ddbe3b3"
+      "size": 17962,
+      "sha256": "93ff6cc411be84525ae6909262749328625c25ec85013ff6c5017d36b9383f52"
     },
     {
       "path": "skills/verification-reviewer/adversarial-checks.md",
@@ -1153,7 +1153,7 @@
     {
       "path": "tests/test_host_packaging.py",
       "size": 1758,
-      "sha256": "b444e2bfec9469683f62313510e6216b287da56c3c5d6fbf85deb3f59aa325fe"
+      "sha256": "e332209499e838bd457917d22766070b07c0d314583790c5315fddbdd69b635d"
     },
     {
       "path": "tests/test_metered_verification.py",
@@ -1166,5 +1166,5 @@
       "sha256": "ce0c4eeed8c0be9e89180d8c761f9f254431ff1a05f78b7351506a69cf22b8a0"
     }
   ],
-  "note": "release-manifest.json, release-assets/, and ignored local evaluation-results/ are excluded from this source-tree hash list; releases/v1.1.6 governs the dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json retains the separately reviewed OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
+  "note": "release-manifest.json, release-assets/, and ignored local evaluation-results/ are excluded from this source-tree hash list; releases/v1.1.7 governs the dual-host customer kit, while release-assets/v1.1.4/openai-submission-custody.json retains the separately reviewed OpenAI portal payload; UTF-8 text hashes use canonical LF line endings for cross-platform validation"
 }

@@ -38,7 +38,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Risk-ranked verification for coding Agents</p>
         <h1>Software verification<br>that argues back.</h1>
-        <p class="lede">TestForge gives inexpensive local coding Agents a verification discipline they do not reliably improvise. It turns changes, repositories, defects, and release candidates into risk-ranked evidence—not a comforting pile of green checkmarks.</p>
+        <p class="lede">TestForge gives inexpensive local coding Agents a verification discipline they do not reliably improvise. It attacks explicitly submitted frozen release candidates with risk-ranked evidence - not ordinary implementation and not a comforting pile of green checkmarks.</p>
         <div class="actions">
           <a class="button primary" href="https://github.com/Stunspot/TestForge/blob/main/JUDGE-QUICKSTART.md">Five-minute judge path</a>
           <a class="button secondary" href="https://github.com/Stunspot/TestForge/releases/latest">Get the release</a>
@@ -230,7 +230,7 @@
         </article>
         <article>
           <span>CLAUDE</span>
-          <p>Confirm the account exposes custom Skills. Upload <code>claude-ai/software-verification-v1.1.6.zip</code> and <code>claude-ai/verification-reviewer-v1.1.6.zip</code> separately, enable both when required, and test each in a new conversation.</p>
+          <p>Confirm the account exposes custom Skills. Upload <code>claude-ai/software-verification-v1.1.7.zip</code> and <code>claude-ai/verification-reviewer-v1.1.7.zip</code> separately, enable both when required, and test each in a new conversation.</p>
           <p>Live upload, discovery, resource loading, script execution, and reviewer handoff were not exercised for this release.</p>
         </article>
         <article>
@@ -254,7 +254,7 @@
         <h2>Ask for the evidence chain, then challenge it separately.</h2>
       </div>
       <div class="prompt-grid">
-        <blockquote><code>$software-verification Verify this change. Reconstruct what could break, create the smallest credible evidence set, run only safe authorized checks, and give me an evidence-backed release assessment.</code></blockquote>
+        <blockquote><code>$software-verification Verify this frozen release candidate. Run only checks that can change the verdict, allow one support-path recovery at most, and give me one evidence-backed release assessment.</code></blockquote>
         <blockquote><code>$verification-reviewer Challenge this verification package and tell me whether its release status is actually supported.</code></blockquote>
       </div>
     </section>
@@ -280,7 +280,7 @@
         <h2>The skills are local. The host and tools still have their own data boundaries.</h2>
       </div>
       <div class="boundary-grid">
-        <article><h3>Product behavior</h3><p>The v1.1.6 skills-only plugin includes no account, telemetry, analytics, hosted service, connector, MCP server, hook, or automatic network request. Deterministic scripts touch only paths and commands the user chooses.</p></article>
+        <article><h3>Product behavior</h3><p>The v1.1.7 skills-only plugin includes no account, telemetry, analytics, hosted service, connector, MCP server, hook, or automatic network request. Deterministic scripts touch only paths and commands the user chooses.</p></article>
         <article><h3>Host behavior</h3><p>Prompts, repositories, logs, uploads, model calls, retention, training, residency, and connector traffic are governed by Codex, Claude, configured models, Git hosts, and any authorized tools—not by TestForge.</p></article>
         <article><h3>Local records</h3><p>Verification manifests, reports, raw command captures, generated tests, evaluation runs, seals, and promoted baselines may contain sensitive project evidence. Store and delete them under an approved retention policy.</p></article>
         <article><h3>Security boundary</h3><p>Imported files and tool output are untrusted evidence. Active security work needs a named target, explicit permission, non-production default, time window, rate limits, prohibited actions, handling rules, and a stop contact.</p></article>
@@ -297,7 +297,7 @@
         <table>
           <thead><tr><th>Claim</th><th>Current evidence</th><th>Boundary</th></tr></thead>
           <tbody>
-            <tr><td>Constructed and packaged</td><td>v1.1.6 source, plugin tree, current Claude archives, manifests, and retained frozen-release receipts</td><td>Does not prove host installation or live behavior</td></tr>
+            <tr><td>Constructed and packaged</td><td>v1.1.7 source, plugin tree, current Claude archives, manifests, and retained frozen-release receipts</td><td>Does not prove host installation or live behavior</td></tr>
             <tr><td>Deterministic behavior</td><td>Repository-local tool, package, distribution, documentation, and eval-harness suites</td><td>Only exercised commands, fixtures, Python version, and environment</td></tr>
             <tr><td>Behavioral evaluation</td><td>Named model/context baselines and a deliberately failed fresh-package smoke</td><td>Single-trial, model-, context-, case-, and judge-bounded; not universal model quality</td></tr>
             <tr><td>OpenAI directory</td><td>Latest retained portal packet is v1.1.4 and repository-tested</td><td>No claim of upload, approval, publication, or discoverability</td></tr>

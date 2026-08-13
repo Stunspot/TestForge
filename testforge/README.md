@@ -1,6 +1,6 @@
 # TestForge: Software Verification Operator
 
-Turn a software change, repository, failing test, or feature requirement into risk-ranked, repository-compatible verification evidence—and a release conclusion that says what is still unsafe to ship.
+Evaluate an explicitly submitted frozen release candidate with risk-ranked, repository-compatible evidence—and issue one bounded conclusion about what is still unsafe to ship.
 
 TestForge is a portable Augment with one self-contained verification operator, one self-contained independent reviewer, progressive testing doctrine, operational artifacts, deterministic Python tools, TypeScript/Python stack guidance, three situated examples, behavioral evaluations, and a fileless fallback. Markdown is the canonical human record; JSON is the canonical machine record.
 
@@ -8,7 +8,7 @@ TestForge is a portable Augment with one self-contained verification operator, o
 
 1. Read `docs/QUICK-START.md`.
 2. Install `skills/software-verification` and `skills/verification-reviewer` as complete skill folders, or upload the matching one-skill archives from the repository's `claude-ai/` directory.
-3. Invoke `$software-verification` with whatever you have: a diff, repository, defect, test failure, requirement, or release candidate.
+3. Invoke `$software-verification` with a completed frozen candidate, its target revision, bounded release claim, and available evidence.
 4. Let TestForge inspect before it questions you. It asks only for decision-critical information it cannot recover.
 5. Run the independent reviewer before accepting a release assessment.
 
