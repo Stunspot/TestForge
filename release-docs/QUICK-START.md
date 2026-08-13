@@ -6,7 +6,7 @@ Use this path to reach a first verification result without confusing a valid pac
 
 1. Extract the canonical release ZIP into a new directory.
 2. If Python 3.10 or newer is available, open a terminal in the extracted directory and run `python tools/verify_release.py .`. Continue when it returns `"ok": true` with no findings.
-3. If Python is unavailable, compare the ZIP's SHA-256 with `TestForge-v1.1.6.zip.sha256` using an operating-system checksum tool. Record the portable verifier as unexecuted. If you cannot perform either check, use only an archive obtained from the canonical GitHub release, retain it unchanged, and treat local package integrity as reduced assurance rather than a pass.
+3. If Python is unavailable, compare the ZIP's SHA-256 with `TestForge-v1.1.7.zip.sha256` using an operating-system checksum tool. Record the portable verifier as unexecuted. If you cannot perform either check, use only an archive obtained from the canonical GitHub release, retain it unchanged, and treat local package integrity as reduced assurance rather than a pass.
 4. Complete the [Codex installation](INSTALL-CODEX.md) or [Claude installation](INSTALL-CLAUDE.md), then start a fresh task or chat.
 
 ## First value: verify a completed candidate
@@ -29,7 +29,7 @@ A useful review returns an independent review verdict, actionable findings or an
 
 ## If first value does not appear
 
-1. Confirm the intended TestForge handle is listed by the host and that version `1.1.6` is selected.
+1. Confirm the intended TestForge handle is listed by the host and that version `1.1.7` is selected.
 2. Name the handle explicitly once to distinguish routing from installation.
 3. Confirm the input is a completed candidate for the operator or an existing verification package for the reviewer.
 4. Follow [support and recovery](SUPPORT.md), recording package verification, installation, discovery, invocation, and behavior as separate observations.

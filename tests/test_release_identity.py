@@ -7,7 +7,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.1.6"
+VERSION = "1.1.7"
 RELEASE_DATE = "2026-08-12"
 
 

@@ -27,7 +27,7 @@ A later Codex task used TestForge to design and harden the CD Augment behavioral
 
 ## Build evidence
 
-> Historical snapshot: the counts and release identity in this section describe the original v1.0.2 Build Week entry. They are not current v1.1.6 package or validation evidence; use the current README, release notes, archive custody, and validation guides for that.
+> Historical snapshot: the counts and release identity in this section describe the original v1.0.2 Build Week entry. They are not current v1.1.7 package or validation evidence; use the current README, release notes, archive custody, and validation guides for that.
 
 - Primary Codex build Session ID: `019f6a6e-8556-75c0-919c-0738a3cb1f84`
 - Primary build model recorded by Codex: `gpt-5.6-sol`

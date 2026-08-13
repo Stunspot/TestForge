@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.7 - 2026-08-13
+
+- Make TestForge an explicit release-grade verdict on a frozen candidate rather than routine build verification.
+- Require every check, artifact, retry, reviewer pass, and receipt to be capable of changing the bounded verdict.
+- Cap test, tooling, and environment recovery at one materially different low-cost path per cycle.
+- Close a second support-layer failure with the exact lost guarantee instead of creating another completion gate.
+- Align plugin discovery, activation examples, the operator, and the fileless fallback with the same stopping boundary.
+
 ## 1.1.6 — 2026-08-12
 
 - Require a fresh, billing-scope-matched capacity observation before quota-limited verification.

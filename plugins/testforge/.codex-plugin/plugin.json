@@ -1,6 +1,6 @@
 {
   "name": "testforge",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Risk-driven software verification and independent evidence review for coding Agents.",
   "author": {
     "name": "Collaborative Dynamics",
@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "TestForge",
     "shortDescription": "Risk-ranked verification with an independent skeptic.",
-    "longDescription": "Turn software changes, repositories, defects, and release candidates into risk-ranked evidence, meaningful tests, captured execution, and a traceable release assessment, then challenge the result with an independent skeptical reviewer.",
+    "longDescription": "Run explicit release-grade adversarial verification on frozen software candidates, capture decision-changing evidence, issue one bounded verdict, and challenge it with an independent skeptical reviewer.",
     "developerName": "Collaborative Dynamics",
     "websiteURL": "https://github.com/Stunspot/TestForge",
     "privacyPolicyURL": "https://github.com/Stunspot/TestForge/blob/main/testforge/docs/DATA-AND-PRIVACY.md",
@@ -32,9 +32,9 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Verify this repository: map impact, rank catastrophic risks, run safe checks, and issue a traceable release assessment.",
+      "Verify this frozen release candidate: map impact, rank catastrophic risks, run only decision-changing checks, and issue one bounded assessment.",
       "Challenge this verification package for catastrophic omissions, weak oracles, broken traceability, and unsupported confidence.",
-      "Turn this failure into evidence that distinguishes product, test, environment, and uncertainty causes."
+      "Classify this candidate failure once, recover one support path at most, and close the cycle with the exact verdict or lost guarantee."
     ],
     "brandColor": "#48CBE8",
     "composerIcon": "./assets/testforge-icon-v1.1.1.png",
