@@ -4182,8 +4182,8 @@
     },
     {
       "path": "releases/v1.1.7/codex/testforge/.codex-plugin/plugin.json",
-      "size": 2036,
-      "sha256": "00648a3e6d1385e92e5632c29f25d16663a338de163428f6182e8b9a6e90847e"
+      "size": 1996,
+      "sha256": "2a420c61daa2d0613832a319a8fe420eb89853ecf041ca4f3ed0292bd6b0e03d"
     },
     {
       "path": "releases/v1.1.7/codex/testforge/assets/testforge-answer-sheet-v1.1.1.svg",
@@ -4812,8 +4812,8 @@
     },
     {
       "path": "releases/v1.1.7/manifest.json",
-      "size": 22503,
-      "sha256": "e22bc58ecae7b823f088c1783b5e42c615690a8ba4181a281dda7d3993963d1a"
+      "size": 22463,
+      "sha256": "c667e700b2bd72c341d5fd17a04097c313dc016d1cce4c6ebc6219d82bc2ecd1"
     },
     {
       "path": "releases/v1.1.7/package-receipt.json",
@@ -4827,13 +4827,13 @@
     },
     {
       "path": "releases/v1.1.7/TestForge-v1.1.7.zip",
-      "size": 990179,
-      "sha256": "4611bceafd7dbd69a70ac488aefe12c0363069e16e24f4e6d74fa8a9dfe23f4d"
+      "size": 990139,
+      "sha256": "0325d86d5e31b249b8877430d685b10d09d960bd5ef62bd11ffeceb9b071b114"
     },
     {
       "path": "releases/v1.1.7/TestForge-v1.1.7.zip.sha256",
       "size": 87,
-      "sha256": "ff5a783fa362acb009d0fdd7ff056e4a699fbf00ef8dee6a105cf3b060297fc1"
+      "sha256": "00b8d4e0a41f59c939190bba298a0d52b333ad33b958ca031bd325602b28cc63"
     },
     {
       "path": "releases/v1.1.7/tools/verify_release.py",
