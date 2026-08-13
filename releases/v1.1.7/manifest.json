@@ -3,7 +3,7 @@
     {
       "file": "claude/software-verification-v1.1.7.zip",
       "handle": "software-verification",
-      "sha256": "07a7f4da918aea7e7be69d06bd9bc9db72195b1a6879acc1e3980a01b5a7cb27"
+      "sha256": "c06aa2e6fa5257f2b241b918cbfb76db1c16be733a08e57d5985e5dfed402ccd"
     },
     {
       "file": "claude/verification-reviewer-v1.1.7.zip",
@@ -51,9 +51,9 @@
           "sha256": "93ff6cc411be84525ae6909262749328625c25ec85013ff6c5017d36b9383f52"
         },
         {
-          "bytes": 966,
+          "bytes": 949,
           "path": "activation-examples.md",
-          "sha256": "64f2404b052b5c2ac84c9c4dd7ae22b62e9f00cd55e4b0d7678a135133187dd4"
+          "sha256": "5b894ecfe69d30e1bf4d945162d9bf1eaa9032a5bbef4156c281047d28085b5d"
         },
         {
           "bytes": 272,

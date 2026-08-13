@@ -38,7 +38,7 @@
     {
       "path": "ARCHIVE-CUSTODY.md",
       "size": 3759,
-      "sha256": "9993397f96c67ce021e9a30d08d755dee7e2358c64132f87ac8af28925c29908"
+      "sha256": "6ddfddcb96d9adef25af3dd9fa30a7d07b3faf023c8de9f400b9cbf03717cc9f"
     },
     {
       "path": "archive-plan-v1.1.2.json",
@@ -97,8 +97,8 @@
     },
     {
       "path": "claude-ai/software-verification-v1.1.7.zip",
-      "size": 87104,
-      "sha256": "841872f2522b2865fd4c53168df4fc03756fd7958b90ad2c859eb95eea4cb90e"
+      "size": 87100,
+      "sha256": "41f2d92cf4cf44c91fb6c204364989772ed0c1d0a376c2dfd982d97117da6714"
     },
     {
       "path": "claude-ai/verification-reviewer-v1.1.0.zip",
@@ -4172,8 +4172,8 @@
     },
     {
       "path": "releases/v1.1.7/claude/software-verification-v1.1.7.zip",
-      "size": 82880,
-      "sha256": "07a7f4da918aea7e7be69d06bd9bc9db72195b1a6879acc1e3980a01b5a7cb27"
+      "size": 82876,
+      "sha256": "c06aa2e6fa5257f2b241b918cbfb76db1c16be733a08e57d5985e5dfed402ccd"
     },
     {
       "path": "releases/v1.1.7/claude/verification-reviewer-v1.1.7.zip",
@@ -4813,12 +4813,12 @@
     {
       "path": "releases/v1.1.7/manifest.json",
       "size": 22463,
-      "sha256": "c667e700b2bd72c341d5fd17a04097c313dc016d1cce4c6ebc6219d82bc2ecd1"
+      "sha256": "702ef9ae31c8dcd4d96ef0f0c1b8e546a585077c3f9d6bb9641e10a3ab6d1485"
     },
     {
       "path": "releases/v1.1.7/package-receipt.json",
       "size": 751,
-      "sha256": "7c51742b8591338d65cb348034ea542b86c394035035452d18325d9fd0923ad8"
+      "sha256": "f4e60861fcbb715dac2e8f5aa117a96f8e318fb9ba67fef13ce7ffa6a4677726"
     },
     {
       "path": "releases/v1.1.7/receipt.json",
@@ -4827,13 +4827,13 @@
     },
     {
       "path": "releases/v1.1.7/TestForge-v1.1.7.zip",
-      "size": 990139,
-      "sha256": "0325d86d5e31b249b8877430d685b10d09d960bd5ef62bd11ffeceb9b071b114"
+      "size": 990126,
+      "sha256": "65507bef84f1726e639aff77d4c6379e40b80197664514665060f8b82403377e"
     },
     {
       "path": "releases/v1.1.7/TestForge-v1.1.7.zip.sha256",
       "size": 87,
-      "sha256": "00b8d4e0a41f59c939190bba298a0d52b333ad33b958ca031bd325602b28cc63"
+      "sha256": "0b94952e6472bfaf12f871fa7786fe72f2a65b85a58f9c88dccf1f72b31e4857"
     },
     {
       "path": "releases/v1.1.7/tools/verify_release.py",

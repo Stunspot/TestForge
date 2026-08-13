@@ -8,7 +8,7 @@ TestForge v1.1.7 is one two-skill Augment with several distinct distribution obj
 |---|---|---|
 | Maintained package | `testforge/` | Current v1.1.7 two-skill source, tools, schemas, examples, evals, adapters, and customer documentation |
 | Codex marketplace plugin | `plugins/testforge/` plus `.agents/plugins/marketplace.json` | Repository-native plugin source for `testforge@cd-testforge`; static structure is repository-tested |
-| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `841872f2522b2865fd4c53168df4fc03756fd7958b90ad2c859eb95eea4cb90e` |
+| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `41f2d92cf4cf44c91fb6c204364989772ed0c1d0a376c2dfd982d97117da6714` |
 | Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `c882eacec514e23647e1e298b9919a89e3b85ded06649041cf924c91994308ba` |
 | Local v1.1.7 customer kit | `releases/v1.1.7/TestForge-v1.1.7.zip` | Deterministic local candidate; the adjacent `.sha256` file is canonical because this document is itself packaged inside the archive |
 | Local v1.1.7 receipts | `releases/v1.1.7/` | Static package, source-parity, and portable archive evidence; no fresh-host activation, customer-outcome, tag, GitHub release, or publication claim |
