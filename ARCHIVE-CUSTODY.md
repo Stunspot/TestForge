@@ -1,20 +1,24 @@
 # TestForge archive custody
 
-TestForge v1.1.6 is one two-skill Augment with several distinct distribution objects. Keep their identity and evidence states separate: source presence is not installation, a valid archive is not discovery, discovery is not invocation, and none of those states proves healthy behavior or directory publication.
+TestForge v1.1.7 is one two-skill Augment with several distinct distribution objects. Keep their identity and evidence states separate: source presence is not installation, a valid archive is not discovery, discovery is not invocation, and none of those states proves healthy behavior or directory publication.
 
-## Current v1.1.6 objects
+## Current v1.1.7 candidate objects
 
 | Object | Canonical location | Observed state and use |
 |---|---|---|
-| Maintained package | `testforge/` | Current two-skill source, tools, schemas, examples, evals, adapters, and customer documentation |
+| Maintained package | `testforge/` | Current v1.1.7 two-skill source, tools, schemas, examples, evals, adapters, and customer documentation |
 | Codex marketplace plugin | `plugins/testforge/` plus `.agents/plugins/marketplace.json` | Repository-native plugin source for `testforge@cd-testforge`; static structure is repository-tested |
-| Claude operator upload | `claude-ai/software-verification-v1.1.6.zip` | Current one-skill upload archive; SHA-256 `3485f982d9d7f770b9077bc9da122498ff5ce135ae60e07e7aa8fa8209d5a52f` |
-| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.6.zip` | Current one-skill upload archive; SHA-256 `c882eacec514e23647e1e298b9919a89e3b85ded06649041cf924c91994308ba` |
-| Frozen v1.1.6 customer kit | `releases/v1.1.6/TestForge-v1.1.6.zip` | Canonical published release object retained unchanged; SHA-256 `4dd052672923192f59ec2866eb2fedef697ca1f98f00a99341c3d8fe062b0594` |
-| Frozen v1.1.6 receipts | `releases/v1.1.6/` | Static package, source-parity, and portable archive evidence; no fresh-host activation or customer-outcome claim |
-| Source release | Git tag `v1.1.6` and [GitHub release](https://github.com/Stunspot/TestForge/releases/tag/v1.1.6) | Published 2026-08-12; versioned public source and release boundary |
+| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `841872f2522b2865fd4c53168df4fc03756fd7958b90ad2c859eb95eea4cb90e` |
+| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `c882eacec514e23647e1e298b9919a89e3b85ded06649041cf924c91994308ba` |
+| Local v1.1.7 customer kit | `releases/v1.1.7/TestForge-v1.1.7.zip` | Deterministic local candidate; the adjacent `.sha256` file is canonical because this document is itself packaged inside the archive |
+| Local v1.1.7 receipts | `releases/v1.1.7/` | Static package, source-parity, and portable archive evidence; no fresh-host activation, customer-outcome, tag, GitHub release, or publication claim |
+| Source state | Local `main` commits after published v1.1.6 | Release source prepared locally; not tagged, pushed, or published by this maintenance pass |
 
-The current `claude-ai/` archives and the frozen archives inside `releases/v1.1.6/claude/` are separate deterministic builds and are not byte-identical. Use the current `claude-ai/` objects for the repository installation guide. Use the frozen release directory to inspect the exact evidence and bytes retained for the v1.1.6 release event.
+The current `claude-ai/` archives and the archives inside `releases/v1.1.7/claude/` are separate deterministic builds and are not expected to be byte-identical. Use the current `claude-ai/` objects for repository installation. Use the candidate release directory to inspect the exact evidence and bytes retained for this local release candidate.
+
+## Published v1.1.6 objects
+
+The prior published release remains immutable: Git tag and GitHub release `v1.1.6`, published 2026-08-12. Its frozen customer kit is `releases/v1.1.6/TestForge-v1.1.6.zip`, SHA-256 `4dd052672923192f59ec2866eb2fedef697ca1f98f00a99341c3d8fe062b0594`. Its retained receipts establish static package and byte-parity evidence only.
 
 ## OpenAI directory packet
 
@@ -25,13 +29,13 @@ The latest retained skills-only portal payload is still v1.1.4:
 - SHA-256: `9aecec78e407e6f368d0a5c613facbc4252a3f3ef545ba6686e74cf7f2404a46`;
 - state: built and repository-tested, not claimed uploaded, approved, published, or discoverable.
 
-There is no retained v1.1.6 portal archive or custody object. The repository-native v1.1.6 plugin remains the current Codex installation surface; the v1.1.4 portal packet is a separately governed historical submission candidate.
+There is no retained v1.1.7 portal archive or custody object. The repository-native v1.1.7 plugin is the current local installation candidate; the v1.1.4 portal packet is a separately governed historical submission candidate.
 
 ## Maintenance rules
 
 - Rebuild current derivatives from maintained source; never edit ZIP members in place.
-- Do not alter `releases/` merely to make present documentation agree with a historical release.
-- Record archive name, byte size, SHA-256, member inventory, source revision, and claim boundary for each new object.
+- Do not alter historical release directories merely to make present documentation agree with a later release.
+- Record archive name, byte size, SHA-256, member inventory, source revision, and claim boundary in the release receipts for each new object.
 - Verify extraction topology and package-relative dependencies before publication.
 - After publication, download the public asset and compare it with the governed local object.
 - Treat upload, automated scan, review submission, approval, publication, installation, discovery, invocation, and health as separate observed states.
