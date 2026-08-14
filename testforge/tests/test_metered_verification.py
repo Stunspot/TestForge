@@ -142,7 +142,6 @@ class MeteredVerificationTests(unittest.TestCase):
                     "authorization_id": "decision:tiny",
                     "authorized_by": "stunspot",
                     "execution_id": "verify:pr-25:head-abc",
-                    "plan_sha256": "0" * 64,
                     "authorized_at": "2026-08-12T12:05:00Z",
                     "valid_until": "2026-08-12T13:00:00Z",
                     "billing_scope": "user:Stunspot",
@@ -162,6 +161,13 @@ class MeteredVerificationTests(unittest.TestCase):
                 ),
                 now=NOW,
             )
+
+    def test_preflight_emits_no_checksum_or_receipt(self) -> None:
+        result = MODULE.assess(base_plan(), now=NOW)
+        self.assertFalse(any("sha" in key or "hash" in key or "receipt" in key for key in result))
+        source = SCRIPT.read_text(encoding="utf-8")
+        self.assertNotIn("hashlib", source)
+        self.assertNotIn("plan_sha256", source)
 
     def test_malformed_or_stale_snapshot_is_rejected(self) -> None:
         with self.assertRaisesRegex(MODULE.PlanError, "valid ISO 8601"):
@@ -219,6 +225,9 @@ class MeteredVerificationTests(unittest.TestCase):
         self.assertIn("If capacity or reserve is unknown", response_template)
         self.assertIn("This substitute does not prove:", response_template)
         self.assertIn("Do not invent a local command or file path", text)
+        self.assertIn("Until the verdict and independent review are complete", text)
+        self.assertIn("Build once, checksum once, verify once", text)
+        self.assertIn("Do not create a verification manifest at intake", text)
 
 
 if __name__ == "__main__":

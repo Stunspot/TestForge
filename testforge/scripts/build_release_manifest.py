@@ -17,13 +17,22 @@ def digest(path: Path) -> str:
     return value.hexdigest()
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("package", type=Path)
+    parser.add_argument(
+        "--final-seal",
+        action="store_true",
+        help="confirm the package is complete and reviewed before computing custody hashes",
+    )
     parser.add_argument("--package-name", default="testforge")
     parser.add_argument("--version", default="1.1.7")
     parser.add_argument("--release-date", default="2026-08-13")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
+    if not args.final_seal:
+        parser.error(
+            "release hashing is final-only; finish and review the package, then pass --final-seal"
+        )
     root = args.package.resolve()
     output = root / "release-manifest.json"
     artifacts = []

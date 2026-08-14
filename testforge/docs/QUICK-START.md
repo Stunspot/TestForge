@@ -13,11 +13,12 @@ Copy both complete skill directories into `~/.claude/skills/` for personal use o
 ## First verification
 
 1. Invoke `$software-verification` with a completed frozen candidate, its target revision, bounded release claim, and available evidence.
-2. Let it inspect existing manifests, tests, and conventions before answering questions.
-3. Keep the generated verification manifest in the target project's working area, not inside this installed package.
-4. Review any proposed command or repository edit. Approve consequential actions only within a bounded scope.
+2. Let it inspect existing manifests, tests, and conventions before answering questions. Use ordinary working notes while risks, tests, and failures are still changing.
+3. Review any proposed command or repository edit. Approve consequential actions only within a bounded scope.
+4. At a stable evidence cutoff, assemble the verification manifest once in the target project's working area, not inside this installed package.
 5. Run `$verification-reviewer` with the completed manifest, tests, evidence, findings, and proposed status.
 6. Treat the report's status as evidence-backed advice; the accountable human retains release authority where consequence requires it.
+7. Do not build release archives, compute custody checksums, or write package or release receipts until the verdict and independent review are complete. A separate final release process may seal an unchanged `READY` or `READY_WITH_RESIDUAL_RISK` candidate once.
 
 Before hosted CI, device farms, browser farms, or any other finite or paid test service, require a current capacity observation for the exact account that will be charged. Count the complete run—including duplicate triggers, matrix jobs, retries, runner ceilings, and billing multipliers—then retain a human-set reserve. If capacity is unknown, stale, across its refresh boundary, or insufficient, TestForge holds the hosted run and proposes the smallest credible local, clean-host, self-hosted, or batched substitute. It never launches a job just to ask the meter whether the job was affordable.
 

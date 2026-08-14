@@ -4,6 +4,7 @@ import importlib.util
 import json
 from pathlib import Path
 import unittest
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,6 +57,35 @@ class ReleaseIdentityTests(unittest.TestCase):
             value = json.loads(manifest.read_text(encoding="utf-8-sig"))
             self.assertEqual(VERSION, value["version"])
             self.assertEqual(RELEASE_DATE, value["release_date"])
+
+    def test_release_hashing_requires_explicit_final_seal(self) -> None:
+        modules = [
+            load_module("guard_build_public", ROOT / "tools" / "build_public_release.py"),
+            load_module("guard_rebuild_public", ROOT / "tools" / "rebuild_public_release.py"),
+            load_module(
+                "guard_build_manifest",
+                ROOT / "testforge" / "scripts" / "build_release_manifest.py",
+            ),
+        ]
+        argument_sets = [[], [], ["unsealed-package"]]
+        for module, arguments in zip(modules, argument_sets):
+            with self.subTest(module=module.__name__):
+                with self.assertRaises(SystemExit) as raised:
+                    module.main(arguments)
+                self.assertEqual(raised.exception.code, 2)
+
+    def test_final_seal_rejects_a_dirty_repository_before_building(self) -> None:
+        modules = [
+            load_module("dirty_build_public", ROOT / "tools" / "build_public_release.py"),
+            load_module("dirty_rebuild_public", ROOT / "tools" / "rebuild_public_release.py"),
+        ]
+        dirty = mock.Mock(returncode=0, stdout=" M unfinished-change\n")
+        for module in modules:
+            with self.subTest(module=module.__name__):
+                with mock.patch.object(module.subprocess, "run", return_value=dirty):
+                    with self.assertRaises(SystemExit) as raised:
+                        module.main(["--final-seal"])
+                self.assertEqual(raised.exception.code, 2)
 
     def test_metered_plan_contract_is_packaged_and_excludes_authority(self) -> None:
         skill = ROOT / "testforge" / "skills" / "software-verification"
