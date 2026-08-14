@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate TestForge release inventories and Claude archive parity."""
+"""Validate TestForge inventories and frozen/current Claude archive parity."""
 
 from __future__ import annotations
 
@@ -13,6 +13,10 @@ import zipfile
 REPO = Path(__file__).resolve().parents[1]
 PACKAGE = REPO / "testforge"
 VERSION = "1.1.7"
+CURRENT_CLAUDE = REPO / "claude-ai"
+RELEASE = REPO / "releases" / f"v{VERSION}"
+RELEASE_CLAUDE = RELEASE / "claude"
+RELEASE_SKILLS = RELEASE / "codex" / "testforge" / "skills"
 SKILLS = ("software-verification", "verification-reviewer")
 EXCLUDED = {
     "__pycache__",
@@ -97,29 +101,51 @@ def snapshot(root: Path) -> dict[str, str]:
     }
 
 
-def validate_archive(skill: str) -> list[str]:
+def validate_archive(
+    skill: str,
+    archive_path: Path,
+    source: Path,
+    *,
+    archive_root: str | None = None,
+) -> list[str]:
     errors = []
-    archive_path = REPO / "releases" / f"v{VERSION}" / "claude" / f"{skill}-v{VERSION}.zip"
     if not zipfile.is_zipfile(archive_path):
         return [f"invalid Claude archive: {archive_path}"]
     with tempfile.TemporaryDirectory() as temporary:
         destination = Path(temporary)
         with zipfile.ZipFile(archive_path) as archive:
-            names = [PurePosixPath(name.replace("\\", "/")) for name in archive.namelist() if name]
+            names = [
+                PurePosixPath(name.replace("\\", "/"))
+                for name in archive.namelist()
+                if name
+            ]
             if any(name.is_absolute() or ".." in name.parts for name in names):
                 errors.append(f"unsafe member path in {archive_path}")
             archive.extractall(destination)
-        if snapshot(PACKAGE / "skills" / skill) != snapshot(destination):
-            errors.append(f"archive content mismatch for {skill}")
+        extracted = destination / archive_root if archive_root else destination
+        if snapshot(source) != snapshot(extracted):
+            errors.append(f"archive content mismatch for {archive_path}")
     return errors
-
-
 def main() -> int:
     errors = []
     errors.extend(validate_manifest(PACKAGE, "testforge"))
     errors.extend(validate_manifest(REPO, "testforge-public-repository"))
     for skill in SKILLS:
-        errors.extend(validate_archive(skill))
+        errors.extend(
+            validate_archive(
+                skill,
+                RELEASE_CLAUDE / f"{skill}-v{VERSION}.zip",
+                RELEASE_SKILLS / skill,
+            )
+        )
+        errors.extend(
+            validate_archive(
+                skill,
+                CURRENT_CLAUDE / f"{skill}-v{VERSION}.zip",
+                PACKAGE / "skills" / skill,
+                archive_root=skill,
+            )
+        )
     if errors:
         print("INVALID")
         for error in errors:
