@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Defer verification-manifest assembly until the evidence reaches a stable cutoff.
+- Prohibit custody checksums, release archives, and package or release receipts until verdict and independent review are complete.
+- Remove the metered-preflight plan digest and hard-gate checksum-producing release tools behind an explicit final seal.
+- Add reviewer and behavioral-regression coverage for premature sealing and receipt recursion.
+
 ## 1.1.7 - 2026-08-13
 
 - Make TestForge an explicit release-grade verdict on a frozen candidate rather than routine build verification.

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import shutil
@@ -59,7 +60,31 @@ def source_record(handle: str, root: Path) -> dict:
     return {"files": inventory, "handle": handle}
 
 
-def main() -> int:
+def require_final_seal(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--final-seal",
+        action="store_true",
+        help="confirm implementation, tests, documentation, and independent review are complete",
+    )
+    args = parser.parse_args(argv)
+    if not args.final_seal:
+        parser.error("release hashing is final-only; finish and review the candidate, then pass --final-seal")
+    status = subprocess.run(
+        ["git", "status", "--porcelain", "--untracked-files=all"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if status.returncode != 0:
+        parser.error("cannot establish a clean frozen repository for final sealing")
+    if status.stdout.strip():
+        parser.error("final sealing requires a clean frozen repository; commit or otherwise resolve all changes first")
+
+
+def main(argv: list[str] | None = None) -> int:
+    require_final_seal(argv)
     expected = (ROOT / "releases" / f"v{VERSION}").resolve()
     if OUT.resolve() != expected or OUT.parent.resolve() != (ROOT / "releases").resolve():
         raise RuntimeError("unsafe release target")

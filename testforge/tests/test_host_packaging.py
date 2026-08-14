@@ -7,7 +7,10 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[2]
 PACKAGE = REPO / "testforge"
-CLAUDE = REPO / "releases" / "v1.1.7" / "claude"
+CURRENT_CLAUDE = REPO / "claude-ai"
+RELEASE = REPO / "releases" / "v1.1.7"
+RELEASE_CLAUDE = RELEASE / "claude"
+RELEASE_SKILLS = RELEASE / "codex" / "testforge" / "skills"
 SKILLS = ("software-verification", "verification-reviewer")
 
 
@@ -32,16 +35,36 @@ class HostPackagingTests(unittest.TestCase):
             description = next(line.split(":", 1)[1].strip() for line in text.splitlines() if line.startswith("description:"))
             self.assertLessEqual(len(description), 200, skill)
 
-    def test_claude_archives_are_safe_and_match_source(self):
+    def assert_archive_matches(self, archive_path, source, archive_root=None):
+        self.assertTrue(archive_path.is_file(), archive_path)
+        with tempfile.TemporaryDirectory() as temporary:
+            with zipfile.ZipFile(archive_path) as archive:
+                names = [
+                    PurePosixPath(name.replace("\\", "/"))
+                    for name in archive.namelist()
+                    if name
+                ]
+                self.assertTrue(
+                    all(not name.is_absolute() and ".." not in name.parts for name in names)
+                )
+                archive.extractall(temporary)
+            extracted = Path(temporary) / archive_root if archive_root else Path(temporary)
+            self.assertEqual(snapshot(source), snapshot(extracted))
+
+    def test_current_claude_archives_are_safe_and_match_current_source(self):
         for skill in SKILLS:
-            archive_path = CLAUDE / f"{skill}-v1.1.7.zip"
-            self.assertTrue(archive_path.is_file(), archive_path)
-            with tempfile.TemporaryDirectory() as temporary:
-                with zipfile.ZipFile(archive_path) as archive:
-                    names = [PurePosixPath(name.replace("\\", "/")) for name in archive.namelist() if name]
-                    self.assertTrue(all(not name.is_absolute() and ".." not in name.parts for name in names))
-                    archive.extractall(temporary)
-                self.assertEqual(snapshot(PACKAGE / "skills" / skill), snapshot(Path(temporary)))
+            self.assert_archive_matches(
+                CURRENT_CLAUDE / f"{skill}-v1.1.7.zip",
+                PACKAGE / "skills" / skill,
+                archive_root=skill,
+            )
+
+    def test_frozen_release_archives_match_frozen_release_source(self):
+        for skill in SKILLS:
+            self.assert_archive_matches(
+                RELEASE_CLAUDE / f"{skill}-v1.1.7.zip",
+                RELEASE_SKILLS / skill,
+            )
 
 
 if __name__ == "__main__":
