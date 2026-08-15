@@ -8,11 +8,11 @@ TestForge v1.1.7 is one two-skill Augment with several distinct distribution obj
 |---|---|---|
 | Maintained package | `testforge/` | Current v1.1.7 two-skill source, tools, schemas, examples, evals, adapters, and customer documentation |
 | Codex marketplace plugin | `plugins/testforge/` plus `.agents/plugins/marketplace.json` | Repository-native plugin source for `testforge@cd-testforge`; static structure is repository-tested |
-| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `41f2d92cf4cf44c91fb6c204364989772ed0c1d0a376c2dfd982d97117da6714` |
-| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `c882eacec514e23647e1e298b9919a89e3b85ded06649041cf924c91994308ba` |
+| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `0fd9105fdb498259fc0d14aba98907dbcfb0c55b3091e83c68104c47d108e24e` |
+| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `47399ff6c1a40bbb13db6d63ca597d7d00529527be1c5d59d3d9167e7d5a1ec6` |
 | Local v1.1.7 customer kit | `releases/v1.1.7/TestForge-v1.1.7.zip` | Deterministic local candidate; the adjacent `.sha256` file is canonical because this document is itself packaged inside the archive |
 | Local v1.1.7 receipts | `releases/v1.1.7/` | Static package, source-parity, and portable archive evidence; no fresh-host activation, customer-outcome, tag, GitHub release, or publication claim |
-| Source state | Local `main` commits after published v1.1.6 | Release source prepared locally; not tagged, pushed, or published by this maintenance pass |
+| Source state | Current `main` contains the v1.1.7 candidate | Tag and GitHub-release state must be established by live remote readback; this retained document does not infer publication from local bytes |
 
 The current `claude-ai/` archives and the archives inside `releases/v1.1.7/claude/` are separate deterministic builds and are not expected to be byte-identical. Use the current `claude-ai/` objects for repository installation. Use the candidate release directory to inspect the exact evidence and bytes retained for this local release candidate.
 
