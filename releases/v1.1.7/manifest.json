@@ -3,12 +3,12 @@
     {
       "file": "claude/software-verification-v1.1.7.zip",
       "handle": "software-verification",
-      "sha256": "c06aa2e6fa5257f2b241b918cbfb76db1c16be733a08e57d5985e5dfed402ccd"
+      "sha256": "4038640c9e43ddc8911b7851f99f1ae83c6a5b1ce968ae4f17704a604c3361f0"
     },
     {
       "file": "claude/verification-reviewer-v1.1.7.zip",
       "handle": "verification-reviewer",
-      "sha256": "392c66672a6a0cb047b89f6267339fd1c31b51cd0856a130226be14b4ea2f6f0"
+      "sha256": "2390423b475e350f283878813c6e535b75d2249b81abc2c7fc30ddcd80bdda64"
     }
   ],
   "excluded_generated_caches": {
@@ -46,9 +46,9 @@
     {
       "files": [
         {
-          "bytes": 17962,
+          "bytes": 17882,
           "path": "SKILL.md",
-          "sha256": "93ff6cc411be84525ae6909262749328625c25ec85013ff6c5017d36b9383f52"
+          "sha256": "386727a81232311a87ddd9c17c575f6b0b7aa87de7e9da7b678531f56e72d1a5"
         },
         {
           "bytes": 949,
@@ -56,9 +56,9 @@
           "sha256": "5b894ecfe69d30e1bf4d945162d9bf1eaa9032a5bbef4156c281047d28085b5d"
         },
         {
-          "bytes": 272,
+          "bytes": 288,
           "path": "agents/openai.yaml",
-          "sha256": "383b3b5007cca797ca4ca84b2bc7f460102738c89b6e6c93c578987bf7f3ddf0"
+          "sha256": "2b12c14f7b2ae4b02e10c512c3eb5a682b1f82f0fdbbfbdc5ef4e37be96bdcf4"
         },
         {
           "bytes": 371,
@@ -531,9 +531,9 @@
     {
       "files": [
         {
-          "bytes": 3424,
+          "bytes": 3273,
           "path": "SKILL.md",
-          "sha256": "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b"
+          "sha256": "34df685496e14bf09830d3efed7fb1f83381f473b3d5f6a69774336295624dea"
         },
         {
           "bytes": 994,
@@ -541,9 +541,9 @@
           "sha256": "92f3bb679ec9e08617d0c950617d171ae689d6c35c59d921fc781325c0ca039a"
         },
         {
-          "bytes": 272,
+          "bytes": 256,
           "path": "agents/openai.yaml",
-          "sha256": "e5f43c244cd420d0817e6612de22513e79ee39d629a6e9c3b94aefc54e8765b0"
+          "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
         },
         {
           "bytes": 1748,

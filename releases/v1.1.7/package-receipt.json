@@ -10,12 +10,12 @@
     {
       "file": "claude/software-verification-v1.1.7.zip",
       "handle": "software-verification",
-      "sha256": "c06aa2e6fa5257f2b241b918cbfb76db1c16be733a08e57d5985e5dfed402ccd"
+      "sha256": "4038640c9e43ddc8911b7851f99f1ae83c6a5b1ce968ae4f17704a604c3361f0"
     },
     {
       "file": "claude/verification-reviewer-v1.1.7.zip",
       "handle": "verification-reviewer",
-      "sha256": "392c66672a6a0cb047b89f6267339fd1c31b51cd0856a130226be14b4ea2f6f0"
+      "sha256": "2390423b475e350f283878813c6e535b75d2249b81abc2c7fc30ddcd80bdda64"
     }
   ]
 }

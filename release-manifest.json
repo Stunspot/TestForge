@@ -97,8 +97,8 @@
     },
     {
       "path": "claude-ai/software-verification-v1.1.7.zip",
-      "size": 87982,
-      "sha256": "0fd9105fdb498259fc0d14aba98907dbcfb0c55b3091e83c68104c47d108e24e"
+      "size": 87987,
+      "sha256": "8eebaef2be86f3631be1c87f557ea4598f0f5119f7b2cba3d743a7fbb0a428f7"
     },
     {
       "path": "claude-ai/verification-reviewer-v1.1.0.zip",
@@ -122,8 +122,8 @@
     },
     {
       "path": "claude-ai/verification-reviewer-v1.1.7.zip",
-      "size": 10052,
-      "sha256": "47399ff6c1a40bbb13db6d63ca597d7d00529527be1c5d59d3d9167e7d5a1ec6"
+      "size": 10025,
+      "sha256": "c12f2c5b9753af3cde6c6ad6ec062ea1bca53d97d43fc9ccaa804ca889fba64d"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -257,8 +257,8 @@
     },
     {
       "path": "plugins/testforge/skills/software-verification/agents/openai.yaml",
-      "size": 272,
-      "sha256": "383b3b5007cca797ca4ca84b2bc7f460102738c89b6e6c93c578987bf7f3ddf0"
+      "size": 288,
+      "sha256": "2b12c14f7b2ae4b02e10c512c3eb5a682b1f82f0fdbbfbdc5ef4e37be96bdcf4"
     },
     {
       "path": "plugins/testforge/skills/software-verification/assets/ci/github-actions-node.yml",
@@ -727,8 +727,8 @@
     },
     {
       "path": "plugins/testforge/skills/software-verification/SKILL.md",
-      "size": 19746,
-      "sha256": "b7e9cfb0f3424cbb4dfbe72a5058ca587492e21ea2ed4c6c719ac58f2a1f26a5"
+      "size": 19666,
+      "sha256": "7fee2d5c158f647106cb1fdb4ed16d53c28fb68ba5b8a48b3a3e9b991601183a"
     },
     {
       "path": "plugins/testforge/skills/verification-reviewer/adversarial-checks.md",
@@ -737,8 +737,8 @@
     },
     {
       "path": "plugins/testforge/skills/verification-reviewer/agents/openai.yaml",
-      "size": 272,
-      "sha256": "e5f43c244cd420d0817e6612de22513e79ee39d629a6e9c3b94aefc54e8765b0"
+      "size": 256,
+      "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
     },
     {
       "path": "plugins/testforge/skills/verification-reviewer/review-rubric.md",
@@ -772,8 +772,8 @@
     },
     {
       "path": "plugins/testforge/skills/verification-reviewer/SKILL.md",
-      "size": 3754,
-      "sha256": "debde9521f5b43e25c323cc58659521b55c342d2e3b15b3a4fc2f98bcbbf56eb"
+      "size": 3603,
+      "sha256": "db8d86b0eabe0770cdfec977bde36b4b0e87ccc820d609f6fe0c9ceaf4206c75"
     },
     {
       "path": "README.md",
@@ -4172,13 +4172,13 @@
     },
     {
       "path": "releases/v1.1.7/claude/software-verification-v1.1.7.zip",
-      "size": 82876,
-      "sha256": "c06aa2e6fa5257f2b241b918cbfb76db1c16be733a08e57d5985e5dfed402ccd"
+      "size": 82878,
+      "sha256": "4038640c9e43ddc8911b7851f99f1ae83c6a5b1ce968ae4f17704a604c3361f0"
     },
     {
       "path": "releases/v1.1.7/claude/verification-reviewer-v1.1.7.zip",
-      "size": 9325,
-      "sha256": "392c66672a6a0cb047b89f6267339fd1c31b51cd0856a130226be14b4ea2f6f0"
+      "size": 9295,
+      "sha256": "2390423b475e350f283878813c6e535b75d2249b81abc2c7fc30ddcd80bdda64"
     },
     {
       "path": "releases/v1.1.7/codex/testforge/.codex-plugin/plugin.json",
@@ -4217,8 +4217,8 @@
     },
     {
       "path": "releases/v1.1.7/codex/testforge/skills/software-verification/agents/openai.yaml",
-      "size": 272,
-      "sha256": "383b3b5007cca797ca4ca84b2bc7f460102738c89b6e6c93c578987bf7f3ddf0"
+      "size": 288,
+      "sha256": "2b12c14f7b2ae4b02e10c512c3eb5a682b1f82f0fdbbfbdc5ef4e37be96bdcf4"
     },
     {
       "path": "releases/v1.1.7/codex/testforge/skills/software-verification/assets/ci/github-actions-node.yml",
@@ -4687,8 +4687,8 @@
     },
     {
       "path": "releases/v1.1.7/codex/testforge/skills/software-verification/SKILL.md",
-      "size": 17962,
-      "sha256": "93ff6cc411be84525ae6909262749328625c25ec85013ff6c5017d36b9383f52"
+      "size": 17882,
+      "sha256": "386727a81232311a87ddd9c17c575f6b0b7aa87de7e9da7b678531f56e72d1a5"
     },
     {
       "path": "releases/v1.1.7/codex/testforge/skills/verification-reviewer/adversarial-checks.md",
@@ -4697,8 +4697,8 @@
     },
     {
       "path": "releases/v1.1.7/codex/testforge/skills/verification-reviewer/agents/openai.yaml",
-      "size": 272,
-      "sha256": "e5f43c244cd420d0817e6612de22513e79ee39d629a6e9c3b94aefc54e8765b0"
+      "size": 256,
+      "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
     },
     {
       "path": "releases/v1.1.7/codex/testforge/skills/verification-reviewer/review-rubric.md",
@@ -4732,8 +4732,8 @@
     },
     {
       "path": "releases/v1.1.7/codex/testforge/skills/verification-reviewer/SKILL.md",
-      "size": 3424,
-      "sha256": "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b"
+      "size": 3273,
+      "sha256": "34df685496e14bf09830d3efed7fb1f83381f473b3d5f6a69774336295624dea"
     },
     {
       "path": "releases/v1.1.7/description-custody.json",
@@ -4813,12 +4813,12 @@
     {
       "path": "releases/v1.1.7/manifest.json",
       "size": 22463,
-      "sha256": "702ef9ae31c8dcd4d96ef0f0c1b8e546a585077c3f9d6bb9641e10a3ab6d1485"
+      "sha256": "4e6dc148a65de99a191016b0f2b03a160a66b125a5837d4790c8a9cf0e8e0f8f"
     },
     {
       "path": "releases/v1.1.7/package-receipt.json",
       "size": 751,
-      "sha256": "f4e60861fcbb715dac2e8f5aa117a96f8e318fb9ba67fef13ce7ffa6a4677726"
+      "sha256": "9eff966beeb6008ebb4fb20a165689fcd0c6eb612982ce28e2327b34a6c7f124"
     },
     {
       "path": "releases/v1.1.7/receipt.json",
@@ -4827,13 +4827,13 @@
     },
     {
       "path": "releases/v1.1.7/TestForge-v1.1.7.zip",
-      "size": 990126,
-      "sha256": "65507bef84f1726e639aff77d4c6379e40b80197664514665060f8b82403377e"
+      "size": 990083,
+      "sha256": "5d61d01a903cbcd43e143cda4b27f0eed887769fcb6b863ec51732a2ab42228a"
     },
     {
       "path": "releases/v1.1.7/TestForge-v1.1.7.zip.sha256",
       "size": 87,
-      "sha256": "0b94952e6472bfaf12f871fa7786fe72f2a65b85a58f9c88dccf1f72b31e4857"
+      "sha256": "5f99601a4eb6fdb9bb0288a1552e9da8d346c5cf64f43ff9e45b5e418f5de3cc"
     },
     {
       "path": "releases/v1.1.7/tools/verify_release.py",
@@ -4843,7 +4843,7 @@
     {
       "path": "releases/v1.1.7/verification-report.json",
       "size": 276,
-      "sha256": "59e4ad8b781f1db1c87f9f375518ed1de763a03f499b3f3f00ad66a2fb17be11"
+      "sha256": "02c701c4569f04396eb47685a22c4dfad882ec34f1cf4cb44b8a45508ff79e26"
     },
     {
       "path": "SECURITY.md",
@@ -5388,7 +5388,7 @@
     {
       "path": "testforge/release-manifest.json",
       "size": 43506,
-      "sha256": "3ec9032a15c53dbd89d1e0a76607ace95711411ae9add2fc1a81f6816a618cf3"
+      "sha256": "3f72ebc8eab9d898f58662c6997d93fe3dd75f8a8de87bdc4badd071900ffa0e"
     },
     {
       "path": "testforge/scripts/assemble_report.py",
@@ -5477,8 +5477,8 @@
     },
     {
       "path": "testforge/skills/software-verification/agents/openai.yaml",
-      "size": 272,
-      "sha256": "383b3b5007cca797ca4ca84b2bc7f460102738c89b6e6c93c578987bf7f3ddf0"
+      "size": 288,
+      "sha256": "2b12c14f7b2ae4b02e10c512c3eb5a682b1f82f0fdbbfbdc5ef4e37be96bdcf4"
     },
     {
       "path": "testforge/skills/software-verification/assets/ci/github-actions-node.yml",
@@ -5947,8 +5947,8 @@
     },
     {
       "path": "testforge/skills/software-verification/SKILL.md",
-      "size": 19746,
-      "sha256": "b7e9cfb0f3424cbb4dfbe72a5058ca587492e21ea2ed4c6c719ac58f2a1f26a5"
+      "size": 19666,
+      "sha256": "7fee2d5c158f647106cb1fdb4ed16d53c28fb68ba5b8a48b3a3e9b991601183a"
     },
     {
       "path": "testforge/skills/verification-reviewer/adversarial-checks.md",
@@ -5957,8 +5957,8 @@
     },
     {
       "path": "testforge/skills/verification-reviewer/agents/openai.yaml",
-      "size": 272,
-      "sha256": "e5f43c244cd420d0817e6612de22513e79ee39d629a6e9c3b94aefc54e8765b0"
+      "size": 256,
+      "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
     },
     {
       "path": "testforge/skills/verification-reviewer/review-rubric.md",
@@ -5992,8 +5992,8 @@
     },
     {
       "path": "testforge/skills/verification-reviewer/SKILL.md",
-      "size": 3754,
-      "sha256": "debde9521f5b43e25c323cc58659521b55c342d2e3b15b3a4fc2f98bcbbf56eb"
+      "size": 3603,
+      "sha256": "db8d86b0eabe0770cdfec977bde36b4b0e87ccc820d609f6fe0c9ceaf4206c75"
     },
     {
       "path": "testforge/tests/__init__.py",
