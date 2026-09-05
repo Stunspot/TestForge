@@ -1157,8 +1157,8 @@
     },
     {
       "path": "tests/test_metered_verification.py",
-      "size": 10310,
-      "sha256": "0b2b24e9b0e14dca64f4c566c574f2ff005d16fac2ff1c6032c3e68150a741a1"
+      "size": 11461,
+      "sha256": "6533df22793a9cc2620c41ba21c0a49462b74fc814c6d5e3346a639b6021804b"
     },
     {
       "path": "tests/test_tools.py",
