@@ -97,8 +97,8 @@
     },
     {
       "path": "claude-ai/software-verification-v1.1.7.zip",
-      "size": 86609,
-      "sha256": "0d944459a27750f2a85392c511e4a8682f0fe136f9b20c0d0d587970c5e882f8"
+      "size": 86479,
+      "sha256": "7229d1118ae86b6f48bb14cfd69e1a8db48f50b074355f6bead621e1c59d7ac9"
     },
     {
       "path": "claude-ai/verification-reviewer-v1.1.0.zip",
@@ -122,8 +122,8 @@
     },
     {
       "path": "claude-ai/verification-reviewer-v1.1.7.zip",
-      "size": 10044,
-      "sha256": "461f60638767d5447dba62d8b4486b99c80de76dab257fa9e493ceb53fe5fb4e"
+      "size": 10025,
+      "sha256": "c12f2c5b9753af3cde6c6ad6ec062ea1bca53d97d43fc9ccaa804ca889fba64d"
     },
     {
       "path": "CONTRIBUTING.md",
