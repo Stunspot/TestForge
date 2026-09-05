@@ -8,8 +8,8 @@ TestForge v1.1.7 is one two-skill Augment with several distinct distribution obj
 |---|---|---|
 | Maintained package | `testforge/` | Current v1.1.7 two-skill source, tools, schemas, examples, evals, adapters, and customer documentation |
 | Codex marketplace plugin | `plugins/testforge/` plus `.agents/plugins/marketplace.json` | Repository-native plugin source for `testforge@cd-testforge`; static structure is repository-tested |
-| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `0fd9105fdb498259fc0d14aba98907dbcfb0c55b3091e83c68104c47d108e24e` |
-| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `47399ff6c1a40bbb13db6d63ca597d7d00529527be1c5d59d3d9167e7d5a1ec6` |
+| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `7229d1118ae86b6f48bb14cfd69e1a8db48f50b074355f6bead621e1c59d7ac9` |
+| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `c12f2c5b9753af3cde6c6ad6ec062ea1bca53d97d43fc9ccaa804ca889fba64d` |
 | Local v1.1.7 customer kit | `releases/v1.1.7/TestForge-v1.1.7.zip` | Deterministic local candidate; the adjacent `.sha256` file is canonical because this document is itself packaged inside the archive |
 | Local v1.1.7 receipts | `releases/v1.1.7/` | Static package, source-parity, and portable archive evidence; no fresh-host activation, customer-outcome, tag, GitHub release, or publication claim |
 | Source state | Current `main` contains the v1.1.7 candidate | Tag and GitHub-release state must be established by live remote readback; this retained document does not infer publication from local bytes |
@@ -39,3 +39,6 @@ There is no retained v1.1.7 portal archive or custody object. The repository-nat
 - Verify extraction topology and package-relative dependencies before publication.
 - After publication, download the public asset and compare it with the governed local object.
 - Treat upload, automated scan, review submission, approval, publication, installation, discovery, invocation, and health as separate observed states.
+## Same-version maintenance, 2026-09-05
+
+Source commit `73f650e` moves metered-verification detail behind the existing task trigger while preserving the capacity, reserve, authorization, and response-template safeguards. The current v1.1.7 packages and delivery sidecars are rebuilt from maintained source. The original v1.1.7 tag remains unchanged; replacement asset custody is established separately by readback. This repair carries static package and source-parity evidence, not fresh-host behavioral evidence.

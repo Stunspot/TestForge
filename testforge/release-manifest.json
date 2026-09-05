@@ -917,8 +917,8 @@
     },
     {
       "path": "skills/software-verification/references/core/metered-verification.md",
-      "size": 7381,
-      "sha256": "35da239711f956bfd000eec4a418f600fed7df118d666cbd8492057765c13334"
+      "size": 8280,
+      "sha256": "5fabca9045fa1155db5f60fdc913d6d71f9717d7804d35132c9b46c1b923ae5a"
     },
     {
       "path": "skills/software-verification/references/core/oracle-design.md",
@@ -1097,8 +1097,8 @@
     },
     {
       "path": "skills/software-verification/SKILL.md",
-      "size": 19666,
-      "sha256": "7fee2d5c158f647106cb1fdb4ed16d53c28fb68ba5b8a48b3a3e9b991601183a"
+      "size": 14688,
+      "sha256": "b1e0730a00ced01469db029d3885153b31c488df98eec76d0b023a3370287cf1"
     },
     {
       "path": "skills/verification-reviewer/adversarial-checks.md",
