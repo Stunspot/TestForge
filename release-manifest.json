@@ -3,7 +3,7 @@
   "package": "testforge-public-repository",
   "version": "1.1.7",
   "release_date": "2026-08-13",
-  "artifact_count": 1276,
+  "artifact_count": 1279,
   "artifacts": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -37,8 +37,8 @@
     },
     {
       "path": "ARCHIVE-CUSTODY.md",
-      "size": 3810,
-      "sha256": "b229d60491c6052aac00b1886c70f3c291be326ebf626d0dfb9165a575d475eb"
+      "size": 4325,
+      "sha256": "d9346fb8f4f50f280798b1f059f8cfe4d6c3992fd43f26cd6d4c67155832c67f"
     },
     {
       "path": "archive-plan-v1.1.2.json",
@@ -129,6 +129,21 @@
       "path": "CONTRIBUTING.md",
       "size": 959,
       "sha256": "57bf58033a9570984271c4e39ec79387ff09af9cbd9e81bb2736ade080452399"
+    },
+    {
+      "path": "delivery/TestForge v1.1.7 Extra.md",
+      "size": 2057,
+      "sha256": "1712350ab937a78b9258662cb1da8bcd3aa556c5a5e99a22b75139ef6de7c853"
+    },
+    {
+      "path": "delivery/TestForge v1.1.7.md",
+      "size": 2952,
+      "sha256": "1442776071bebab9397c40ef07427d34f82a26465fc7c5e0c6fb1f67f468ea47"
+    },
+    {
+      "path": "delivery/TestForge.png",
+      "size": 600421,
+      "sha256": "9eb81f699f7b8bfdfa4b6ec41cee2883563d1d8de79bed2298167b90c212ec12"
     },
     {
       "path": "docs/.nojekyll",
