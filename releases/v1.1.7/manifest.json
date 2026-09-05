@@ -3,12 +3,12 @@
     {
       "file": "claude/software-verification-v1.1.7.zip",
       "handle": "software-verification",
-      "sha256": "c06aa2e6fa5257f2b241b918cbfb76db1c16be733a08e57d5985e5dfed402ccd"
+      "sha256": "d312526461246ef2bfa661567a930b9f9c2dc3b82ebb214eeb0151b7e2bc2c56"
     },
     {
       "file": "claude/verification-reviewer-v1.1.7.zip",
       "handle": "verification-reviewer",
-      "sha256": "392c66672a6a0cb047b89f6267339fd1c31b51cd0856a130226be14b4ea2f6f0"
+      "sha256": "4fe0084680541e8f1ee158a65c2f6376e6e0e847c5cb07ae76ab97f54d789f2a"
     }
   ],
   "excluded_generated_caches": {
@@ -46,9 +46,9 @@
     {
       "files": [
         {
-          "bytes": 17962,
+          "bytes": 14688,
           "path": "SKILL.md",
-          "sha256": "93ff6cc411be84525ae6909262749328625c25ec85013ff6c5017d36b9383f52"
+          "sha256": "b1e0730a00ced01469db029d3885153b31c488df98eec76d0b023a3370287cf1"
         },
         {
           "bytes": 949,
@@ -56,9 +56,9 @@
           "sha256": "5b894ecfe69d30e1bf4d945162d9bf1eaa9032a5bbef4156c281047d28085b5d"
         },
         {
-          "bytes": 272,
+          "bytes": 288,
           "path": "agents/openai.yaml",
-          "sha256": "383b3b5007cca797ca4ca84b2bc7f460102738c89b6e6c93c578987bf7f3ddf0"
+          "sha256": "2b12c14f7b2ae4b02e10c512c3eb5a682b1f82f0fdbbfbdc5ef4e37be96bdcf4"
         },
         {
           "bytes": 371,
@@ -321,9 +321,9 @@
           "sha256": "7f496d9a10aaeee805a60e1777a4337ad6f293532ede1c16d051128bc1695d70"
         },
         {
-          "bytes": 5405,
+          "bytes": 5921,
           "path": "fallback/master-prompt.md",
-          "sha256": "c89cb754ed3919779e148e347d89a24c0346692ac8f294ad73713e0b2b6e4dde"
+          "sha256": "4b0eefa694be8ab7521a8bbbf0a35405e30016197a15fac3b8209cddc909c1b3"
         },
         {
           "bytes": 785,
@@ -331,14 +331,14 @@
           "sha256": "dba5c2a713a2cdcb0a328db9a7a41b41de3dc7ad90cbcba020bb187078978639"
         },
         {
-          "bytes": 1438,
+          "bytes": 1670,
           "path": "fallback/review-prompt.md",
-          "sha256": "77015ca574ebfbe190eb503b39fe914133ff3ee88c09336263f1cb500d86b670"
+          "sha256": "812011c96de359dfae0b2b682ed7742643169ec430e86331333577fa08545d85"
         },
         {
-          "bytes": 1255,
+          "bytes": 1418,
           "path": "output-contract.md",
-          "sha256": "786ec4297051b86734c4814d4e088a7968d26383e22b1e27bca3381b58d66f0a"
+          "sha256": "801f4010f883f6b6ff31d7b940c4d21be17271346a1ace0cd40e6f59cd4eba95"
         },
         {
           "bytes": 955,
@@ -346,9 +346,9 @@
           "sha256": "455b2f606ad76b0a8d7e063507d348e9574b5201338c8c3c08cddfce09181cfd"
         },
         {
-          "bytes": 7243,
+          "bytes": 8280,
           "path": "references/core/metered-verification.md",
-          "sha256": "1bdf07ebfac077b2f15a3b1e89486294dcb1e87ae8436f7f57c84f4b037e9a9f"
+          "sha256": "5fabca9045fa1155db5f60fdc913d6d71f9717d7804d35132c9b46c1b923ae5a"
         },
         {
           "bytes": 1033,
@@ -461,9 +461,9 @@
           "sha256": "e9499fbd7a36055c203aa6575bcef0651dd0ad9329153374cf6b294e2f124d77"
         },
         {
-          "bytes": 9785,
+          "bytes": 9244,
           "path": "scripts/assess_metered_verification.py",
-          "sha256": "30e073c1f864f34e87dc2ec5c58d3784469ead684ca1791263b367f9aaf0e4d9"
+          "sha256": "32fea456367754fdbe81a2afe138528a671624b10d25bfd76552c6e5196bfc96"
         },
         {
           "bytes": 2454,
@@ -531,24 +531,24 @@
     {
       "files": [
         {
-          "bytes": 3424,
+          "bytes": 3603,
           "path": "SKILL.md",
-          "sha256": "31a2847003e6d94e8b22645482b966b295b675af478b4f2ef4e3f392d8d0d68b"
+          "sha256": "db8d86b0eabe0770cdfec977bde36b4b0e87ccc820d609f6fe0c9ceaf4206c75"
         },
         {
-          "bytes": 994,
+          "bytes": 1145,
           "path": "adversarial-checks.md",
-          "sha256": "92f3bb679ec9e08617d0c950617d171ae689d6c35c59d921fc781325c0ca039a"
+          "sha256": "325b3079dc7ea8891d8caf52bb76fa030939da14709ab7773b8bcb384f606c42"
         },
         {
-          "bytes": 272,
+          "bytes": 256,
           "path": "agents/openai.yaml",
-          "sha256": "e5f43c244cd420d0817e6612de22513e79ee39d629a6e9c3b94aefc54e8765b0"
+          "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
         },
         {
-          "bytes": 1748,
+          "bytes": 2002,
           "path": "review-rubric.md",
-          "sha256": "519299144228feb8f8dc4293a8532af43a50f83e59df1fb04dfe0c35f9a3043a"
+          "sha256": "7ced348798074e3768752a10d6379a2b9045cc0244e241b145e52d27e191082e"
         },
         {
           "bytes": 74,

@@ -627,8 +627,8 @@
     },
     {
       "path": "skills/software-verification/agents/openai.yaml",
-      "size": 272,
-      "sha256": "383b3b5007cca797ca4ca84b2bc7f460102738c89b6e6c93c578987bf7f3ddf0"
+      "size": 288,
+      "sha256": "2b12c14f7b2ae4b02e10c512c3eb5a682b1f82f0fdbbfbdc5ef4e37be96bdcf4"
     },
     {
       "path": "skills/software-verification/assets/ci/github-actions-node.yml",
@@ -917,8 +917,8 @@
     },
     {
       "path": "skills/software-verification/references/core/metered-verification.md",
-      "size": 7381,
-      "sha256": "35da239711f956bfd000eec4a418f600fed7df118d666cbd8492057765c13334"
+      "size": 8280,
+      "sha256": "5fabca9045fa1155db5f60fdc913d6d71f9717d7804d35132c9b46c1b923ae5a"
     },
     {
       "path": "skills/software-verification/references/core/oracle-design.md",
@@ -1097,8 +1097,8 @@
     },
     {
       "path": "skills/software-verification/SKILL.md",
-      "size": 19746,
-      "sha256": "b7e9cfb0f3424cbb4dfbe72a5058ca587492e21ea2ed4c6c719ac58f2a1f26a5"
+      "size": 14688,
+      "sha256": "b1e0730a00ced01469db029d3885153b31c488df98eec76d0b023a3370287cf1"
     },
     {
       "path": "skills/verification-reviewer/adversarial-checks.md",
@@ -1107,8 +1107,8 @@
     },
     {
       "path": "skills/verification-reviewer/agents/openai.yaml",
-      "size": 272,
-      "sha256": "e5f43c244cd420d0817e6612de22513e79ee39d629a6e9c3b94aefc54e8765b0"
+      "size": 256,
+      "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
     },
     {
       "path": "skills/verification-reviewer/review-rubric.md",
@@ -1142,8 +1142,8 @@
     },
     {
       "path": "skills/verification-reviewer/SKILL.md",
-      "size": 3754,
-      "sha256": "debde9521f5b43e25c323cc58659521b55c342d2e3b15b3a4fc2f98bcbbf56eb"
+      "size": 3603,
+      "sha256": "db8d86b0eabe0770cdfec977bde36b4b0e87ccc820d609f6fe0c9ceaf4206c75"
     },
     {
       "path": "tests/__init__.py",
@@ -1157,8 +1157,8 @@
     },
     {
       "path": "tests/test_metered_verification.py",
-      "size": 10310,
-      "sha256": "0b2b24e9b0e14dca64f4c566c574f2ff005d16fac2ff1c6032c3e68150a741a1"
+      "size": 11461,
+      "sha256": "6533df22793a9cc2620c41ba21c0a49462b74fc814c6d5e3346a639b6021804b"
     },
     {
       "path": "tests/test_tools.py",
