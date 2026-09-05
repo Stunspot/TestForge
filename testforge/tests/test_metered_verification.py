@@ -200,20 +200,38 @@ class MeteredVerificationTests(unittest.TestCase):
 
     def test_skill_makes_capacity_preflight_mandatory(self) -> None:
         text = SKILL.read_text(encoding="utf-8")
-        self.assertIn("## Preflight metered verification", text)
-        self.assertIn("Do not launch a metered check merely to discover", text)
-        self.assertIn("scripts/assess_metered_verification.py", text)
-        self.assertIn("`Capacity`, `Expansion`, `Decision`, `Substitute`, and `Authority`", text)
-        self.assertIn("`Substitute` is mandatory on every hold", text)
-        self.assertIn("current multiplier is unobserved, mark it explicitly `unknown`", text)
-        self.assertIn("triggers × matrix jobs × attempts × ceiling minutes × provider multiplier", text)
-        self.assertIn("Never label the intermediate job-attempt count as runner-minutes", text)
-        self.assertIn("This substitute does not prove:", text)
-        self.assertIn("PREPARED — NOT EXECUTED", text)
-        self.assertIn("Copy snapshot facts exactly", text)
-        self.assertIn("required_with_reserve_minutes = estimated_minutes + reserve_minutes", text)
-        self.assertIn("maximum_paid_minutes_required", text)
-        self.assertIn("assets/templates/metered-verification-response.md", text)
+        doctrine_relative = "references/core/metered-verification.md"
+        self.assertIn(
+            f"`{doctrine_relative}` before proposing or invoking hosted CI, "
+            "device/browser farms, paid cloud tests, or any other quota-limited verification",
+            text,
+        )
+        self.assertIn(
+            "follow its mandatory capacity, usage, reserve, authorization, "
+            "and response-template contract before dispatch",
+            text,
+        )
+        doctrine_path = SKILL.parent / doctrine_relative
+        doctrine = doctrine_path.read_text(encoding="utf-8")
+        self.assertIn("Never run a job merely to discover whether the meter permits it", doctrine)
+        self.assertIn("Run `scripts/assess_metered_verification.py`", doctrine)
+        self.assertIn("A hold blocks automatic invocation", doctrine)
+        self.assertIn("Only `PROCEED` permits automatic invocation", doctrine)
+        self.assertIn("The assessor is advisory and cannot accept, authenticate, or grant spend authority", doctrine)
+        self.assertIn("`Capacity`, `Expansion`, `Decision`, `Substitute`, and `Authority`", doctrine)
+        self.assertIn("`Substitute` is not optional", doctrine)
+        self.assertIn("Report the multiplier as an observed value or explicitly as `unknown`", doctrine)
+        self.assertIn("triggers × matrix jobs × attempts × ceiling minutes × provider multiplier", doctrine)
+        self.assertIn("do not call the preceding job-attempt count minutes", doctrine)
+        self.assertIn("This substitute does not prove:", doctrine)
+        self.assertIn("PREPARED — NOT EXECUTED", doctrine)
+        self.assertIn("Copy supplied snapshot facts exactly", doctrine)
+        self.assertIn("required_with_reserve_minutes = estimated_minutes + reserve_minutes", doctrine)
+        self.assertIn("maximum_paid_minutes_required", doctrine)
+        template_relative = "../../assets/templates/metered-verification-response.md"
+        self.assertIn(f"[required response template]({template_relative})", doctrine)
+        self.assertIn("It is the response contract, not an optional example", doctrine)
+        self.assertEqual((doctrine_path.parent / template_relative).resolve(), RESPONSE_TEMPLATE.resolve())
 
         response_template = RESPONSE_TEMPLATE.read_text(encoding="utf-8")
         self.assertIn("2 × 3 × 2 × 20 = 240 raw runner-minutes", response_template)
@@ -224,7 +242,7 @@ class MeteredVerificationTests(unittest.TestCase):
         self.assertIn("Never replace the exact run with the phrase", response_template)
         self.assertIn("If capacity or reserve is unknown", response_template)
         self.assertIn("This substitute does not prove:", response_template)
-        self.assertIn("Do not invent a local command or file path", text)
+        self.assertIn("Do not invent a local command or path", doctrine)
         self.assertIn("Until the verdict and independent review are complete", text)
         self.assertIn("Build once, checksum once, verify once", text)
         self.assertIn("Do not create a verification manifest at intake", text)
