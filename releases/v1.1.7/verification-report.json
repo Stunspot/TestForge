@@ -1,10 +1,10 @@
 {
   "counts": {
     "claude_archives_checked": 2,
-    "files_checked": 135,
+    "files_checked": 132,
     "source_files_checked": 105,
-    "unique_zip_containers_checked": 5,
-    "zip_members_checked": 343
+    "unique_zip_containers_checked": 2,
+    "zip_members_checked": 105
   },
   "findings": [],
   "ok": true,
