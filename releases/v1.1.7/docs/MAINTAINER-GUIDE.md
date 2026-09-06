@@ -4,13 +4,14 @@ Build each release from the maintained repository on a clean release branch. A p
 
 ## Rebuild procedure
 
-1. Finish implementation, repository-native tests, behavioral evaluation, and every document journey declared by `documentation-manifest.json` without running release builders or computing custody hashes.
-2. Complete independent skeptical review and resolve its findings. Only a reviewed `READY` or `READY_WITH_RESIDUAL_RISK` candidate proceeds.
-3. Freeze the exact candidate on a clean release branch. Confirm `plugins/testforge/skills/` and `testforge/skills/` are identical and the plugin, package, eval suite, and release target declare the same version.
-4. Run `python -B tools/build_public_release.py --final-seal` once from the repository root. The explicit flag is accepted only for this post-review sealing phase.
-5. Run `python -B releases/v1.1.7/tools/verify_release.py releases/v1.1.7` once and require `ok: true` with no findings.
-6. If either final command fails, do not repair manifests or receipts in place. Return the candidate to builder custody, fix it, re-review the changed surface, and start a new final-seal attempt only after it is frozen again.
-7. After publication, download the GitHub asset and compare its SHA-256 with the canonical repository artifact and release shelf copy. This is verification of an already released artifact, not construction-time sealing.
+1. Confirm `plugins/testforge/skills/` and `testforge/skills/` are byte-identical and the plugin, package, eval suite, and release target all declare version `1.1.7`.
+2. Run `python -B tools/build_public_release.py` from the repository root.
+3. Run it a second time and require the same SHA-256 digest.
+4. Run `python -B releases/v1.1.7/tools/verify_release.py releases/v1.1.7` and require `ok: true` with no findings.
+5. Run the repository unit suites, package validator, eval-suite validator, release-manifest validator, and line-ending verifier.
+6. Review every document declared by the current `documentation-manifest.json` as a reader journey, including installation, first value, expected success, troubleshooting, removal, and rollback.
+7. Require an independent skeptical review before publication.
+8. After publication, download the GitHub asset and compare its SHA-256 with the canonical repository artifact and release shelf copy.
 
 ## Evidence pointers
 

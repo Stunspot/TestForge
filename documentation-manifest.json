@@ -24,7 +24,7 @@
                           "testforge/docs/SUPPORTED-ENVIRONMENTS.md",
                           "testforge/docs/SALES-DEMO.md",
                           "testforge/CHANGELOG.md",
-                          "RELEASE-NOTES-v1.1.7.md",
+                          "RELEASE-NOTES-v2.0.0.md",
                           "RELEASE-NOTES.md",
                           "ARCHIVE-CUSTODY.md",
                           "PLUGIN-DIRECTORY-SUBMISSION-v1.1.4.md",
@@ -102,7 +102,7 @@
                                         ],
                     "support_maintenance":  [
                                                 "CONTRIBUTING.md",
-                                                "RELEASE-NOTES-v1.1.7.md",
+                                                "RELEASE-NOTES-v2.0.0.md",
                                                 "RELEASE-NOTES.md",
                                                 "ARCHIVE-CUSTODY.md",
                                                 "release-docs/MAINTAINER-GUIDE.md"

@@ -14,8 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "testforge"
 PLUGIN = ROOT / "plugins" / "testforge"
 PLUGIN_SKILLS = PLUGIN / "skills"
-PACKAGE_VERSION = "1.1.7"
-PLUGIN_VERSION = "1.1.7"
+PACKAGE_VERSION = "2.0.0"
+PLUGIN_VERSION = "2.0.0"
 
 
 class PublicDistributionTests(unittest.TestCase):

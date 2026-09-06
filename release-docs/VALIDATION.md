@@ -10,7 +10,7 @@
    ```
 
 3. Require exit code `0`, `"ok": true`, and an empty findings list.
-4. Compare the result with [verification-report.json](../releases/v1.1.7/verification-report.json).
+4. Compare the result with [verification-report.json](../releases/v2.0.0/verification-report.json).
 
 The verifier checks manifest-to-Codex byte parity, Claude ZIP hashes and members, ZIP path safety, plugin metadata, the documentation set, and private-topology leakage.
 
@@ -19,8 +19,8 @@ The verifier checks manifest-to-Codex byte parity, Claude ZIP hashes and members
 From the unextracted staging or download directory in PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 '.\TestForge-v1.1.7.zip'
-Get-Content '.\TestForge-v1.1.7.zip.sha256'
+Get-FileHash -Algorithm SHA256 '.\TestForge-v2.0.0.zip'
+Get-Content '.\TestForge-v2.0.0.zip.sha256'
 ```
 
 The computed digest must match the detached checksum supplied beside the archive.

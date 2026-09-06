@@ -8,7 +8,7 @@ import zipfile
 REPO = Path(__file__).resolve().parents[2]
 PACKAGE = REPO / "testforge"
 CURRENT_CLAUDE = REPO / "claude-ai"
-RELEASE = REPO / "releases" / "v1.1.7"
+RELEASE = REPO / "releases" / "v2.0.0"
 RELEASE_CLAUDE = RELEASE / "claude"
 RELEASE_SKILLS = RELEASE / "codex" / "testforge" / "skills"
 SKILLS = ("software-verification", "verification-reviewer")
@@ -54,7 +54,7 @@ class HostPackagingTests(unittest.TestCase):
     def test_current_claude_archives_are_safe_and_match_current_source(self):
         for skill in SKILLS:
             self.assert_archive_matches(
-                CURRENT_CLAUDE / f"{skill}-v1.1.7.zip",
+                CURRENT_CLAUDE / f"{skill}-v2.0.0.zip",
                 PACKAGE / "skills" / skill,
                 archive_root=skill,
             )
@@ -62,7 +62,7 @@ class HostPackagingTests(unittest.TestCase):
     def test_frozen_release_archives_match_frozen_release_source(self):
         for skill in SKILLS:
             self.assert_archive_matches(
-                RELEASE_CLAUDE / f"{skill}-v1.1.7.zip",
+                RELEASE_CLAUDE / f"{skill}-v2.0.0.zip",
                 RELEASE_SKILLS / skill,
             )
 
