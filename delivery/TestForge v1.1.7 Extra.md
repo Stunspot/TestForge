@@ -4,7 +4,7 @@ TestForge is a free two-SKILL verification system for frozen release candidates.
 
 # Usage Notes
 
-Copy the `.zip` from Additional Files to the chosen harness or Chat project, attach or reference it in chat, and say, `Install this Augment.`
+Copy the .zip from "Additional Files" to your Codex, Claude Code, or other harness (or add the .zip file to a knowledge base of a project on Chat) and install the contained TestForge Augment Agent SKILLs. The prompt this post contains has a clean install and onboarding process but is not required. Hit copy to clipboard and paste to your harness in chat with the .zip file.
 
 - Give `$software-verification` a completed, frozen candidate and an explicit release-readiness claim. Ordinary implementation work does not need the full TestForge apparatus.
 - Keep the builder and verifier roles distinct. A discovered product defect or newly exposed requirement returns to builder custody.
@@ -16,8 +16,6 @@ Public GitHub Repo: [TestForge](https://github.com/Stunspot/TestForge)
 Project Site: [TestForge verification workbench](https://stunspot.github.io/TestForge/)
 
 # Changelog
-
-2026-09-05 maintenance - Kept hosted-verification safeguards together in their task-specific guide, reducing the instructions loaded for ordinary local verification.
 
 v1.1.7 - Tightened activation to explicit frozen-candidate release verification, enforced decision-changing evidence, and added bounded recovery and stopping rules.
 v1.1.6 - Added metered-verification safeguards for quota-limited environments.

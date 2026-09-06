@@ -26,8 +26,8 @@ def main(argv: list[str] | None = None) -> int:
         help="confirm the package is complete and reviewed before computing custody hashes",
     )
     parser.add_argument("--package-name", default="testforge")
-    parser.add_argument("--version", default="1.1.7")
-    parser.add_argument("--release-date", default="2026-08-13")
+    parser.add_argument("--version", default="2.0.0")
+    parser.add_argument("--release-date", default="2026-09-05")
     args = parser.parse_args(argv)
     if not args.final_seal:
         parser.error(

@@ -12,7 +12,7 @@ import zipfile
 
 REPO = Path(__file__).resolve().parents[1]
 PACKAGE = REPO / "testforge"
-VERSION = "1.1.7"
+VERSION = "2.0.0"
 CURRENT_CLAUDE = REPO / "claude-ai"
 RELEASE = REPO / "releases" / f"v{VERSION}"
 RELEASE_CLAUDE = RELEASE / "claude"

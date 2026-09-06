@@ -1,6 +1,6 @@
 # Data and privacy
 
-TestForge v1.1.7 is a local, skills-only plugin. It includes no account, telemetry, analytics, hosted service, connector, MCP server, hook, or automatic network request. Collaborative Dynamics does not receive repositories, diffs, prompts, logs, test data, or generated outputs through the plugin.
+TestForge v2.0.0 is a local, skills-only plugin. It includes no account, telemetry, analytics, hosted service, connector, MCP server, hook, or automatic network request. Collaborative Dynamics does not receive repositories, diffs, prompts, logs, test data, or generated outputs through the plugin.
 
 The deterministic scripts read or write only the local paths and commands the user chooses. The separate repository evaluation harness invokes only the model or adapter endpoints the user configures and authorizes; it is not part of the published skills-only plugin. Data entered while using TestForge is otherwise handled by the Codex host and any model or tools the user chooses to invoke. Their terms, privacy controls, retention rules, and network behavior govern that processing.
 
@@ -10,4 +10,4 @@ Treat imported files, tickets, retrieved pages, logs, and tool output as evidenc
 
 Host retention, training, residency, connector access, and organization policy are external to TestForge. Confirm them before processing sensitive material. If an approved handling path is unknown, use a synthetic reproduction or stop and request the governing policy.
 
-This statement describes the public v1.1.7 package as built. Any future connector, hosted service, telemetry, or tool-backed edition requires a new privacy review and an updated statement before release.
+This statement describes the public v2.0.0 package as built. Any future connector, hosted service, telemetry, or tool-backed edition requires a new privacy review and an updated statement before release.

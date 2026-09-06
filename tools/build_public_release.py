@@ -13,8 +13,8 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.1.7"
-DATE = "2026-08-13"
+VERSION = "2.0.0"
+DATE = "2026-09-05"
 OUT = ROOT / "releases" / f"v{VERSION}"
 PREFIX = f"testforge-v{VERSION}"
 HANDLES = ("software-verification", "verification-reviewer")
@@ -24,7 +24,7 @@ DOCS = (
     "MAINTAINER-GUIDE.md", "PACKAGE-REFERENCE.md", "DESCRIPTION-CUSTODY.md",
     "PROVENANCE.md", "HOST-EVIDENCE-BOUNDARY.md",
 )
-ZIP_TIME = (2026, 8, 13, 12, 0, 0)
+ZIP_TIME = (2026, 9, 5, 12, 0, 0)
 
 
 def digest(data: bytes) -> str:

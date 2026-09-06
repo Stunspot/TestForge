@@ -1,44 +1,15 @@
 # TestForge archive custody
 
-TestForge v1.1.7 is one two-skill Augment with several distinct distribution objects. Keep their identity and evidence states separate: source presence is not installation, a valid archive is not discovery, discovery is not invocation, and none of those states proves healthy behavior or directory publication.
+TestForge v2.0.0 is the current two-skill distribution family. The maintained package is `testforge/`; the Codex plugin is `plugins/testforge/`. Current standalone uploads are `claude-ai/software-verification-v2.0.0.zip` and `claude-ai/verification-reviewer-v2.0.0.zip`. The complete customer kit is `releases/v2.0.0/TestForge-v2.0.0.zip`; its adjacent checksum and receipts bind the final bytes. Delivery sidecars are versioned under `delivery/`.
 
-## Current v1.1.7 candidate objects
+## Historical release repair
 
-| Object | Canonical location | Observed state and use |
-|---|---|---|
-| Maintained package | `testforge/` | Current v1.1.7 two-skill source, tools, schemas, examples, evals, adapters, and customer documentation |
-| Codex marketplace plugin | `plugins/testforge/` plus `.agents/plugins/marketplace.json` | Repository-native plugin source for `testforge@cd-testforge`; static structure is repository-tested |
-| Claude operator upload | `claude-ai/software-verification-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `7229d1118ae86b6f48bb14cfd69e1a8db48f50b074355f6bead621e1c59d7ac9` |
-| Claude reviewer upload | `claude-ai/verification-reviewer-v1.1.7.zip` | Current one-skill upload candidate; SHA-256 `c12f2c5b9753af3cde6c6ad6ec062ea1bca53d97d43fc9ccaa804ca889fba64d` |
-| Local v1.1.7 customer kit | `releases/v1.1.7/TestForge-v1.1.7.zip` | Deterministic local candidate; the adjacent `.sha256` file is canonical because this document is itself packaged inside the archive |
-| Local v1.1.7 receipts | `releases/v1.1.7/` | Static package, source-parity, and portable archive evidence; no fresh-host activation, customer-outcome, tag, GitHub release, or publication claim |
-| Source state | Current `main` contains the v1.1.7 candidate | Tag and GitHub-release state must be established by live remote readback; this retained document does not infer publication from local bytes |
+The original published v1.1.7 assets are restored from verified pre-maintenance backups. The original complete ZIP has SHA-256 `65507bef84f1726e639aff77d4c6379e40b80197664514665060f8b82403377e`. Its source tag remains unchanged. The September 5 same-version replacement is superseded by the distinct 2.0.0 release; it must not be represented as the original 1.1.7 bytes.
 
-The current `claude-ai/` archives and the archives inside `releases/v1.1.7/claude/` are separate deterministic builds and are not expected to be byte-identical. Use the current `claude-ai/` objects for repository installation. Use the candidate release directory to inspect the exact evidence and bytes retained for this local release candidate.
+Earlier release directories and tags retain their own history. The latest retained OpenAI skills-only portal packet remains `release-assets/v1.1.4/Plugin-TestForge-v1.1.4-OpenAI-Submission.zip`, with its separately governed custody record. No new portal submission is claimed.
 
-## Published v1.1.6 objects
+## Evidence boundary
 
-The prior published release remains immutable: Git tag and GitHub release `v1.1.6`, published 2026-08-12. Its frozen customer kit is `releases/v1.1.6/TestForge-v1.1.6.zip`, SHA-256 `4dd052672923192f59ec2866eb2fedef697ca1f98f00a99341c3d8fe062b0594`. Its retained receipts establish static package and byte-parity evidence only.
+Source presence, static verification, archive construction, remote readback, installation, discovery, invocation, and healthy behavior are separate evidence states. Release receipts establish only their recorded scope. A new release does not retroactively change an earlier assessment.
 
-## OpenAI directory packet
-
-The latest retained skills-only portal payload is still v1.1.4:
-
-- archive: `release-assets/v1.1.4/Plugin-TestForge-v1.1.4-OpenAI-Submission.zip`;
-- custody: `release-assets/v1.1.4/openai-submission-custody.json`;
-- SHA-256: `9aecec78e407e6f368d0a5c613facbc4252a3f3ef545ba6686e74cf7f2404a46`;
-- state: built and repository-tested, not claimed uploaded, approved, published, or discoverable.
-
-There is no retained v1.1.7 portal archive or custody object. The repository-native v1.1.7 plugin is the current local installation candidate; the v1.1.4 portal packet is a separately governed historical submission candidate.
-
-## Maintenance rules
-
-- Rebuild current derivatives from maintained source; never edit ZIP members in place.
-- Do not alter historical release directories merely to make present documentation agree with a later release.
-- Record archive name, byte size, SHA-256, member inventory, source revision, and claim boundary in the release receipts for each new object.
-- Verify extraction topology and package-relative dependencies before publication.
-- After publication, download the public asset and compare it with the governed local object.
-- Treat upload, automated scan, review submission, approval, publication, installation, discovery, invocation, and health as separate observed states.
-## Same-version maintenance, 2026-09-05
-
-Source commit `73f650e` moves metered-verification detail behind the existing task trigger while preserving the capacity, reserve, authorization, and response-template safeguards. The current v1.1.7 packages and delivery sidecars are rebuilt from maintained source. The original v1.1.7 tag remains unchanged; replacement asset custody is established separately by readback. This repair carries static package and source-parity evidence, not fresh-host behavioral evidence.
+Rebuild only the new current derivative from maintained source. Preserve old tags and verified original release assets. Download published assets and compare them with the governed local objects before treating remote custody as complete.
