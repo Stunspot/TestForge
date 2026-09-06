@@ -1,0 +1,46 @@
+{
+  "name": "testforge",
+  "version": "2.0.0",
+  "description": "Risk-driven software verification and independent evidence review for coding Agents.",
+  "author": {
+    "name": "Collaborative Dynamics",
+    "url": "https://collaborative-dynamics.com"
+  },
+  "homepage": "https://github.com/Stunspot/TestForge",
+  "repository": "https://github.com/Stunspot/TestForge",
+  "license": "SEE LICENSE.md",
+  "keywords": [
+    "software verification",
+    "testing",
+    "agent skills",
+    "behavioral evaluation",
+    "release confidence"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "TestForge",
+    "shortDescription": "Risk-ranked verification with an independent skeptic.",
+    "longDescription": "Run explicit release-grade adversarial verification on frozen software candidates, capture decision-changing evidence, issue one bounded verdict, and challenge it with an independent skeptical reviewer.",
+    "developerName": "Collaborative Dynamics",
+    "websiteURL": "https://github.com/Stunspot/TestForge",
+    "privacyPolicyURL": "https://github.com/Stunspot/TestForge/blob/main/testforge/docs/DATA-AND-PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/Stunspot/TestForge/blob/main/testforge/docs/TERMS-OF-USE.md",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Verify this frozen candidate: rank catastrophic risks, run only decision-changing checks, and issue one bounded assessment.",
+      "Challenge this verification package for catastrophic omissions, weak oracles, broken traceability, and unsupported confidence.",
+      "Classify this failure once, recover one support path at most, and close with the exact verdict or lost guarantee."
+    ],
+    "brandColor": "#48CBE8",
+    "composerIcon": "./assets/testforge-icon-v1.1.1.png",
+    "logo": "./assets/testforge-icon-v1.1.1.png",
+    "screenshots": [
+      "./assets/testforge-social-preview.png"
+    ]
+  }
+}
