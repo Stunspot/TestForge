@@ -1,1 +1,0 @@
-"""Synthetic parser example."""

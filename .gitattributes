@@ -13,4 +13,3 @@
 *.jpeg binary
 *.png binary
 *.zip binary
-/releases/v1.1.3/** -text
