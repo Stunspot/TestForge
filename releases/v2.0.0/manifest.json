@@ -3,12 +3,12 @@
     {
       "file": "claude/software-verification-v2.0.0.zip",
       "handle": "software-verification",
-      "sha256": "c7e79b43b777abb10febf6b8830cbc3aaac1221a5909e49a926f308c8f7036e7"
+      "sha256": "425163e323f05f52bea93208bb353aa4ea573d5d83d0685845c2c6c1b204aba0"
     },
     {
       "file": "claude/verification-reviewer-v2.0.0.zip",
       "handle": "verification-reviewer",
-      "sha256": "1f0d48a94e318f1d2d1116b5540da6d5c08808dbc48f5cda07d2b5410cad1b55"
+      "sha256": "188e4735c7c288994fdb78c81a68f8d6bf07a1154849bf187c38d1c705299d52"
     }
   ],
   "excluded_generated_caches": {
@@ -46,9 +46,9 @@
     {
       "files": [
         {
-          "bytes": 14688,
+          "bytes": 14863,
           "path": "SKILL.md",
-          "sha256": "b1e0730a00ced01469db029d3885153b31c488df98eec76d0b023a3370287cf1"
+          "sha256": "8ba1812ae361c2c57b446087486294d71322ca3a602bee0563a557a76f550ad1"
         },
         {
           "bytes": 949,
@@ -421,6 +421,11 @@
           "sha256": "36add90a748d545ae1276ad8007dd4f3cc3f4189cc9550dc6abea3d79c5c5c96"
         },
         {
+          "bytes": 4416,
+          "path": "references/specialized/agent-research-workflows.md",
+          "sha256": "fea84b039299d93f2f59104455f5ee3f4b3cc6c14cd84e62000955ba458ca6cd"
+        },
+        {
           "bytes": 512,
           "path": "references/specialized/contract-testing.md",
           "sha256": "bbb3cb8ccdd135a14136af3d9649634560dce62c1501961fa335222274a8de5f"
@@ -531,9 +536,9 @@
     {
       "files": [
         {
-          "bytes": 3603,
+          "bytes": 3921,
           "path": "SKILL.md",
-          "sha256": "db8d86b0eabe0770cdfec977bde36b4b0e87ccc820d609f6fe0c9ceaf4206c75"
+          "sha256": "29d3f974ae9cefffa8a524c838ab0c00211cd22ce86bc8df86605c4ccb3f2d5e"
         },
         {
           "bytes": 1145,
@@ -544,6 +549,11 @@
           "bytes": 256,
           "path": "agents/openai.yaml",
           "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
+        },
+        {
+          "bytes": 2521,
+          "path": "cold-read-review.md",
+          "sha256": "ace870f684c52cd4846c189d793f9fba6c51a9642bc636017ddc40bcf4148e1d"
         },
         {
           "bytes": 2002,

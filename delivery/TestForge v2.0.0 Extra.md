@@ -17,6 +17,8 @@ Project Site: [TestForge verification workbench](https://stunspot.github.io/Test
 
 # Changelog
 
+2026-09-12 local praxis maintenance, v2.0.0 — Added cold-read review that examines complete evidence before author ratings, plus agent/research-harness checks for stale attempts, expired workers, producer identity, malformed review results and truthful completion. Existing frozen-candidate and stopping boundaries remain unchanged.
+
 v2.0.0 - Kept hosted-verification safeguards in their conditional guide; declared removal of the assessor plan_sha256 output field as a compatibility break. Callers must stop requiring that field. Original v1.1.7 assets are restored and its tag preserved.
 
 v1.1.7 - Tightened activation to explicit frozen-candidate release verification, enforced decision-changing evidence, and added bounded recovery and stopping rules.
