@@ -3,7 +3,7 @@
   "package": "testforge",
   "version": "2.0.0",
   "release_date": "2026-09-05",
-  "artifact_count": 232,
+  "artifact_count": 234,
   "artifacts": [
     {
       "path": "adapters/claude-code.md",
@@ -991,6 +991,11 @@
       "sha256": "36add90a748d545ae1276ad8007dd4f3cc3f4189cc9550dc6abea3d79c5c5c96"
     },
     {
+      "path": "skills/software-verification/references/specialized/agent-research-workflows.md",
+      "size": 4416,
+      "sha256": "fea84b039299d93f2f59104455f5ee3f4b3cc6c14cd84e62000955ba458ca6cd"
+    },
+    {
       "path": "skills/software-verification/references/specialized/contract-testing.md",
       "size": 512,
       "sha256": "bbb3cb8ccdd135a14136af3d9649634560dce62c1501961fa335222274a8de5f"
@@ -1097,8 +1102,8 @@
     },
     {
       "path": "skills/software-verification/SKILL.md",
-      "size": 14688,
-      "sha256": "b1e0730a00ced01469db029d3885153b31c488df98eec76d0b023a3370287cf1"
+      "size": 14863,
+      "sha256": "8ba1812ae361c2c57b446087486294d71322ca3a602bee0563a557a76f550ad1"
     },
     {
       "path": "skills/verification-reviewer/adversarial-checks.md",
@@ -1109,6 +1114,11 @@
       "path": "skills/verification-reviewer/agents/openai.yaml",
       "size": 256,
       "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
+    },
+    {
+      "path": "skills/verification-reviewer/cold-read-review.md",
+      "size": 2521,
+      "sha256": "ace870f684c52cd4846c189d793f9fba6c51a9642bc636017ddc40bcf4148e1d"
     },
     {
       "path": "skills/verification-reviewer/review-rubric.md",
@@ -1142,8 +1152,8 @@
     },
     {
       "path": "skills/verification-reviewer/SKILL.md",
-      "size": 3603,
-      "sha256": "db8d86b0eabe0770cdfec977bde36b4b0e87ccc820d609f6fe0c9ceaf4206c75"
+      "size": 3921,
+      "sha256": "29d3f974ae9cefffa8a524c838ab0c00211cd22ce86bc8df86605c4ccb3f2d5e"
     },
     {
       "path": "tests/__init__.py",
