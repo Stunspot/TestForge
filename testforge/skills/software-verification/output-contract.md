@@ -16,3 +16,5 @@ Required state:
 - exactly one release status.
 
 `READY` requires all decision-critical checks to have executed and passed, no unresolved critical or high product defect, no critical risk without credible evidence, and reviewer acceptance. `READY_WITH_RESIDUAL_RISK` requires the same blocking conditions to be absent plus bounded, visible residual risk. Other states preserve why readiness has not been earned.
+
+Keep the report at least as qualified as its manifest. Preserve assumptions, unresolved claims, reviewer findings/conditions, all failed or incomplete attempts and linked residual treatment. Record command versus observation, supplied versus directly observed source, target revision and environment. One consistent status follows the evidence; it never grants release authority. See references/core/evidence-records.md for the machine-readable contract.

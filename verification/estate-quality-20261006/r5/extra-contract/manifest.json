@@ -1,0 +1,8 @@
+{
+  "format": "cd-customer-documentation/v1",
+  "product": "testforge",
+  "version": "2.0.0",
+  "customer_docs": [
+    "delivery/TestForge v2.0.0 Extra.md"
+  ]
+}

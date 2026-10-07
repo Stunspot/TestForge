@@ -1,0 +1,765 @@
+{
+  "status": "PASS",
+  "candidate": "E:\\Github\\testforge\\releases\\estate-quality-20261006-r5\\TestForge-v2.0.0.zip",
+  "sha256": "f5f7348a15fe9407acd63cb55e361c2777510919201c447f2a6f54c9f2b1db68",
+  "source_freeze_files": 441,
+  "archive_members": 137,
+  "delta": [
+    {
+      "path": "testforge-v2.0.0/claude/software-verification-v2.0.0.zip",
+      "kind": "inner archive contains LF-only changes"
+    },
+    {
+      "path": "testforge-v2.0.0/claude/verification-reviewer-v2.0.0.zip",
+      "kind": "inner archive contains LF-only changes"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/SKILL.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/assets/schemas/verification-manifest.schema.json",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/assets/templates/verification-manifest.json",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/fallback/master-prompt.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/fallback/review-prompt.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/output-contract.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/references/core/evidence-records.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/references/core/oracle-design.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/references/core/release-assessment.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/references/specialized/domain-oracles.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/scripts/assemble_report.py",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/scripts/normalize_test_results.py",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/scripts/validate_manifest.py",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/software-verification/scripts/validate_traceability.py",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/verification-reviewer/SKILL.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/verification-reviewer/domain-oracles.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/verification-reviewer/evidence-records.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/verification-reviewer/review-rubric.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/verification-reviewer/scripts/validate_manifest.py",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/codex/testforge/skills/verification-reviewer/scripts/validate_traceability.py",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/CAPABILITIES.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/DESCRIPTION-CUSTODY.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/HOST-EVIDENCE-BOUNDARY.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/INSTALL-CLAUDE.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/INSTALL-CODEX.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/LIMITATIONS.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/MAINTAINER-GUIDE.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/PACKAGE-REFERENCE.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/PROVENANCE.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/QUICK-START.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/README.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/SUPPORT.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/docs/VALIDATION.md",
+      "kind": "LF only"
+    },
+    {
+      "path": "testforge-v2.0.0/manifest.json",
+      "kind": "generated source/inner-archive hashes"
+    }
+  ],
+  "independent_preflight_controls": [
+    "crlf public rejects before replacement",
+    "crlf mirror rejects before replacement",
+    "bare-cr public rejects before replacement",
+    "bare-cr mirror rejects before replacement",
+    "null-byte public rejects before replacement",
+    "null-byte mirror rejects before replacement",
+    "invalid-utf8 public rejects before replacement",
+    "invalid-utf8 mirror rejects before replacement",
+    "documented CRLF command exception and binary preservation",
+    "valid LF archive preserves exact bytes"
+  ],
+  "native_verifier": {
+    "files": 137,
+    "runtime_files": 113,
+    "inner_archives": 2,
+    "findings": []
+  },
+  "consumers": [
+    {
+      "id": "software-verification",
+      "destination": "E:\\Github\\nova-the-optimal-ai-mind\\plugins\\nova-the-optimal-ai\\skills\\software-verification",
+      "tree": {
+        "file_count": 100,
+        "tree_sha256": "af382845883ac57b6a5a74a71abc6fdf307ef1b2d49b40aaff97549d84f0b3bb",
+        "files": [
+          {
+            "path": "SKILL.md",
+            "bytes": 16301,
+            "sha256": "bf4818bf585cd73bed99f679e7fda7c3c776ec61108402937e3b0fb0d3264641"
+          },
+          {
+            "path": "activation-examples.md",
+            "bytes": 949,
+            "sha256": "5b894ecfe69d30e1bf4d945162d9bf1eaa9032a5bbef4156c281047d28085b5d"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "bytes": 288,
+            "sha256": "2b12c14f7b2ae4b02e10c512c3eb5a682b1f82f0fdbbfbdc5ef4e37be96bdcf4"
+          },
+          {
+            "path": "assets/ci/github-actions-node.yml",
+            "bytes": 371,
+            "sha256": "dc1aa5039958662bcc26276b21710a0b9d965a59d510ffc4586c73df582c9ca0"
+          },
+          {
+            "path": "assets/ci/github-actions-python.yml",
+            "bytes": 416,
+            "sha256": "c553873bb349a8117ff2d90d194aed3f365700cdd7b265f6ee12c3c396901460"
+          },
+          {
+            "path": "assets/schemas/finding.schema.json",
+            "bytes": 940,
+            "sha256": "957010afdf5f07c73600eb6a4945920507d89a65f0316a33d372256d924517d8"
+          },
+          {
+            "path": "assets/schemas/metered-verification-plan.schema.json",
+            "bytes": 2287,
+            "sha256": "5ace038f1f1766d5798ecdcd2edbf7c5687c1fa46427b4765b2452da760e9cbe"
+          },
+          {
+            "path": "assets/schemas/normalized-results.schema.json",
+            "bytes": 1212,
+            "sha256": "6c6b814387a9c4d1904ad2ab7b8dac27e8f017c58869b774ae983284f157076a"
+          },
+          {
+            "path": "assets/schemas/scenario.schema.json",
+            "bytes": 1095,
+            "sha256": "8c5c962078b8696adf1b2f3a063dc4badd3f11368998549d30b31f11af3159e6"
+          },
+          {
+            "path": "assets/schemas/verification-manifest.schema.json",
+            "bytes": 11669,
+            "sha256": "f2c736f80013536ea3efb021467335d9c82d54eff19eb8492bc75b2996016172"
+          },
+          {
+            "path": "assets/templates/execution-record.json",
+            "bytes": 261,
+            "sha256": "5891ec0997c384712a7af882b2ae408dd72e5641938d87b754e500e0f40b294f"
+          },
+          {
+            "path": "assets/templates/exploratory-charter.md",
+            "bytes": 400,
+            "sha256": "9595b177d6737907c2a368c028e639754b96ea36cee55f8d05b6b22764ae332d"
+          },
+          {
+            "path": "assets/templates/failure-triage.md",
+            "bytes": 462,
+            "sha256": "de959f3fc53d24e24c427e2d0fc28093724c227fcb840b5e715a3a099c71a34a"
+          },
+          {
+            "path": "assets/templates/metered-verification-plan.json",
+            "bytes": 788,
+            "sha256": "4ca2744d5a000d478f1896b5e69e7d5a2caba0e5d0d36945132f99cb75ef815b"
+          },
+          {
+            "path": "assets/templates/metered-verification-response.md",
+            "bytes": 3310,
+            "sha256": "4d7e1d712109519b840e140d39a018249db030920d74fed24c100d5c2974a972"
+          },
+          {
+            "path": "assets/templates/residual-risk-ledger.md",
+            "bytes": 357,
+            "sha256": "4b785b71a5575623e9a7ec615aae63452d1f00e64933daca210e30e41075671c"
+          },
+          {
+            "path": "assets/templates/risk-register.md",
+            "bytes": 428,
+            "sha256": "1ee52cdc230e2566c80980e495cdfe10572e3027dd06d36499b55d3c295a60ae"
+          },
+          {
+            "path": "assets/templates/traceability-matrix.md",
+            "bytes": 314,
+            "sha256": "f410da235e3132da596db2f49cbb4b722a2a8043e305bb77617780403c4f02f2"
+          },
+          {
+            "path": "assets/templates/verification-brief.md",
+            "bytes": 529,
+            "sha256": "e1dc1aace15d01d3d4899d0900e013593989844e324ea999ee13a94dcf5d2eb9"
+          },
+          {
+            "path": "assets/templates/verification-manifest.json",
+            "bytes": 971,
+            "sha256": "bb1ebf5f3cc6adbcbd3039e7444515be76d8d1df833da4133db5a308c458adc3"
+          },
+          {
+            "path": "assets/templates/verification-report.md",
+            "bytes": 577,
+            "sha256": "62ec2673fd6dc59798f11a6eb29a563425902384e0c16442b555f2ea294a4732"
+          },
+          {
+            "path": "examples/parser-edge-cases/demonstration.md",
+            "bytes": 1154,
+            "sha256": "79b9c312ac0beb5ad1db13e592471bb17b50478e84ef01fe57332474005d20b7"
+          },
+          {
+            "path": "examples/parser-edge-cases/expected/execution-record.json",
+            "bytes": 2377,
+            "sha256": "b75c17350eb9ddbe19a6b4453a8fda84ea0334e881be410cc5731b34f17593d9"
+          },
+          {
+            "path": "examples/parser-edge-cases/expected/normalized-results.json",
+            "bytes": 488,
+            "sha256": "c705e3c3601662efe5f902a342a00ca3022f3de811e188405b94b18e3fb37539"
+          },
+          {
+            "path": "examples/parser-edge-cases/expected/test_parser.py",
+            "bytes": 711,
+            "sha256": "9208da5701987e239da66fa915d1251752e14e1dc8b91efd01f996a36684b732"
+          },
+          {
+            "path": "examples/parser-edge-cases/expected/verification-manifest.json",
+            "bytes": 3507,
+            "sha256": "25464cfd9e022c6552fe4472c0e30b15dd00206ac6879763f565ed040cfc588c"
+          },
+          {
+            "path": "examples/parser-edge-cases/expected/verification-report.md",
+            "bytes": 1342,
+            "sha256": "9704e1cad7d7209de4be5cc4608ec6f3fed888835cd13553f0cdc94dc8d170e7"
+          },
+          {
+            "path": "examples/parser-edge-cases/input/__init__.py",
+            "bytes": 32,
+            "sha256": "26990ab1c2ae4084bd2a053ad1034d6b841a6bba672310ea18f8cb1465ff6768"
+          },
+          {
+            "path": "examples/parser-edge-cases/input/parser.py",
+            "bytes": 424,
+            "sha256": "6c093ed263999b34087b13f8808835ebdcc7d4fc338ac1b84507537ce1d524a4"
+          },
+          {
+            "path": "examples/parser-edge-cases/walkthrough.md",
+            "bytes": 622,
+            "sha256": "c56f5ad0f2119c71430bb3867cdab698be2faca5296ba2b3a8b03bba6ccf3cbf"
+          },
+          {
+            "path": "examples/python-regression/demonstration.md",
+            "bytes": 1121,
+            "sha256": "ee7f8468d3b58267d9ea7ae7c586c6146d1170e845951f131b05d9140bd86560"
+          },
+          {
+            "path": "examples/python-regression/expected/execution-record.json",
+            "bytes": 1590,
+            "sha256": "4f4dc1c8b1a0d2bfc123e1f19d8b97cb76616072a541019c71b9db324baa02e1"
+          },
+          {
+            "path": "examples/python-regression/expected/fix.patch",
+            "bytes": 182,
+            "sha256": "ac25b78e442fca77af45c010db3d78c40fdd7d7a95c7dd91d8c28e731ea97ec1"
+          },
+          {
+            "path": "examples/python-regression/expected/fixed/__init__.py",
+            "bytes": 55,
+            "sha256": "215a6c48237941a704a18aa26275c0f3f8a08daf101a29dfa3d4aeb74a3a9c46"
+          },
+          {
+            "path": "examples/python-regression/expected/fixed/reporting.py",
+            "bytes": 245,
+            "sha256": "763ecada5563d3071e504d0bde3d5ce23119533f175c2306133455a0a6bbd32d"
+          },
+          {
+            "path": "examples/python-regression/expected/normalized-results.json",
+            "bytes": 493,
+            "sha256": "2a369ee9cbdf08392c2c184cf461ab38c31c42544dcc8c9084669b98fddb908f"
+          },
+          {
+            "path": "examples/python-regression/expected/post-fix-execution-record.json",
+            "bytes": 666,
+            "sha256": "b4c27688c7ee6a7f440f80259c7487da5ae713632a569d211d0c3134aabbcee7"
+          },
+          {
+            "path": "examples/python-regression/expected/test_date_filter.py",
+            "bytes": 724,
+            "sha256": "9f06d2369bc6c1555f21be0851933b9844fe8e4dc1c1aac91be7c1d50d5e6735"
+          },
+          {
+            "path": "examples/python-regression/expected/test_fixed_date_filter.py",
+            "bytes": 699,
+            "sha256": "930818616350f022d7e30ba7cf695efc9bf0ea6c7b22e1642542e4416c923312"
+          },
+          {
+            "path": "examples/python-regression/expected/verification-manifest.json",
+            "bytes": 3058,
+            "sha256": "2d05ecb10a9aebbe7f7ea72fab2329003332b2f4a8a9aa3f7a5723167c5ab775"
+          },
+          {
+            "path": "examples/python-regression/expected/verification-report.md",
+            "bytes": 1242,
+            "sha256": "f102762d6e96b84237c4e69aff7b886adba9c95c48929a09d925ef4caf94e1a3"
+          },
+          {
+            "path": "examples/python-regression/input/__init__.py",
+            "bytes": 35,
+            "sha256": "a1c8127a300481f6b0e58d0c1bb065e8a12890371ca31f4f0036d6a600f7d4d5"
+          },
+          {
+            "path": "examples/python-regression/input/reporting.py",
+            "bytes": 297,
+            "sha256": "2f2c1428f625ba446a8c2186fd31bd86384da18422068b95a04193e528e3c0e0"
+          },
+          {
+            "path": "examples/python-regression/input/test_existing.py",
+            "bytes": 380,
+            "sha256": "ce1a4750a22339c37746e22c6d90c97170ca3e8af59bea3d787cf6ad2d493f4d"
+          },
+          {
+            "path": "examples/python-regression/walkthrough.md",
+            "bytes": 980,
+            "sha256": "099338f50dc2c9040b9088cdbfa6655cb76ea489d14752d487ce9354478ca752"
+          },
+          {
+            "path": "examples/typescript-api-change/demonstration.md",
+            "bytes": 1526,
+            "sha256": "8918aaf3cb32c9becec71de3921c3ddbe1374974cfa12093990249df9e3b00ee"
+          },
+          {
+            "path": "examples/typescript-api-change/expected/cancelSubscription.integration.test.ts",
+            "bytes": 1669,
+            "sha256": "da54677fc911097532f6c2aa884628fb8b5a020310a7489c574b30a0531305b0"
+          },
+          {
+            "path": "examples/typescript-api-change/expected/verification-manifest.json",
+            "bytes": 4397,
+            "sha256": "3e2576623477eae00a23c9e32ea1eba65dc69d50123530155e12c5788ad5634d"
+          },
+          {
+            "path": "examples/typescript-api-change/expected/verification-report.md",
+            "bytes": 1522,
+            "sha256": "9e989c27cd189bf229623c6394fd209c27f6165d8db086759d9fd20078754116"
+          },
+          {
+            "path": "examples/typescript-api-change/input/package.json",
+            "bytes": 190,
+            "sha256": "ad82654146816ffc43a5e54605e0a9c9d5617e906641015fb1eb5ea35292d20c"
+          },
+          {
+            "path": "examples/typescript-api-change/input/requirement.md",
+            "bytes": 318,
+            "sha256": "c5baeed90136df1aff2c7f37a425d74a0fca00fdd296c58ea4e3a201178efdfa"
+          },
+          {
+            "path": "examples/typescript-api-change/input/src/subscriptionService.ts",
+            "bytes": 1215,
+            "sha256": "19adc36944add9a785eac1936f7d320338f296e1d2aaadb215a9d0d65ba1ea0f"
+          },
+          {
+            "path": "examples/typescript-api-change/input/tests/cancelSubscription.test.ts",
+            "bytes": 674,
+            "sha256": "50a846aa9cb9ba93f4b3fabec21b84414c53eb609c4258ff5fa91515baa29e5e"
+          },
+          {
+            "path": "examples/typescript-api-change/walkthrough.md",
+            "bytes": 936,
+            "sha256": "8568661d5dc92f78d23f4571b0e15c885993cfda56c6ce0d9660a1fefc2b685b"
+          },
+          {
+            "path": "fallback/intake-card.md",
+            "bytes": 543,
+            "sha256": "7f496d9a10aaeee805a60e1777a4337ad6f293532ede1c16d051128bc1695d70"
+          },
+          {
+            "path": "fallback/master-prompt.md",
+            "bytes": 7590,
+            "sha256": "1be6ab9546ff40c9eb3537efa2a4793bd66baba4db53865437cfd39dbeeedbb6"
+          },
+          {
+            "path": "fallback/output-templates.md",
+            "bytes": 785,
+            "sha256": "dba5c2a713a2cdcb0a328db9a7a41b41de3dc7ad90cbcba020bb187078978639"
+          },
+          {
+            "path": "fallback/review-prompt.md",
+            "bytes": 2162,
+            "sha256": "3beb2a333f78210ee9acca41a4b226522bd2a1790d890f36cec00e9bdbc04f2d"
+          },
+          {
+            "path": "output-contract.md",
+            "bytes": 1874,
+            "sha256": "f9ef994ddec22379346d7826e58292e0149283275edc7e9c013b5ece6e02f364"
+          },
+          {
+            "path": "references/core/boundary-and-equivalence.md",
+            "bytes": 955,
+            "sha256": "455b2f606ad76b0a8d7e063507d348e9574b5201338c8c3c08cddfce09181cfd"
+          },
+          {
+            "path": "references/core/evidence-records.md",
+            "bytes": 4072,
+            "sha256": "fad443f43813f845d26a0cb918283b712f49e3d1892d71880dc79db8557d781d"
+          },
+          {
+            "path": "references/core/metered-verification.md",
+            "bytes": 8280,
+            "sha256": "5fabca9045fa1155db5f60fdc913d6d71f9717d7804d35132c9b46c1b923ae5a"
+          },
+          {
+            "path": "references/core/oracle-design.md",
+            "bytes": 1951,
+            "sha256": "bc772fccb596b49c9b4b1c9fe56fa0377bf75a697f11f1f43cb808a90363e6d8"
+          },
+          {
+            "path": "references/core/release-assessment.md",
+            "bytes": 2642,
+            "sha256": "bef10656a5adc83268d4822f742854e45a5f898472afc6c75f88fb52272d9d73"
+          },
+          {
+            "path": "references/core/risk-based-testing.md",
+            "bytes": 1728,
+            "sha256": "6e74815e26680111d8a7194ad8d64593454a94d8b8a8b1ecd4d0f9de218a30c4"
+          },
+          {
+            "path": "references/core/state-transition-testing.md",
+            "bytes": 797,
+            "sha256": "227037dbf8cf9fb2d95e8ee4f9b262682d38378643787fd2dab1bd0e3b08d945"
+          },
+          {
+            "path": "references/core/test-layer-selection.md",
+            "bytes": 1615,
+            "sha256": "ef5691c3849e664601f824be321da1a6f22d7d292bfcef4b58ae9346ff812b70"
+          },
+          {
+            "path": "references/core/test-smells.md",
+            "bytes": 1222,
+            "sha256": "493568a4cb3feae487a9b9456d47c6500e4781b130ae42c6b65e7754a0b7585d"
+          },
+          {
+            "path": "references/reliability/concurrency-and-races.md",
+            "bytes": 650,
+            "sha256": "6b0628bcd4bf00fbdb764d89b087a4c0d7661d5df386e9639d2da20df711a0f8"
+          },
+          {
+            "path": "references/reliability/dependency-failure-modes.md",
+            "bytes": 748,
+            "sha256": "b57632c4188e7ea9f84eda2078efc33368abe1e61eabc56d47fbb8c9d13297aa"
+          },
+          {
+            "path": "references/reliability/observability-verification.md",
+            "bytes": 625,
+            "sha256": "b1fe93d1c67c579b457f973a26c84911cc99c5caddebdd1f7c0e06a41ffe6dd8"
+          },
+          {
+            "path": "references/reliability/retries-idempotency-timeouts.md",
+            "bytes": 778,
+            "sha256": "dfd2c4164f7cbd74f84776f695da43479c8934ae22702057df70c6899e468cdb"
+          },
+          {
+            "path": "references/security/authorization-testing.md",
+            "bytes": 669,
+            "sha256": "f65d58465c53fc64e59650bd744ee87dec435efec1c0cdcdaf0c01c298ea3376"
+          },
+          {
+            "path": "references/security/input-and-parser-security.md",
+            "bytes": 523,
+            "sha256": "82ada5f47330260a8a0820013d5f75aa5eb8e1de401e8e2408d7c8365a601681"
+          },
+          {
+            "path": "references/security/safe-testing-boundaries.md",
+            "bytes": 768,
+            "sha256": "eaba06a902822c672af3a55915ef5d9650aa9dd4f1f43cf93be79a4d926e27ac"
+          },
+          {
+            "path": "references/security/secrets-and-config-review.md",
+            "bytes": 529,
+            "sha256": "36add90a748d545ae1276ad8007dd4f3cc3f4189cc9550dc6abea3d79c5c5c96"
+          },
+          {
+            "path": "references/specialized/agent-research-workflows.md",
+            "bytes": 4416,
+            "sha256": "fea84b039299d93f2f59104455f5ee3f4b3cc6c14cd84e62000955ba458ca6cd"
+          },
+          {
+            "path": "references/specialized/contract-testing.md",
+            "bytes": 512,
+            "sha256": "bbb3cb8ccdd135a14136af3d9649634560dce62c1501961fa335222274a8de5f"
+          },
+          {
+            "path": "references/specialized/customer-journeys.md",
+            "bytes": 2846,
+            "sha256": "3d8d78da272acb9a6c594a7b480d06b5cfac621d7748ab3c203a9f27f84ead1d"
+          },
+          {
+            "path": "references/specialized/domain-oracles.md",
+            "bytes": 4942,
+            "sha256": "87ad284d957241fdc15c4da29780501ed954ec393c3c9e01136bc643f23da79c"
+          },
+          {
+            "path": "references/specialized/migration-testing.md",
+            "bytes": 508,
+            "sha256": "681875be0a4910ee1cfd8747f7dd391f48c55c29026c6b1fb59aa9eaf3001e2c"
+          },
+          {
+            "path": "references/specialized/parser-and-compiler-testing.md",
+            "bytes": 660,
+            "sha256": "60161d47ffa95241b43d035b6c588548a73fe1773cb74f1c2996b5041b91431f"
+          },
+          {
+            "path": "references/specialized/property-based-testing.md",
+            "bytes": 596,
+            "sha256": "648b1e5440c6a639cdf2ccaa60a872d84c666332353e2b1fb7c851a684060004"
+          },
+          {
+            "path": "references/stacks/generic-adapter.md",
+            "bytes": 689,
+            "sha256": "5aca6159f4e73277d2895dea3ec6b9843f1f9f74e6ae79585331464f2be1b8a8"
+          },
+          {
+            "path": "references/stacks/python-pytest.md",
+            "bytes": 684,
+            "sha256": "4e0fd68fe34648dd3224cfc42f3cd8bbfa66b7de46c025614d6c2f9956afc7e9"
+          },
+          {
+            "path": "references/stacks/typescript-vitest-jest.md",
+            "bytes": 881,
+            "sha256": "eccd25b5d3f96c67b0d5668e2912272c811496108ea9324f3c8620e6da2d9461"
+          },
+          {
+            "path": "scripts/assemble_report.py",
+            "bytes": 3965,
+            "sha256": "d56f7a1cc216e9346f5f23fe5efd0ac2bcb6edbe570e77f4f893650c94bdca54"
+          },
+          {
+            "path": "scripts/assess_metered_verification.py",
+            "bytes": 9244,
+            "sha256": "32fea456367754fdbe81a2afe138528a671624b10d25bfd76552c6e5196bfc96"
+          },
+          {
+            "path": "scripts/capture_command.py",
+            "bytes": 2454,
+            "sha256": "2c65a44c7d9fb298e8126fffcd78ccff8c8b138e78a6f00bb44cfce715c8b9e2"
+          },
+          {
+            "path": "scripts/common/__init__.py",
+            "bytes": 74,
+            "sha256": "e29efe317da7e746892083a5918fa21076e7f1a1cbacfcc752552663cda5ffc8"
+          },
+          {
+            "path": "scripts/common/command_result.py",
+            "bytes": 546,
+            "sha256": "c6ee9db9175ab18087bdbbc34b54e291d15fce245c462e30d8fcecd44b9c76a2"
+          },
+          {
+            "path": "scripts/common/filesystem.py",
+            "bytes": 2095,
+            "sha256": "822c21c4f60f50d4e709249fbd74b67a61d2aab51a16785787147bbd3bbc47eb"
+          },
+          {
+            "path": "scripts/detect_test_stack.py",
+            "bytes": 4073,
+            "sha256": "206c85e2f81edc37dffbb219a9eabfb320199f3b19f9ed44989cd211fb019717"
+          },
+          {
+            "path": "scripts/inspect_repo.py",
+            "bytes": 3967,
+            "sha256": "7eb04aa787b41dd5095399441dab95edc5232d4b9bfb6f989633a56024d17410"
+          },
+          {
+            "path": "scripts/normalize_test_results.py",
+            "bytes": 8841,
+            "sha256": "966a2fd337218752e228d02f3ef4f58038d2188064b897a805362f9bc68aaf7a"
+          },
+          {
+            "path": "scripts/scan_test_smells.py",
+            "bytes": 2999,
+            "sha256": "5f63e0ba814b7a2da8bd11abae6dbd394903579ca6560ba77d4a451a335d23eb"
+          },
+          {
+            "path": "scripts/summarize_diff.py",
+            "bytes": 3144,
+            "sha256": "99826e53b2ddbdafc568475c527c7c19ae9511539ca09742e46859a45f099dc0"
+          },
+          {
+            "path": "scripts/validate_eval_suite.py",
+            "bytes": 1373,
+            "sha256": "99883297ea16a400c681f8fcfa297c6d1bf1cc8ad38b8031f44b73d20969b304"
+          },
+          {
+            "path": "scripts/validate_manifest.py",
+            "bytes": 22894,
+            "sha256": "a79c7d2887922fe8b2403933c7bf1f4ab457568af4511dc3a1f937d7804cd97d"
+          },
+          {
+            "path": "scripts/validate_traceability.py",
+            "bytes": 4505,
+            "sha256": "ee2fa93ce42aa4e6829e7f9e7ab68f2883d2f07811793971e9401c9fc5e4b8c7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "verification-reviewer",
+      "destination": "E:\\Github\\nova-the-optimal-ai-mind\\plugins\\nova-the-optimal-ai\\skills\\verification-reviewer",
+      "tree": {
+        "file_count": 13,
+        "tree_sha256": "658f98a79629098f61e53141e347ae704755331dfe004e755ec3ebadf062489b",
+        "files": [
+          {
+            "path": "SKILL.md",
+            "bytes": 5212,
+            "sha256": "9477a8f6cf159cfecf1edb6b1402424120e73c36729c846b2ad2f704c445a762"
+          },
+          {
+            "path": "adversarial-checks.md",
+            "bytes": 1145,
+            "sha256": "325b3079dc7ea8891d8caf52bb76fa030939da14709ab7773b8bcb384f606c42"
+          },
+          {
+            "path": "agents/openai.yaml",
+            "bytes": 256,
+            "sha256": "34ff405fe713642858d945f2388d973c8e60f4f18d9079b58b16687a2361e474"
+          },
+          {
+            "path": "cold-read-review.md",
+            "bytes": 2521,
+            "sha256": "ace870f684c52cd4846c189d793f9fba6c51a9642bc636017ddc40bcf4148e1d"
+          },
+          {
+            "path": "customer-journeys.md",
+            "bytes": 2846,
+            "sha256": "3d8d78da272acb9a6c594a7b480d06b5cfac621d7748ab3c203a9f27f84ead1d"
+          },
+          {
+            "path": "domain-oracles.md",
+            "bytes": 4982,
+            "sha256": "3e3edaac05f6cb87d04b12d5f4e1ea77accac7a25c7f85bb9ac0ad567b9062f3"
+          },
+          {
+            "path": "evidence-records.md",
+            "bytes": 4072,
+            "sha256": "fad443f43813f845d26a0cb918283b712f49e3d1892d71880dc79db8557d781d"
+          },
+          {
+            "path": "review-rubric.md",
+            "bytes": 2068,
+            "sha256": "5c86296e29f9ff03992b2205ee32a44b1da19825323676c6353258cbbe8e16cf"
+          },
+          {
+            "path": "scripts/common/__init__.py",
+            "bytes": 74,
+            "sha256": "e29efe317da7e746892083a5918fa21076e7f1a1cbacfcc752552663cda5ffc8"
+          },
+          {
+            "path": "scripts/common/command_result.py",
+            "bytes": 546,
+            "sha256": "c6ee9db9175ab18087bdbbc34b54e291d15fce245c462e30d8fcecd44b9c76a2"
+          },
+          {
+            "path": "scripts/common/filesystem.py",
+            "bytes": 2095,
+            "sha256": "822c21c4f60f50d4e709249fbd74b67a61d2aab51a16785787147bbd3bbc47eb"
+          },
+          {
+            "path": "scripts/validate_manifest.py",
+            "bytes": 22894,
+            "sha256": "a79c7d2887922fe8b2403933c7bf1f4ab457568af4511dc3a1f937d7804cd97d"
+          },
+          {
+            "path": "scripts/validate_traceability.py",
+            "bytes": 4505,
+            "sha256": "ee2fa93ce42aa4e6829e7f9e7ab68f2883d2f07811793971e9401c9fc5e4b8c7"
+          }
+        ]
+      }
+    }
+  ],
+  "runtime_semantics": "Accepted r4 instruction text and Python ASTs unchanged apart from LF; prior failed r3 and bounded model qualification preserved.",
+  "new_extra": "Separate one-doc Hesperos correction, exact install/heading/changelog/tag contract preflight required before shelf transaction.",
+  "limitations": [
+    "File existence and consistency checks do not authenticate raw evidence.",
+    "No fresh-host activation or universal model behavior claim.",
+    "qwen35 local configuration not qualified for unsupervised readiness; final alternate local model failed before response."
+  ]
+}

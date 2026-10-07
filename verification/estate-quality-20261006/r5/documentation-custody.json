@@ -1,0 +1,134 @@
+{
+  "schema": "cd-documentation-custody-continuation/v1",
+  "product": "testforge",
+  "version": "2.0.0",
+  "scope": "Line-ending normalization only; exact original authoring scopes and historical receipts retained. This is a byte amendment, not a new Hesperos authorship receipt.",
+  "hesperos_continuations": [
+    {
+      "path": "release-docs/QUICK-START.md",
+      "original_authoring": {
+        "authorship_scope": "materially-revised",
+        "capability": "hesperos-documentation",
+        "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_snapshot": {
+          "bytes": 7306,
+          "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+          "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+        },
+        "mode": "in-process",
+        "run_id": "testforge-r4-20261006"
+      },
+      "original_receipt": "verification/estate-quality-20261006/r4/documentation-authorship.json",
+      "original_receipt_sha256": "6f23fd560697634ff76fca99e7a9085497cc40a56a51750be73cb6c397e677f2",
+      "before": {
+        "bytes": 7999,
+        "path": "release-docs/QUICK-START.md",
+        "sha256": "539f5c1d5ccce563a7d1e4195168d3d24769d430ac68d25aa0e87ee0e15e3a2c"
+      },
+      "after": {
+        "bytes": 7935,
+        "sha256": "8f4d1dc165c54cf7ab3a57d04810208aa7156f048992959f182ebaa81d1d2661"
+      },
+      "transformation": "CRLF to LF only; original Hesperos authorship continues. No new authoring run claimed."
+    },
+    {
+      "path": "testforge/docs/QUICK-START.md",
+      "original_authoring": {
+        "authorship_scope": "materially-revised",
+        "capability": "hesperos-documentation",
+        "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_snapshot": {
+          "bytes": 7306,
+          "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+          "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+        },
+        "mode": "in-process",
+        "run_id": "testforge-r4-20261006"
+      },
+      "original_receipt": "verification/estate-quality-20261006/r4/documentation-authorship.json",
+      "original_receipt_sha256": "6f23fd560697634ff76fca99e7a9085497cc40a56a51750be73cb6c397e677f2",
+      "before": {
+        "bytes": 8564,
+        "path": "testforge/docs/QUICK-START.md",
+        "sha256": "e8fab0268ec64ca5abc3c0a1896b2e3e18ee1976cca0e84568e60cf58bddcfbb"
+      },
+      "after": {
+        "bytes": 8485,
+        "sha256": "5df0e8e22c1647a7e90627f2d8c7eaf944cd8d27b2a6884145c2e9c0922cfc8d"
+      },
+      "transformation": "CRLF to LF only; original Hesperos authorship continues. No new authoring run claimed."
+    },
+    {
+      "path": "release-docs/HOST-EVIDENCE-BOUNDARY.md",
+      "original_authoring": {
+        "authorship_scope": "materially-revised",
+        "capability": "hesperos-documentation",
+        "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_snapshot": {
+          "bytes": 7306,
+          "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+          "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+        },
+        "mode": "in-process",
+        "run_id": "testforge-depth-20261006"
+      },
+      "original_receipt": "verification/estate-quality-20261006/depth-review/documentation-authorship.json",
+      "original_receipt_sha256": "379a1c3a6f216b5633e1a4ea9ae4c21cb922a6c12c1677d19e3289271ea94086",
+      "before": {
+        "bytes": 1506,
+        "path": "release-docs/HOST-EVIDENCE-BOUNDARY.md",
+        "sha256": "043ec847cf78ae75ac466a118dc13c01a49fffd0fb6fd1640be7888fcb707acf"
+      },
+      "after": {
+        "bytes": 1489,
+        "sha256": "3ae3a91e0e7e480e699d12559d331e9b889db976ed170dd6e9efefe5b040c9b7"
+      },
+      "transformation": "CRLF to LF only; original Hesperos authorship continues. No new authoring run claimed."
+    },
+    {
+      "path": "release-docs/MAINTAINER-GUIDE.md",
+      "original_authoring": {
+        "authorship_scope": "materially-revised",
+        "capability": "hesperos-documentation",
+        "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+        "capability_snapshot": {
+          "bytes": 7306,
+          "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+          "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+        },
+        "mode": "in-process",
+        "run_id": "testforge-depth-20261006"
+      },
+      "original_receipt": "verification/estate-quality-20261006/depth-review/documentation-authorship.json",
+      "original_receipt_sha256": "379a1c3a6f216b5633e1a4ea9ae4c21cb922a6c12c1677d19e3289271ea94086",
+      "before": {
+        "bytes": 2644,
+        "path": "release-docs/MAINTAINER-GUIDE.md",
+        "sha256": "e681dba50211c7d9f9e199762ba04f232db46583a80a75caf785eed7bb769bbf"
+      },
+      "after": {
+        "bytes": 2618,
+        "sha256": "ea7394876ff92b6f837f1b24e7b8048e9e5c639ad377081abb46efffdc309327"
+      },
+      "transformation": "CRLF to LF only; original Hesperos authorship continues. No new authoring run claimed."
+    }
+  ],
+  "accepted_companion_continuation": {
+    "path": "delivery/TestForge v2.0.0 Extra.md",
+    "before": {
+      "sha256": "2cc6b10161c883e921f6cb2092e3be653338f6a666b98da10ba59e0b6d20f868",
+      "bytes": 3321
+    },
+    "after": {
+      "sha256": "c452d817c376f7cca1bf11a89b8e0f46bad778fb28c0d019add9a8d8693d7e6e",
+      "bytes": 3288
+    },
+    "transformation": "CRLF to LF only; prior accepted companion content unchanged. No new Hesperos authorship asserted.",
+    "status": "historical intermediate LF-only amendment; superseded by separate Extra contract revision"
+  },
+  "current_companion_authorship": "verification/estate-quality-20261006/r5/extra-contract/documentation-authorship.json"
+}

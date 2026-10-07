@@ -22,3 +22,5 @@ Build each release from the maintained repository on a clean release branch. A p
 - `TestForge-v2.0.0.zip.sha256`: detached canonical archive digest.
 
 Never infer installation, discovery, invocation, or healthy behavior from a passing static package check.
+
+For an authorized same-version final replacement, preserve the existing accepted directory and pass --output-dir releases/reviewed-replacement to tools/build_public_release.py together with --final-seal after review. The directory must be new and directly under releases. The final-seal clean-candidate gate still applies; choosing a new destination does not bypass review or authorize publication.

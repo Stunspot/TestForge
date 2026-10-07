@@ -1,0 +1,15 @@
+{
+  "product": "TestForge2.0.0",
+  "source_truth": [
+    "Existing accepted companion product facts and runtime capability remain unchanged",
+    "Shared shelf exact standard install paragraph and ordered sections",
+    "Current candidate runtime has only LF normalization versus accepted r4"
+  ],
+  "scope": [
+    "delivery/TestForge v2.0.0 Extra.md"
+  ],
+  "limits": [
+    "No fresh model or host qualification",
+    "Only the Extra companion is authored in this run; other docs have separate continued authorship"
+  ]
+}

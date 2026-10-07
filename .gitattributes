@@ -13,3 +13,6 @@
 *.jpeg binary
 *.png binary
 *.zip binary
+
+# Preserve exact hash-addressed authoring capability evidence.
+verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md -text

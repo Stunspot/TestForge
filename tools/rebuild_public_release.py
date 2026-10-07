@@ -9,6 +9,10 @@ import json
 import subprocess
 from pathlib import Path, PurePosixPath
 import zipfile
+import os
+import tempfile
+from archive_paths import check_tree, assert_unlinked
+from source_text_policy import assert_text_entries, assert_source_text
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -55,6 +59,7 @@ def canonical_record(path: Path, root: Path) -> dict[str, object]:
 
 
 def files(root: Path, excluded_file: Path | None = None) -> list[Path]:
+    assert_unlinked(root)
     result = []
     for path in root.rglob("*"):
         relative = path.relative_to(root)
@@ -74,14 +79,22 @@ def files(root: Path, excluded_file: Path | None = None) -> list[Path]:
 
 
 def write_zip(source: Path, output: Path, top_level: str) -> None:
+    entries = check_tree(source, files(source), top_level)
+    assert_text_entries(entries)
     output.parent.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
-        for path in files(source):
-            name = PurePosixPath(top_level, *path.relative_to(source).parts).as_posix()
-            info = zipfile.ZipInfo(name, date_time=FIXED_TIME)
-            info.compress_type = zipfile.ZIP_DEFLATED
-            info.external_attr = 0o644 << 16
-            archive.writestr(info, path.read_bytes())
+    fd, temporary_path = tempfile.mkstemp(prefix=".testforge-", suffix=".building", dir=output.parent)
+    os.close(fd)
+    temporary = Path(temporary_path)
+    try:
+        with zipfile.ZipFile(temporary, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+            for name, payload in entries:
+                info = zipfile.ZipInfo(name, date_time=FIXED_TIME)
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = 0o644 << 16
+                archive.writestr(info, payload)
+        os.replace(temporary, output)
+    finally:
+        if temporary.exists(): temporary.unlink()
 
 
 def write_manifest(root: Path, package_name: str) -> None:
@@ -126,6 +139,8 @@ def require_final_seal(argv: list[str] | None = None) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     require_final_seal(argv)
+    # Preflight every current skill before replacing any archive or manifest.
+    assert_source_text(files(PACKAGE))
     archives = {}
     for skill in SKILLS:
         output = REPO / "claude-ai" / f"{skill}-v{VERSION}.zip"

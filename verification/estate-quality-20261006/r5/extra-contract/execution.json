@@ -1,0 +1,5 @@
+{
+  "agent": "estate_quality_tools",
+  "mode": "in-process",
+  "work": "Applied Hesperos to one customer companion: exact installation entry, consistent versioned changelog and recovery note placed in the proper section. Preserved all runtime/product claims and discovery tags."
+}

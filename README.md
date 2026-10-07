@@ -2,7 +2,7 @@
 
 # TestForge
 
-TestForge is a free Collaborative Dynamics Augment that gives inexpensive local coding Agents a verification discipline they do not reliably improvise on their own. It attacks an explicitly submitted, frozen release candidate with risk-ranked evidence instead of turning ordinary implementation into a comforting?and endless?pile of green checkmarks.
+TestForge is a free Collaborative Dynamics Augment that gives inexpensive local coding Agents a verification discipline they do not reliably improvise on their own. It attacks an explicitly submitted, frozen release candidate with risk-ranked evidence instead of turning ordinary implementation into a comforting—and endless—pile of green checkmarks.
 
 The bundled Augment testbed generalizes the same discipline beyond code. Every capability you build can carry behavioral evals, run isolated trials, expose the exact failed dimensions, guide reengineering, seal the evidence, promote a reviewed passing baseline, and detect regression later. TestForge makes “I should check this” an operative capability and “it worked before” a durable record.
 

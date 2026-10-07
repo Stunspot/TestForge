@@ -3,6 +3,10 @@ name: TestForge checks
 on:
   workflow_dispatch:
 
+env:
+  PYTHONUTF8: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+
 permissions:
   contents: read
 
@@ -34,4 +38,5 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python testforge/scripts/verify_package.py testforge
       - run: python tools/augment-evals/augment_eval.py validate testforge
-      - run: python tools/validate_release_manifests.py
+      - name: Verify current accepted source and release cutoff
+        run: python -B tools/verify_current_release.py

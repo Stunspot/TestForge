@@ -1,0 +1,15 @@
+# Verify the customer outcome
+
+For an interactive or information product, reconstruct the promise from the request, current contract and actual entry surface before accepting the submitted technical scope. A narrow code claim may be legitimate, but it cannot stand in for product readiness. State the omitted customer journey and reduce the verdict boundary when it was not exercised.
+
+Start a cold walkthrough at the actual advertised entry point, in the intended runtime and with representative content. Use an outcome such as "find an accessible introduction to a topic I cannot yet name" rather than "click Explore, then this card." Record the visible cues and destination. An author-supplied deep link or explanation is assistance, not evidence of discovery.
+
+For libraries, exercise known-item retrieval, subject browsing without a query, exploration of unfamiliar material, inspection of a preview, source reading, and return to the same position/filters. Check meaningful subject labels, collection purpose, collection versus course versus saved-list semantics, accurate counts, source provenance, and reasons for related items. Random selection alone does not establish useful serendipity.
+
+For learning tools, ask what the learner will be able to do, what they need beforehand, where to begin, where they are now, what follows and why, how to practice, and what their progress means. Distinguish opened, practiced, self-reported understanding and demonstrated performance. Test saved work across refresh, return, route changes and failure recovery; do not promote a click to mastery.
+
+For shared navigation and themes, follow entry → overview → detail → adjacent task → return → resume. Exercise every supported theme on real controls, reading panels, menus, focus, selected, disabled and error states at representative narrow/wide sizes. Root token values, a screenshot of one page or absence of JavaScript errors is insufficient: inspect rendered text/background combinations and operate the path.
+
+Treat content shape as test data: realistic record counts, long titles, missing metadata, empty subsets, duplicate works, stale links and delayed saves. A ten-record synthetic catalog cannot establish the usability of a five-hundred-record library. Use a faithful bounded sample when the real corpus cannot be accessed and name the scale boundary.
+
+Record each material journey as actor/context; start; uncoached task; expected visible comprehension and persistent result; forbidden loss; observed steps; evidence; unresolved boundary. Practitioner/browser walkthroughs establish observed operation and expert diagnosis. They do not fabricate participant performance or accessibility conformance. A missing navigation edge is a product finding; a missing user study is an evidence limit, not automatically a release blocker.

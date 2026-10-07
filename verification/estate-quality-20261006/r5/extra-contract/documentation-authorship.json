@@ -1,0 +1,57 @@
+{
+  "authored_files": [
+    {
+      "bytes": 3390,
+      "path": "delivery/TestForge v2.0.0 Extra.md",
+      "sha256": "a569352f5fd8cae6f6fdbfef57f46f8003e23cc2e031ead98e07470e7e860762"
+    }
+  ],
+  "authoring": {
+    "authorship_scope": "materially-revised",
+    "capability": "hesperos-documentation",
+    "capability_entrypoint_sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_revision": "sha256:21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f",
+    "capability_snapshot": {
+      "bytes": 7306,
+      "path": "verification/hesperos-capabilities/21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f/SKILL.md",
+      "sha256": "21606903702db1eae375cb8e05dcad821616d399a574488f0f1be738d6dab42f"
+    },
+    "mode": "in-process",
+    "run_id": "testforge-r5-extra-contract-20261007"
+  },
+  "authoring_response": {
+    "bytes": 506,
+    "path": "verification/estate-quality-20261006/r5/extra-contract/authoring-response.md",
+    "sha256": "86ead46cdab21b388ed2427de6514da9e668a7b67203bb744dd6085727b7fddf"
+  },
+  "claim_boundary": "Binds retained evidence for one Hesperos authoring or material-revision run. It does not prove independent review, host activation, publication, accessibility conformance, or customer outcomes.",
+  "created_at": "2026-10-07T03:49:32+00:00",
+  "documentation_fingerprint": "70cc890de918fc3fe78bc66618924697daa5129f4dd4ce22f4f0efdff4217b6d",
+  "documentation_manifest": {
+    "bytes": 162,
+    "path": "verification/estate-quality-20261006/r5/extra-contract/manifest.json",
+    "sha256": "8c513c68fd817a531d97176ef145938563d48900c0a70cc438eab85c1eb52080"
+  },
+  "evidence_packet": {
+    "bytes": 523,
+    "path": "verification/estate-quality-20261006/r5/extra-contract/evidence-packet.json",
+    "sha256": "4a1b21da7b76403242fb5131f19e83a874d10ab38b01369600bfd1eeb87dd04c"
+  },
+  "execution_evidence": [
+    {
+      "bytes": 281,
+      "path": "verification/estate-quality-20261006/r5/extra-contract/execution.json",
+      "sha256": "9f91f59861a385d30a94aa9abe7541e52a2df56bcd5a58c9ad0b45e4b19d3fe7"
+    },
+    {
+      "bytes": 506,
+      "path": "verification/estate-quality-20261006/r5/extra-contract/authoring-response.md",
+      "sha256": "86ead46cdab21b388ed2427de6514da9e668a7b67203bb744dd6085727b7fddf"
+    }
+  ],
+  "format": "cd-hesperos-documentation-authorship/v1",
+  "product": {
+    "slug": "testforge",
+    "version": "2.0.0"
+  }
+}

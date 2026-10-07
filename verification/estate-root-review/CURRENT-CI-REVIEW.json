@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "finding": "TF-CI01",
+  "issue": "CI compared the changing whole working repository with historical full-tree seals; that can never identify the current accepted delivery after maintenance.",
+  "repair": "CI current descriptor binds accepted r5 SHA and checks complete current plugin, runtime mirrors, Claude mirrors, customer guidance, license and portable verifier against that artifact. Original full-tree seals and old validator remain historical.",
+  "current_positive": "137 nativefiles113runtime2archives exact",
+  "negative_controls": [
+    {
+      "case": "changed-current-runtime",
+      "status": "PASS",
+      "rejection": "Accepted runtime differs from canonical source: software-verification"
+    },
+    {
+      "case": "changed-customer-guide",
+      "status": "PASS",
+      "rejection": "Accepted customer document differs: QUICK-START.md"
+    },
+    {
+      "case": "changed-current-mirror",
+      "status": "PASS",
+      "rejection": "Current runtime mirror differs: verification-reviewer"
+    }
+  ],
+  "runtime_or_customer_bytes_changed": false
+}
