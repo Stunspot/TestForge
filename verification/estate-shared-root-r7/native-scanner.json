@@ -1,0 +1,30 @@
+{
+  "target": "E:\\Github\\testforge\\verification\\root-shared-async-r7\\native-extract\\testforge-v2.0.0\\codex\\testforge\\skills\\software-verification",
+  "ok": false,
+  "findings": [
+    {
+      "severity": "error",
+      "code": "private-absolute-path",
+      "path": "E:/Github/testforge/verification/root-shared-async-r7/native-extract/testforge-v2.0.0/codex/testforge/skills/software-verification/examples/parser-edge-cases/expected/test_parser.py",
+      "message": "runtime text contains a private absolute path"
+    },
+    {
+      "severity": "error",
+      "code": "upward-runtime-path",
+      "path": "E:/Github/testforge/verification/root-shared-async-r7/native-extract/testforge-v2.0.0/codex/testforge/skills/software-verification/examples/typescript-api-change/expected/cancelSubscription.integration.test.ts",
+      "message": "unresolved upward path literal: verify runtime containment or document its exact non-runtime test use"
+    },
+    {
+      "severity": "error",
+      "code": "upward-runtime-path",
+      "path": "E:/Github/testforge/verification/root-shared-async-r7/native-extract/testforge-v2.0.0/codex/testforge/skills/software-verification/examples/typescript-api-change/input/tests/cancelSubscription.test.ts",
+      "message": "unresolved upward path literal: verify runtime containment or document its exact non-runtime test use"
+    },
+    {
+      "severity": "error",
+      "code": "missing-resource",
+      "path": "E:/Github/testforge/verification/root-shared-async-r7/native-extract/testforge-v2.0.0/codex/testforge/skills/software-verification/references/specialized/agent-research-workflows.md",
+      "message": "scripts/ar_run_manifest.py"
+    }
+  ]
+}

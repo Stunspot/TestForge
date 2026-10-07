@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "candidate": "E:\\Github\\testforge\\releases\\estate-quality-20261007-r7\\TestForge-v2.0.0.zip",
+  "sha256": "00244338649db1b4ebb8b440c5c79dd2a85d3359047a33623b47231720fdb64a",
+  "native_files": 138,
+  "runtime_files": 114,
+  "root_synthetic_edge_controls": 16,
+  "root_protected_controls": 9,
+  "root_dangerous_variants": 7,
+  "retained_native_semantic_checks": 6,
+  "source_native_claude_parity": "PASS",
+  "r6_to_r7_payload_delta": [
+    "claude/software-verification-v2.0.0.zip",
+    "codex/testforge/skills/software-verification/output-contract.md",
+    "manifest.json"
+  ],
+  "shared_findings": 4,
+  "review": "Existing correct concurrency doctrine is reached from customer-journey guidance; reviewer adds decision-critical state/permission oracles without mandating a UI architecture. Worked example preserves true narrower evidence claims. Root identical invariant functions discriminate all7 broken variants and retain useful protected work.",
+  "scanner": "One genuine resource defect repaired; four exact source-bound example/import/lineage nondefects adjudicated. Raw scanner still reports four; no claim of raw scan clean.",
+  "documentation": "Current customer documents and authorship bytes unchanged; runtime instruction/reference repair only.",
+  "limits": [
+    "Synthetic browser fixture evidence does not establish product behavior or model adherence",
+    "No host invocation, real user study, browser conformance or actual household conclusion",
+    "Prior acceptedr5 broader model/evaluator evidence retains its original bounds"
+  ]
+}

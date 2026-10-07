@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Fictional async custody fixture</title>
+<style>body{font:18px system-ui;max-width:800px;margin:30px auto}textarea{display:block;width:95%;min-height:100px}button{margin:8px;padding:8px}#pending{padding:12px;background:#fff0bd}#confirm{border:2px solid #765;padding:14px}fieldset{border:1px solid #aaa}</style>
+<h1>Fictional record workspace</h1><p>This isolated teaching fixture has intentional fault variants. No external data or storage.</p>
+<div id="pending" role="status" hidden></div><button id="cancel" hidden>Cancel pending operation</button>
+<fieldset id="work"><legend>Current work</legend><h2 id="identity"></h2><label>Unapplied draft<textarea id="draft"></textarea></label>
+<button id="apply">Apply draft to its record</button><button id="save">Save current record</button><button id="openC">Open record C</button>
+<label>Select replacement file<input id="file" type="file" accept=".json"></label><button id="refresh">Refresh catalog</button><pre id="catalog"></pre></fieldset>
+<div id="confirm" hidden><p id="question"></p><button id="accept">Discard this draft</button><button id="reject">Keep this draft</button></div>
+<p id="result" role="status">Ready</p>
+<script>
+'use strict';
+const $=s=>document.querySelector(s), q=new URLSearchParams(location.search),mode=q.get('mode')||'editable',fault=q.get('fault')||'';
+let state={active:'A',draft:'',editor:'A',revision:0,generation:0,records:{A:'Original A',C:'Original C'},catalog:{A:'Original A',C:'Original C'},commits:0,stage:'idle',request:0};
+let serial=0,current=null,gates=new Map(),choice=null,operations=[],events=[];
+const clone=x=>JSON.parse(JSON.stringify(x));
+function trace(event){events.push({event,...clone(state),inert:$('#work').inert});}
+function render(){ $('#identity').textContent='Record '+state.active;$('#draft').value=state.draft;$('#catalog').textContent=JSON.stringify(state.catalog); }
+function lock(on){$('#work').inert=on;}
+function busy(op,stage){state.stage=stage;$('#pending').hidden=false;$('#pending').textContent='Pending '+op.kind+': '+stage;$('#cancel').hidden=false;$('#save').disabled=op.kind==='save';lock(mode==='serialized'||(op.kind==='save'&&fault!=='save_edit'));}
+function finish(op,message){trace('finish '+op.id+':'+message);op.done=true;op.message=message;if(current===op){current=null;state.stage='idle';$('#pending').hidden=true;$('#cancel').hidden=true;$('#save').disabled=false;lock(false);$('#result').textContent=message;}if(fault!=='same_file')$('#file').value='';}
+function gate(name,op){busy(op,name);trace('wait '+op.id+':'+name);return new Promise((resolve,reject)=>gates.set(op.id+":"+name,{resolve,reject,op}));}
+function alive(op){return fault==='cancel_late'||(current===op&&!op.cancelled&&op.generation===state.generation);}
+function ask(){const snapshot={revision:state.revision,active:state.active,generation:state.generation};$('#question').textContent='Discard current draft for '+state.active+' at revision '+state.revision+'?';$('#confirm').hidden=false;state.stage='confirm';return new Promise(resolve=>choice={resolve,snapshot});}
+function choose(answer){if(!choice)return;const old=choice;choice=null;$('#confirm').hidden=true;trace('choice '+answer);old.resolve({answer,snapshot:old.snapshot});}
+$('#accept').onclick=()=>choose(true);$('#reject').onclick=()=>choose(false);
+async function run(kind,file){
+ const op={id:++serial,kind,generation:state.generation,cancelled:false,done:false};current=op;operations.push(op);state.request=op.id;const start={active:state.active,draft:state.draft,revision:state.revision,dirty:!!state.draft,catalog:clone(state.records)};
+ try{
+  if(fault==='start_guard'&&start.dirty){finish(op,'Kept start draft');return;}
+  await gate('read',op);if(!alive(op)){finish(op,'Stale read ignored');return;}
+  let incoming=kind==='replace'?JSON.parse(await file.text()):null;
+  await gate('validate',op);
+  if(!alive(op)&&!(fault==='stale_refresh'&&kind==='refresh')){finish(op,'Stale completion ignored');return;}
+  if(kind==='replace'){
+   if(fault!=='start_guard'&&state.draft){const decision=await ask();if(!alive(op)||!decision.answer||decision.snapshot.revision!==state.revision||decision.snapshot.active!==state.active||decision.snapshot.generation!==state.generation){finish(op,'Current draft retained');return;}}
+   const stale=fault==='wrong_editor';state.active=incoming.id;state.records[incoming.id]=incoming.text;state.catalog=clone(state.records);if(!stale){state.draft='';state.editor=incoming.id;}state.generation++;state.commits++;render();
+  }else if(kind==='save'){
+   state.records[start.active]=start.draft;state.catalog=clone(state.records);state.draft='';state.editor=state.active;state.generation++;state.commits++;render();
+  }else{state.catalog=start.catalog;render();}
+  finish(op,'Completed '+kind);
+ }catch(e){finish(op,'Failed: '+e.message);}
+ finally{op.settled=true;if(fault!=='same_file')$('#file').value='';if(current===op)finish(op,op.message||'Finished');}
+}
+$('#draft').oninput=e=>{state.draft=e.target.value;state.editor=state.active;state.revision++;trace('edit');};
+$('#apply').onclick=()=>{if(state.editor!==state.active&&fault!=='wrong_editor'){$('#result').textContent='Draft belongs to '+state.editor;return;}state.records[state.active]=state.draft;state.catalog=clone(state.records);state.draft='';state.generation++;state.commits++;render();};
+$('#openC').onclick=()=>{state.active='C';state.generation++;if(fault!=='wrong_editor'){state.draft='';state.editor='C';}render();};
+$('#file').onchange=e=>{const file=e.target.files[0];if(file)run('replace',file);};
+$('#save').onclick=()=>run('save');$('#refresh').onclick=()=>run('refresh');
+$('#cancel').onclick=()=>{if(current){const op=current;op.cancelled=true;state.generation++;choose(false);finish(op,'Cancelled');}};
+window.fixture={snapshot:()=>clone({...state,inert:$('#work').inert,pendingVisible:!$('#pending').hidden,input:$('#file').value,result:$('#result').textContent}),release(name,fail=false,id=state.request){const key=id+':'+name;const g=gates.get(key);if(!g)throw Error('No gate '+key);gates.delete(key);trace('release '+key+(fail?' failure':''));if(fault==='early_unlock'&&name==='read'){lock(false);}if(fail)g.reject(Error('Synthetic read failure'));else g.resolve();},gates:()=>[...gates.keys()],operations:()=>clone(operations),trace:()=>clone(events)};
+// Mutation releases interaction while the final validation promise is still pending.
+const originalBusy=busy;busy=(op,stage)=>{originalBusy(op,stage);if(fault==='early_unlock'&&stage==='validate')lock(false);};
+render();
+</script></html>

@@ -1,0 +1,3432 @@
+{
+  "status": "PASS",
+  "checks": 16,
+  "protected": 9,
+  "broken": 7,
+  "engine": "154.0.4258.62",
+  "scope": "The identical invariant function runs on protected and broken fixtures; real pointer/keyboard operations and observable gates. Oracle qualification only, not estate product or model adherence.",
+  "fixture_sha256": "f7c28278d23c85759543c0200f63c9e667dbbd10055abdb5d4dbe37431cdf73a",
+  "results": [
+    {
+      "name": "current-draft permission protected",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "state": {
+        "active": "A",
+        "draft": "NEW A",
+        "editor": "A",
+        "revision": 1,
+        "generation": 0,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Current draft retained"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "NEW A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "NEW A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "choice false",
+          "active": "A",
+          "draft": "NEW A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Current draft retained",
+          "active": "A",
+          "draft": "NEW A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "current-draft permission broken",
+      "variant": {
+        "fault": "start_guard"
+      },
+      "expected_invariant": false,
+      "holds": false,
+      "state": {
+        "active": "B",
+        "draft": "",
+        "editor": "B",
+        "revision": 1,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "NEW A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "NEW A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Completed replace",
+          "active": "B",
+          "draft": "",
+          "editor": "B",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "commits": 1,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "cancel remains invalid after completion protected",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "state": {
+        "active": "A",
+        "draft": "",
+        "editor": "A",
+        "revision": 0,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Cancelled"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Cancelled",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Stale completion ignored",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "cancel remains invalid after completion broken",
+      "variant": {
+        "fault": "cancel_late"
+      },
+      "expected_invariant": false,
+      "holds": false,
+      "state": {
+        "active": "B",
+        "draft": "",
+        "editor": "B",
+        "revision": 0,
+        "generation": 2,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Cancelled"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Cancelled",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Completed replace",
+          "active": "B",
+          "draft": "",
+          "editor": "B",
+          "revision": 0,
+          "generation": 2,
+          "records": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "commits": 1,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "old editor cannot apply A draft to B protected",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "before": {
+        "active": "B",
+        "draft": "",
+        "editor": "B",
+        "revision": 1,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "state": {
+        "active": "B",
+        "draft": "",
+        "editor": "B",
+        "revision": 1,
+        "generation": 2,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": ""
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": ""
+        },
+        "commits": 2,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "events": [
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 0,
+          "inert": false
+        },
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "choice true",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Completed replace",
+          "active": "B",
+          "draft": "",
+          "editor": "B",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "commits": 1,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "old editor cannot apply A draft to B broken",
+      "variant": {
+        "fault": "wrong_editor"
+      },
+      "expected_invariant": false,
+      "holds": false,
+      "before": {
+        "active": "B",
+        "draft": "A old editor",
+        "editor": "A",
+        "revision": 1,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "state": {
+        "active": "B",
+        "draft": "",
+        "editor": "A",
+        "revision": 1,
+        "generation": 2,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "A old editor"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "A old editor"
+        },
+        "commits": 2,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "events": [
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 0,
+          "inert": false
+        },
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "choice true",
+          "active": "A",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Completed replace",
+          "active": "B",
+          "draft": "A old editor",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "commits": 1,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "serialized lifetime reaches final validation protected",
+      "variant": {
+        "mode": "serialized"
+      },
+      "expected_invariant": true,
+      "holds": true,
+      "held": {
+        "active": "A",
+        "draft": "",
+        "editor": "A",
+        "revision": 0,
+        "generation": 0,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "validate",
+        "request": 1,
+        "inert": true,
+        "pendingVisible": true,
+        "input": "C:\\fakepath\\fictional-B.json",
+        "result": "Ready"
+      },
+      "state": {
+        "active": "B",
+        "draft": "",
+        "editor": "B",
+        "revision": 0,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "finish 1:Completed replace",
+          "active": "B",
+          "draft": "",
+          "editor": "B",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "commits": 1,
+          "stage": "validate",
+          "request": 1,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "name": "serialized lifetime reaches final validation broken",
+      "variant": {
+        "mode": "serialized",
+        "fault": "early_unlock"
+      },
+      "expected_invariant": false,
+      "holds": false,
+      "held": {
+        "active": "C",
+        "draft": "",
+        "editor": "C",
+        "revision": 8,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "validate",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": true,
+        "input": "C:\\fakepath\\fictional-B.json",
+        "result": "Ready"
+      },
+      "state": {
+        "active": "C",
+        "draft": "",
+        "editor": "C",
+        "revision": 8,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Stale completion ignored"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "C",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "CO",
+          "editor": "A",
+          "revision": 2,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "CON",
+          "editor": "A",
+          "revision": 3,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "CONF",
+          "editor": "A",
+          "revision": 4,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "CONFL",
+          "editor": "A",
+          "revision": 5,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "CONFLI",
+          "editor": "A",
+          "revision": 6,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "CONFLIC",
+          "editor": "A",
+          "revision": 7,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "CONFLICT",
+          "editor": "A",
+          "revision": 8,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "C",
+          "draft": "",
+          "editor": "C",
+          "revision": 8,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Stale completion ignored",
+          "active": "C",
+          "draft": "",
+          "editor": "C",
+          "revision": 8,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "same-file retry is a new usable operation protected",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "state": {
+        "active": "B",
+        "draft": "",
+        "editor": "B",
+        "revision": 0,
+        "generation": 2,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 2,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Cancelled",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Stale completion ignored",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 2:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 2,
+          "inert": false
+        },
+        {
+          "event": "release 2:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 2,
+          "inert": false
+        },
+        {
+          "event": "wait 2:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 2,
+          "inert": false
+        },
+        {
+          "event": "release 2:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 2,
+          "inert": false
+        },
+        {
+          "event": "finish 2:Completed replace",
+          "active": "B",
+          "draft": "",
+          "editor": "B",
+          "revision": 0,
+          "generation": 2,
+          "records": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "commits": 1,
+          "stage": "validate",
+          "request": 2,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "same-file retry is a new usable operation broken",
+      "variant": {
+        "fault": "same_file"
+      },
+      "expected_invariant": false,
+      "holds": false,
+      "state": {
+        "active": "A",
+        "draft": "",
+        "editor": "A",
+        "revision": 0,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "C:\\fakepath\\fictional-B.json",
+        "result": "Cancelled"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Cancelled",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Stale completion ignored",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "save lifetime protects every draft field protected",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "held": {
+        "active": "A",
+        "draft": "Saved A",
+        "editor": "A",
+        "revision": 1,
+        "generation": 0,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "validate",
+        "request": 1,
+        "inert": true,
+        "pendingVisible": true,
+        "input": "",
+        "result": "Ready"
+      },
+      "state": {
+        "active": "A",
+        "draft": "",
+        "editor": "A",
+        "revision": 1,
+        "generation": 1,
+        "records": {
+          "A": "Saved A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Saved A",
+          "C": "Original C"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed save"
+      },
+      "events": [
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 0,
+          "inert": false
+        },
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": true
+        },
+        {
+          "event": "finish 1:Completed save",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "Saved A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Saved A",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "validate",
+          "request": 1,
+          "inert": true
+        }
+      ]
+    },
+    {
+      "name": "save lifetime protects every draft field broken",
+      "variant": {
+        "fault": "save_edit"
+      },
+      "expected_invariant": false,
+      "holds": false,
+      "held": {
+        "active": "A",
+        "draft": "Saved ALOST CORRECTION",
+        "editor": "A",
+        "revision": 16,
+        "generation": 0,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "validate",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": true,
+        "input": "",
+        "result": "Ready"
+      },
+      "state": {
+        "active": "A",
+        "draft": "",
+        "editor": "A",
+        "revision": 16,
+        "generation": 1,
+        "records": {
+          "A": "Saved A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Saved A",
+          "C": "Original C"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed save"
+      },
+      "events": [
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 0,
+          "inert": false
+        },
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "Saved A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved AL",
+          "editor": "A",
+          "revision": 2,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALO",
+          "editor": "A",
+          "revision": 3,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOS",
+          "editor": "A",
+          "revision": 4,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST",
+          "editor": "A",
+          "revision": 5,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST ",
+          "editor": "A",
+          "revision": 6,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST C",
+          "editor": "A",
+          "revision": 7,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CO",
+          "editor": "A",
+          "revision": 8,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST COR",
+          "editor": "A",
+          "revision": 9,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CORR",
+          "editor": "A",
+          "revision": 10,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CORRE",
+          "editor": "A",
+          "revision": 11,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CORREC",
+          "editor": "A",
+          "revision": 12,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CORRECT",
+          "editor": "A",
+          "revision": 13,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CORRECTI",
+          "editor": "A",
+          "revision": 14,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CORRECTIO",
+          "editor": "A",
+          "revision": 15,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "Saved ALOST CORRECTION",
+          "editor": "A",
+          "revision": 16,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "Saved ALOST CORRECTION",
+          "editor": "A",
+          "revision": 16,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Completed save",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 16,
+          "generation": 1,
+          "records": {
+            "A": "Saved A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Saved A",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "old read cannot contradict newer saved view protected",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "state": {
+        "active": "A",
+        "draft": "",
+        "editor": "A",
+        "revision": 1,
+        "generation": 1,
+        "records": {
+          "A": "A newly saved",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "A newly saved",
+          "C": "Original C"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 2,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed save"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 2:read",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "release 2:read",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "wait 2:validate",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "release 2:validate",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "finish 2:Completed save",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "validate",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "idle",
+          "request": 2,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Stale completion ignored",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "idle",
+          "request": 2,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "old read cannot contradict newer saved view broken",
+      "variant": {
+        "fault": "stale_refresh"
+      },
+      "expected_invariant": false,
+      "holds": false,
+      "state": {
+        "active": "A",
+        "draft": "",
+        "editor": "A",
+        "revision": 1,
+        "generation": 1,
+        "records": {
+          "A": "A newly saved",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 2,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed save"
+      },
+      "events": [
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 0,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 2:read",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "release 2:read",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "wait 2:validate",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "release 2:validate",
+          "active": "A",
+          "draft": "A newly saved",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "finish 2:Completed save",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "validate",
+          "request": 2,
+          "inert": true
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "idle",
+          "request": 2,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Completed refresh",
+          "active": "A",
+          "draft": "",
+          "editor": "A",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "A newly saved",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 1,
+          "stage": "idle",
+          "request": 2,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "current permission permits exactly one replacement",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "state": {
+        "active": "B",
+        "draft": "",
+        "editor": "B",
+        "revision": 1,
+        "generation": 1,
+        "records": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C",
+          "B": "Incoming B"
+        },
+        "commits": 1,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Completed replace"
+      },
+      "events": [
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "A draft",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 0,
+          "inert": false
+        },
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "A draft",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "A draft",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "A draft",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "A draft",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "choice true",
+          "active": "A",
+          "draft": "A draft",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Completed replace",
+          "active": "B",
+          "draft": "",
+          "editor": "B",
+          "revision": 1,
+          "generation": 1,
+          "records": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C",
+            "B": "Incoming B"
+          },
+          "commits": 1,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    },
+    {
+      "name": "new edit during asynchronous permission is preserved",
+      "variant": {},
+      "expected_invariant": true,
+      "holds": true,
+      "state": {
+        "active": "A",
+        "draft": "NEWER A",
+        "editor": "A",
+        "revision": 2,
+        "generation": 0,
+        "records": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "catalog": {
+          "A": "Original A",
+          "C": "Original C"
+        },
+        "commits": 0,
+        "stage": "idle",
+        "request": 1,
+        "inert": false,
+        "pendingVisible": false,
+        "input": "",
+        "result": "Current draft retained"
+      },
+      "events": [
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "First A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "idle",
+          "request": 0,
+          "inert": false
+        },
+        {
+          "event": "wait 1:read",
+          "active": "A",
+          "draft": "First A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:read",
+          "active": "A",
+          "draft": "First A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "read",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "wait 1:validate",
+          "active": "A",
+          "draft": "First A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "release 1:validate",
+          "active": "A",
+          "draft": "First A",
+          "editor": "A",
+          "revision": 1,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "validate",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "edit",
+          "active": "A",
+          "draft": "NEWER A",
+          "editor": "A",
+          "revision": 2,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "choice true",
+          "active": "A",
+          "draft": "NEWER A",
+          "editor": "A",
+          "revision": 2,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        },
+        {
+          "event": "finish 1:Current draft retained",
+          "active": "A",
+          "draft": "NEWER A",
+          "editor": "A",
+          "revision": 2,
+          "generation": 0,
+          "records": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "catalog": {
+            "A": "Original A",
+            "C": "Original C"
+          },
+          "commits": 0,
+          "stage": "confirm",
+          "request": 1,
+          "inert": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "testforge",
+  "version": "2.0.0",
+  "bundle_fingerprint": "sha256:8ae78be02d0761098700d5b0b2e7af3eb05645e41653612d16862afea3c4a7bf",
+  "zip_sha256": "00244338649db1b4ebb8b440c5c79dd2a85d3359047a33623b47231720fdb64a",
+  "release_decision": {
+    "schema": "cd-release-decision/v1",
+    "kind": "edit",
+    "effect": "restored_behavior",
+    "baseline_version": "2.0.0",
+    "baseline_bundle_fingerprint": "sha256:6e07ae5d7419034566c8ead6e354c93cdb07fc512527746093896ebf697115bd",
+    "target_version": "2.0.0",
+    "target_bundle_fingerprint": "sha256:8ae78be02d0761098700d5b0b2e7af3eb05645e41653612d16862afea3c4a7bf",
+    "reason": "Same-promise correction of pending user operation/draft/record verification routing, reviewer oracles and worked example, plus exact contained output schema link. Existing concurrency doctrine and interaction architecture choice retained.16 independent actual Edge fixture controls discriminate7 unsafe variants while retaining9 protected cases;6 native semantic checks and138-file/114-runtime parity pass. Customer docs, artwork, sidecars, executable semantics and historical evidence remain unchanged; no model qualification upgrade.",
+    "evidence": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json",
+    "reviewed_at": "2026-10-07T10:08:33.1800262+00:00"
+  },
+  "retained_baseline": "E:\\Indranet\\Augment-Custody\\Active Shelf Control\\superseded\\estate-testforge-20261007T100833188Z",
+  "shelf_hashes": "verified",
+  "kanban": "pending_sync",
+  "applicable_installations": "separate_readback",
+  "public_upload": "not_implied"
+}

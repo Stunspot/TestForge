@@ -1,0 +1,105 @@
+{
+  "candidate": {
+    "candidate_zip": "E:\\Github\\testforge\\releases\\estate-quality-20261007-r7\\TestForge-v2.0.0.zip",
+    "sha256": "00244338649db1b4ebb8b440c5c79dd2a85d3359047a33623b47231720fdb64a"
+  },
+  "module_path": "E:\\Github\\testforge\\verification\\root-shared-async-r7\\native-extract\\testforge-v2.0.0\\codex\\testforge\\skills\\software-verification\\scripts",
+  "synthetic_fixture_boundary": "Checks shipped deterministic semantics; these fixtures are not actual customer usage or independent review.",
+  "checks": [
+    {
+      "id": "candidate-bound-positive-control",
+      "passed": true,
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "counts": {
+          "risks": 1,
+          "scenarios": 1,
+          "tests": 1,
+          "executions": 1
+        }
+      }
+    },
+    {
+      "id": "required-evidence-cannot-be-waived",
+      "passed": true,
+      "observation": {
+        "valid": false,
+        "errors": [
+          "T-002: ready status requires every decision-critical check to pass"
+        ],
+        "warnings": [],
+        "counts": {
+          "risks": 1,
+          "scenarios": 1,
+          "tests": 2,
+          "executions": 1
+        }
+      }
+    },
+    {
+      "id": "real-observation-without-fake-command",
+      "passed": true,
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "counts": {
+          "risks": 1,
+          "scenarios": 1,
+          "tests": 1,
+          "executions": 1
+        }
+      }
+    },
+    {
+      "id": "report-retains-source-and-limits",
+      "passed": true,
+      "observation": {
+        "report": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\packaged-smoke\\report.md"
+      }
+    },
+    {
+      "id": "skipped-case-cannot-be-normalized-to-pass",
+      "passed": true,
+      "observation": {
+        "format_version": "1.0",
+        "source": {
+          "format": "generic_json",
+          "path": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\packaged-smoke\\contradictory-results.json"
+        },
+        "summary": {
+          "total": 1,
+          "passed": 0,
+          "failed": 0,
+          "skipped": 1,
+          "errors": 0,
+          "status": "unparsed"
+        },
+        "cases": [
+          {
+            "name": "required",
+            "status": "skipped"
+          }
+        ],
+        "parse_warnings": [
+          "generic JSON mapping; verify framework semantics",
+          "generic summary counts differ from case records"
+        ]
+      }
+    },
+    {
+      "id": "malformed-status-controlled",
+      "passed": true,
+      "observation": {
+        "valid": false,
+        "errors": [
+          "executions.status must be a string"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "ok": true
+}

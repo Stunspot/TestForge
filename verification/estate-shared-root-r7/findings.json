@@ -1,0 +1,59 @@
+{
+  "scope": "SHARED-ASYNC-001 bounded responsibility revisit",
+  "findings": [
+    {
+      "id": "ASYNC-01",
+      "severity": "high",
+      "issue": "Pending user operation not connected to current draft and identity in journey scope",
+      "status": "repaired and independently accepted root r7",
+      "action": "Connect journey to existing race practice with commit-time state and visible operation contract",
+      "evidence": [
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\browser-results.json",
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\source-package-parity.json"
+      ],
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json"
+    },
+    {
+      "id": "ASYNC-02",
+      "severity": "high",
+      "issue": "Reviewer lacks situated stale-completion and wrong-record discriminating oracle",
+      "status": "repaired and independently accepted root r7",
+      "action": "Challenge cancelled/invalidated completion and matched useful controls",
+      "evidence": [
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\browser-results.json",
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\source-package-parity.json"
+      ],
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json"
+    },
+    {
+      "id": "ASYNC-03",
+      "severity": "medium",
+      "issue": "No worked example demonstrating the consequential user interleaving",
+      "status": "repaired and independently accepted root r7",
+      "action": "Add situated example and actual deterministic Edge oracle qualification",
+      "evidence": [
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\browser-results.json",
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\source-package-parity.json"
+      ],
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json"
+    },
+    {
+      "id": "ASYNC-04",
+      "severity": "medium",
+      "title": "The canonical output contract routes outside the skill to a missing schema",
+      "evidence": {
+        "source": "E:\\Github\\testforge\\plugins\\testforge\\skills\\software-verification\\output-contract.md",
+        "source_sha256": "f9ef994ddec22379346d7826e58292e0149283275edc7e9c013b5ece6e02f364",
+        "advertised": "E:\\Github\\testforge\\plugins\\testforge\\assets\\schemas\\verification-manifest.schema.json",
+        "advertised_exists": false,
+        "actual": "E:\\Github\\testforge\\plugins\\testforge\\skills\\software-verification\\assets\\schemas\\verification-manifest.schema.json",
+        "actual_exists": true
+      },
+      "impact": "A reader following the advertised machine contract cannot reach its owned schema; the exact packaged resource boundary contradicts the instruction.",
+      "action": "Point the output contract to its actual contained schema; preserve the schema and current output semantics.",
+      "acceptance": "Resolve the link inside both canonical mirrors and fresh extracted package, parse that schema, and retain native validation behavior.",
+      "status": "repaired and independently accepted root r7",
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json"
+    }
+  ]
+}

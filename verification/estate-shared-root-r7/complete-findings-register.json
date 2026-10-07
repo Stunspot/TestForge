@@ -1,0 +1,408 @@
+{
+  "schema": "estate-product-findings/v1",
+  "product": "testforge",
+  "phase": "independent_review_pass",
+  "findings": [
+    {
+      "id": "TF-01",
+      "severity": "critical",
+      "title": "JUnit can convert observed failure into a pass",
+      "evidence_file": "plugins/testforge/skills/software-verification/scripts/normalize_test_results.py",
+      "evidence": "normalize_junit counts suite failure attributes rather than testcase outcomes; omitted attributes default to zero. Empty and unrelated XML can also become passed.",
+      "impact": "A release verifier can erase its own failure evidence.",
+      "action": "Derive leaf testcase counts, avoid nested-suite double counting, preserve namespace support, label empty/contradictory input honestly, and test these planted failures.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Canonical source and mirror review",
+        "Executed regression evidence at E:\\Github\\testforge\\verification\\estate-quality-20261006\\test-results.json"
+      ]
+    },
+    {
+      "id": "TF-02",
+      "severity": "critical",
+      "title": "READY is structurally accepted without evidence",
+      "evidence_file": "plugins/testforge/skills/software-verification/scripts/validate_manifest.py",
+      "evidence": "The existing test fixture base_manifest has READY/REVIEW_PASS but empty risks, scenarios, tests and executions; the validator accepts it.",
+      "impact": "A green report can exist without a single tested risk or observed result.",
+      "action": "Require a nonempty decision basis and complete risk/scenario/test/execution evidence for READY. Keep incomplete manifests valid only with a truthful non-ready status.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Canonical source and mirror review",
+        "Executed regression evidence at E:\\Github\\testforge\\verification\\estate-quality-20261006\\test-results.json"
+      ]
+    },
+    {
+      "id": "TF-03",
+      "severity": "high",
+      "title": "Contradictory execution and defect states survive validation",
+      "evidence_file": "plugins/testforge/skills/software-verification/scripts/validate_manifest.py",
+      "evidence": "Only integer exit-code presence is checked. A passed execution with exit 1 and an open PRODUCT_DEFECT finding can coexist with READY.",
+      "impact": "Captured failure and declared success disagree without stopping report generation.",
+      "action": "Check execution status/exit consistency, command/raw-evidence presence, test-execution consistency, unresolved material findings, and READY residual-risk semantics.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Canonical source and mirror review",
+        "Executed regression evidence at E:\\Github\\testforge\\verification\\estate-quality-20261006\\test-results.json"
+      ]
+    },
+    {
+      "id": "TF-04",
+      "severity": "high",
+      "title": "Traceability is too weak and fragile",
+      "evidence_file": "plugins/testforge/skills/software-verification/scripts/validate_traceability.py",
+      "evidence": "Dictionaries silently collapse duplicate IDs; nonobject inputs crash; completed tests need only a matching execution ID, not a completed compatible execution or evidence chain.",
+      "impact": "Broken links and status laundering can be represented as coverage.",
+      "action": "Validate shapes and unique identities before traversal; reject dangling links and incomplete/contradictory evidence; run traceability inside report validation.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Canonical source and mirror review",
+        "Executed regression evidence at E:\\Github\\testforge\\verification\\estate-quality-20261006\\test-results.json"
+      ]
+    },
+    {
+      "id": "TF-05",
+      "severity": "high",
+      "title": "User success can disappear behind a bounded technical claim",
+      "evidence_file": "plugins/testforge/skills/software-verification/SKILL.md",
+      "evidence": "Risk doctrine mentions browser and domain invariants but has no operative information-product task probe. A builder can submit source/import/render correctness while browse, first lesson, progress meaning and return navigation remain invisible.",
+      "impact": "Lucerna can have green technical checks while the learner cannot recognize or follow the product.",
+      "action": "Require reconstruction of the customer promise and realistic cold-entry journeys before accepting scope; add information-product and educational oracles to both operator and reviewer.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Connected skill/reference/customer-guide inspection",
+        "Scoped Hesperos authoring and Markdown lint where customer docs changed",
+        "Independent behavioral interpretation review requested; no participant study or universal model efficacy asserted"
+      ]
+    },
+    {
+      "id": "TF-06",
+      "severity": "medium",
+      "title": "Malformed result inputs can crash instead of preserving uncertainty",
+      "evidence_file": "plugins/testforge/skills/software-verification/scripts/normalize_test_results.py",
+      "evidence": "normalize_json assumes an object and valid aggregate counts; command status is accepted without checking the exit code.",
+      "impact": "Operators lose a useful evidence record or get false confidence from contradictory input.",
+      "action": "Validate input shape/counts, preserve parse warnings, reject contradictory command records, and emit unparsed with a nonzero exit on unsupported inputs.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Canonical source and mirror review",
+        "Executed regression evidence at E:\\Github\\testforge\\verification\\estate-quality-20261006\\test-results.json"
+      ]
+    },
+    {
+      "id": "TF-07",
+      "severity": "high",
+      "title": "Release writers lack final member-path preflight",
+      "evidence_file": "tools/build_public_release.py",
+      "evidence": "zip_tree writes directly to the destination and does not reject extraction-length, normalized-name or symlink hazards.",
+      "impact": "An archive can pass CRC yet fail in a customer extractor or overwrite the prior good output before discovering failure.",
+      "action": "Preflight the full member tree, including nested ZIPs and extraction allowance, then atomically replace only a successfully built candidate.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Negative portable-path regressions",
+        "Built exact candidate and Windows Expand-Archive succeeded"
+      ]
+    },
+    {
+      "id": "TF-08",
+      "severity": "medium",
+      "title": "First-use guidance under-specifies a useful submission",
+      "evidence_file": "release-docs/QUICK-START.md",
+      "evidence": "The sample asks for a bounded candidate but does not require customer promises, real content or start/return conditions. It also lacks concrete recovery for malformed or zero-test evidence.",
+      "impact": "A novice can unknowingly scope away the experience they needed verified.",
+      "action": "Rewrite first-value prompts around the actual customer outcome and document evidence errors, preserved non-ready states, and cold-entry examples.",
+      "status": "repaired_independently_reviewed",
+      "verification": [
+        "Connected skill/reference/customer-guide inspection",
+        "Scoped Hesperos authoring and Markdown lint where customer docs changed",
+        "Independent behavioral interpretation review requested; no participant study or universal model efficacy asserted"
+      ]
+    },
+    {
+      "id": "TF-09",
+      "severity": "high",
+      "title": "All-unexecuted rows still accepted as READY",
+      "evidence": "Independent frozen-candidate review reproduced a low planned risk, unexecuted test and not_run execution passing READY.",
+      "impact": "False confidence or unusable recovery at verification boundary.",
+      "action": "Require a passing test/execution chain; unfinished or accepted risk qualifies residual status explicitly.",
+      "status": "repaired_independently_reviewed"
+    },
+    {
+      "id": "TF-10",
+      "severity": "high",
+      "title": "Jest aggregates erased an observed failed assertion",
+      "evidence": "Independent review supplied success=true and passing aggregates beside a failed assertion; normalized passed.",
+      "impact": "False confidence or unusable recovery at verification boundary.",
+      "action": "Observed failure dominates aggregates; contradictory or absent case evidence cannot establish pass.",
+      "status": "repaired_independently_reviewed"
+    },
+    {
+      "id": "TF-11",
+      "severity": "high",
+      "title": "Malformed nested trace links crashed instead of rejecting",
+      "evidence": "scenario_ids=[{}] raised TypeError in trace set construction.",
+      "impact": "False confidence or unusable recovery at verification boundary.",
+      "action": "Validate every link list and avoid set construction on unvalidated values; include malformed risk verification links.",
+      "status": "repaired_independently_reviewed"
+    },
+    {
+      "id": "TF-D01",
+      "severity": "high",
+      "title": "A passed unrelated check can hide a required unexecuted check",
+      "evidence": "required_check_hidden_as_residual and required_check_not_applicable_without_reason both validate in r2.",
+      "impact": "Readiness can survive an unexercised restore, authorization or actual customer journey because a nonempty residual list is treated as a waiver.",
+      "action": "Decision-critical tests must have passing applicable evidence; non-applicability requires rationale and cannot silently exclude a required check. Every unfinished noncritical test needs a specific residual reference, owner and revisit condition.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Required checks cannot be residualized or silently marked not applicable. Explicit noncritical omissions require linked residual, owner and revisit condition.",
+      "verification": "test_required_check_cannot_hide_in_residual; test_noncritical_omission_is_bounded_not_blanket_waiver; test_nonapplicable_requires_real_scope_and_cannot_replace_required_check",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D02",
+      "severity": "high",
+      "title": "Review conditions can be silently promoted to READY",
+      "evidence": "unresolved_review_condition validates; reviewer status alone is accepted and its findings are not disposed.",
+      "impact": "Independent review can identify a blocking claim failure while the machine report still says ready.",
+      "action": "Resolve review findings explicitly or require a qualified/non-ready status. Bind review and executions to the target revision when recorded; require identified review basis for readiness.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Readiness needs identified candidate-bound review; findings require disposition and open blocking conditions reject READY.",
+      "verification": "test_ready_needs_identified_review_not_pass_word; test_reviewer_findings_need_disposition; test_blocking_review_condition_cannot_be_residualized",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D03",
+      "severity": "high",
+      "title": "Raw evidence locators and revision conflicts are not checked",
+      "evidence": "nonexistent_raw_evidence and stale_execution_and_review validate.",
+      "impact": "A stale log or invented path can support a current verdict; the report is structurally self-consistent but evidentially empty.",
+      "action": "Reject explicit revision mismatch; inspect local raw references inside the declared evidence root, distinguish external/supplied references requiring review, and do not claim authenticity from file existence.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Explicit revision conflicts reject; local raw evidence must exist beneath evidence root. External/supplied evidence keeps reviewer warning. File existence is not authenticity.",
+      "verification": "test_stale_execution_or_review_cannot_support_current_candidate; test_actual_local_evidence_and_missing_file_control",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D04",
+      "severity": "high",
+      "title": "The final report drops assumptions, unknowns and reviewer caveats",
+      "evidence": "report_omits_qualifiers output omits the supplied disposable-data assumption, restart unknown and review limitation.",
+      "impact": "The handoff is more confident than its manifest and cannot be assessed without recovering the hidden source record.",
+      "action": "Render claim custody, limitations, reviewer findings/conditions, incomplete observations and specific residual treatment, with safe Markdown escaping.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Report retains claim custody, scope, scenarios/oracles, reviewer conditions, execution history, residual treatment and authority boundary; safe text rendering.",
+      "verification": "test_final_report_preserves_all_decision_changing_qualifiers; packaged report-retains-source-and-limits",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D05",
+      "severity": "high",
+      "title": "A real observational check must impersonate a shell command",
+      "evidence": "genuine_observation_rejected demands command tokens and integer exit code; reviewer already promises manual charters/exploratory evidence.",
+      "impact": "Browser, document and human-supplied observations are either discarded or coerced into fake command execution.",
+      "action": "Represent observational evidence explicitly with procedure, actual observations, recorder/source/environment and a raw locator. Require command/exit only for commands; never promote supplied observation to own execution.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Observation records carry actual procedure/observed/source/recorder/environment/revision/raw locator without fake shell command or exit code.",
+      "verification": "test_supplied_observation_does_not_fabricate_command; test_proposed_observation_cannot_count_as_pass; packaged real-observation-without-fake-command",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D06",
+      "severity": "high",
+      "title": "Authority and readiness are contradictory across source and tool",
+      "evidence": "unresolved_release_authority validates despite release-assessment requiring authority for its stated release context.",
+      "impact": "Ready may be read as approval to publish even when permission is explicitly missing; conversely a technical verdict can become unnecessarily blocked by a separate future release action.",
+      "action": "Clarify that technical readiness is bounded and never grants release authority. If the claim itself includes authorized release, required authority blocks that claim; show outstanding actions prominently and preserve prior authorization.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Technical readiness never grants authority. Explicit claim of authorized release conflicts with outstanding authority; report shows needed action.",
+      "verification": "test_technical_pass_does_not_grant_outstanding_release_authority",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D07",
+      "severity": "high",
+      "title": "Generic normalization still lets summary totals erase case semantics",
+      "evidence": "generic_summary_contradicts_case reports passed while its only case is skipped.",
+      "impact": "A framework adapter can bypass the JUnit/Jest repairs through generic format and fabricate exercised coverage.",
+      "action": "Cross-check provided generic cases against totals/status; preserve observed failure and return unparsed for absent, unknown or contradictory case evidence rather than pass.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Generic JSON aggregate and case semantics reconcile conservatively. Skipped/unknown/missing cases cannot become passing coverage; observed failure survives.",
+      "verification": "test_generic_summary_cannot_erase_skipped_unknown_or_failed_cases; test_empty_generic_aggregate_does_not_establish_cases; packaged skipped-case-cannot-be-normalized-to-pass",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D08",
+      "severity": "medium",
+      "title": "Malformed nested metadata still crashes the validator",
+      "evidence": "malformed_nested_status raises TypeError for a dictionary execution status.",
+      "impact": "Imported or damaged records prevent an actionable report and encourage manual bypass.",
+      "action": "Validate types before set membership and joins, including review/decision status, finding severity, test execution ID and nested evidence lists. Return controlled errors.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Nested enum/type/ID values fail through controlled invalid results before sets and trace joins.",
+      "verification": "test_malformed_nested_records_controlled; packaged malformed-status-controlled",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D09",
+      "severity": "high",
+      "title": "Domain fit stops at software mechanics and a library special case",
+      "evidence": "Operator core and reviewer rubric say risk/invariant but lack an explicit route for probabilistic model outputs, generated artifacts and decision-support claims; local eval harness is separately documented.",
+      "impact": "A style-compliant AI response can be certified from one attractive example; a document can pass opening while being unusable, or a data report can pass schema while changing units.",
+      "action": "Add a compact claim-to-domain oracle selection reference: task-success and boundary failures for skills, actual content correctness and usable format for artifacts, numerical/provenance invariants for data, and qualified distributions/contrasts for stochastic output. Let purpose choose checks, not a universal checklist.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Purpose-selected domain oracles now cover skills/AI, data, artifacts, educational interfaces and authority workflows in operator/reviewer/fallback guidance. Host-specific judgment is not guaranteed.",
+      "verification": "source review of domain-oracles.md; behavior-qualification.json retains unresolved model/configuration failures",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "remaining_boundary": "Local tested model configurations not qualified; see behavior-qualification.md. Guidance changes are not universal behavior proof.",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D10",
+      "severity": "medium",
+      "title": "The doctrine can reward finding flaws more than discriminating evidence",
+      "evidence": "The chapel framing strongly celebrates rejection; oracle doctrine asks dangerous mutations but does not explicitly pair positive controls or examine all-refuse behavior.",
+      "impact": "An overcautious skill or permissive test can look safe while failing legitimate work; model criticism alone can be mistaken for measured capability.",
+      "action": "Keep the challenge role, add matched legitimate controls and contrastive harmful/valid cases. Distinguish an intentionally stopped product-defect cycle from comprehensive coverage; retain omitted surfaces in the bounded verdict.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Matched valid controls, full denominator, candidate-vs-mutant custody, proportional scope and one consistent status are explicit. All-refuse safety cannot substitute for useful authorized task success.",
+      "verification": "source review of oracle-design.md, release-assessment.md and reviewer rubric; behavior-qualification.json",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "remaining_boundary": "Local tested model configurations not qualified; see behavior-qualification.md. Guidance changes are not universal behavior proof.",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D11",
+      "severity": "high",
+      "title": "A resolved support failure remains an unconditional readiness blocker",
+      "evidence": "r2 rejects any failed execution, despite the explicit one-correction TEST_DEFECT/TOOLING_FAILURE/environment allowance and required retained raw history.",
+      "impact": "A legitimate bounded recovery must either erase failed history or be falsely blocked; the validator rewards omission.",
+      "action": "Allow only a specific superseded support attempt with a resolved classified finding and a passing replacement execution for the same candidate. Product defects cannot be waived by this route; retain every attempt in the report.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Exactly one classified resolved support failure may be retained and superseded by current-candidate passing evidence; product defects and repeated repairs remain blocked.",
+      "verification": "test_one_resolved_support_correction_preserves_failed_history; test_product_defect_is_not_support_recovery; test_two_support_corrections_exceed_cycle",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D12",
+      "severity": "high",
+      "title": "Builders accept linked source roots and file-directory collisions",
+      "evidence": {
+        "file_directory_collision": "accepted",
+        "junction_source": "archived linked outside target"
+      },
+      "impact": "A source junction packages bytes outside its lexical owner, while assets plus assets/icon.png creates an archive that cannot extract faithfully.",
+      "action": "Reject all symlink/junction/reparse points at the source root, ancestors and selected descendants before traversal. Validate the normalized complete file/directory namespace including nested ZIPs and preserve prior outputs on rejection.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Source root/ancestors/descendants reject reparse links; complete portable namespace includes implicit directories and nested archives. Atomic archive replacement and new final output directory preserve accepted outputs.",
+      "verification": "PortableCustodyTests: collision both orders, valid explicit directories, nested collision, final output preservation, actual Windows junction rejection",
+      "evidence_register": "E:\\Github\\testforge\\verification\\estate-quality-20261006\\depth-review\\test-results.json",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-D13",
+      "severity": "high",
+      "title": "Support recovery accepts unrelated passing check",
+      "evidence": "Root exact-r3 reviewer reproduced failed restore superseded by unrelated health; root-r3-independent/unrelated-recovery-state.json",
+      "impact": "Required failed behavior could be masked by a harmless different success.",
+      "action": "Bind explicit check IDs, replacement coverage and current passing test linkage; do not require identical command tokens or invent legacy scope.",
+      "status": "source_repaired_pending_independent_review",
+      "repair": "Optional execution.test_ids fields validate nonempty unique known IDs; both recovery attempts must have explicit scope, replacement covers failed set and every failed check maps to passing replacement.",
+      "verification": "Six added regression methods; exact root reproducer rejects in shipped r4; same checks with corrected interpreter passes.",
+      "origin_register": "depth-review/findings.json"
+    },
+    {
+      "id": "TF-LF01",
+      "status": "resolved_pending_independent_review",
+      "repair": "55 current CRLF source/doc/test/tool inputs normalized; original bytes preserved. Final runtime and prompt semantics unchanged.",
+      "evidence": "source-package-equivalence.json:52 final pure LF-only source changes,18 Python AST equivalences,33 native text changes all CRLF-to-LF;430-file real Git round trip.",
+      "origin_register": "lf-custody-r5/findings.json"
+    },
+    {
+      "id": "TF-LF02",
+      "status": "resolved_pending_independent_review",
+      "repair": "Both maintained archive helpers reject wrong endings before replacing an output; main public and mirror builds preflight all relevant current source before output mutation.",
+      "evidence": "5 matched preflight tests pass inside repository79; prior archive preservation and no new output directory controls.",
+      "origin_register": "lf-custody-r5/findings.json"
+    },
+    {
+      "id": "TF-LF03",
+      "status": "resolved_pending_independent_review",
+      "repair": "4 current customer documents retain exact original Hesperos authorship with byte-bound LF continuations; previous receipts unchanged. Extra has separate correction receipt.",
+      "evidence": "documentation-custody.json and preserved originals; current Extra one-doc authorship validates.",
+      "origin_register": "lf-custody-r5/findings.json"
+    },
+    {
+      "id": "TF-LF04",
+      "status": "resolved_pending_independent_review",
+      "repair": "Extra exact install paragraph restored, newest entries versioned, recovery note moved into changelog; original facts preserved.",
+      "evidence": "Shared Extra preflight PASS; one-document Hesperos receipt PASS. Native ZIP does not embed Extra.",
+      "origin_register": "lf-custody-r5/findings.json"
+    },
+    {
+      "id": "ASYNC-01",
+      "severity": "high",
+      "issue": "Pending user operation not connected to current draft and identity in journey scope",
+      "status": "repaired and independently accepted root r7",
+      "action": "Connect journey to existing race practice with commit-time state and visible operation contract",
+      "evidence": [
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\browser-results.json",
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\source-package-parity.json"
+      ],
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json",
+      "origin_register": "shared-async-revisit/findings.json"
+    },
+    {
+      "id": "ASYNC-02",
+      "severity": "high",
+      "issue": "Reviewer lacks situated stale-completion and wrong-record discriminating oracle",
+      "status": "repaired and independently accepted root r7",
+      "action": "Challenge cancelled/invalidated completion and matched useful controls",
+      "evidence": [
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\browser-results.json",
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\source-package-parity.json"
+      ],
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json",
+      "origin_register": "shared-async-revisit/findings.json"
+    },
+    {
+      "id": "ASYNC-03",
+      "severity": "medium",
+      "issue": "No worked example demonstrating the consequential user interleaving",
+      "status": "repaired and independently accepted root r7",
+      "action": "Add situated example and actual deterministic Edge oracle qualification",
+      "evidence": [
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\browser-results.json",
+        "E:\\Github\\testforge\\verification\\shared-async-revisit\\source-package-parity.json"
+      ],
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json",
+      "origin_register": "shared-async-revisit/findings.json"
+    },
+    {
+      "id": "ASYNC-04",
+      "severity": "medium",
+      "title": "The canonical output contract routes outside the skill to a missing schema",
+      "evidence": {
+        "source": "E:\\Github\\testforge\\plugins\\testforge\\skills\\software-verification\\output-contract.md",
+        "source_sha256": "f9ef994ddec22379346d7826e58292e0149283275edc7e9c013b5ece6e02f364",
+        "advertised": "E:\\Github\\testforge\\plugins\\testforge\\assets\\schemas\\verification-manifest.schema.json",
+        "advertised_exists": false,
+        "actual": "E:\\Github\\testforge\\plugins\\testforge\\skills\\software-verification\\assets\\schemas\\verification-manifest.schema.json",
+        "actual_exists": true
+      },
+      "impact": "A reader following the advertised machine contract cannot reach its owned schema; the exact packaged resource boundary contradicts the instruction.",
+      "action": "Point the output contract to its actual contained schema; preserve the schema and current output semantics.",
+      "acceptance": "Resolve the link inside both canonical mirrors and fresh extracted package, parse that schema, and retain native validation behavior.",
+      "status": "repaired and independently accepted root r7",
+      "root_acceptance": "E:\\Indranet\\Nova\\projects\\project-records\\projects\\augment-estate-quality-repair\\records\\product-audits\\testforge\\shared-async-revisit\\root-review-r7\\root-acceptance.json",
+      "origin_register": "shared-async-revisit/findings.json"
+    }
+  ],
+  "register_reconciliation": "Prior top-level11 plus13 depth plus4 LF/source-custody plus4 shared/root findings; prior24 delivery total omitted the4 LF findings. Original registers and acceptance evidence retained."
+}

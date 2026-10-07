@@ -1,0 +1,47 @@
+{
+  "fixed_actual_defects": [
+    {
+      "id": "ASYNC-04",
+      "severity": "medium",
+      "title": "The canonical output contract routes outside the skill to a missing schema",
+      "evidence": {
+        "source": "E:\\Github\\testforge\\plugins\\testforge\\skills\\software-verification\\output-contract.md",
+        "source_sha256": "f9ef994ddec22379346d7826e58292e0149283275edc7e9c013b5ece6e02f364",
+        "advertised": "E:\\Github\\testforge\\plugins\\testforge\\assets\\schemas\\verification-manifest.schema.json",
+        "advertised_exists": false,
+        "actual": "E:\\Github\\testforge\\plugins\\testforge\\skills\\software-verification\\assets\\schemas\\verification-manifest.schema.json",
+        "actual_exists": true
+      },
+      "impact": "A reader following the advertised machine contract cannot reach its owned schema; the exact packaged resource boundary contradicts the instruction.",
+      "action": "Point the output contract to its actual contained schema; preserve the schema and current output semantics.",
+      "acceptance": "Resolve the link inside both canonical mirrors and fresh extracted package, parse that schema, and retain native validation behavior."
+    }
+  ],
+  "bounded_nondefects": [
+    {
+      "path": "examples/parser-edge-cases/expected/test_parser.py",
+      "sha256": "9208da5701987e239da66fa915d1251752e14e1dc8b91efd01f996a36684b732",
+      "disposition": "exact reviewed nondefect",
+      "reason": "C:\\tmp is deliberate fictional string input for escaping behavior; neither read nor execution depends on that private path."
+    },
+    {
+      "path": "examples/typescript-api-change/expected/cancelSubscription.integration.test.ts",
+      "sha256": "da54677fc911097532f6c2aa884628fb8b5a020310a7489c574b30a0531305b0",
+      "disposition": "exact reviewed nondefect",
+      "reason": "The ../input/src module resolves within this bundled example, not outside its runtime closure."
+    },
+    {
+      "path": "examples/typescript-api-change/input/tests/cancelSubscription.test.ts",
+      "sha256": "50a846aa9cb9ba93f4b3fabec21b84414c53eb609c4258ff5fa91515baa29e5e",
+      "disposition": "exact reviewed nondefect",
+      "reason": "The ../src module resolves within the bundled input project."
+    },
+    {
+      "path": "references/specialized/agent-research-workflows.md",
+      "sha256": "fea84b039299d93f2f59104455f5ee3f4b3cc6c14cd84e62000955ba458ca6cd",
+      "disposition": "exact reviewed nondefect",
+      "reason": "scripts/ar_run_manifest.py is explicitly named as upstream lineage, not an invoked local resource; no upstream runtime is copied."
+    }
+  ],
+  "boundary": "No claim that a finding is harmless merely because r5 had it; actual dependency context inspected."
+}

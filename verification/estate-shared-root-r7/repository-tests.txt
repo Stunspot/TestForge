@@ -1,0 +1,98 @@
+test_action_revision_requires_a_full_commit_sha (test_bootstrap_repository.BootstrapRepositoryTests.test_action_revision_requires_a_full_commit_sha) ... ok
+test_apply_bootstraps_fresh_repository_and_is_idempotent (test_bootstrap_repository.BootstrapRepositoryTests.test_apply_bootstraps_fresh_repository_and_is_idempotent) ... ok
+test_check_mode_reports_without_writing (test_bootstrap_repository.BootstrapRepositoryTests.test_check_mode_reports_without_writing) ... ok
+test_existing_contract_is_never_overwritten (test_bootstrap_repository.BootstrapRepositoryTests.test_existing_contract_is_never_overwritten) ... ok
+test_root_byte_custody_receives_only_the_gate (test_bootstrap_repository.BootstrapRepositoryTests.test_root_byte_custody_receives_only_the_gate) ... ok
+test_actual_local_evidence_and_missing_file_control (test_depth_quality.DeeperEvidenceTests.test_actual_local_evidence_and_missing_file_control) ... ok
+test_blocking_review_condition_cannot_be_residualized (test_depth_quality.DeeperEvidenceTests.test_blocking_review_condition_cannot_be_residualized) ... ok
+test_candidate_bound_positive_control (test_depth_quality.DeeperEvidenceTests.test_candidate_bound_positive_control) ... ok
+test_empty_generic_aggregate_does_not_establish_cases (test_depth_quality.DeeperEvidenceTests.test_empty_generic_aggregate_does_not_establish_cases) ... ok
+test_final_report_preserves_all_decision_changing_qualifiers (test_depth_quality.DeeperEvidenceTests.test_final_report_preserves_all_decision_changing_qualifiers) ... ok
+test_generic_summary_cannot_erase_skipped_unknown_or_failed_cases (test_depth_quality.DeeperEvidenceTests.test_generic_summary_cannot_erase_skipped_unknown_or_failed_cases) ... ok
+test_malformed_nested_records_controlled (test_depth_quality.DeeperEvidenceTests.test_malformed_nested_records_controlled) ... ok
+test_nonapplicable_requires_real_scope_and_cannot_replace_required_check (test_depth_quality.DeeperEvidenceTests.test_nonapplicable_requires_real_scope_and_cannot_replace_required_check) ... ok
+test_noncritical_omission_is_bounded_not_blanket_waiver (test_depth_quality.DeeperEvidenceTests.test_noncritical_omission_is_bounded_not_blanket_waiver) ... ok
+test_one_resolved_support_correction_preserves_failed_history (test_depth_quality.DeeperEvidenceTests.test_one_resolved_support_correction_preserves_failed_history) ... ok
+test_product_defect_is_not_support_recovery (test_depth_quality.DeeperEvidenceTests.test_product_defect_is_not_support_recovery) ... ok
+test_proposed_observation_cannot_count_as_pass (test_depth_quality.DeeperEvidenceTests.test_proposed_observation_cannot_count_as_pass) ... ok
+test_ready_needs_identified_review_not_pass_word (test_depth_quality.DeeperEvidenceTests.test_ready_needs_identified_review_not_pass_word) ... ok
+test_recovery_must_cover_every_failed_check (test_depth_quality.DeeperEvidenceTests.test_recovery_must_cover_every_failed_check) ... ok
+test_recovery_must_map_failed_check_to_replacement_result (test_depth_quality.DeeperEvidenceTests.test_recovery_must_map_failed_check_to_replacement_result) ... ok
+test_recovery_unknown_and_malformed_scope_controlled (test_depth_quality.DeeperEvidenceTests.test_recovery_unknown_and_malformed_scope_controlled) ... ok
+test_required_check_cannot_hide_in_residual (test_depth_quality.DeeperEvidenceTests.test_required_check_cannot_hide_in_residual) ... ok
+test_reviewer_findings_need_disposition (test_depth_quality.DeeperEvidenceTests.test_reviewer_findings_need_disposition) ... ok
+test_same_check_recovery_allows_changed_interpreter (test_depth_quality.DeeperEvidenceTests.test_same_check_recovery_allows_changed_interpreter) ... ok
+test_stale_execution_or_review_cannot_support_current_candidate (test_depth_quality.DeeperEvidenceTests.test_stale_execution_or_review_cannot_support_current_candidate) ... ok
+test_supplied_observation_does_not_fabricate_command (test_depth_quality.DeeperEvidenceTests.test_supplied_observation_does_not_fabricate_command) ... ok
+test_support_recovery_scope_cannot_be_inferred (test_depth_quality.DeeperEvidenceTests.test_support_recovery_scope_cannot_be_inferred) ... ok
+test_technical_pass_does_not_grant_outstanding_release_authority (test_depth_quality.DeeperEvidenceTests.test_technical_pass_does_not_grant_outstanding_release_authority) ... ok
+test_two_support_corrections_exceed_cycle (test_depth_quality.DeeperEvidenceTests.test_two_support_corrections_exceed_cycle) ... ok
+test_unrelated_check_cannot_recover_failed_check (test_depth_quality.DeeperEvidenceTests.test_unrelated_check_cannot_recover_failed_check) ... ok
+test_explicit_directory_and_child_are_legitimate (test_depth_quality.PortableCustodyTests.test_explicit_directory_and_child_are_legitimate) ... ok
+test_file_directory_collisions_in_both_orders (test_depth_quality.PortableCustodyTests.test_file_directory_collisions_in_both_orders) ... ok
+test_final_builder_never_deletes_accepted_directory (test_depth_quality.PortableCustodyTests.test_final_builder_never_deletes_accepted_directory) ... ok
+test_nested_archive_collision_refused (test_depth_quality.PortableCustodyTests.test_nested_archive_collision_refused) ... ok
+test_source_junction_rejected_before_prior_archive_changes (test_depth_quality.PortableCustodyTests.test_source_junction_rejected_before_prior_archive_changes) ... ok
+test_all_tracked_markdown_local_links_resolve (test_documentation.DocumentationCurrencyTests.test_all_tracked_markdown_local_links_resolve) ... ok
+test_current_customer_paths_use_current_release_identity (test_documentation.DocumentationCurrencyTests.test_current_customer_paths_use_current_release_identity) ... ok
+test_customer_document_manifest_is_complete_and_coherent (test_documentation.DocumentationCurrencyTests.test_customer_document_manifest_is_complete_and_coherent) ... ok
+test_pages_journey_and_visual_roles_are_distinct (test_documentation.DocumentationCurrencyTests.test_pages_journey_and_visual_roles_are_distinct) ... ok
+test_aggregate_failure_cannot_be_erased (test_estate_quality.EvidenceRegressions.test_aggregate_failure_cannot_be_erased) ... ok
+test_empty_and_skipped_are_not_pass (test_estate_quality.EvidenceRegressions.test_empty_and_skipped_are_not_pass) ... ok
+test_empty_ready_is_rejected (test_estate_quality.EvidenceRegressions.test_empty_ready_is_rejected) ... ok
+test_invalid_shapes_and_links_return_errors (test_estate_quality.EvidenceRegressions.test_invalid_shapes_and_links_return_errors) ... ok
+test_jest_no_cases_or_mismatch_cannot_pass (test_estate_quality.EvidenceRegressions.test_jest_no_cases_or_mismatch_cannot_pass) ... ok
+test_jest_observed_failure_beats_aggregate_pass (test_estate_quality.EvidenceRegressions.test_jest_observed_failure_beats_aggregate_pass) ... ok
+test_json_unsupported_and_contradictory_are_rejected (test_estate_quality.EvidenceRegressions.test_json_unsupported_and_contradictory_are_rejected) ... ok
+test_malformed_trace_links_do_not_crash (test_estate_quality.EvidenceRegressions.test_malformed_trace_links_do_not_crash) ... ok
+test_missing_aggregate_failure_is_failure (test_estate_quality.EvidenceRegressions.test_missing_aggregate_failure_is_failure) ... ok
+test_nested_namespaced_counts_once (test_estate_quality.EvidenceRegressions.test_nested_namespaced_counts_once) ... ok
+test_open_defect_exit_mismatch_and_no_raw_evidence (test_estate_quality.EvidenceRegressions.test_open_defect_exit_mismatch_and_no_raw_evidence) ... ok
+test_partial_ready_requires_qualified_residual_risk (test_estate_quality.EvidenceRegressions.test_partial_ready_requires_qualified_residual_risk) ... ok
+test_passing_test_cannot_use_unparsed_execution (test_estate_quality.EvidenceRegressions.test_passing_test_cannot_use_unparsed_execution) ... ok
+test_portable_member_rejections (test_estate_quality.EvidenceRegressions.test_portable_member_rejections) ... ok
+test_ready_cannot_mean_all_work_unexecuted (test_estate_quality.EvidenceRegressions.test_ready_cannot_mean_all_work_unexecuted) ... ok
+test_valid_complete_chain_passes (test_estate_quality.EvidenceRegressions.test_valid_complete_chain_passes) ... ok
+test_wrong_xml_is_not_a_test_run (test_estate_quality.EvidenceRegressions.test_wrong_xml_is_not_a_test_run) ... ok
+test_crlf_already_in_index_is_rejected (test_line_ending_policy.LineEndingPolicyTests.test_crlf_already_in_index_is_rejected) ... ok
+test_gitlink_is_not_scanned_as_a_blob (test_line_ending_policy.LineEndingPolicyTests.test_gitlink_is_not_scanned_as_a_blob) ... ok
+test_missing_windows_and_binary_rules_fail_effective_probes (test_line_ending_policy.LineEndingPolicyTests.test_missing_windows_and_binary_rules_fail_effective_probes) ... ok
+test_root_byte_custody_is_a_separate_passing_profile (test_line_ending_policy.LineEndingPolicyTests.test_root_byte_custody_is_a_separate_passing_profile) ... ok
+test_scoped_byte_custody_exempts_canonical_cr_bytes (test_line_ending_policy.LineEndingPolicyTests.test_scoped_byte_custody_exempts_canonical_cr_bytes) ... ok
+test_standard_policy_passes_effective_and_blob_checks (test_line_ending_policy.LineEndingPolicyTests.test_standard_policy_passes_effective_and_blob_checks) ... ok
+test_declared_customer_documents_exist (test_public_distribution.PublicDistributionTests.test_declared_customer_documents_exist) ... ok
+test_marketplace_and_plugin_identity_agree (test_public_distribution.PublicDistributionTests.test_marketplace_and_plugin_identity_agree) ... ok
+test_openai_submission_archive_has_retained_custody_and_portal_shape (test_public_distribution.PublicDistributionTests.test_openai_submission_archive_has_retained_custody_and_portal_shape) ... ok
+test_plugin_assets_and_skill_entrypoints_exist (test_public_distribution.PublicDistributionTests.test_plugin_assets_and_skill_entrypoints_exist) ... ok
+test_plugin_skills_are_byte_identical_to_canonical_skills (test_public_distribution.PublicDistributionTests.test_plugin_skills_are_byte_identical_to_canonical_skills) ... ok
+test_public_line_ending_action_uses_canonical_verifier (test_public_distribution.PublicDistributionTests.test_public_line_ending_action_uses_canonical_verifier) ... ok
+test_public_tree_has_no_cache_debris (test_public_distribution.PublicDistributionTests.test_public_tree_has_no_cache_debris) ... ok
+test_release_hashes_are_line_ending_portable (test_public_distribution.PublicDistributionTests.test_release_hashes_are_line_ending_portable) ... ok
+test_final_seal_rejects_a_dirty_repository_before_building (test_release_identity.ReleaseIdentityTests.test_final_seal_rejects_a_dirty_repository_before_building) ... usage: python.exe -m unittest [-h] [--final-seal] [--output-dir OUTPUT_DIR]
+python.exe -m unittest: error: final sealing requires a clean frozen repository; commit or otherwise resolve all changes first
+usage: python.exe -m unittest [-h] [--final-seal]
+python.exe -m unittest: error: final sealing requires a clean frozen repository; commit or otherwise resolve all changes first
+ok
+test_metered_plan_contract_is_packaged_and_excludes_authority (test_release_identity.ReleaseIdentityTests.test_metered_plan_contract_is_packaged_and_excludes_authority) ... ok
+test_release_hashing_requires_explicit_final_seal (test_release_identity.ReleaseIdentityTests.test_release_hashing_requires_explicit_final_seal) ... usage: python.exe -m unittest [-h] [--final-seal] [--output-dir OUTPUT_DIR]
+python.exe -m unittest: error: release hashing is final-only; finish and review the candidate, then pass --final-seal
+usage: python.exe -m unittest [-h] [--final-seal]
+python.exe -m unittest: error: release hashing is final-only; finish and review the candidate, then pass --final-seal
+usage: python.exe -m unittest [-h] [--final-seal]
+                              [--package-name PACKAGE_NAME]
+                              [--version VERSION]
+                              [--release-date RELEASE_DATE]
+                              package
+python.exe -m unittest: error: release hashing is final-only; finish and review the package, then pass --final-seal
+ok
+test_version_and_date_sources_agree (test_release_identity.ReleaseIdentityTests.test_version_and_date_sources_agree) ... ok
+test_extensionless_text_is_checked_but_binary_is_preserved (test_source_text_policy.PackageTextPolicyTests.test_extensionless_text_is_checked_but_binary_is_preserved) ... ok
+test_lf_bytes_are_preserved_exactly (test_source_text_policy.PackageTextPolicyTests.test_lf_bytes_are_preserved_exactly) ... ok
+test_public_build_checks_working_bytes_before_creating_output (test_source_text_policy.PackageTextPolicyTests.test_public_build_checks_working_bytes_before_creating_output) ... ok
+test_windows_command_exception_is_specific (test_source_text_policy.PackageTextPolicyTests.test_windows_command_exception_is_specific) ... ok
+test_wrong_python_endings_leave_prior_archives_untouched (test_source_text_policy.PackageTextPolicyTests.test_wrong_python_endings_leave_prior_archives_untouched) ... ok
+
+----------------------------------------------------------------------
+Ran 79 tests in 4.659s
+
+OK

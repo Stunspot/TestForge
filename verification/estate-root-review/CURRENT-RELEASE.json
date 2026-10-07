@@ -1,8 +1,8 @@
 {
   "schema": "testforge-current-delivery/v1",
   "version": "2.0.0",
-  "archive": "releases/estate-quality-20261006-r5/TestForge-v2.0.0.zip",
-  "sha256": "f5f7348a15fe9407acd63cb55e361c2777510919201c447f2a6f54c9f2b1db68",
-  "acceptance": "verification/estate-root-review/R5-ACCEPTANCE.json",
+  "archive": "releases/estate-quality-20261007-r7/TestForge-v2.0.0.zip",
+  "sha256": "00244338649db1b4ebb8b440c5c79dd2a85d3359047a33623b47231720fdb64a",
+  "acceptance": "verification/estate-shared-root-r7/root-acceptance.json",
   "boundary": "Exact current source inputs and accepted artifact; historical release-manifest.json files retain their original cutoff. No model qualification upgrade."
 }
