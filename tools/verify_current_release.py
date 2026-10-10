@@ -33,6 +33,8 @@ def main():
             assert packed['docs/'+name]==expected,'Accepted customer document differs: '+name
         assert packed['tools/verify_release.py']==(ROOT/'tools/verify_family_release.py').read_bytes(),'Verifier differs'
         assert packed['LICENSE.md']==(ROOT/'LICENSE.md').read_bytes(),'License differs'
+        assert packed['.agents/plugins/marketplace.json']==(ROOT/'release-docs/CODEX-MARKETPLACE.json').read_bytes(),'Native marketplace entrypoint differs'
+        assert packed['README.md']==(ROOT/'release-docs/ROOT-README.md').read_bytes(),'Root landing guide differs'
         with tempfile.TemporaryDirectory(prefix='testforge-current-',dir=ROOT.parent.resolve()) as temp:
             native=Path(temp)
             for name,data in packed.items():

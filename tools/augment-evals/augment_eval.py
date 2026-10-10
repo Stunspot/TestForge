@@ -506,6 +506,11 @@ def judge_prompt(case: dict[str, Any], trial: int, response: str) -> str:
         "acceptable_variation_used": [],
         "notes": "",
     }
+    claim_context = "".join(
+        f"{label}\n{case[key]}\n\n"
+        for label, key in (("BEHAVIORAL CLAIM", "claim"), ("SUITE SYNTHESIS", "synthesis"))
+        if case.get(key)
+    )
     return (
         "Judge the observable Augment behavior below against its evaluator-only rubric. "
         "Anchor every classification in the supplied response; distinguish absence from contradiction, and allow the stated variations without rewarding fluent approximation. "
@@ -515,6 +520,7 @@ def judge_prompt(case: dict[str, Any], trial: int, response: str) -> str:
         f"TRIAL\n{trial}\n\n"
         f"USER INPUT\n{case['input']}\n\n"
         f"RUNTIME CONDITIONS\n{case['runtime']}\n\n"
+        f"{claim_context}"
         f"EXPECTED BEHAVIORS\n{criteria}\n\n"
         f"ACCEPTABLE VARIATION\n{variation}\n\n"
         f"MATERIAL FAILURE SIGNALS\n{signals}\n\n"
@@ -947,6 +953,17 @@ def judge_prepared_run(run_dir: Path, judge_adapter_path: Path, replace: bool = 
             episode_dir, request, rubric, response, judge_adapter, package_root, run_dir,
         )
         judged += 1
+    if judged:
+        history = list(run.get("judge_adapter_history") or [])
+        previous = run.get("judge_adapter_provenance")
+        if previous and previous != provenance and previous not in history:
+            history.append(previous)
+        update_run(
+            run_dir, judge_adapter=str(judge_adapter_path.resolve()),
+            judge_adapter_provenance=provenance,
+            judge_adapter_sha256=provenance["config_sha256"],
+            judge_adapter_history=history,
+        )
     return judged
 
 
@@ -995,7 +1012,8 @@ def evaluation_identity(run: dict[str, Any], suite: dict[str, Any], run_dir: Pat
                 break
             execution = read_json(path)
             provenance = execution.get("adapter_provenance")
-            if not provenance or not provenance.get("config_sha256") or not execution.get("execution_harness_sha256"):
+            identity = provenance.get("config_sha256") if isinstance(provenance, dict) else None
+            if not isinstance(identity, str) or not re.fullmatch(r"[0-9a-f]{64}", identity) or not execution.get("execution_harness_sha256"):
                 records = None
                 break
             key = episode.relative_to(run_dir / "episodes").as_posix()
@@ -1284,6 +1302,32 @@ def promote_baseline(
             "tracked_files": tracked,
         }
 
+    def executed_adapter(role: str) -> dict[str, Any]:
+        actual: dict[str, dict[str, Any]] = {}
+        unknown: list[str] = []
+        for episode in sorted((run_dir / "episodes").glob("*/trial-*")):
+            path = episode / (role + "-execution.json")
+            provenance = read_json(path).get("adapter_provenance") if path.is_file() else None
+            identity = provenance.get("config_sha256") if isinstance(provenance, dict) else None
+            if not isinstance(identity, str) or not re.fullmatch(r"[0-9a-f]{64}", identity):
+                unknown.append(episode.relative_to(run_dir / "episodes").as_posix())
+                continue
+            item = portable_adapter(provenance, None)
+            key = json.dumps(item, sort_keys=True, ensure_ascii=False)
+            actual[key] = item
+        if unknown:
+            return {
+                "name": "incomplete",
+                "adapters": list(actual.values()),
+                "unknown_episodes": unknown,
+                "selected_adapter": portable_adapter(
+                    run.get(role + "_adapter_provenance"), run.get(role + "_adapter_sha256"),
+                ),
+            }
+        if len(actual) == 1:
+            return next(iter(actual.values()))
+        return {"name": "mixed", "adapters": list(actual.values())}
+
     record = {
         "protocol_version": PROTOCOL_VERSION,
         "baseline_name": name,
@@ -1299,12 +1343,8 @@ def promote_baseline(
             "model": run["model"],
             "harness_sha256": run.get("harness_sha256"),
             "runtime_identity": runtime,
-            "subject_adapter": portable_adapter(
-                run.get("subject_adapter_provenance"), run.get("subject_adapter_sha256")
-            ),
-            "judge_adapter": portable_adapter(
-                run.get("judge_adapter_provenance"), run.get("judge_adapter_sha256")
-            ),
+            "subject_adapter": executed_adapter("subject"),
+            "judge_adapter": executed_adapter("judge"),
         },
         "review": review,
         "integrity_manifest_sha256": file_sha256(run_dir / ARTIFACT_MANIFEST),

@@ -235,10 +235,46 @@ class ContextCustodyTests(unittest.TestCase):
             )
 
         self.assertFalse(judge)
-        self.assertIn("Return a concise final answer", prompt)
+        self.assertNotIn("RESPONSE DISCIPLINE", prompt)
         self.assertNotIn("Capacity, Expansion, Decision, Substitute, and Authority", prompt)
         self.assertNotIn("one retry means two attempts", prompt)
         self.assertNotIn("maximum paid minutes", prompt)
+
+    def test_neutral_full_payload_preserves_ordinary_task_without_verification_framing(self):
+        with tempfile.TemporaryDirectory() as temp:
+            package = Path(temp)
+            write(package / "SKILL.md", "Help with the user's ordinary work.")
+            write(package / "evals" / "secret.yaml", "HIDDEN RUBRIC CANARY")
+            episode = "Turn these supplier notes into a meeting agenda. Do not contact anyone."
+            payload, judge = adapter.build_model_prompt(episode, package, ["SKILL.md"], "neutral")
+        self.assertFalse(judge)
+        self.assertIn(episode, payload)
+        self.assertIn("Help with the user's ordinary work.", payload)
+        self.assertIn("Do not claim tool actions or access", payload)
+        self.assertNotIn("HIDDEN RUBRIC CANARY", payload)
+        self.assertNotIn("design concrete unexecuted evidence", payload)
+        self.assertNotIn("no target files were inspected", payload)
+        self.assertNotIn("Cover each independent requirement exactly once", payload)
+
+    def test_neutral_preserves_artifact_request_as_final_instruction(self):
+        with tempfile.TemporaryDirectory() as temp:
+            package = Path(temp)
+            write(package / "SKILL.md", "Produce the user's requested artifact.")
+            episode = "Write the complete executable Python file, then its run command."
+            payload, judge = adapter.build_model_prompt(episode, package, ["SKILL.md"], "neutral")
+        self.assertFalse(judge)
+        self.assertTrue(payload.endswith(episode))
+        self.assertNotIn("RESPONSE DISCIPLINE", payload)
+        self.assertNotIn("concise final answer", payload)
+
+    def test_adaptive_verification_control_retains_its_existing_task_boundary(self):
+        with tempfile.TemporaryDirectory() as temp:
+            package = Path(temp)
+            write(package / "SKILL.md", "Verification doctrine.")
+            payload, judge = adapter.build_model_prompt("Design checks for a cache.", package, ["SKILL.md"], "adaptive")
+        self.assertFalse(judge)
+        self.assertIn("design concrete unexecuted evidence", payload)
+        self.assertIn("no target files were inspected", payload)
 
     def test_reasoning_mode_is_forwarded_to_ollama(self):
         response = io.BytesIO(json.dumps({"response": "visible output"}).encode("utf-8"))

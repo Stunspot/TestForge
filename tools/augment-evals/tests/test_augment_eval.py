@@ -321,6 +321,32 @@ entry_points:
 
 
 class EvidenceCustodyTests(unittest.TestCase):
+    def test_suite_claim_and_synthesis_reach_judge_but_not_subject(self):
+        with tempfile.TemporaryDirectory() as directory:
+            package = make_canonical_package(Path(directory))
+            case = augment_eval.load_eval_suite(package)["cases"][0]
+            judged = augment_eval.judge_prompt(case, 1, "A useful but ungrounded answer.")
+            subject = augment_eval.subject_prompt(package, case)
+            for field in ("claim", "synthesis"):
+                self.assertIn(case[field], judged)
+                self.assertNotIn(case[field], subject)
+            self.assertIn("Every case must preserve the boundary.", judged)
+            self.assertNotIn(case["criteria"][0], subject)
+            self.assertNotIn(case["failure_signals"][0], subject)
+
+    def test_legacy_judge_without_claim_metadata_keeps_indexed_contract(self):
+        with tempfile.TemporaryDirectory() as directory:
+            package = make_testforge_package(Path(directory))
+            case = augment_eval.load_eval_suite(package)["cases"][0]
+            case.pop("claim")
+            case.pop("synthesis")
+            judged = augment_eval.judge_prompt(case, 3, "Only supplied evidence is used.")
+            self.assertIn("TRIAL\n3", judged)
+            self.assertIn("0. Bounds the conclusion to supplied evidence.", judged)
+            self.assertIn('"criterion_index": 0', judged)
+            self.assertIn('"signal_index": 0', judged)
+            self.assertNotIn("SUITE SYNTHESIS", judged)
+
     def test_subject_prompt_does_not_contain_hidden_rubric(self):
         with tempfile.TemporaryDirectory() as temp:
             suite = augment_eval.load_eval_suite(make_testforge_package(Path(temp)))
@@ -441,6 +467,109 @@ class ExecutionAndSummaryTests(unittest.TestCase):
             self.assertEqual(1, judged)
             self.assertEqual("DEMONSTRATED", summary["claim_status"])
 
+    def test_rejudging_updates_selection_and_exports_actual_judge(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            suite = augment_eval.load_eval_suite(make_testforge_package(root))
+            original = make_adapter(root / "original")
+            corrected = make_adapter(root / "corrected")
+            config = json.loads(corrected.read_text())
+            config["name"] = "corrected-judge"
+            write(corrected, json.dumps(config))
+            run_dir = augment_eval.create_run(suite, root / "results", 1, "fixture", "fixture", str(original), str(original))
+            augment_eval.execute_run(run_dir, original, original)
+            self.assertEqual(1, augment_eval.judge_prepared_run(run_dir, corrected, replace=True))
+            augment_eval.summarize_run(run_dir)
+            run = json.loads((run_dir / "run.json").read_text())
+            self.assertEqual("corrected-judge", run["judge_adapter_provenance"]["name"])
+            self.assertEqual(str(corrected.resolve()), run["judge_adapter"])
+            unchanged = (run_dir / "run.json").read_text()
+            self.assertEqual(0, augment_eval.judge_prepared_run(run_dir, original))
+            self.assertEqual(unchanged, (run_dir / "run.json").read_text())
+            self.assertEqual("fixture-adapter", run["judge_adapter_history"][0]["name"])
+            write(run_dir / "review.md", "Fixture-only reviewed provenance check; no model-performance claim.")
+            augment_eval.seal_run(run_dir)
+            baseline = augment_eval.promote_baseline(run_dir, "corrected", root / "baselines", "REVIEW_PASS", "native fixture")
+            record = json.loads(baseline.read_text())
+            self.assertEqual("corrected-judge", record["provenance"]["judge_adapter"]["name"])
+            self.assertEqual(augment_eval.file_sha256(corrected), record["provenance"]["judge_adapter"]["config_sha256"])
+
+    def test_mixed_judges_remain_distinct_in_promoted_provenance(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            package = make_testforge_package(root)
+            cases_path = package / "evals" / "behavior-cases.yaml"
+            cases = json.loads(cases_path.read_text())
+            cases["cases"].append({**cases["cases"][0], "id": "EVAL-002"})
+            write(cases_path, json.dumps(cases))
+            original = make_adapter(root / "original")
+            corrected = make_adapter(root / "corrected")
+            for adapter in (original, corrected):
+                script = adapter.parent / "adapter.py"
+                body = script.read_text().replace("'case_id': 'EVAL-001',", "'case_id': prompt.split('CASE ID\\n', 1)[1].splitlines()[0],")
+                write(script, body)
+            config = json.loads(corrected.read_text())
+            config["name"] = "second-judge"
+            write(corrected, json.dumps(config))
+            suite = augment_eval.load_eval_suite(package)
+            run_dir = augment_eval.create_run(suite, root / "results", 1, "fixture", "fixture", str(original), str(original))
+            augment_eval.execute_run(run_dir, original, original)
+            episode = sorted((run_dir / "episodes").glob("*/trial-*"))[0]
+            (episode / "result.json").unlink()
+            self.assertEqual(1, augment_eval.judge_prepared_run(run_dir, corrected))
+            summary = augment_eval.summarize_run(run_dir)
+            self.assertEqual(2, summary["valid_episodes"])
+            write(run_dir / "review.md", "Fixture-only reviewed mixed-adapter check; no model-performance claim.")
+            augment_eval.seal_run(run_dir)
+            baseline = augment_eval.promote_baseline(run_dir, "mixed", root / "baselines", "REVIEW_PASS", "native fixture")
+            record = json.loads(baseline.read_text())
+            actual = record["provenance"]["judge_adapter"]
+            self.assertEqual("mixed", actual["name"])
+            self.assertEqual({"fixture-adapter", "second-judge"}, {item["name"] for item in actual["adapters"]})
+            self.assertNotIn(str(root), baseline.read_text())
+
+    def test_incomplete_execution_provenance_is_explicit_in_baseline(self):
+        for role in ("judge", "subject"):
+            for damage in ("missing-record", "missing-provenance", "empty-identity", "all-missing"):
+                with self.subTest(role=role, damage=damage), tempfile.TemporaryDirectory() as temp:
+                    root = Path(temp)
+                    package = make_testforge_package(root)
+                    cases_path = package / "evals" / "behavior-cases.yaml"
+                    cases = json.loads(cases_path.read_text())
+                    cases["cases"].append({**cases["cases"][0], "id": "EVAL-002"})
+                    write(cases_path, json.dumps(cases))
+                    adapter = make_adapter(root)
+                    script = adapter.parent / "adapter.py"
+                    body = script.read_text().replace("'case_id': 'EVAL-001',", "'case_id': prompt.split('CASE ID\\n', 1)[1].splitlines()[0],")
+                    write(script, body)
+                    suite = augment_eval.load_eval_suite(package)
+                    run_dir = augment_eval.create_run(suite, root / "results", 1, "fixture", "fixture", str(adapter), str(adapter))
+                    augment_eval.execute_run(run_dir, adapter, adapter)
+                    episodes = sorted((run_dir / "episodes").glob("*/trial-*"))
+                    damaged = episodes if damage == "all-missing" else episodes[1:]
+                    for episode in damaged:
+                        capture_path = episode / (role + "-execution.json")
+                        if damage in ("missing-record", "all-missing"):
+                            capture_path.unlink()
+                        else:
+                            capture = json.loads(capture_path.read_text())
+                            if damage == "missing-provenance":
+                                capture.pop("adapter_provenance")
+                            else:
+                                capture["adapter_provenance"]["config_sha256"] = ""
+                            write(capture_path, json.dumps(capture))
+                    summary = augment_eval.summarize_run(run_dir)
+                    self.assertEqual(2, summary["valid_episodes"])
+                    write(run_dir / "review.md", "Native provenance-damage fixture; no model-performance claim.")
+                    augment_eval.seal_run(run_dir)
+                    baseline = augment_eval.promote_baseline(run_dir, "incomplete", root / "baselines", "REVIEW_PASS_WITH_CONDITIONS", "unknown execution identity")
+                    actual = json.loads(baseline.read_text())["provenance"][role + "_adapter"]
+                    self.assertEqual("incomplete", actual["name"])
+                    self.assertEqual([episode.relative_to(run_dir / "episodes").as_posix() for episode in damaged], actual["unknown_episodes"])
+                    self.assertEqual(0 if damage == "all-missing" else 1, len(actual["adapters"]))
+                    self.assertEqual("fixture-adapter", actual["selected_adapter"]["name"])
+                    self.assertNotIn(str(root), baseline.read_text())
+
     def test_incomplete_run_does_not_enter_ledger(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -515,6 +644,31 @@ class ExecutionAndSummaryTests(unittest.TestCase):
             self.assertEqual("fixture-reference", listed[0]["baseline_name"])
             self.assertTrue(augment_eval.list_runs(root / "results")[0]["sealed"])
             self.assertNotIn(str(root), baseline_text)
+
+    def test_malformed_nonempty_execution_identity_cannot_gain_comparison_credit(self):
+        for role in ("subject", "judge"):
+            for identity in ("a" * 64, "not-a-sha256", ""):
+                with self.subTest(role=role, identity=identity), tempfile.TemporaryDirectory() as temporary:
+                    run_dir = Path(temporary)
+                    episode = run_dir / "episodes" / "CASE" / "trial-001"
+                    write(episode / "evaluator-rubric.json", json.dumps({"case_id": "CASE", "trial": 1}))
+                    write(episode / "subject-request.json", json.dumps({"input": "retained"}))
+                    for producer in ("subject", "judge"):
+                        write(episode / (producer + "-execution.json"), json.dumps({
+                            "adapter_provenance": {"config_sha256": identity if producer == role else "b" * 64, "tracked_files": []},
+                            "execution_harness_sha256": "c" * 64,
+                        }))
+                    comparison = augment_eval.evaluation_identity({"host": "native-fixture", "model": "no-model", "trials": 1, "indispensable_dimensions": []}, {}, run_dir)
+                    summary = {"run_id": "native-identity-fixture", "comparison_identity": comparison, "mean_score": 100.0, "demonstrated_rate": 1.0,
+                               "verdicts": {"invalid": 0}, "claim_status": "DEMONSTRATED", "package_fingerprint_sha256": "d" * 64,
+                               "indispensable_gates": {}, "run_status": "COMPLETE", "evaluated_episodes": 1, "expected_episodes": 1}
+                    report = augment_eval.check_regression(summary, summary, 0.0, 0.0, 0)
+                    valid = identity == "a" * 64
+                    self.assertEqual(valid, report["passed"])
+                    self.assertEqual(valid, report["comparison"]["full_baseline_comparable"])
+                    if not valid:
+                        self.assertIsNone(comparison[role + "_adapter"])
+                        self.assertTrue(any("identity missing or incomplete" in failure for failure in report["failures"]))
 
     def test_regression_policy_blocks_score_invalid_and_gate_regression(self):
         baseline = {

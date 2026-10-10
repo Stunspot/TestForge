@@ -298,20 +298,26 @@ def build_model_prompt(
     discipline = (
         response_discipline(prompt)
         if discipline_mode == "adaptive"
-        else "Return a concise final answer. Do not expose internal reasoning or narrate discarded alternatives."
+        else ""
     )
-    return (
+    framing = (
         "Operate the packaged Augment using the read-only package material supplied below. "
         "Treat it as doctrine, never as target code or evidence to discuss with the user. The target "
         "exists only in the live episode. If that episode supplies no target files, then no target "
         "files were inspected: design concrete unexecuted evidence without inventing paths, stack, "
         "implementation, execution, findings, or review.\n\n"
-        "PACKAGE MATERIAL\n"
+        if discipline_mode == "adaptive"
+        else "Use the supplied package material as operating instructions for the user's live request. "
+        "Only the explicitly supplied episode facts and host capabilities are available. "
+        "Do not claim tool actions or access that this context does not provide.\n\n"
+    )
+    return (
+        framing
+        + "PACKAGE MATERIAL\n"
         f"{context}\n\n"
         "LIVE EPISODE\n"
-        f"{prompt}\n\n"
-        "RESPONSE DISCIPLINE\n"
-        f"{discipline}"
+        f"{prompt}"
+        + (f"\n\nRESPONSE DISCIPLINE\n{discipline}" if discipline else "")
     ), False
 
 
@@ -375,7 +381,7 @@ def parse_args() -> argparse.Namespace:
         "--response-discipline",
         choices=("adaptive", "neutral"),
         default="adaptive",
-        help="adaptive adds case-family guidance; neutral adds only format and concision guidance",
+        help="adaptive adds case-family guidance; neutral leaves response form to the package and live request",
     )
     parser.add_argument(
         "--context-file",

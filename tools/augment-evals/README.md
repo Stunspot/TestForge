@@ -37,13 +37,15 @@ py -m pip install -r tools\augment-evals\requirements.txt
 
 The included Codex isolated profile fails closed before launching a subject: this adapter cannot enforce evaluator-file read denial or run a denial canary in the subject execution context against original checkout and result paths. Ephemeral read-only Codex execution restricts writes; it does not isolate hidden evaluator files. No successful isolation or historical contamination is claimed. A separately qualified host boundary and execution-context denial canary are required to enable this profile. Any other model or host can participate through the same small adapter contract.
 
+For general Augment performance checks, explicitly select `--response-discipline neutral`. Neutral mode supplies the package and episode without TestForge-specific target/evidence instructions or an appended response style; the live request remains the final instruction. Adaptive mode retains its existing verification-task framing and case-family guidance; its results establish combined adapter behavior rather than package-only performance. Inspect the full assembled model prompt when qualifying a new context route.
+
 The included Ollama context adapter is fully local. For subject episodes it supplies either a root-installed `SKILL.md` or skills under `skills/`, then connected model-facing material from `personas/`, `workflows/`, `references/`, `assets/`, `schemas/`, `examples/`, and `jurisdiction-packs/` in operating-priority order; it never supplies `evals/` or executable `scripts/`. Judge episodes receive only the evaluator prompt and subject response. This mode verifies context-only Augment behavior, not live shell-tool use or selective host retrieval.
 
 Adapters may set Ollama reasoning to `auto`, `on`, or `off`. Use `off` for models such as `qwen35` when evaluation output must appear in the ordinary response channel rather than being consumed by hidden reasoning. Use `--case CASE-ID` on `run` or `prepare` for a recorded smoke run; repeat the option to select several cases.
 
 Use `adapters/ollama-qwen35-metered-context.json` for the TestForge metered-capacity regression cases. It models progressive disclosure by loading the operator entry point, metered-capacity doctrine, and release-assessment doctrine rather than truncating a whole-package context before the relevant material reaches the local model.
 
-Use `adapters/ollama-qwen35-metered-neutral.json` when the evidence claim concerns the packaged TestForge doctrine itself. It loads the same progressively disclosed package material but adds only generic concision guidance; unlike the adaptive profile, it does not inject case-family answer content. Results from the adaptive profile establish the combined host-adapter behavior and must not be represented as package-only behavioral evidence.
+Use `adapters/ollama-qwen35-metered-neutral.json` when the evidence claim concerns the packaged TestForge doctrine itself. It loads the same progressively disclosed package material and leaves the response form to that material and the live request; unlike the adaptive profile, it does not inject case-family answer content. Results from the adaptive profile establish the combined host-adapter behavior and must not be represented as package-only behavioral evidence.
 
 `adapters/ollama-devstral-metered-neutral.json` provides the same package-only evidence boundary with the local Devstral coding model. Use a separate model family as judge and retain the exact model pair in the run record; a pass establishes only that bounded configuration, never universal model behavior.
 
@@ -61,20 +63,22 @@ py tools\augment-evals\augment_eval.py validate testforge
 
 Validation reports the discovered dialect, suites, cases, dimensions, package version, and structural defects. It does not claim that model behavior passed.
 
-## Run Testforge through Codex
+## Run the local context testbed
 
-Use separate subject and judge invocations so the evaluated model never receives the answer key. Three trials provide a first consistency signal without pretending to be a universal sampling regime.
+This text-only route loads the declared TestForge doctrine and records actual local subject and independent model-family judge output. It does not execute target repository tools or establish evaluator filesystem isolation. Use the paired authority-hold and legitimate included-capacity cases to check both appropriate refusal and useful permission.
 
 ```powershell
-py tools\augment-evals\augment_eval.py run `
-  testforge `
+py tools\augment-evals\augment_eval.py run testforge `
   --results evaluation-results `
-  --subject-adapter tools\augment-evals\adapters\codex-cli.json `
-  --judge-adapter tools\augment-evals\adapters\codex-cli.json `
-  --host codex-cli `
-  --model configured-default `
-  --trials 3
+  --subject-adapter tools\augment-evals\adapters\ollama-devstral-metered-neutral.json `
+  --judge-adapter tools\augment-evals\adapters\ollama-qwen25-coder-judge.json `
+  --host ollama-neutral-context --model devstral-small-2:latest `
+  --trials 1 --case EVAL-METER-002 --case EVAL-METER-003
 ```
+
+Install those exact model tags in Ollama before using the profiles. The command exercises this bounded model pair and selected cases. The recorded paired qualification yielded invalid judgments; one bounded judge substitute left one invalid episode and one independently partial response. This configuration has no accepted behavioral baseline. Inspect transcripts and judgments, retain every attempt and seek independent review before baseline promotion. It is not a qualification of cheaper models for arbitrary executable test authoring.
+
+The supplied `codex-cli.json` profile deliberately stops before subject launch while its evaluator-read denial boundary is unqualified. A successful ordinary Codex tool-capable skill invocation is a different guarantee. Select a separately qualified host boundary before making isolated-host trial claims.
 
 The command prints the run directory and writes `summary.json`, `summary.md`, and `evaluation-results\ledger.jsonl`.
 
@@ -108,7 +112,7 @@ py tools\augment-evals\augment_eval.py promote evaluation-results\MY-TESTBED\RUN
 py tools\augment-evals\augment_eval.py list-baselines
 ```
 
-Raw prompts and transcripts remain local under `evaluation-results/` and are ignored by Git. Promoted records live in `tools/augment-evals/baselines/` and retain metrics, provenance, review disposition, and integrity identity without copying raw episode material.
+Raw prompts and transcripts remain local under `evaluation-results/` and are ignored by Git. Promoted records live in `tools/augment-evals/baselines/` and retain metrics, provenance, review disposition, and integrity identity without copying raw episode material. Adapter provenance comes from each episode execution. Complete uniform and mixed executions retain their actual adapter identities. Missing or malformed episode identities are exported as `incomplete`, with explicit unknown episodes and any selected adapter labeled separately; a selected configuration cannot fill a missing execution record.
 
 ## Compare two runs
 
@@ -175,5 +179,7 @@ The judge must return the JSON object described by `judge-result.schema.json`. T
 - Wilson intervals accompany demonstrated rates so tiny samples do not masquerade as precise reliability estimates.
 
 Scores help compare like-for-like runs. The categorical claim status and indispensable gates govern interpretation.
+
+The judge receives the suite's behavioral claim and synthesis together with criteria, variations and material failures; these evaluator-only fields stay outside the subject context. Their presence establishes context custody, not model judgment accuracy. Separate consequential distinctions into discriminating oracles, and inspect raw responses independently before accepting a factual-performance claim. Local Qwen2.5-coder14b and Devstral24B candidate judge configurations missed unsupported historical status in the2026-10-10 calibration; those observations grant no factual-readiness credit. A machine green summary is a classification, not self-authenticating evidence.
 
 Regression checks require recorded case/rubric identities, evaluator identity, host, model, subject/judge adapter content identities and trial count. Missing identity refuses equivalence; historical baselines remain evidence for their recorded scope. Package revisions may change without invalidating a matched comparison. Use `check --comparison-change "reason"` for an intentional change in evaluation scope or runtime: the report suppresses baseline deltas and gates and explicitly denies full-baseline significance. This option cannot supply missing identity.

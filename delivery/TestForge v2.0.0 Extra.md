@@ -17,6 +17,8 @@ Project Site: [TestForge verification workbench](https://stunspot.github.io/Test
 
 # Changelog
 
+v2.0.0 - Maintenance (2026-10-10): Restores the complete customer landing and copy-paste fallback path, corrects standalone-kit skill locations, supplies the native Codex marketplace entrypoint and checked installation commands, and keeps local model and host limits explicit. Behavioral evaluation now preserves neutral requests and actual retry/partial execution identities instead of attributing a replacement judgment to the initial adapter. A legitimate included-capacity control joins the paid-capacity hold cases.
+
 v2.0.0 - Maintenance (2026-10-06): Corrects false passes from incomplete test output, rejects contradictory ready verdicts and broken evidence chains, and verifies actual entry, discovery, task completion and resumption for information products. Package builders now preflight portable extraction paths. Further maintenance binds verdicts to current evidence and reviewer conditions, distinguishes real observations from command execution, preserves failed support-attempt history and report caveats, and rejects linked source roots and conflicting archive paths. The maintenance repair also binds the one permitted support correction to explicit test identities. Unrelated success can no longer supersede a failed check; changed interpreter commands remain valid when the same check is actually rerun.
 
 v2.0.0 - Local praxis maintenance (2026-09-12): Added cold-read review that examines complete evidence before author ratings, plus agent/research-harness checks for stale attempts, expired workers, producer identity, malformed review results and truthful completion. Existing frozen-candidate and stopping boundaries remain unchanged.

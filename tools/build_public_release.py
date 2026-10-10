@@ -112,6 +112,8 @@ def main(argv: list[str] | None = None) -> int:
     (out / "claude").mkdir()
     (out / "docs").mkdir()
     (out / "tools").mkdir()
+    (out / ".agents" / "plugins").mkdir(parents=True)
+    shutil.copy2(ROOT / "release-docs" / "CODEX-MARKETPLACE.json", out / ".agents" / "plugins" / "marketplace.json")
     shutil.copy2(ROOT / "LICENSE.md", out / "LICENSE.md")
     shutil.copytree(ROOT / "plugins" / "testforge", out / "codex" / "testforge", ignore=shutil.ignore_patterns("__pycache__", ".pytest_cache", "*.pyc", "*.pyo"))
     shutil.copy2(ROOT / "tools" / "verify_family_release.py", out / "tools" / "verify_release.py")
@@ -119,6 +121,10 @@ def main(argv: list[str] | None = None) -> int:
         text = (ROOT / "release-docs" / name).read_text(encoding="utf-8")
         text = text.replace(f"../releases/v{VERSION}/", "../")
         (out / "docs" / name).write_text(text, encoding="utf-8", newline="\n")
+    (out / "README.md").write_text(
+        (ROOT / "release-docs" / "ROOT-README.md").read_text(encoding="utf-8"),
+        encoding="utf-8", newline="\n",
+    )
     manifest = {
         "claude_archives": [],
         "excluded_generated_caches": {handle: [] for handle in HANDLES},

@@ -1,42 +1,30 @@
 # Install TestForge in Codex
 
-## Prerequisites
+Use a Codex build with the native `plugin marketplace` and `plugin add` commands. This path was checked on Codex CLI 0.144.5; plugin support in another build requires that build's own supported controls.
 
-Python 3.10+ is recommended for the portable verifier but is not required by the skills at runtime. Without Python, follow the checksum and reduced-assurance path in the [quick start](QUICK-START.md).
+Extract `TestForge-v2.0.0.zip` into a new directory. Open a terminal in its `testforge-v2.0.0/` release root. Python 3.10+ is recommended for the portable verifier; without it use the checksum and reduced-assurance path in the [quick start](QUICK-START.md).
 
-- An extracted `TestForge-v2.0.0.zip` release.
-- A Codex build that supports local plugin import or a configured local plugin source directory.
-- Permission to add a local plugin on the host.
+## Install the complete plugin
 
-## Procedure
+Run these commands from the extracted release root:
 
-1. From the extracted release root, run `python tools/verify_release.py .` and require `"ok": true`.
-2. Confirm the payload contains [plugin.json](../releases/v2.0.0/codex/testforge/.codex-plugin/plugin.json) and a `codex/testforge/skills/` directory.
-3. In Codex's supported local-plugin import flow, select the complete `codex/testforge/` directory. If the host instead uses a configured plugin source directory, copy that whole directory there unchanged; do not copy individual skill files out of it.
-4. Let Codex reload plugins, then open a fresh task so discovery is tested without stale task state.
-5. Confirm `TestForge` and its expected handles are listed by the host.
-6. Use the starter prompt from the [quick start](QUICK-START.md).
+```text
+python tools/verify_release.py .
+codex plugin marketplace add . --json
+codex plugin add testforge@cd-testforge --json
+codex plugin list --json
+```
 
-## Expected success
+Require the verifier to return `"ok": true`. The bundled `.agents/plugins/marketplace.json` registers the existing `cd-testforge` marketplace and points to the complete `codex/testforge/` plugin. The install result should identify `testforge@cd-testforge`, version `2.0.0`, and its actual installed path. Check that the host lists the plugin as enabled. Keep the extracted root available while it is a configured local marketplace.
 
-- The host reports the plugin as installed or loaded.
-- A fresh task can discover the expected handle.
-- An explicit invocation reaches the requested capability without package or manifest errors.
+If the same marketplace is already registered to a different location, inspect that source through the host's plugin manager before changing it. Preserve an older installed copy until its provenance is known; use the host's supported disable/remove controls for duplicates rather than deleting arbitrary cache files.
 
-These are three separate observations. Do not call the plugin healthy merely because its files were copied.
+Open a fresh task after installation. Discover `software-verification` and `verification-reviewer`, then invoke the starter prompt from the [quick start](QUICK-START.md). Package verification, native installation, fresh discovery and useful operation are separate observations. A successful file copy alone proves none of the latter three.
 
-## Recovery
+## Recovery and rollback
 
-1. If static verification fails, discard the extracted copy and extract again from the canonical ZIP.
-2. If verification passes but the plugin is absent, confirm the host supports local plugins and that the selected directory is `codex/testforge/`, not its parent or `skills/` child.
-3. If an older duplicate is selected, preserve it until its provenance is known; disable or retire it only through the host's supported controls.
-4. If discovery succeeds but behavior fails, collect the [support bundle](SUPPORT.md) and report a runtime issue rather than a packaging issue.
+If static verification fails, preserve the failed result and extract a fresh copy from the canonical ZIP. If the plugin remains absent, check the exact CLI error and selected marketplace root. It must contain `.agents/plugins/marketplace.json` and `codex/testforge/`; selecting the `skills/` child is not this installation path.
 
+If discovery succeeds but behavior fails, collect the [support bundle](SUPPORT.md). Retain the target, invocation and original response so a package defect can be distinguished from an unsupported host or model configuration.
 
-## Remove or roll back
-
-1. Use Codex's plugin manager to disable or remove TestForge. If the host uses a configured local plugin directory, remove only the `testforge` directory that you previously copied there.
-2. Start a fresh task and confirm the two TestForge handles are no longer discoverable.
-3. To roll back, install the retained older release through the same supported flow, reload plugins, and verify its displayed version before use.
-
-Removing TestForge does not delete verification reports or other project files that you created while using it.
+Use Codex's plugin manager to disable or remove TestForge. Start a fresh task and confirm its two handles are no longer discoverable. To roll back, register and install the retained older complete release through the same supported flow, then verify the displayed version and a fresh invocation. Removing TestForge does not delete verification reports or other project files created while using it.

@@ -9,6 +9,12 @@ Use this path to reach a first verification result without confusing a valid pac
 3. If Python is unavailable, compare the ZIP's SHA-256 with a separately supplied canonical digest when available, using an operating-system checksum tool. Record the portable verifier as unexecuted. If you cannot perform either check, use only an archive obtained from the canonical GitHub release, retain it unchanged, and treat local package integrity as reduced assurance rather than a pass.
 4. Complete the [Codex installation](INSTALL-CODEX.md) or [Claude installation](INSTALL-CLAUDE.md), then start a fresh task or chat.
 
+## Copy-paste use without skills or shell
+
+Open `codex/testforge/skills/software-verification/fallback/intake-card.md` from the extracted release root and fill in the target and evidence. Paste the adjacent `master-prompt.md` into your chat, followed by that material. It should produce useful copy-ready tests and commands marked UNEXECUTED when no results are supplied. Use the adjacent `review-prompt.md` in a fresh chat with the verification packet. Review of the authored tests is separate from execution-backed software readiness.
+
+The behavioral evaluation testbed is a separate repository component at `tools/augment-evals/`; it is not inside this skills-only customer kit. Obtain it from the existing TestForge repository and follow its own README. Its local context adapters and its isolated-host profiles establish different guarantees.
+
 ## First value: verify a completed candidate
 
 Invoke `$software-verification` with a completed candidate, its bounded readiness claim, and the available evidence. Copy this prompt:

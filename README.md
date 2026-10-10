@@ -65,7 +65,7 @@ The current v2.0.0 maintenance kit and accepted repair are documented in [the ma
 
 ## Quick start: use the standalone Agent SKILLs
 
-Download the latest release, unzip it and keep the `testforge/` tree together. Expose both directories under `testforge/skills/` through your Agent host's skill mechanism. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
+Download the current release and open `testforge-v2.0.0/docs/QUICK-START.md`. The ZIP carries the complete plugin under `testforge-v2.0.0/codex/testforge/`; expose both complete directories under its `skills/` through your Agent host's skill mechanism. In a repository checkout the equivalent maintained directories are `testforge/skills/`. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
 
 The frozen v2.0.0 release kit preserves the complete Augment, Codex plugin source, and both Claude skill archives with static package receipts. The maintained repository separately exposes current Claude upload archives. The latest retained OpenAI skills-only portal packet is v1.1.4; it is built and repository-tested, but this repository does not claim it was uploaded, scanned by the current portal, approved, published, or made discoverable. See [archive custody](ARCHIVE-CUSTODY.md) for exact object identities and boundaries.
 

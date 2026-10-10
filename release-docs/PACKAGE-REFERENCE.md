@@ -3,6 +3,7 @@
 ## Canonical contents
 
 ```text
+.agents/plugins/marketplace.json
 codex/testforge/
 claude/
 docs/
