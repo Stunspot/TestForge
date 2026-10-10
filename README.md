@@ -61,6 +61,8 @@ codex plugin add testforge@cd-testforge
 
 Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v2.0.0 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
 
+The current v2.0.0 maintenance kit and accepted repair are documented in [the maintenance acceptance record](verification/estate-public-repair-20261010/ACCEPTANCE.md). [Download the complete current ZIP](https://github.com/Stunspot/TestForge/releases/download/v2.0.0/TestForge-v2.0.0.zip).
+
 ## Quick start: use the standalone Agent SKILLs
 
 Download the latest release, unzip it and keep the `testforge/` tree together. Expose both directories under `testforge/skills/` through your Agent host's skill mechanism. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).

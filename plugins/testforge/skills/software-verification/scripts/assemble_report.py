@@ -29,7 +29,6 @@ def assemble(data: dict, root: Path | None = None) -> str:
         lines+=["","### "+inline(evidence.get("id")),"",bullets([f"{key}: {json.dumps(value,ensure_ascii=False) if isinstance(value,(list,dict)) else value}" for key,value in evidence.items()])]
     lines+=["","## Findings","",bullets([record(x) for x in data["findings"]]),"","## Reviewer scope, findings and conditions","",bullets([f"{key}: {json.dumps(value,ensure_ascii=False) if isinstance(value,(list,dict)) else value}" for key,value in review.items()]),"","## Residual risk and follow-up","",bullets([record(x) for x in data["residual_risks"]]),"","## Authority still required","",bullets(decision.get("authority_required",[])),"","## Validation limits","",bullets(report.get("warnings",[])),"","File presence and a valid manifest do not authenticate a claimed observation. Supplied evidence remains supplied. Unexecuted checks and unobserved customer outcomes retain their explicit boundaries.",""]
     text="\n".join(lines)
-    if "REPLACE" in text or "{{" in text or "}}" in text:raise ValueError("unresolved placeholder in assembled report")
     return text
 
 def main():

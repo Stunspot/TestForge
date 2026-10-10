@@ -1,0 +1,24 @@
+{
+  "status": "READY_WITH_RESIDUAL_RISK",
+  "revision": "testforge-apparatus-r8",
+  "version": "2.0.0",
+  "scope": "Report rendering, exact shipped template-slot validation, and clarification of browser/partial-observation evidence.",
+  "changes": [
+    "Valid nested reviewer metadata and literal evidence render without a blanket output blacklist.",
+    "Unfilled REPLACE values in actual target and included-scope template slots are rejected by manifest validation.",
+    "Guidance distinguishes failed commands, meaningful completed observations and unexecuted checks; existing recovery/readiness rules remain in force."
+  ],
+  "validation": {
+    "repository_unittest_cases": 84,
+    "independent_focused_cases": 5,
+    "independent_additional_boundary_controls": 7,
+    "independent_source_parity_paths": 15,
+    "independent_review": "REVIEW_PASS, no blocking findings",
+    "native_windows_extraction": "138 members,114 runtime source files,two nested Claude archives verified"
+  },
+  "limits": [
+    "This maintenance does not establish measured model adherence or requalify unrelated product behavior.",
+    "Detailed private audit records are retained outside this public repository.",
+    "Customer documentation and sidecars retain their prior accepted content."
+  ]
+}

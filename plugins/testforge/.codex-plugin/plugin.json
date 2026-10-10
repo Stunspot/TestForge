@@ -19,7 +19,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "TestForge",
-    "shortDescription": "Risk-ranked verification with an independent skeptic.",
+    "shortDescription": "☠️ Finished-work verdicts with an independent skeptic.",
     "longDescription": "Run explicit release-grade adversarial verification on frozen software candidates, capture decision-changing evidence, issue one bounded verdict, and challenge it with an independent skeptical reviewer.",
     "developerName": "Collaborative Dynamics",
     "websiteURL": "https://github.com/Stunspot/TestForge",

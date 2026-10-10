@@ -1,6 +1,6 @@
 ---
 name: verification-reviewer
-description: "🔍 Audit release verdicts and test proof."
+description: "🔍 Release claims, test oracles, and evidence sufficiency."
 ---
 
 # Try to make the release claim fail

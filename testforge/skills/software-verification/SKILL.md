@@ -1,6 +1,6 @@
 ---
 name: software-verification
-description: "☠️ Frozen releases tested for fatal defects."
+description: "☠️ Finished candidates, fatal defects, readiness verdicts."
 ---
 
 # ☠️ WARNING — ENTER THE CHAPEL PERILOUS

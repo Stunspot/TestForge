@@ -22,6 +22,14 @@ The one allowed support correction may retain a failed attempt with superseded_b
 
 This route cannot excuse a product defect, multiple support corrections, an unresolved cause or a failed replacement. A repaired product is a different candidate cycle. Do not delete earlier attempts to make the record look clean.
 
+## A completed observation inside an interrupted run
+
+Keep the command's failed or interrupted status and exact error. Separately identify any completed observation whose oracle was actually reached: candidate revision, action, visible or saved post-state, recorder and raw evidence locator. Mark each unexecuted check as such. An assertion count, a downloaded filename or a screenshot without its decision-relevant state is insufficient. Reuse the completed observation only when the later failure cannot undermine its meaning, attribution or freshness; carry supplied evidence as supplied.
+
+For example, a saved edit may be independently readable in a real exported file even when the subsequent annotation-disclosure locator fails. That file can support the bounded saved-edit claim; it cannot establish the untouched disclosure, full return journey or overall script success. The reviewer decides which required guarantees remain missing. This is evidence interpretation, not another support recovery, a fabricated passing replacement execution or permission to repeat a failed cycle. Preserve the original attempt and apply the existing recovery and stopping limits.
+
+The report assembler validates the manifest before rendering it. It rejects the exact REPLACE values left in the shipped target and included-scope template slots. Literal replacement terminology, braces, source excerpts and nested review metadata remain evidence content. Structural validation cannot decide whether otherwise well-formed prose is sufficiently resolved; the operator and reviewer retain that judgment.
+
 ## Review and authority
 
 A ready record identifies reviewer, raw_evidence, target_revision and evidence_cutoff. Reviewer finding strings have explicit finding_dispositions with status resolved or non_blocking and a reason. Conditional review has named conditions with statement, status met/open and boolean blocking. An open blocking condition prevents readiness; open nonblocking conditions require the qualified residual-risk status.

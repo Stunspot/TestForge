@@ -12,6 +12,17 @@ If the supplied contract and observations already establish that legitimate work
 
 Identify the useful task, legitimate inputs, harmful or misleading near-neighbors, interaction state and output boundary. Judge task success and claim support, not resemblance to an attractive answer. Contrast a correct useful answer, an unsupported confident answer, a justified refusal and an unnecessary refusal. For agent tools, observe the actual action and post-state, not a declaration of intent.
 
+For authored prompts, inspect the intended performance and the operative load
+route. Wording, persona, symbols, emphasis, repetition and relationships can
+carry the capability. Establish an actual error, wrong direction or functional
+failure before accepting a repair rationale; unfamiliar or less tidy language
+alone establishes none. An unchanged canonical file behind a new overriding
+interpretation is source custody, not proof that the original method remains
+operative. Compare the remedy with the accepted purpose and preserve effective
+surrounding form. Use direct source or mechanical evidence for a claim it can
+establish, and model observations for the performance claim actually made.
+Keep those conclusions distinct without imposing a new universal trial gate.
+
 Select repetitions only where nondeterminism could change the decision. Fix the case set, denominator, success oracle and material failure rule before interpreting results. Retain failed, timed-out, unparsed, skipped and unavailable attempts. A model judge's confidence or average cannot cancel a decisive fabrication, data-loss or authority failure. Name the tested model, host, context route, candidate revision and sampling limits. A context-only model probe does not prove live tool use or selective retrieval; a single deterministic fixture does not estimate production reliability.
 
 Independently inspect disputed criterion evidence against the raw response. Prefer a small held-out or contrastive case capable of overturning the claim to a large suite of paraphrases. Treat prompt/evaluator co-adaptation as a contamination risk; do not improve both until the score says pass and call that validation.

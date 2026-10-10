@@ -1,8 +1,8 @@
 {
   "schema": "testforge-current-delivery/v1",
   "version": "2.0.0",
-  "archive": "releases/estate-quality-20261007-r7/TestForge-v2.0.0.zip",
-  "sha256": "00244338649db1b4ebb8b440c5c79dd2a85d3359047a33623b47231720fdb64a",
-  "acceptance": "verification/estate-shared-root-r7/root-acceptance.json",
-  "boundary": "Exact current source inputs and accepted artifact; historical release-manifest.json files retain their original cutoff. No model qualification upgrade."
+  "archive": "releases/compact-cue-ccr2/TestForge-v2.0.0.zip",
+  "sha256": "3e7073ef408a99ec07b7b36622340b48c754062f51068768f5f296a352e733d7",
+  "acceptance": "verification/estate-public-repair-20261010/ACCEPTANCE.md",
+  "boundary": "Accepted behavioral repairs, authored-purpose restoration and approved compact discovery descriptions. Complete current kit and native verifier passed; prior behavioral evidence retains its original scope. Public delivery authorized by the owner."
 }

@@ -68,7 +68,16 @@ def validate(data: Any, root: Path | None = None) -> dict:
     target = data.get("target", {})
     if not isinstance(target, dict) or not text(target.get("name")) or not text(target.get("revision")):
         errors.append("target requires name and revision")
+    # Check authoring slots from the shipped template, never serialized evidence.
+    # Literal template syntax in a finding or observed source is legitimate content.
+    for field in ("name", "revision"):
+        if isinstance(target.get(field), str) and target[field].strip() == "REPLACE":
+            errors.append("target." + field + " retains the unfilled template value REPLACE")
     scope = data.get("scope", {})
+    if isinstance(scope.get("included"), list):
+        for index, item in enumerate(scope["included"]):
+            if isinstance(item, str) and item.strip() == "REPLACE":
+                errors.append(f"scope.included[{index}] retains the unfilled template value REPLACE")
     if not isinstance(scope, dict) or not strings(scope.get("included")) or not scope.get("included"):
         errors.append("scope.included must be a non-empty list")
     for field in ("excluded", "constraints", "safety_boundary"):

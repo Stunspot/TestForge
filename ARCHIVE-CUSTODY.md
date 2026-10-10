@@ -1,6 +1,6 @@
 # TestForge archive custody
 
-TestForge v2.0.0 is the current two-skill distribution family. The maintained package is `testforge/`; the Codex plugin is `plugins/testforge/`. Current standalone uploads are `claude-ai/software-verification-v2.0.0.zip` and `claude-ai/verification-reviewer-v2.0.0.zip`. The complete customer kit is `releases/v2.0.0/TestForge-v2.0.0.zip`; its adjacent checksum and receipts bind the final bytes. Delivery sidecars are versioned under `delivery/`.
+TestForge v2.0.0 is the current two-skill distribution family. The maintained package is `testforge/`; the Codex plugin is `plugins/testforge/`. Current standalone uploads are `claude-ai/software-verification-v2.0.0.zip` and `claude-ai/verification-reviewer-v2.0.0.zip`. The current accepted customer kit is `releases/compact-cue-ccr2/TestForge-v2.0.0.zip`, identified by `verification/estate-root-review/CURRENT-RELEASE.json`; its adjacent checksum binds the final bytes. The v2.0.0 GitHub release download is maintained at these accepted bytes. `releases/v2.0.0/` retains the earlier frozen kit. Delivery sidecars are versioned under `delivery/`.
 
 ## Historical release repair
 
