@@ -6,6 +6,7 @@
     "-X",
     "utf8",
     "{harness_root}\\adapters\\codex_cli_adapter.py",
+    "--require-evaluator-isolation",
     "exec",
     "--ephemeral",
     "--sandbox",
@@ -20,5 +21,6 @@
   "working_directory": "{package_root}",
   "tracked_files": [
     "{harness_root}\\adapters\\codex_cli_adapter.py"
-  ]
+  ],
+  "isolation_profile": "required-evaluator-read-denial-unsupported"
 }

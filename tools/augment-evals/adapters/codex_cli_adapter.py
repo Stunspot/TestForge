@@ -39,6 +39,9 @@ def main(arguments: Sequence[str] | None = None) -> int:
         sys.stderr.reconfigure(encoding="utf-8")
 
     forwarded = list(arguments if arguments is not None else sys.argv[1:])
+    if "--require-evaluator-isolation" in forwarded:
+        print("Unsupported isolated profile: this Codex CLI adapter provides no evaluator-file read-denial boundary or subject-context denial canary for original checkout and result paths. No subject launched. Use a separately qualified isolated host; read-only permissions do not establish read isolation.", file=sys.stderr)
+        return 2
     prompt = sys.stdin.read()
     if "-" in forwarded and not prompt.strip():
         print("Codex CLI adapter received an empty prompt", file=sys.stderr)

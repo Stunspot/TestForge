@@ -672,6 +672,13 @@ def adapter_provenance(path: Path, package_root: Path, run_dir: Path) -> dict[st
     }
 
 
+def capture_text(value: str | bytes | None) -> str:
+    """Preserve subprocess partial output across Python timeout representations."""
+    if value is None:
+        return ""
+    return value.decode("utf-8", errors="replace") if isinstance(value, bytes) else value
+
+
 def invoke_adapter(
     adapter: dict[str, Any], prompt: str, package_root: Path, run_dir: Path,
     episode_dir: Path, case_id: str,
@@ -701,6 +708,8 @@ def invoke_adapter(
             check=False,
         )
         return {
+            "adapter_provenance": adapter.get("_execution_provenance"),
+            "execution_harness_sha256": file_sha256(Path(__file__).resolve()),
             "adapter": adapter.get("name", "unnamed"),
             "command": command,
             "working_directory": str(working_directory),
@@ -715,14 +724,18 @@ def invoke_adapter(
         }
     except subprocess.TimeoutExpired as exc:
         return {
+            "adapter_provenance": adapter.get("_execution_provenance"),
+            "execution_harness_sha256": file_sha256(Path(__file__).resolve()),
             "adapter": adapter.get("name", "unnamed"), "command": command,
             "working_directory": str(working_directory), "started_at": started_at,
             "finished_at": now_iso(), "duration_seconds": round(time.monotonic() - started, 6),
             "exit_code": None, "timed_out": True, "status": "interrupted",
-            "stdout": exc.stdout or "", "stderr": exc.stderr or "",
+            "stdout": capture_text(exc.stdout), "stderr": capture_text(exc.stderr),
         }
     except (OSError, UnicodeError) as exc:
         return {
+            "adapter_provenance": adapter.get("_execution_provenance"),
+            "execution_harness_sha256": file_sha256(Path(__file__).resolve()),
             "adapter": adapter.get("name", "unnamed"), "command": command,
             "working_directory": str(working_directory), "started_at": started_at,
             "finished_at": now_iso(), "duration_seconds": round(time.monotonic() - started, 6),
@@ -768,8 +781,8 @@ def validate_judgment(judgment: dict[str, Any], rubric: dict[str, Any]) -> list[
                 continue
             if item.get("status") not in CRITERION_POINTS:
                 errors.append(f"criterion {index} has invalid status")
-            if not isinstance(item.get("evidence"), str):
-                errors.append(f"criterion {index} evidence must be text")
+            if not isinstance(item.get("evidence"), str) or not item["evidence"].strip():
+                errors.append(f"criterion {index} evidence must be nonblank text")
     signals = judgment.get("failure_signals")
     if not isinstance(signals, list) or len(signals) != len(rubric["failure_signals"]):
         errors.append("failure_signals count does not match rubric")
@@ -780,8 +793,8 @@ def validate_judgment(judgment: dict[str, Any], rubric: dict[str, Any]) -> list[
                 continue
             if not isinstance(item.get("observed"), bool):
                 errors.append(f"failure signal {index} observed must be boolean")
-            if not isinstance(item.get("evidence"), str):
-                errors.append(f"failure signal {index} evidence must be text")
+            if not isinstance(item.get("evidence"), str) or not item["evidence"].strip():
+                errors.append(f"failure signal {index} evidence must be nonblank text")
     return errors
 
 
@@ -827,6 +840,9 @@ def adjudicate_episode(
     episode_dir: Path, request: dict[str, Any], rubric: dict[str, Any], response: str,
     judge_adapter: dict[str, Any], package_root: Path, run_dir: Path,
 ) -> None:
+    if not response.strip():
+        write_blocked_result(episode_dir, rubric, "subject response is empty or whitespace; no observable evidence")
+        return
     prompt = judge_prompt(
         rubric | {"input": request["input"], "runtime": request["runtime"]},
         request["trial"],
@@ -871,6 +887,10 @@ def execute_run(run_dir: Path, subject_adapter_path: Path, judge_adapter_path: P
     package_root = Path(run["package_root"])
     subject_adapter = load_adapter(subject_adapter_path)
     judge_adapter = load_adapter(judge_adapter_path)
+    for role, path in (("subject", subject_adapter_path), ("judge", judge_adapter_path)):
+        provenance = adapter_provenance(path, package_root, run_dir)
+        (subject_adapter if role == "subject" else judge_adapter)["_execution_provenance"] = provenance
+        update_run(run_dir, **{role + "_adapter_provenance": provenance, role + "_adapter_sha256": provenance["config_sha256"]})
     update_run(run_dir, status="RUNNING", execution_started_at=now_iso())
     try:
         for episode_dir in sorted((run_dir / "episodes").glob("*/trial-*")):
@@ -913,6 +933,8 @@ def judge_prepared_run(run_dir: Path, judge_adapter_path: Path, replace: bool = 
     run = read_json(run_dir / "run.json")
     package_root = Path(run["package_root"])
     judge_adapter = load_adapter(judge_adapter_path)
+    provenance = adapter_provenance(judge_adapter_path, package_root, run_dir)
+    judge_adapter["_execution_provenance"] = provenance
     judged = 0
     for episode_dir in sorted((run_dir / "episodes").glob("*/trial-*")):
         response_path = episode_dir / "subject-response.md"
@@ -948,6 +970,46 @@ def claim_status(counts: Counter[str], expected: int, evaluated: int) -> str:
     if counts["DEMONSTRATED"] == expected and expected:
         return "DEMONSTRATED"
     return "INSUFFICIENT_EVIDENCE"
+
+
+def evaluation_identity(run: dict[str, Any], suite: dict[str, Any], run_dir: Path) -> dict[str, Any]:
+    def digest(value: Any) -> str:
+        return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, separators=(",", ":")).encode("utf-8")).hexdigest()
+
+    actual = defaultdict(list)
+    for episode in sorted((run_dir / "episodes").glob("*/trial-*")):
+        rubric = read_json(episode / "evaluator-rubric.json")
+        request = read_json(episode / "subject-request.json")
+        body = {key: value for key, value in rubric.items() if key != "trial"}
+        body["subject_inputs"] = {key: request.get(key) for key in ("input", "runtime", "skills", "interactive")}
+        actual[rubric["case_id"]].append(digest(body))
+    cases = {key: digest(value) for key, value in actual.items()}
+    adapters = {}
+    execution_harnesses = {}
+    for role in ("subject", "judge"):
+        records = {}
+        for episode in sorted((run_dir / "episodes").glob("*/trial-*")):
+            path = episode / (role + "-execution.json")
+            if not path.is_file():
+                records = None
+                break
+            execution = read_json(path)
+            provenance = execution.get("adapter_provenance")
+            if not provenance or not provenance.get("config_sha256") or not execution.get("execution_harness_sha256"):
+                records = None
+                break
+            key = episode.relative_to(run_dir / "episodes").as_posix()
+            records[key] = {"config_sha256": provenance["config_sha256"], "tracked_files": sorted(item["sha256"] for item in provenance.get("tracked_files", []))}
+            execution_harnesses[role + "/" + key] = execution["execution_harness_sha256"]
+        adapters[role] = digest(records) if records else None
+    return {
+        "schema": "testforge-comparison-identity/v1",
+        "cases": cases,
+        "evaluator": digest({"harness": execution_harnesses, "gates": run.get("indispensable_dimensions"), "judge": adapters["judge"]}),
+        "host": run.get("host"), "model": run.get("model"),
+        "subject_adapter": adapters["subject"], "judge_adapter": adapters["judge"],
+        "trials": run.get("trials"),
+    }
 
 
 def summarize_run(run_dir: Path, append_ledger: bool = True) -> dict[str, Any]:
@@ -1005,6 +1067,7 @@ def summarize_run(run_dir: Path, append_ledger: bool = True) -> dict[str, Any]:
         "model": run["model"],
         "trials": run["trials"],
         "case_count": run["case_count"],
+        "comparison_identity": evaluation_identity(run, suite, run_dir),
         "selected_case_ids": run.get("selected_case_ids", []),
         "source_case_count": run.get("source_case_count", run["case_count"]),
         "run_status": run_status,
@@ -1343,10 +1406,28 @@ def check_regression(
     max_rate_drop: float,
     max_invalid: int,
     allow_status_regression: bool = False,
+    comparison_change: str | None = None,
 ) -> dict[str, Any]:
     comparison = compare_summaries(baseline, current)
     failures: list[str] = []
     warnings: list[str] = []
+    old_identity, new_identity = baseline.get("comparison_identity"), current.get("comparison_identity")
+    required = ("cases", "evaluator", "host", "model", "subject_adapter", "judge_adapter", "trials")
+    identity_present = all(isinstance(value, dict) and value.get("schema") == "testforge-comparison-identity/v1" and all(value.get(key) for key in required) for value in (old_identity, new_identity))
+    changed = [key for key in required if identity_present and old_identity[key] != new_identity[key]]
+    full_baseline = identity_present and not changed
+    comparison["full_baseline_comparable"] = full_baseline
+    comparison["identity_changes"] = changed
+    comparison["change_reason"] = comparison_change
+    if not identity_present:
+        failures.append("comparison identity missing or incomplete; baseline equivalence is unproven")
+    elif changed and not (comparison_change and comparison_change.strip()):
+        failures.append("comparison conditions changed without explicit reason: " + ", ".join(changed))
+    if not full_baseline:
+        comparison["mean_score_delta"] = None
+        comparison["demonstrated_rate_delta"] = None
+        comparison["indispensable_gates"] = {}
+        warnings.append("No full-baseline regression conclusion: changed or unproven case/evaluator/runtime scope")
     score_delta = comparison["mean_score_delta"]
     if score_delta is not None and score_delta < -max_score_drop:
         failures.append(f"mean score dropped {abs(score_delta):.4f}, exceeding {max_score_drop:.4f}")
@@ -1370,7 +1451,7 @@ def check_regression(
     if new_claim == "INSUFFICIENT_EVIDENCE":
         failures.append("current claim status is INSUFFICIENT_EVIDENCE")
     if (
-        not allow_status_regression
+        full_baseline and not allow_status_regression
         and CLAIM_STATUS_RANK.get(new_claim, 0) < CLAIM_STATUS_RANK.get(old_claim, 0)
     ):
         failures.append(f"claim status regressed from {old_claim} to {new_claim}")
@@ -1491,6 +1572,7 @@ def command_check(args: argparse.Namespace) -> int:
         args.max_rate_drop,
         args.max_invalid,
         args.allow_status_regression,
+        args.comparison_change,
     )
     if args.output:
         write_json(args.output, report)
@@ -1584,6 +1666,7 @@ def build_parser() -> argparse.ArgumentParser:
     check.add_argument("--max-rate-drop", type=float, default=0.0)
     check.add_argument("--max-invalid", type=int, default=0)
     check.add_argument("--allow-status-regression", action="store_true")
+    check.add_argument("--comparison-change", help="Explicit reason for changed case/evaluator/runtime conditions; never grants full-baseline significance")
     check.add_argument("--output", type=Path)
     check.set_defaults(func=command_check)
     return parser

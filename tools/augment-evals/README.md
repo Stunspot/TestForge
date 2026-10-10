@@ -35,7 +35,7 @@ Python 3.10+ is required. PyYAML is the only dependency because generated packag
 py -m pip install -r tools\augment-evals\requirements.txt
 ```
 
-The included Codex adapter uses the existing signed-in Codex CLI in ephemeral, read-only, non-interactive mode. Any other model or host can participate through the same small adapter contract.
+The included Codex isolated profile fails closed before launching a subject: this adapter cannot enforce evaluator-file read denial or run a denial canary in the subject execution context against original checkout and result paths. Ephemeral read-only Codex execution restricts writes; it does not isolate hidden evaluator files. No successful isolation or historical contamination is claimed. A separately qualified host boundary and execution-context denial canary are required to enable this profile. Any other model or host can participate through the same small adapter contract.
 
 The included Ollama context adapter is fully local. For subject episodes it supplies either a root-installed `SKILL.md` or skills under `skills/`, then connected model-facing material from `personas/`, `workflows/`, `references/`, `assets/`, `schemas/`, `examples/`, and `jurisdiction-packs/` in operating-priority order; it never supplies `evals/` or executable `scripts/`. Judge episodes receive only the evaluator prompt and subject response. This mode verifies context-only Augment behavior, not live shell-tool use or selective host retrieval.
 
@@ -56,7 +56,7 @@ The bundled `gpt-oss:20b` profile remains experimental. In the 2026-07-17 local 
 ## Validate a generated package
 
 ```powershell
-py tools\augment-evals\augment_eval.py validate prototypes\testforge\working-package\testforge
+py tools\augment-evals\augment_eval.py validate testforge
 ```
 
 Validation reports the discovered dialect, suites, cases, dimensions, package version, and structural defects. It does not claim that model behavior passed.
@@ -67,7 +67,7 @@ Use separate subject and judge invocations so the evaluated model never receives
 
 ```powershell
 py tools\augment-evals\augment_eval.py run `
-  prototypes\testforge\working-package\testforge `
+  testforge `
   --results evaluation-results `
   --subject-adapter tools\augment-evals\adapters\codex-cli.json `
   --judge-adapter tools\augment-evals\adapters\codex-cli.json `
@@ -175,3 +175,5 @@ The judge must return the JSON object described by `judge-result.schema.json`. T
 - Wilson intervals accompany demonstrated rates so tiny samples do not masquerade as precise reliability estimates.
 
 Scores help compare like-for-like runs. The categorical claim status and indispensable gates govern interpretation.
+
+Regression checks require recorded case/rubric identities, evaluator identity, host, model, subject/judge adapter content identities and trial count. Missing identity refuses equivalence; historical baselines remain evidence for their recorded scope. Package revisions may change without invalidating a matched comparison. Use `check --comparison-change "reason"` for an intentional change in evaluation scope or runtime: the report suppresses baseline deltas and gates and explicitly denies full-baseline significance. This option cannot supply missing identity.

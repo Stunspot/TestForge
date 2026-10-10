@@ -528,6 +528,9 @@ class ExecutionAndSummaryTests(unittest.TestCase):
             "package_fingerprint_sha256": "b", "indispensable_gates": {"honesty": "PARTIAL"},
         }
 
+        identity = {"schema": "testforge-comparison-identity/v1", "cases": {"A": "rubric-a"}, "evaluator": "judge", "host": "fixture", "model": "fixture", "subject_adapter": "subject", "judge_adapter": "judge", "trials": 1}
+        baseline["comparison_identity"] = identity
+        current["comparison_identity"] = identity
         report = augment_eval.check_regression(baseline, current, 2.0, 0.05, 0)
 
         self.assertFalse(report["passed"])
