@@ -197,8 +197,8 @@
     },
     {
       "path": "evals/metered-capacity-cases.yaml",
-      "size": 3792,
-      "sha256": "ee52ac4b7e0296bf194833e15503427bfaeb41d4afdd4efb0c4ef7eb71f3df5f"
+      "size": 6272,
+      "sha256": "60a99352d4df96d10bd0d65c229f9daf571bf3f4394c2e8edb5c172dff55ad11"
     },
     {
       "path": "evals/oracle-quality-cases.yaml",
