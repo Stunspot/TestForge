@@ -1,8 +1,8 @@
 {
   "schema": "testforge-current-delivery/v1",
   "version": "2.0.0",
-  "archive": "releases/compact-cue-ccr2/TestForge-v2.0.0.zip",
-  "sha256": "3e7073ef408a99ec07b7b36622340b48c754062f51068768f5f296a352e733d7",
+  "archive": "releases/estate-completion-20261010/TestForge-v2.0.0.zip",
+  "sha256": "9a37aa5e5c0a528de3c9468ed14430383c6127a500a63ff074a3315b615faaa9",
   "acceptance": "verification/estate-public-repair-20261010/ACCEPTANCE.md",
-  "boundary": "Accepted behavioral repairs, authored-purpose restoration and approved compact discovery descriptions. Complete current kit and native verifier passed; prior behavioral evidence retains its original scope. Public delivery authorized by the owner."
+  "boundary": "Accepted same-version restoration of verification/acquisition behavior, with complete original promptcraft preserved. Exact fresh kit and native installation passed; capable-host, fileless authoring and native/manual quality-ratchet evidence retain their bounded scope. Existing public maintenance authorized by owner."
 }
