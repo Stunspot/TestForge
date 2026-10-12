@@ -1,8 +1,8 @@
 name: testforge
 display_name: "TestForge: Software Verification Operator"
-version: 2.0.0
+version: 2.0.1
 publisher: Collaborative Dynamics
-release_date: 2026-09-05
+release_date: 2026-10-12
 canonical_human_record: Markdown
 canonical_machine_record: JSON
 entry_points:

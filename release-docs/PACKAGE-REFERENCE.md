@@ -14,15 +14,15 @@ package-receipt.json
 verification-report.json
 ```
 
-The canonical archive is `TestForge-v2.0.0.zip`. The release tree contains `receipt.json`. The `.sha256` file lives beside the archive because an archive cannot contain its own final digest.
+The canonical archive is `TestForge-v2.0.1.zip`. The release tree contains `receipt.json`. The `.sha256` file lives beside the archive because an archive cannot contain its own final digest.
 
 ## Key records
 
-- [Plugin manifest](../releases/v2.0.0/codex/testforge/.codex-plugin/plugin.json)
-- [Release manifest](../releases/v2.0.0/manifest.json)
-- [Description custody](../releases/v2.0.0/description-custody.json)
-- [Portable verification report](../releases/v2.0.0/verification-report.json)
-- [Package receipt](../releases/v2.0.0/package-receipt.json)
+- [Plugin manifest](../releases/v2.0.1/codex/testforge/.codex-plugin/plugin.json)
+- [Release manifest](../releases/v2.0.1/manifest.json)
+- [Description custody](../releases/v2.0.1/description-custody.json)
+- [Portable verification report](../releases/v2.0.1/verification-report.json)
+- [Package receipt](../releases/v2.0.1/package-receipt.json)
 - [Validation procedure](VALIDATION.md)
 
 The Software Verification skill includes `assets/templates/metered-verification-plan.json`, its exact field contract at `assets/schemas/metered-verification-plan.schema.json`, and the five-field output contract at `assets/templates/metered-verification-response.md`.

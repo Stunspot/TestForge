@@ -2,7 +2,7 @@
 
 Use a Codex build with the native `plugin marketplace` and `plugin add` commands. This path was checked on Codex CLI 0.144.5; plugin support in another build requires that build's own supported controls.
 
-Extract `TestForge-v2.0.0.zip` into a new directory. Open a terminal in its `testforge-v2.0.0/` release root. Python 3.10+ is recommended for the portable verifier; without it use the checksum and reduced-assurance path in the [quick start](QUICK-START.md).
+Extract `TestForge-v2.0.1.zip` into a new directory. Open a terminal in its `testforge-v2.0.1/` release root. Python 3.10+ is recommended for the portable verifier; without it use the checksum and reduced-assurance path in the [quick start](QUICK-START.md).
 
 ## Install the complete plugin
 
@@ -15,7 +15,7 @@ codex plugin add testforge@cd-testforge --json
 codex plugin list --json
 ```
 
-Require the verifier to return `"ok": true`. The bundled `.agents/plugins/marketplace.json` registers the existing `cd-testforge` marketplace and points to the complete `codex/testforge/` plugin. The install result should identify `testforge@cd-testforge`, version `2.0.0`, and its actual installed path. Check that the host lists the plugin as enabled. Keep the extracted root available while it is a configured local marketplace.
+Require the verifier to return `"ok": true`. The bundled `.agents/plugins/marketplace.json` registers the existing `cd-testforge` marketplace and points to the complete `codex/testforge/` plugin. The install result should identify `testforge@cd-testforge`, version `2.0.1`, and its actual installed path. Check that the host lists the plugin as enabled. Keep the extracted root available while it is a configured local marketplace.
 
 If the same marketplace is already registered to a different location, inspect that source through the host's plugin manager before changing it. Preserve an older installed copy until its provenance is known; use the host's supported disable/remove controls for duplicates rather than deleting arbitrary cache files.
 

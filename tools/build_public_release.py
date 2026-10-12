@@ -17,8 +17,8 @@ from source_text_policy import assert_text_entries, assert_source_text
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "2.0.0"
-DATE = "2026-09-05"
+VERSION = "2.0.1"
+DATE = "2026-10-12"
 OUT = ROOT / "releases" / f"v{VERSION}"
 PREFIX = f"testforge-v{VERSION}"
 HANDLES = ("software-verification", "verification-reviewer")

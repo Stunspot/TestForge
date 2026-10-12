@@ -1,19 +1,19 @@
 # TestForge: description custody
 
-Model-visible descriptions govern model selection; UI short descriptions are compact human-facing semantic attractors. They are distinct prompt surfaces and need not be identical. Both exact values are bound to this release.
+Model-visible descriptions guide skill selection. UI short descriptions serve the host interface. Current source carries the following exact values; the release manifest binds the complete containing files.
 
 ## software-verification
 
-Model-visible: 🧪 Software verification and release proof.
+Model-visible: ☠️ Finished candidates, fatal defects, readiness verdicts.
 
-UI short: 🧪 Software verification and release proof.
+UI short: ☠️ Finished candidates, fatal defects, readiness verdicts.
 
 Relationship: identical
 
 ## verification-reviewer
 
-Model-visible: 🔍 Challenge existing verification evidence now. Naming a future reviewer or review burden is route design, not activation.
+Model-visible: 🔍 Release claims, test oracles, and evidence sufficiency.
 
-UI short: 🔍 Challenge existing verification evidence now.
+UI short: 🔍 Release claims, test oracles, and evidence sufficiency.
 
-Relationship: intentionally distinct
+Relationship: identical

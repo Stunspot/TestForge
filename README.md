@@ -43,7 +43,7 @@ TestForge is advisory verification machinery. It does not prove defect freedom, 
 ## Repository map
 
 - [`docs/`](docs/) - the tailored GitHub Pages site, generated hero artwork, and site-source boundary.
-- [`testforge/`](testforge/) - the complete portable TestForge Augment v2.0.0.
+- [`testforge/`](testforge/) - the complete portable TestForge Augment v2.0.1.
 - [`testforge/docs/QUICK-START.md`](testforge/docs/QUICK-START.md) - install and first-use guide.
 - [`RELEASE-NOTES-v2.0.0.md`](RELEASE-NOTES-v2.0.0.md) - metered-verification safeguards and exact evidence boundary.
 - [`ARCHIVE-CUSTODY.md`](ARCHIVE-CUSTODY.md) - canonical Augment, plugin, standalone-skill, Claude, GitHub, and backup custody.
@@ -59,15 +59,15 @@ codex plugin marketplace add Stunspot/TestForge
 codex plugin add testforge@cd-testforge
 ```
 
-Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v2.0.0 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
+Start a new Codex task, then invoke `$software-verification` or `$verification-reviewer`. The plugin bundles the two self-contained TestForge v2.0.1 skills so their doctrine, tools, examples, and status vocabulary stay aligned. The separate Augment behavioral-evaluation harness remains in this repository rather than the skills-only plugin. Its marketplace namespace is product-specific, so TestForge can coexist with other Collaborative Dynamics plugin repositories.
 
-The current v2.0.0 maintenance kit and accepted repair are documented in [the maintenance acceptance record](verification/estate-public-repair-20261010/ACCEPTANCE.md). [Download the complete current ZIP](https://github.com/Stunspot/TestForge/releases/download/v2.0.0/TestForge-v2.0.0.zip).
+Version2.0.1 carries the [accepted2.0.0 repair](verification/estate-public-repair-20261010/ACCEPTANCE.md) under a distinct update identity; see [current release notes](RELEASE-NOTES-v2.0.1.md). [Download the complete current ZIP](https://github.com/Stunspot/TestForge/releases/download/v2.0.1/TestForge-v2.0.1.zip).
 
 ## Quick start: use the standalone Agent SKILLs
 
-Download the current release and open `testforge-v2.0.0/docs/QUICK-START.md`. The ZIP carries the complete plugin under `testforge-v2.0.0/codex/testforge/`; expose both complete directories under its `skills/` through your Agent host's skill mechanism. In a repository checkout the equivalent maintained directories are `testforge/skills/`. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
+Download the current release and open `testforge-v2.0.1/docs/QUICK-START.md`. The ZIP carries the complete plugin under `testforge-v2.0.1/codex/testforge/`; expose both complete directories under its `skills/` through your Agent host's skill mechanism. In a repository checkout the equivalent maintained directories are `testforge/skills/`. Host-specific notes are included for [Codex](testforge/adapters/codex.md), [Claude Code](testforge/adapters/claude-code.md), [GitHub](testforge/adapters/github.md), [local shell](testforge/adapters/local-shell.md) and [copy-paste chat](testforge/adapters/copy-paste-chat.md).
 
-The frozen v2.0.0 release kit preserves the complete Augment, Codex plugin source, and both Claude skill archives with static package receipts. The maintained repository separately exposes current Claude upload archives. The latest retained OpenAI skills-only portal packet is v1.1.4; it is built and repository-tested, but this repository does not claim it was uploaded, scanned by the current portal, approved, published, or made discoverable. See [archive custody](ARCHIVE-CUSTODY.md) for exact object identities and boundaries.
+The current v2.0.1 release kit preserves the complete Augment, Codex plugin source, and both Claude skill archives with static package receipts. The maintained repository separately exposes current Claude upload archives. The latest retained OpenAI skills-only portal packet is v1.1.4; it is built and repository-tested, but this repository does not claim it was uploaded, scanned by the current portal, approved, published, or made discoverable. See [archive custody](ARCHIVE-CUSTODY.md) for exact object identities and boundaries.
 
 Then start with:
 

@@ -15,7 +15,7 @@ def main():
     with zipfile.ZipFile(archive) as z:
         members={n:z.read(n) for n in z.namelist() if not n.endswith('/')}
         assert len(members)==len([n for n in z.namelist() if not n.endswith('/')]),'Duplicate ZIP members'
-        prefix='testforge-v2.0.0/'
+        prefix='testforge-v2.0.1/'
         assert all(n.startswith(prefix) and '..' not in Path(n).parts for n in members),'Unexpected ZIP path'
         packed={n[len(prefix):]:b for n,b in members.items()}
         for handle in HANDLES:
@@ -24,12 +24,12 @@ def main():
             actual={n[len(key):]:b for n,b in packed.items() if n.startswith(key)}
             assert actual==source,'Accepted runtime differs from canonical source: '+handle
             assert tree(ROOT/'testforge/skills'/handle)==source,'Current runtime mirror differs: '+handle
-            with zipfile.ZipFile(ROOT/'claude-ai'/f'{handle}-v2.0.0.zip') as inner:
+            with zipfile.ZipFile(ROOT/'claude-ai'/f'{handle}-v2.0.1.zip') as inner:
                 assert {n[len(handle)+1:]:inner.read(n) for n in inner.namelist() if not n.endswith('/')}==source,'Current Claude mirror differs: '+handle
         plugin=tree(ROOT/'plugins/testforge')
         assert {n[len('codex/testforge/'):]:b for n,b in packed.items() if n.startswith('codex/testforge/')}==plugin,'Plugin metadata/source differs'
         for name in DOCS:
-            expected=(ROOT/'release-docs'/name).read_text(encoding='utf-8').replace('../releases/v2.0.0/','../').encode('utf-8')
+            expected=(ROOT/'release-docs'/name).read_text(encoding='utf-8').replace('../releases/v2.0.1/','../').encode('utf-8')
             assert packed['docs/'+name]==expected,'Accepted customer document differs: '+name
         assert packed['tools/verify_release.py']==(ROOT/'tools/verify_family_release.py').read_bytes(),'Verifier differs'
         assert packed['LICENSE.md']==(ROOT/'LICENSE.md').read_bytes(),'License differs'

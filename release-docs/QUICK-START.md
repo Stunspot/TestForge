@@ -35,7 +35,7 @@ A useful review returns an independent review verdict, actionable findings or an
 
 ## If first value does not appear
 
-1. Confirm the intended TestForge handle is listed by the host and that version `2.0.0` is selected.
+1. Confirm the intended TestForge handle is listed by the host and that version `2.0.1` is selected.
 2. Name the handle explicitly once to distinguish routing from installation.
 3. Confirm the input is a completed candidate for the operator or an existing verification package for the reviewer.
 4. Follow [support and recovery](SUPPORT.md), recording package verification, installation, discovery, invocation, and behavior as separate observations.
