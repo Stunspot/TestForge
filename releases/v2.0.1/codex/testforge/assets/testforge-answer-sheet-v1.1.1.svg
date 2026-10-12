@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">TestForge answer sheet</title>
+  <desc id="desc">A partially completed optical answer sheet marked with a large coral check.</desc>
+  <rect width="1024" height="1024" fill="#071F3D"/>
+
+  <g transform="rotate(-4 500 500)">
+    <rect x="242" y="166" width="500" height="672" rx="48" fill="#BDEFFC"/>
+
+    <g fill="none" stroke="#48CBE8" stroke-width="20">
+      <circle cx="322" cy="280" r="29"/>
+      <circle cx="442" cy="280" r="29"/>
+      <circle cx="562" cy="280" r="29"/>
+      <circle cx="682" cy="280" r="29"/>
+
+      <circle cx="322" cy="380" r="29"/>
+      <circle cx="442" cy="380" r="29"/>
+      <circle cx="562" cy="380" r="29"/>
+      <circle cx="682" cy="380" r="29"/>
+
+      <circle cx="322" cy="480" r="29"/>
+      <circle cx="442" cy="480" r="29"/>
+      <circle cx="562" cy="480" r="29"/>
+      <circle cx="682" cy="480" r="29"/>
+
+      <circle cx="322" cy="580" r="29"/>
+      <circle cx="442" cy="580" r="29"/>
+      <circle cx="562" cy="580" r="29"/>
+      <circle cx="682" cy="580" r="29"/>
+
+      <circle cx="322" cy="680" r="29"/>
+      <circle cx="442" cy="680" r="29"/>
+      <circle cx="562" cy="680" r="29"/>
+      <circle cx="682" cy="680" r="29"/>
+    </g>
+
+    <g fill="#071F3D">
+      <circle cx="322" cy="280" r="30"/>
+      <circle cx="442" cy="380" r="30"/>
+      <circle cx="562" cy="480" r="30"/>
+      <circle cx="322" cy="580" r="30"/>
+      <circle cx="442" cy="680" r="30"/>
+    </g>
+  </g>
+
+  <path d="M 488 654 L 612 778 L 844 470" fill="none" stroke="#FF674D" stroke-width="92" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

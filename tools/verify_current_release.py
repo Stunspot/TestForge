@@ -25,7 +25,7 @@ def main():
             assert actual==source,'Accepted runtime differs from canonical source: '+handle
             assert tree(ROOT/'testforge/skills'/handle)==source,'Current runtime mirror differs: '+handle
             with zipfile.ZipFile(ROOT/'claude-ai'/f'{handle}-v2.0.1.zip') as inner:
-                assert {n[len(handle)+1:]:inner.read(n) for n in inner.namelist() if not n.endswith('/')}==source,'Current Claude mirror differs: '+handle
+                assert {n:inner.read(n) for n in inner.namelist() if not n.endswith('/')}==source,'Current Claude mirror differs: '+handle
         plugin=tree(ROOT/'plugins/testforge')
         assert {n[len('codex/testforge/'):]:b for n,b in packed.items() if n.startswith('codex/testforge/')}==plugin,'Plugin metadata/source differs'
         for name in DOCS:

@@ -1,8 +1,8 @@
 {
   "schema": "testforge-current-delivery/v1",
-  "version": "2.0.0",
-  "archive": "releases/estate-completion-20261010/TestForge-v2.0.0.zip",
-  "sha256": "9a37aa5e5c0a528de3c9468ed14430383c6127a500a63ff074a3315b615faaa9",
-  "acceptance": "verification/estate-public-repair-20261010/ACCEPTANCE.md",
-  "boundary": "Accepted same-version restoration of verification/acquisition behavior, with complete original promptcraft preserved. Exact fresh kit and native installation passed; capable-host, fileless authoring and native/manual quality-ratchet evidence retain their bounded scope. Existing public maintenance authorized by owner."
+  "version": "2.0.1",
+  "archive": "releases/v2.0.1/TestForge-v2.0.1.zip",
+  "sha256": "a79b0bf53a3a178013ecb1eaa4c7bfa6f58c5e811c155d43d24a45358c0acb46",
+  "retained_acceptance": "verification/estate-public-repair-20261010/ACCEPTANCE.md",
+  "boundary": "Versioned2.0.1 update carries accepted neutral-request/provenance/native-acquisition repairs with complete authored runtime unchanged. Current source review and native static build passed; final artifact and operative/public receiving remain separate."
 }

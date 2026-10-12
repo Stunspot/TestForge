@@ -1,0 +1,20 @@
+{
+  "name": "cd-testforge",
+  "interface": {
+    "displayName": "Collaborative Dynamics - TestForge"
+  },
+  "plugins": [
+    {
+      "name": "testforge",
+      "source": {
+        "source": "local",
+        "path": "./codex/testforge"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
